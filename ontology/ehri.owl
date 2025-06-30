@@ -1,0 +1,826 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://lod.ehri-project-test.eu/ontology#"
+     xml:base="http://lod.ehri-project-test.eu/ontology"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:ehri="http://lod.ehri-project-test.eu/ontology#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/">
+    <owl:Ontology rdf:about="http://lod.ehri-project-test.eu/ontology#">
+        <owl:versionIRI rdf:resource="http://lod.ehri-project-test.eu/ontology/0.0.1"/>
+        <owl:imports rdf:resource="https://www.ica.org/standards/RiC/ontology/1.0.2"/>
+        <ns:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dc:contributor xml:lang="en">Herminio García-González (Kazerne Dossin)</dc:contributor>
+        <dc:contributor xml:lang="en">Mike Bryant (NIOD)</dc:contributor>
+        <dc:title xml:lang="en">EHRI Ontology</dc:title>
+        <terms:description xml:lang="en">This ontology defines the data model used by the EHRI-KG when representing the information hosted in the EHRI Portal. It does so by extending RiC-O v1.0.2 and reusing some of the schema.org concepts.</terms:description>
+        <terms:publisher>EHRI-ERIC</terms:publisher>
+        <owl:versionInfo>v0.0.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#hasCopy -->
+
+    <owl:ObjectProperty rdf:about="http://lod.ehri-project-test.eu/ontology#hasCopy">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasCopy"/>
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
+        <owl:inverseOf rdf:resource="http://lod.ehri-project-test.eu/ontology#isCopyOf"/>
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Institution"/>
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Record"/>
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#RecordSet"/>
+        <rdfs:range rdf:resource="http://lod.ehri-project-test.eu/ontology#Institution"/>
+        <rdfs:range rdf:resource="http://lod.ehri-project-test.eu/ontology#Record"/>
+        <rdfs:range rdf:resource="http://lod.ehri-project-test.eu/ontology#RecordSet"/>
+        <rdfs:label xml:lang="fr">a pour copie</rdfs:label>
+        <rdfs:label xml:lang="en">has copy</rdfs:label>
+        <rdfs:label xml:lang="es">tiene como copia</rdfs:label>
+        <skos:definition xml:lang="en">This is a generalisation of the rico:hasCopy property to expand the domain and range to ehri:Institution instances.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#isCopyOf -->
+
+    <owl:ObjectProperty rdf:about="http://lod.ehri-project-test.eu/ontology#isCopyOf">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isCopyOf"/>
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Institution"/>
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Record"/>
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#RecordSet"/>
+        <rdfs:range rdf:resource="http://lod.ehri-project-test.eu/ontology#Institution"/>
+        <rdfs:range rdf:resource="http://lod.ehri-project-test.eu/ontology#Record"/>
+        <rdfs:range rdf:resource="http://lod.ehri-project-test.eu/ontology#RecordSet"/>
+        <rdfs:label xml:lang="es">es copia de</rdfs:label>
+        <rdfs:label xml:lang="fr">est la copie de</rdfs:label>
+        <rdfs:label xml:lang="en">is copy of</rdfs:label>
+        <skos:definition xml:lang="en">Inverse of ehri:hasCopy object property.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#scriptOfMaterials -->
+
+    <owl:ObjectProperty rdf:about="http://lod.ehri-project-test.eu/ontology#scriptOfMaterials">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Record"/>
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#RecordSet"/>
+        <rdfs:range rdf:resource="http://lod.ehri-project-test.eu/ontology#MaterialScript"/>
+        <rdfs:label xml:lang="es">la documentación tiene o tenía como escritura</rdfs:label>
+        <rdfs:label xml:lang="fr">la documentation a ou a eu pour écriture</rdfs:label>
+        <rdfs:label xml:lang="en">materials have or had script</rdfs:label>
+        <skos:definition xml:lang="en">This property allows to indicate the script present in the materials</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#accessibility -->
+
+    <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#accessibility">
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Institution"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="es">accesibilidad</rdfs:label>
+        <rdfs:label xml:lang="en">accessibility</rdfs:label>
+        <rdfs:label xml:lang="fr">accessibilité</rdfs:label>
+        <skos:definition xml:lang="en">Collects information about the institution&apos;s accesibility with respect to its archival holdings and services.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#administrativeStructure -->
+
+    <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#administrativeStructure">
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Institution"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">administrative structure</rdfs:label>
+        <rdfs:label xml:lang="es">estructura administrativa</rdfs:label>
+        <rdfs:label xml:lang="fr">structure administrative</rdfs:label>
+        <skos:definition xml:lang="en">Represents the current administrative structure of an institution</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#appraisal -->
+
+    <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#appraisal">
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Record"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">appraisal</rdfs:label>
+        <rdfs:label xml:lang="es">valoración</rdfs:label>
+        <rdfs:label xml:lang="fr">évaluation</rdfs:label>
+        <skos:definition xml:lang="en">Provides information on any appraisal, destruction and scheduling action.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#archivalHistory -->
+
+    <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#archivalHistory">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#history"/>
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#archivalSituation -->
+
+    <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#archivalSituation">
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">archival situation</rdfs:label>
+        <rdfs:label xml:lang="es">situación de los archivos</rdfs:label>
+        <rdfs:label xml:lang="fr">situation de conservation</rdfs:label>
+        <skos:definition xml:lang="en">Offers a short introduction to the archival situation and culture in a country.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#archivistNote -->
+
+    <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#archivistNote">
+        <rdfs:subPropertyOf rdf:resource="http://lod.ehri-project-test.eu/ontology#notes"/>
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Record"/>
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#RecordSet"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">archivist note</rdfs:label>
+        <rdfs:label xml:lang="es">nota del archivero/a</rdfs:label>
+        <rdfs:label xml:lang="fr">notes de l&apos;archiviste</rdfs:label>
+        <skos:definition xml:lang="en">Explains how the description was prepared and by whom.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#buildings -->
+
+    <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#buildings">
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Institution"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">building(s)</rdfs:label>
+        <rdfs:label xml:lang="fr">bâtiment(s)</rdfs:label>
+        <rdfs:label xml:lang="es">edificio(s)</rdfs:label>
+        <skos:definition xml:lang="en">Provides information about the buildings of the institution</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#contactPerson -->
+
+    <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#contactPerson">
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#InstitutionAddress"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">contact person</rdfs:label>
+        <rdfs:label xml:lang="es">persona de contacto</rdfs:label>
+        <rdfs:label xml:lang="fr">personne de contact</rdfs:label>
+        <skos:definition xml:lang="en">To provide the information needed to contact members of the staff.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#findingAids -->
+
+    <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#findingAids">
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Institution"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">finding aids</rdfs:label>
+        <rdfs:label xml:lang="es">instrumentos de descripción</rdfs:label>
+        <rdfs:label xml:lang="fr">instruments de recherche</rdfs:label>
+        <skos:definition xml:lang="en">Provides a general overview of the published and/or published finding aids.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#generalContext -->
+
+    <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#generalContext">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#generalDescription"/>
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Institution"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#institutionConditionOfAccess -->
+
+    <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#institutionConditionOfAccess">
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Institution"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="es">condiciones de acceso</rdfs:label>
+        <rdfs:label xml:lang="fr">conditions d&apos;accès</rdfs:label>
+        <rdfs:label xml:lang="en">conditions of access</rdfs:label>
+        <skos:definition xml:lang="en">Collects information about the conditions, requirements and procedures for access to, and use of institutional services</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#institutionReproductionServices -->
+
+    <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#institutionReproductionServices">
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Institution"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">reproduction services</rdfs:label>
+        <rdfs:label xml:lang="fr">services de reproduction</rdfs:label>
+        <rdfs:label xml:lang="es">servicios de reproducción</rdfs:label>
+        <skos:definition xml:lang="en">Gather information on the legal status or other regulations that restrict or affect access to the unit of description.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#locationOfCopies -->
+
+    <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#locationOfCopies">
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Record"/>
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#RecordSet"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">existence and location of copies</rdfs:label>
+        <rdfs:label xml:lang="fr">existence et lieu de copies</rdfs:label>
+        <rdfs:label xml:lang="es">existencia y localización de copias</rdfs:label>
+        <skos:definition xml:lang="en">Indicates the existence, location and availability of copies of the unit of description.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#locationOfOriginals -->
+
+    <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#locationOfOriginals">
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Record"/>
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#RecordSet"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">existence and location of copies</rdfs:label>
+        <rdfs:label xml:lang="fr">existence et lieu des originaux</rdfs:label>
+        <rdfs:label xml:lang="es">existencia y localización de los originales</rdfs:label>
+        <skos:definition xml:lang="en">Indicates the existence, location, availability and/or destruction of originals where the unit of description consists of copies</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#notes -->
+
+    <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#notes">
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Record"/>
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#RecordSet"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="es">nota(s)</rdfs:label>
+        <rdfs:label xml:lang="en">note(s)</rdfs:label>
+        <rdfs:label xml:lang="fr">note(s)</rdfs:label>
+        <skos:definition xml:lang="en">Provides information that cannot be accommodated in any of the other data properties</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#otherFindingAids -->
+
+    <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#otherFindingAids">
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Record"/>
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#RecordSet"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">finding aids</rdfs:label>
+        <rdfs:label xml:lang="es">instrumentos de descripción</rdfs:label>
+        <rdfs:label xml:lang="fr">instruments de recherche</rdfs:label>
+        <skos:definition xml:lang="en">Provide information on the history of the unit of description that is significant for its authenticity, integrity and interpretation.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#physicalCharacterisiticsAndTechnicalRequirements -->
+
+    <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#physicalCharacterisiticsAndTechnicalRequirements">
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Record"/>
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#RecordSet"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="es">características físicas y requisitos técnicos</rdfs:label>
+        <rdfs:label xml:lang="fr">caractéristiques matérielles et contraintes techniques</rdfs:label>
+        <rdfs:label xml:lang="en">physical characteristics and technical requirements</rdfs:label>
+        <skos:definition xml:lang="en">Collects information about any important physical characteristics or technical requirements that affect use of the unit of description.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#publicAreas -->
+
+    <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#publicAreas">
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Institution"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="fr">espaces publics</rdfs:label>
+        <rdfs:label xml:lang="es">espacios públicos</rdfs:label>
+        <rdfs:label xml:lang="en">public areas</rdfs:label>
+        <skos:definition xml:lang="en">Collects information about areas of the institution available for public use.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#recordsManagementAndCollectingPolicies -->
+
+    <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#recordsManagementAndCollectingPolicies">
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Institution"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="fr">gestion des archives courantes et intermédiaires et politiques de collecte</rdfs:label>
+        <rdfs:label xml:lang="es">gestión de documentos y política de ingresos</rdfs:label>
+        <rdfs:label xml:lang="en">records management and collecting policies</rdfs:label>
+        <skos:definition xml:lang="en">Provides information about the records management and collecting policies of the institution with archival holdings.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#relatedMaterial -->
+
+    <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#relatedMaterial">
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Record"/>
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#RecordSet"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">related units of description</rdfs:label>
+        <rdfs:label xml:lang="fr">sources complémentaires</rdfs:label>
+        <rdfs:label xml:lang="es">unidades de descripción relacionadas</rdfs:label>
+        <skos:definition xml:lang="en">Identifies related units of description.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#researchExtensive -->
+
+    <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#researchExtensive">
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">EHRI research (extensive)</rdfs:label>
+        <rdfs:label xml:lang="es">investigación del EHRI (ampliado)</rdfs:label>
+        <rdfs:label xml:lang="fr">recherche EHRI (extensif)</rdfs:label>
+        <skos:definition xml:lang="en">Offers information on how EHRI acquiered its data and integrated it into the Portal.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#researchServices -->
+
+    <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#researchServices">
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Institution"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">research services</rdfs:label>
+        <rdfs:label xml:lang="fr">services d&apos;aide à la recherche</rdfs:label>
+        <rdfs:label xml:lang="es">servicios de ayuda a la investigación</rdfs:label>
+        <skos:definition xml:lang="en">Describes the research services provided by the institution with archival holdings.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#researchSummary -->
+
+    <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#researchSummary">
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">EHRI research (summary)</rdfs:label>
+        <rdfs:label xml:lang="es">investigación del EHRI (resumen)</rdfs:label>
+        <rdfs:label xml:lang="fr">recherche EHRI (récapitulatif)</rdfs:label>
+        <skos:definition xml:lang="en">Elaborates on EHRI&apos;s identification work, which is ongoing since October 2010. This section also includes references to aggregators and country-specific research guides.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#separatedMaterial -->
+
+    <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#separatedMaterial">
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Record"/>
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#RecordSet"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">separated units of description</rdfs:label>
+        <rdfs:label xml:lang="fr">sources séparées</rdfs:label>
+        <rdfs:label xml:lang="es">unidadades de descripción separadas</rdfs:label>
+        <skos:definition xml:lang="en">Information about materials that are associated by provenance to the described materials but that have been physically separated or removed. Items may be separated for various reasons, including the dispersal of special formats to more appropriate custodial units; the outright destruction of duplicate or nonessential material; and the deliberate or unintentional scattering of fonds among different repositories.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#sources -->
+
+    <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#sources">
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Record"/>
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#RecordSet"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="es">fuentes</rdfs:label>
+        <rdfs:label xml:lang="en">sources</rdfs:label>
+        <rdfs:label xml:lang="fr">sources</rdfs:label>
+        <skos:definition xml:lang="en">Record notes on sources consulted in preparing the description and who prepared it.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#structureOrGenealogy -->
+
+    <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#structureOrGenealogy">
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="es">estructura(s) interna(s)/genealogía</rdfs:label>
+        <rdfs:label xml:lang="fr">structure interne</rdfs:label>
+        <rdfs:label>internal structure</rdfs:label>
+        <skos:definition xml:lang="en">Describes and/or represents the internal administrative structure(s) of a corporate body or the genealogy of a family.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#wasUsedAsSourceIn -->
+
+    <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#wasUsedAsSourceIn">
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Record"/>
+        <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#RecordSet"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="fr">bibliographie</rdfs:label>
+        <rdfs:label xml:lang="es">nota de publicaciones</rdfs:label>
+        <rdfs:label xml:lang="en">publication note</rdfs:label>
+        <skos:definition xml:lang="en">Identifies any publications that are about or are based on the use, study, or analysis of the unit of description.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/contactType -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/contactType">
+        <rdfs:domain rdf:resource="http://schema.org/PostalAddress"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:isDefinedBy rdf:resource="http://schema.org/contactType"/>
+        <rdfs:label xml:lang="en">contact type</rdfs:label>
+        <rdfs:label xml:lang="es">tipo de contacto</rdfs:label>
+        <rdfs:label xml:lang="fr">type de contact</rdfs:label>
+        <skos:definition xml:lang="en">A person or organization can have different contact points, for different purposes. For example, a sales contact point, a PR contact point and so on. This property is used to specify the kind of contact point.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/email -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/email">
+        <rdfs:domain rdf:resource="http://schema.org/PostalAddress"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:isDefinedBy rdf:resource="http://schema.org/email"/>
+        <rdfs:label xml:lang="fr">adresse email</rdfs:label>
+        <rdfs:label xml:lang="es">dirección de correo electrónico</rdfs:label>
+        <rdfs:label xml:lang="en">email address</rdfs:label>
+        <skos:definition xml:lang="en">Email address.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/faxNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/faxNumber">
+        <rdfs:domain rdf:resource="http://schema.org/PostalAddress"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:isDefinedBy rdf:resource="http://schema.org/faxNumber"/>
+        <rdfs:label xml:lang="en">fax number</rdfs:label>
+        <rdfs:label xml:lang="fr">numéro de fax</rdfs:label>
+        <rdfs:label xml:lang="es">número de fax</rdfs:label>
+        <skos:definition xml:lang="en">The fax number.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/openingHours -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/openingHours">
+        <rdfs:domain rdf:resource="http://schema.org/ArchiveOrganization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label rdf:resource="http://schema.org/openingHours"/>
+        <rdfs:label xml:lang="fr">heures d&apos;ouverture</rdfs:label>
+        <rdfs:label xml:lang="es">horarios de apertura</rdfs:label>
+        <rdfs:label xml:lang="en">opening hours</rdfs:label>
+        <skos:definition xml:lang="en">The general opening hours for a business.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/postalCode -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/postalCode">
+        <rdfs:domain rdf:resource="http://schema.org/PostalAddress"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:isDefinedBy rdf:resource="http://schema.org/postalCode"/>
+        <rdfs:label xml:lang="fr">code postal</rdfs:label>
+        <rdfs:label xml:lang="es">código postal</rdfs:label>
+        <rdfs:label xml:lang="en">postal code</rdfs:label>
+        <skos:definition xml:lang="en">The postal code.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/telephone -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/telephone">
+        <rdfs:domain rdf:resource="http://schema.org/PostalAddress"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:isDefinedBy rdf:resource="http://schema.org/telephone"/>
+        <rdfs:label xml:lang="fr">numéro de téléphone</rdfs:label>
+        <rdfs:label xml:lang="es">número de teléfono</rdfs:label>
+        <rdfs:label xml:lang="en">telephone number</rdfs:label>
+        <skos:definition xml:lang="en">The telephone number.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#AlternateAgentName -->
+
+    <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#AlternateAgentName">
+        <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentName"/>
+        <rdfs:label xml:lang="en">Alternative forms of the agent&apos;s name</rdfs:label>
+        <rdfs:label xml:lang="es">Formas alternativas del nombre</rdfs:label>
+        <rdfs:label xml:lang="fr">Formes alternatives du nom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#City -->
+
+    <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#City">
+        <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Place"/>
+        <rdfs:label xml:lang="en">City</rdfs:label>
+        <rdfs:label xml:lang="es">Ciudad</rdfs:label>
+        <rdfs:label xml:lang="fr">Ville</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#CorporateBody -->
+
+    <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#CorporateBody">
+        <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+        <rdfs:label xml:lang="fr">Collectivité</rdfs:label>
+        <rdfs:label xml:lang="en">Corporate body</rdfs:label>
+        <rdfs:label xml:lang="es">Persona jurídica</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#Country -->
+
+    <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#Country">
+        <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Place"/>
+        <rdfs:label xml:lang="en">Country</rdfs:label>
+        <rdfs:label xml:lang="fr">Pays</rdfs:label>
+        <rdfs:label xml:lang="es">País</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#Family -->
+
+    <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#Family">
+        <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Family"/>
+        <rdfs:label xml:lang="es">Familia</rdfs:label>
+        <rdfs:label xml:lang="fr">Famille</rdfs:label>
+        <rdfs:label xml:lang="en">Family</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#Institution -->
+
+    <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#Institution">
+        <rdfs:subClassOf rdf:resource="http://lod.ehri-project-test.eu/ontology#CorporateBody"/>
+        <rdfs:subClassOf rdf:resource="http://schema.org/ArchiveOrganization"/>
+        <rdfs:label xml:lang="es">Institución</rdfs:label>
+        <rdfs:label xml:lang="en">Institution</rdfs:label>
+        <rdfs:label xml:lang="fr">Institution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#InstitutionAddress -->
+
+    <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#InstitutionAddress">
+        <rdfs:subClassOf rdf:resource="http://schema.org/PostalAddress"/>
+        <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#PhysicalLocation"/>
+        <rdfs:label xml:lang="fr">Adresse de l&apos;institution</rdfs:label>
+        <rdfs:label xml:lang="es">Dirección de la institución</rdfs:label>
+        <rdfs:label xml:lang="en">Institution&apos;s address</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#MaterialScript -->
+
+    <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#MaterialScript">
+        <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Concept"/>
+        <rdfs:label xml:lang="es">Escritura de la documentación</rdfs:label>
+        <rdfs:label xml:lang="en">Script of materials</rdfs:label>
+        <rdfs:label xml:lang="fr">Écriture des documents</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#ParallelAgentName -->
+
+    <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#ParallelAgentName">
+        <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentName"/>
+        <rdfs:label xml:lang="es">Formas paralelas del nombre</rdfs:label>
+        <rdfs:label xml:lang="fr">Formes parallèles du nom</rdfs:label>
+        <rdfs:label xml:lang="en">Parallel forms of the agent&apos;s name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#Person -->
+
+    <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#Person">
+        <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+        <rdfs:label xml:lang="es">Persona</rdfs:label>
+        <rdfs:label xml:lang="fr">Personne</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#Record -->
+
+    <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#Record">
+        <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#RecordSet -->
+
+    <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#RecordSet">
+        <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/ontology#Region -->
+
+    <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#Region">
+        <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Place"/>
+        <rdfs:label xml:lang="en">Region</rdfs:label>
+        <rdfs:label xml:lang="es">Región</rdfs:label>
+        <rdfs:label xml:lang="fr">Région</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/ArchiveOrganization -->
+
+    <owl:Class rdf:about="http://schema.org/ArchiveOrganization"/>
+    
+
+
+    <!-- http://schema.org/PostalAddress -->
+
+    <owl:Class rdf:about="http://schema.org/PostalAddress"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+        <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#RecordGroup -->
+
+    <owl:NamedIndividual rdf:about="http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#RecordGroup">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+        <skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
+        <skos:topConceptOf rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
+        <rdfs:label xml:lang="fr">groupe d&apos;enregistrement</rdfs:label>
+        <rdfs:label xml:lang="en">record group</rdfs:label>
+        <rdfs:label xml:lang="es">unidad documental compuesta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subcollection -->
+
+    <owl:NamedIndividual rdf:about="http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subcollection">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+        <skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
+        <skos:topConceptOf rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
+        <rdfs:label xml:lang="fr">sous-collection</rdfs:label>
+        <rdfs:label xml:lang="en">sub-collection</rdfs:label>
+        <rdfs:label xml:lang="es">subcolección</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subfonds -->
+
+    <owl:NamedIndividual rdf:about="http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subfonds">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+        <skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
+        <skos:topConceptOf rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
+        <rdfs:label xml:lang="fr">sous-fonds</rdfs:label>
+        <rdfs:label xml:lang="en">sub-fonds</rdfs:label>
+        <rdfs:label xml:lang="es">subfondo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subgroup -->
+
+    <owl:NamedIndividual rdf:about="http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subgroup">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+        <skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
+        <skos:topConceptOf rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
+        <rdfs:label xml:lang="fr">sous-groupe</rdfs:label>
+        <rdfs:label xml:lang="en">sub-group</rdfs:label>
+        <rdfs:label xml:lang="es">subunidad documental compuesta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subseries -->
+
+    <owl:NamedIndividual rdf:about="http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subseries">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+        <skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
+        <skos:topConceptOf rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
+        <rdfs:label xml:lang="fr">sous-série</rdfs:label>
+        <rdfs:label xml:lang="en">sub-series</rdfs:label>
+        <rdfs:label xml:lang="es">subserie</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
