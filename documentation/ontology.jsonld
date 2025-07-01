@@ -1,0 +1,1320 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+    }, {
+      "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+    }, {
+      "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+    }, {
+      "@id" : "https://www.ica.org/standards/RiC/ontology#Agent"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+    }, {
+      "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+    }, {
+      "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+    } ]
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://creativecommons.org/ns#license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@language" : "en",
+    "@value" : "Herminio García-González (Kazerne Dossin)"
+  }, {
+    "@language" : "en",
+    "@value" : "Mike Bryant (NIOD)"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "en",
+    "@value" : "EHRI Ontology"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "This ontology defines the data model used by the EHRI-KG when representing the information hosted in the EHRI Portal. It does so by extending RiC-O v1.0.2 and reusing some of the schema.org concepts."
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@value" : "EHRI-ERIC"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "ehri"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#"
+  } ],
+  "http://schema.org/codeRepository" : [ {
+    "@id" : "https://github.com/EHRI/ehri-kg-ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/ontology/1.0.2"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology/0.0.1"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "v0.0.1"
+  } ],
+  "http://xmlns.com/foaf/0.1/logo" : [ {
+    "@id" : "https://ehri-kg.ehri-project.eu/images/ehri-logo.svg"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#AlternateAgentName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Alternative forms of the agent's name"
+  }, {
+    "@language" : "es",
+    "@value" : "Formas alternativas del nombre"
+  }, {
+    "@language" : "fr",
+    "@value" : "Formes alternatives du nom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#AgentName"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#City",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "City"
+  }, {
+    "@language" : "es",
+    "@value" : "Ciudad"
+  }, {
+    "@language" : "fr",
+    "@value" : "Ville"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#Place"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#CorporateBody",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "Collectivité"
+  }, {
+    "@language" : "en",
+    "@value" : "Corporate body"
+  }, {
+    "@language" : "es",
+    "@value" : "Persona jurídica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#CorporateBody"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#Country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Country"
+  }, {
+    "@language" : "fr",
+    "@value" : "Pays"
+  }, {
+    "@language" : "es",
+    "@value" : "País"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#Place"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#Family",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Familia"
+  }, {
+    "@language" : "fr",
+    "@value" : "Famille"
+  }, {
+    "@language" : "en",
+    "@value" : "Family"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#Family"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#Institution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Institución"
+  }, {
+    "@language" : "en",
+    "@value" : "Institution"
+  }, {
+    "@language" : "fr",
+    "@value" : "Institution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#CorporateBody"
+  }, {
+    "@id" : "http://schema.org/ArchiveOrganization"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#InstitutionAddress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "Adresse de l'institution"
+  }, {
+    "@language" : "es",
+    "@value" : "Dirección de la institución"
+  }, {
+    "@language" : "en",
+    "@value" : "Institution's address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/PostalAddress"
+  }, {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#PhysicalLocation"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#MaterialScript",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Escritura de la documentación"
+  }, {
+    "@language" : "en",
+    "@value" : "Script of materials"
+  }, {
+    "@language" : "fr",
+    "@value" : "Écriture des documents"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#Concept"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#ParallelAgentName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Formas paralelas del nombre"
+  }, {
+    "@language" : "fr",
+    "@value" : "Formes parallèles du nom"
+  }, {
+    "@language" : "en",
+    "@value" : "Parallel forms of the agent's name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#AgentName"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Person"
+  }, {
+    "@language" : "es",
+    "@value" : "Persona"
+  }, {
+    "@language" : "fr",
+    "@value" : "Personne"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#Person"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#Record",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+  }, {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#Record"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Record Resource"
+  }, {
+    "@language" : "es",
+    "@value" : "Recurso documental"
+  }, {
+    "@language" : "fr",
+    "@value" : "Ressource archivistique"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#RecordResource"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#RecordSet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+  }, {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#RecordSet"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#Region",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Region"
+  }, {
+    "@language" : "es",
+    "@value" : "Región"
+  }, {
+    "@language" : "fr",
+    "@value" : "Région"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#Place"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#accessibility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Collects information about the institution's accesibility with respect to its archival holdings and services."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "accesibilidad"
+  }, {
+    "@language" : "en",
+    "@value" : "accessibility"
+  }, {
+    "@language" : "fr",
+    "@value" : "accessibilité"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#administrativeStructure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents the current administrative structure of an institution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "administrative structure"
+  }, {
+    "@language" : "es",
+    "@value" : "estructura administrativa"
+  }, {
+    "@language" : "fr",
+    "@value" : "structure administrative"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#appraisal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Provides information on any appraisal, destruction and scheduling action."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#Record"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "appraisal"
+  }, {
+    "@language" : "es",
+    "@value" : "valoración"
+  }, {
+    "@language" : "fr",
+    "@value" : "évaluation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#archivalHistory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Holds information about the Holocaust and WWII and how it relates to the archival landscape."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "archival history"
+  }, {
+    "@language" : "fr",
+    "@value" : "histoire archivistique"
+  }, {
+    "@language" : "es",
+    "@value" : "historia archivística"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#history"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#archivalSituation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Offers a short introduction to the archival situation and culture in a country."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "archival situation"
+  }, {
+    "@language" : "es",
+    "@value" : "situación de los archivos"
+  }, {
+    "@language" : "fr",
+    "@value" : "situation de conservation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#archivistNote",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Explains how the description was prepared and by whom."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "archivist note"
+  }, {
+    "@language" : "es",
+    "@value" : "nota del archivero/a"
+  }, {
+    "@language" : "fr",
+    "@value" : "notes de l'archiviste"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#notes"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#buildings",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Provides information about the buildings of the institution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "building(s)"
+  }, {
+    "@language" : "fr",
+    "@value" : "bâtiment(s)"
+  }, {
+    "@language" : "es",
+    "@value" : "edificio(s)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#contactPerson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "To provide the information needed to contact members of the staff."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#InstitutionAddress"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "contact person"
+  }, {
+    "@language" : "es",
+    "@value" : "persona de contacto"
+  }, {
+    "@language" : "fr",
+    "@value" : "personne de contact"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#findingAids",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Provides a general overview of the published and/or published finding aids."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "finding aids"
+  }, {
+    "@language" : "es",
+    "@value" : "instrumentos de descripción"
+  }, {
+    "@language" : "fr",
+    "@value" : "instruments de recherche"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#generalContext",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Provides information about the geographical and cultural context of the institution."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "contexte général"
+  }, {
+    "@language" : "es",
+    "@value" : "contexto general"
+  }, {
+    "@language" : "en",
+    "@value" : "general context"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#generalDescription"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#hasCopy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is a generalisation of the rico:hasCopy property to expand the domain and range to ehri:Institution instances."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "a pour copie"
+  }, {
+    "@language" : "en",
+    "@value" : "has copy"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene como copia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid4"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#hasCopy"
+  }, {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#isRelatedTo"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#isCopyOf"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#institutionConditionOfAccess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Collects information about the conditions, requirements and procedures for access to, and use of institutional services"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "condiciones de acceso"
+  }, {
+    "@language" : "fr",
+    "@value" : "conditions d'accès"
+  }, {
+    "@language" : "en",
+    "@value" : "conditions of access"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#institutionReproductionServices",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Gather information on the legal status or other regulations that restrict or affect access to the unit of description."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "reproduction services"
+  }, {
+    "@language" : "fr",
+    "@value" : "services de reproduction"
+  }, {
+    "@language" : "es",
+    "@value" : "servicios de reproducción"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#isCopyOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inverse of ehri:hasCopy object property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid7"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "es copia de"
+  }, {
+    "@language" : "fr",
+    "@value" : "est la copie de"
+  }, {
+    "@language" : "en",
+    "@value" : "is copy of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid10"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#isCopyOf"
+  }, {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#isRelatedTo"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#locationOfCopies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates the existence, location and availability of copies of the unit of description."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "existence and location of copies"
+  }, {
+    "@language" : "fr",
+    "@value" : "existence et lieu de copies"
+  }, {
+    "@language" : "es",
+    "@value" : "existencia y localización de copias"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#locationOfOriginals",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates the existence, location, availability and/or destruction of originals where the unit of description consists of copies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "existence and location of copies"
+  }, {
+    "@language" : "fr",
+    "@value" : "existence et lieu des originaux"
+  }, {
+    "@language" : "es",
+    "@value" : "existencia y localización de los originales"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#notes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Provides information that cannot be accommodated in any of the other data properties"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "nota(s)"
+  }, {
+    "@language" : "en",
+    "@value" : "note(s)"
+  }, {
+    "@language" : "fr",
+    "@value" : "note(s)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#otherFindingAids",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Provide information on the history of the unit of description that is significant for its authenticity, integrity and interpretation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "finding aids"
+  }, {
+    "@language" : "es",
+    "@value" : "instrumentos de descripción"
+  }, {
+    "@language" : "fr",
+    "@value" : "instruments de recherche"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#physicalCharacterisiticsAndTechnicalRequirements",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Collects information about any important physical characteristics or technical requirements that affect use of the unit of description."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "características físicas y requisitos técnicos"
+  }, {
+    "@language" : "fr",
+    "@value" : "caractéristiques matérielles et contraintes techniques"
+  }, {
+    "@language" : "en",
+    "@value" : "physical characteristics and technical requirements"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#publicAreas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Collects information about areas of the institution available for public use."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "espaces publics"
+  }, {
+    "@language" : "es",
+    "@value" : "espacios públicos"
+  }, {
+    "@language" : "en",
+    "@value" : "public areas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#recordsManagementAndCollectingPolicies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Provides information about the records management and collecting policies of the institution with archival holdings."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "gestion des archives courantes et intermédiaires et politiques de collecte"
+  }, {
+    "@language" : "es",
+    "@value" : "gestión de documentos y política de ingresos"
+  }, {
+    "@language" : "en",
+    "@value" : "records management and collecting policies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#relatedMaterial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifies related units of description."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "related units of description"
+  }, {
+    "@language" : "fr",
+    "@value" : "sources complémentaires"
+  }, {
+    "@language" : "es",
+    "@value" : "unidades de descripción relacionadas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#researchExtensive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Offers information on how EHRI acquiered its data and integrated it into the Portal."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "EHRI research (extensive)"
+  }, {
+    "@language" : "es",
+    "@value" : "investigación del EHRI (ampliado)"
+  }, {
+    "@language" : "fr",
+    "@value" : "recherche EHRI (extensif)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#researchServices",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Describes the research services provided by the institution with archival holdings."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "research services"
+  }, {
+    "@language" : "fr",
+    "@value" : "services d'aide à la recherche"
+  }, {
+    "@language" : "es",
+    "@value" : "servicios de ayuda a la investigación"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#researchSummary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Elaborates on EHRI's identification work, which is ongoing since October 2010. This section also includes references to aggregators and country-specific research guides."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "EHRI research (summary)"
+  }, {
+    "@language" : "es",
+    "@value" : "investigación del EHRI (resumen)"
+  }, {
+    "@language" : "fr",
+    "@value" : "recherche EHRI (récapitulatif)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#scriptOfMaterials",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property allows to indicate the script present in the materials"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "la documentación tiene o tenía como escritura"
+  }, {
+    "@language" : "fr",
+    "@value" : "la documentation a ou a eu pour écriture"
+  }, {
+    "@language" : "en",
+    "@value" : "materials have or had script"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#MaterialScript"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#isRelatedTo"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#separatedMaterial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Information about materials that are associated by provenance to the described materials but that have been physically separated or removed. Items may be separated for various reasons, including the dispersal of special formats to more appropriate custodial units; the outright destruction of duplicate or nonessential material; and the deliberate or unintentional scattering of fonds among different repositories."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "separated units of description"
+  }, {
+    "@language" : "fr",
+    "@value" : "sources séparées"
+  }, {
+    "@language" : "es",
+    "@value" : "unidadades de descripción separadas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#sources",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Record notes on sources consulted in preparing the description and who prepared it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid13"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "fuentes"
+  }, {
+    "@language" : "en",
+    "@value" : "sources"
+  }, {
+    "@language" : "fr",
+    "@value" : "sources"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#structureOrGenealogy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Describes and/or represents the internal administrative structure(s) of a corporate body or the genealogy of a family."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "estructura(s) interna(s)/genealogía"
+  }, {
+    "@language" : "en",
+    "@value" : "internal structure"
+  }, {
+    "@language" : "fr",
+    "@value" : "structure interne"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#wasUsedAsSourceIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifies any publications that are about or are based on the use, study, or analysis of the unit of description."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "bibliographie"
+  }, {
+    "@language" : "es",
+    "@value" : "nota de publicaciones"
+  }, {
+    "@language" : "en",
+    "@value" : "publication note"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#RecordGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#RecordSetType" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "groupe d'enregistrement"
+  }, {
+    "@language" : "en",
+    "@value" : "record group"
+  }, {
+    "@language" : "es",
+    "@value" : "unidad documental compuesta"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subcollection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#RecordSetType" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "sous-collection"
+  }, {
+    "@language" : "en",
+    "@value" : "sub-collection"
+  }, {
+    "@language" : "es",
+    "@value" : "subcolección"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subfonds",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#RecordSetType" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "sous-fonds"
+  }, {
+    "@language" : "en",
+    "@value" : "sub-fonds"
+  }, {
+    "@language" : "es",
+    "@value" : "subfondo"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subgroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#RecordSetType" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "sous-groupe"
+  }, {
+    "@language" : "en",
+    "@value" : "sub-group"
+  }, {
+    "@language" : "es",
+    "@value" : "subunidad documental compuesta"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subseries",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#RecordSetType" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "sous-série"
+  }, {
+    "@language" : "en",
+    "@value" : "sub-series"
+  }, {
+    "@language" : "es",
+    "@value" : "subserie"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+  } ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/ArchiveOrganization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://schema.org/PostalAddress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://schema.org/codeRepository",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/contactType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A person or organization can have different contact points, for different purposes. For example, a sales contact point, a PR contact point and so on. This property is used to specify the kind of contact point."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/PostalAddress"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://schema.org/contactType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "contact type"
+  }, {
+    "@language" : "es",
+    "@value" : "tipo de contacto"
+  }, {
+    "@language" : "fr",
+    "@value" : "type de contact"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://schema.org/email",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Email address."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/PostalAddress"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://schema.org/email"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "adresse email"
+  }, {
+    "@language" : "es",
+    "@value" : "dirección de correo electrónico"
+  }, {
+    "@language" : "en",
+    "@value" : "email address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://schema.org/faxNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The fax number."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/PostalAddress"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://schema.org/faxNumber"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "fax number"
+  }, {
+    "@language" : "fr",
+    "@value" : "numéro de fax"
+  }, {
+    "@language" : "es",
+    "@value" : "número de fax"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://schema.org/openingHours",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The general opening hours for a business."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/ArchiveOrganization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@id" : "http://schema.org/openingHours"
+  }, {
+    "@language" : "fr",
+    "@value" : "heures d'ouverture"
+  }, {
+    "@language" : "es",
+    "@value" : "horarios de apertura"
+  }, {
+    "@language" : "en",
+    "@value" : "opening hours"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://schema.org/postalCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The postal code."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/PostalAddress"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://schema.org/postalCode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "code postal"
+  }, {
+    "@language" : "es",
+    "@value" : "código postal"
+  }, {
+    "@language" : "en",
+    "@value" : "postal code"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://schema.org/telephone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The telephone number."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/PostalAddress"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://schema.org/telephone"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "numéro de téléphone"
+  }, {
+    "@language" : "es",
+    "@value" : "número de teléfono"
+  }, {
+    "@language" : "en",
+    "@value" : "telephone number"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#Thing"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/logo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

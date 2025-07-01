@@ -7,14 +7,13 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:ehri="http://lod.ehri-project-test.eu/ontology#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:schema="http://schema.org/">
+     xmlns:schema="http://schema.org/"
+     xmlns:ontology="https://www.ica.org/standards/RiC/ontology#">
     <owl:Ontology rdf:about="http://lod.ehri-project-test.eu/ontology">
         <owl:versionIRI rdf:resource="http://lod.ehri-project-test.eu/ontology/0.0.1"/>
         <owl:imports rdf:resource="https://www.ica.org/standards/RiC/ontology/1.0.2"/>
@@ -41,10 +40,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://purl.org/dc/elements/1.1/contributor -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
@@ -54,11 +55,13 @@
 
     <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
     
 
 
     <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
     
@@ -66,17 +69,20 @@
 
     <!-- http://schema.org/codeRepository -->
 
+
     <owl:AnnotationProperty rdf:about="http://schema.org/codeRepository"/>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#definition -->
 
+
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/logo -->
+
 
     <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/logo"/>
     
@@ -90,10 +96,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://lod.ehri-project-test.eu/ontology#hasCopy -->
+
 
     <owl:ObjectProperty rdf:about="http://lod.ehri-project-test.eu/ontology#hasCopy">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasCopy"/>
@@ -125,6 +133,7 @@
 
     <!-- http://lod.ehri-project-test.eu/ontology#isCopyOf -->
 
+
     <owl:ObjectProperty rdf:about="http://lod.ehri-project-test.eu/ontology#isCopyOf">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isCopyOf"/>
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
@@ -154,6 +163,7 @@
 
     <!-- http://lod.ehri-project-test.eu/ontology#scriptOfMaterials -->
 
+
     <owl:ObjectProperty rdf:about="http://lod.ehri-project-test.eu/ontology#scriptOfMaterials">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
         <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#RecordResource"/>
@@ -174,10 +184,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://lod.ehri-project-test.eu/ontology#accessibility -->
+
 
     <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#accessibility">
         <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Institution"/>
@@ -192,6 +204,7 @@
 
     <!-- http://lod.ehri-project-test.eu/ontology#administrativeStructure -->
 
+
     <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#administrativeStructure">
         <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Institution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
@@ -205,6 +218,7 @@
 
     <!-- http://lod.ehri-project-test.eu/ontology#appraisal -->
 
+
     <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#appraisal">
         <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Record"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
@@ -217,6 +231,7 @@
 
 
     <!-- http://lod.ehri-project-test.eu/ontology#archivalHistory -->
+
 
     <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#archivalHistory">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#history"/>
@@ -232,6 +247,7 @@
 
     <!-- http://lod.ehri-project-test.eu/ontology#archivalSituation -->
 
+
     <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#archivalSituation">
         <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Country"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
@@ -244,6 +260,7 @@
 
 
     <!-- http://lod.ehri-project-test.eu/ontology#archivistNote -->
+
 
     <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#archivistNote">
         <rdfs:subPropertyOf rdf:resource="http://lod.ehri-project-test.eu/ontology#notes"/>
@@ -259,6 +276,7 @@
 
     <!-- http://lod.ehri-project-test.eu/ontology#buildings -->
 
+
     <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#buildings">
         <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Institution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
@@ -271,6 +289,7 @@
 
 
     <!-- http://lod.ehri-project-test.eu/ontology#contactPerson -->
+
 
     <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#contactPerson">
         <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#InstitutionAddress"/>
@@ -285,6 +304,7 @@
 
     <!-- http://lod.ehri-project-test.eu/ontology#findingAids -->
 
+
     <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#findingAids">
         <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Institution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
@@ -297,6 +317,7 @@
 
 
     <!-- http://lod.ehri-project-test.eu/ontology#generalContext -->
+
 
     <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#generalContext">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#generalDescription"/>
@@ -312,6 +333,7 @@
 
     <!-- http://lod.ehri-project-test.eu/ontology#institutionConditionOfAccess -->
 
+
     <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#institutionConditionOfAccess">
         <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Institution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
@@ -324,6 +346,7 @@
 
 
     <!-- http://lod.ehri-project-test.eu/ontology#institutionReproductionServices -->
+
 
     <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#institutionReproductionServices">
         <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Institution"/>
@@ -338,6 +361,7 @@
 
     <!-- http://lod.ehri-project-test.eu/ontology#locationOfCopies -->
 
+
     <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#locationOfCopies">
         <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
@@ -350,6 +374,7 @@
 
 
     <!-- http://lod.ehri-project-test.eu/ontology#locationOfOriginals -->
+
 
     <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#locationOfOriginals">
         <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#RecordResource"/>
@@ -364,6 +389,7 @@
 
     <!-- http://lod.ehri-project-test.eu/ontology#notes -->
 
+
     <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#notes">
         <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
@@ -376,6 +402,7 @@
 
 
     <!-- http://lod.ehri-project-test.eu/ontology#otherFindingAids -->
+
 
     <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#otherFindingAids">
         <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#RecordResource"/>
@@ -390,6 +417,7 @@
 
     <!-- http://lod.ehri-project-test.eu/ontology#physicalCharacterisiticsAndTechnicalRequirements -->
 
+
     <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#physicalCharacterisiticsAndTechnicalRequirements">
         <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
@@ -402,6 +430,7 @@
 
 
     <!-- http://lod.ehri-project-test.eu/ontology#publicAreas -->
+
 
     <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#publicAreas">
         <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Institution"/>
@@ -416,6 +445,7 @@
 
     <!-- http://lod.ehri-project-test.eu/ontology#recordsManagementAndCollectingPolicies -->
 
+
     <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#recordsManagementAndCollectingPolicies">
         <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Institution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
@@ -428,6 +458,7 @@
 
 
     <!-- http://lod.ehri-project-test.eu/ontology#relatedMaterial -->
+
 
     <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#relatedMaterial">
         <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#RecordResource"/>
@@ -442,6 +473,7 @@
 
     <!-- http://lod.ehri-project-test.eu/ontology#researchExtensive -->
 
+
     <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#researchExtensive">
         <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Country"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
@@ -454,6 +486,7 @@
 
 
     <!-- http://lod.ehri-project-test.eu/ontology#researchServices -->
+
 
     <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#researchServices">
         <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Institution"/>
@@ -468,6 +501,7 @@
 
     <!-- http://lod.ehri-project-test.eu/ontology#researchSummary -->
 
+
     <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#researchSummary">
         <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Country"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
@@ -481,6 +515,7 @@
 
     <!-- http://lod.ehri-project-test.eu/ontology#separatedMaterial -->
 
+
     <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#separatedMaterial">
         <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
@@ -493,6 +528,7 @@
 
 
     <!-- http://lod.ehri-project-test.eu/ontology#sources -->
+
 
     <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#sources">
         <rdfs:domain>
@@ -514,6 +550,7 @@
 
     <!-- http://lod.ehri-project-test.eu/ontology#structureOrGenealogy -->
 
+
     <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#structureOrGenealogy">
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
@@ -527,6 +564,7 @@
 
     <!-- http://lod.ehri-project-test.eu/ontology#wasUsedAsSourceIn -->
 
+
     <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#wasUsedAsSourceIn">
         <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
@@ -539,6 +577,7 @@
 
 
     <!-- http://schema.org/contactType -->
+
 
     <owl:DatatypeProperty rdf:about="http://schema.org/contactType">
         <rdfs:domain rdf:resource="http://schema.org/PostalAddress"/>
@@ -554,6 +593,7 @@
 
     <!-- http://schema.org/email -->
 
+
     <owl:DatatypeProperty rdf:about="http://schema.org/email">
         <rdfs:domain rdf:resource="http://schema.org/PostalAddress"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
@@ -567,6 +607,7 @@
 
 
     <!-- http://schema.org/faxNumber -->
+
 
     <owl:DatatypeProperty rdf:about="http://schema.org/faxNumber">
         <rdfs:domain rdf:resource="http://schema.org/PostalAddress"/>
@@ -582,6 +623,7 @@
 
     <!-- http://schema.org/openingHours -->
 
+
     <owl:DatatypeProperty rdf:about="http://schema.org/openingHours">
         <rdfs:domain rdf:resource="http://schema.org/ArchiveOrganization"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
@@ -596,6 +638,7 @@
 
     <!-- http://schema.org/postalCode -->
 
+
     <owl:DatatypeProperty rdf:about="http://schema.org/postalCode">
         <rdfs:domain rdf:resource="http://schema.org/PostalAddress"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
@@ -609,6 +652,7 @@
 
 
     <!-- http://schema.org/telephone -->
+
 
     <owl:DatatypeProperty rdf:about="http://schema.org/telephone">
         <rdfs:domain rdf:resource="http://schema.org/PostalAddress"/>
@@ -630,10 +674,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://lod.ehri-project-test.eu/ontology#AlternateAgentName -->
+
 
     <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#AlternateAgentName">
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentName"/>
@@ -646,6 +692,7 @@
 
     <!-- http://lod.ehri-project-test.eu/ontology#City -->
 
+
     <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#City">
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Place"/>
         <rdfs:label xml:lang="en">City</rdfs:label>
@@ -656,6 +703,7 @@
 
 
     <!-- http://lod.ehri-project-test.eu/ontology#CorporateBody -->
+
 
     <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#CorporateBody">
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -668,6 +716,7 @@
 
     <!-- http://lod.ehri-project-test.eu/ontology#Country -->
 
+
     <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#Country">
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Place"/>
         <rdfs:label xml:lang="en">Country</rdfs:label>
@@ -679,6 +728,7 @@
 
     <!-- http://lod.ehri-project-test.eu/ontology#Family -->
 
+
     <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#Family">
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Family"/>
         <rdfs:label xml:lang="es">Familia</rdfs:label>
@@ -689,6 +739,7 @@
 
 
     <!-- http://lod.ehri-project-test.eu/ontology#Institution -->
+
 
     <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#Institution">
         <rdfs:subClassOf rdf:resource="http://lod.ehri-project-test.eu/ontology#CorporateBody"/>
@@ -702,6 +753,7 @@
 
     <!-- http://lod.ehri-project-test.eu/ontology#InstitutionAddress -->
 
+
     <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#InstitutionAddress">
         <rdfs:subClassOf rdf:resource="http://schema.org/PostalAddress"/>
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#PhysicalLocation"/>
@@ -714,6 +766,7 @@
 
     <!-- http://lod.ehri-project-test.eu/ontology#MaterialScript -->
 
+
     <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#MaterialScript">
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Concept"/>
         <rdfs:label xml:lang="es">Escritura de la documentación</rdfs:label>
@@ -724,6 +777,7 @@
 
 
     <!-- http://lod.ehri-project-test.eu/ontology#ParallelAgentName -->
+
 
     <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#ParallelAgentName">
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentName"/>
@@ -736,6 +790,7 @@
 
     <!-- http://lod.ehri-project-test.eu/ontology#Person -->
 
+
     <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#Person">
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:label xml:lang="en">Person</rdfs:label>
@@ -747,6 +802,7 @@
 
     <!-- http://lod.ehri-project-test.eu/ontology#Record -->
 
+
     <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#Record">
         <rdfs:subClassOf rdf:resource="http://lod.ehri-project-test.eu/ontology#RecordResource"/>
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
@@ -755,6 +811,7 @@
 
 
     <!-- http://lod.ehri-project-test.eu/ontology#RecordResource -->
+
 
     <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#RecordResource">
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
@@ -767,6 +824,7 @@
 
     <!-- http://lod.ehri-project-test.eu/ontology#RecordSet -->
 
+
     <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#RecordSet">
         <rdfs:subClassOf rdf:resource="http://lod.ehri-project-test.eu/ontology#RecordResource"/>
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
@@ -775,6 +833,7 @@
 
 
     <!-- http://lod.ehri-project-test.eu/ontology#Region -->
+
 
     <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#Region">
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Place"/>
@@ -787,17 +846,20 @@
 
     <!-- http://schema.org/ArchiveOrganization -->
 
+
     <owl:Class rdf:about="http://schema.org/ArchiveOrganization"/>
     
 
 
     <!-- http://schema.org/PostalAddress -->
 
+
     <owl:Class rdf:about="http://schema.org/PostalAddress"/>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
 
     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
@@ -813,10 +875,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#RecordGroup -->
+
 
     <owl:NamedIndividual rdf:about="http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#RecordGroup">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -832,6 +896,7 @@
 
     <!-- http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subcollection -->
 
+
     <owl:NamedIndividual rdf:about="http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subcollection">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
@@ -845,6 +910,7 @@
 
 
     <!-- http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subfonds -->
+
 
     <owl:NamedIndividual rdf:about="http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subfonds">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -860,6 +926,7 @@
 
     <!-- http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subgroup -->
 
+
     <owl:NamedIndividual rdf:about="http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subgroup">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
@@ -874,6 +941,7 @@
 
     <!-- http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subseries -->
 
+
     <owl:NamedIndividual rdf:about="http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subseries">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
@@ -883,20 +951,10 @@
         <rdfs:label xml:lang="en">sub-series</rdfs:label>
         <rdfs:label xml:lang="es">subserie</rdfs:label>
     </owl:NamedIndividual>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-   
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
