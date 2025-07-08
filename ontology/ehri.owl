@@ -22,7 +22,8 @@
         <dc:creator xml:lang="en">Herminio García-González (Kazerne Dossin)</dc:creator>
         <dc:creator xml:lang="en">Mike Bryant (NIOD)</dc:creator>
         <dc:title xml:lang="en">EHRI Ontology</dc:title>
-        <terms:description xml:lang="en">This ontology defines the data model used by the EHRI-KG when representing the information hosted in the EHRI Portal. It does so by extending RiC-O v1.0.2 and reusing some of the schema.org concepts.</terms:description>
+        <terms:abstract xml:lang="en">This ontology defines the data model used by the EHRI-KG for the representation of the information hosted in the EHRI Portal. It does so by extending RiC-O v1.0.2 and reusing some of the schema.org concepts.</terms:abstract>
+        <terms:description xml:lang="en">The EHRI Portal is an aggregator for archival descriptions pertaining to the Holocaust, as such it had always strongly relied on the International Council on Archives (ICA) standards, like ISAD(G), ISAAR (CPF) and ISDIAH but with some specific adaptations to cater for the specific needs of this use case. With the apparition of RiC-O, EHRI has sought to embrace this new standard and explore the benefits that it can bring to the EHRI Portal and institutions alike. Therefore, this ontology is the result of this adoption effort in which the specificities of EHRI are converted to new axioms. Furthermore, some pieces of information bounded to previous standards are included as an extension of RiC-O with the aim to possibilitate a more staightforward translation from those widely-adopted standards.</terms:description>
         <terms:publisher>EHRI-ERIC</terms:publisher>
         <vann:preferredNamespacePrefix>ehri</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="http://lod.ehri-project-test.eu/ontology#"/>
@@ -195,7 +196,7 @@
     <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#administrativeStructure">
         <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Institution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="en">Represents the current administrative structure of an institution</rdfs:comment>
+        <rdfs:comment xml:lang="en">Represents the current administrative structure of an institution.</rdfs:comment>
         <rdfs:label xml:lang="en">administrative structure</rdfs:label>
         <rdfs:label xml:lang="es">estructura administrativa</rdfs:label>
         <rdfs:label xml:lang="fr">structure administrative</rdfs:label>
@@ -222,7 +223,7 @@
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#history"/>
         <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Country"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="en">Holds information about the Holocaust and WWII and how it relates to the archival landscape.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Holds information about the Holocaust and WWII and how it relates to the archival landscape in that country.</rdfs:comment>
         <rdfs:label xml:lang="en">archival history</rdfs:label>
         <rdfs:label xml:lang="fr">histoire archivistique</rdfs:label>
         <rdfs:label xml:lang="es">historia archivística</rdfs:label>
@@ -310,15 +311,15 @@
     
 
 
-    <!-- http://lod.ehri-project-test.eu/ontology#institutionConditionOfAccess -->
+    <!-- http://lod.ehri-project-test.eu/ontology#institutionConditionsOfAccess -->
 
-    <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#institutionConditionOfAccess">
+    <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#institutionConditionsOfAccess">
         <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Institution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">Collects information about the conditions, requirements and procedures for access to, and use of institutional services</rdfs:comment>
-        <rdfs:label xml:lang="es">condiciones de acceso</rdfs:label>
-        <rdfs:label xml:lang="fr">conditions d&apos;accès</rdfs:label>
-        <rdfs:label xml:lang="en">conditions of access</rdfs:label>
+        <rdfs:label xml:lang="es">condiciones de acceso de una institución</rdfs:label>
+        <rdfs:label xml:lang="fr">conditions d&apos;accès d&apos;une institution</rdfs:label>
+        <rdfs:label xml:lang="en">conditions of access of an institution</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -354,8 +355,8 @@
     <owl:DatatypeProperty rdf:about="http://lod.ehri-project-test.eu/ontology#locationOfOriginals">
         <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="en">Indicates the existence, location, availability and/or destruction of originals where the unit of description consists of copies</rdfs:comment>
-        <rdfs:label xml:lang="en">existence and location of copies</rdfs:label>
+        <rdfs:comment xml:lang="en">Indicates the existence, location, availability and/or destruction of originals where the unit of description consists of copies.</rdfs:comment>
+        <rdfs:label xml:lang="en">existence and location of originals</rdfs:label>
         <rdfs:label xml:lang="fr">existence et lieu des originaux</rdfs:label>
         <rdfs:label xml:lang="es">existencia y localización de los originales</rdfs:label>
     </owl:DatatypeProperty>
@@ -381,9 +382,9 @@
         <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">Provide information on the history of the unit of description that is significant for its authenticity, integrity and interpretation.</rdfs:comment>
-        <rdfs:label xml:lang="en">finding aids</rdfs:label>
-        <rdfs:label xml:lang="es">instrumentos de descripción</rdfs:label>
-        <rdfs:label xml:lang="fr">instruments de recherche</rdfs:label>
+        <rdfs:label xml:lang="fr">autres instruments de recherche</rdfs:label>
+        <rdfs:label xml:lang="en">other finding aids</rdfs:label>
+        <rdfs:label xml:lang="es">otros instrumentos de descripción</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -446,9 +447,9 @@
         <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Country"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">Offers information on how EHRI acquiered its data and integrated it into the Portal.</rdfs:comment>
-        <rdfs:label xml:lang="en">EHRI research (extensive)</rdfs:label>
         <rdfs:label xml:lang="es">investigación del EHRI (ampliado)</rdfs:label>
-        <rdfs:label xml:lang="fr">recherche EHRI (extensif)</rdfs:label>
+        <rdfs:label xml:lang="fr">recherche par EHRI (extensif)</rdfs:label>
+        <rdfs:label xml:lang="en">research by EHRI (extensive)</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -472,9 +473,9 @@
         <rdfs:domain rdf:resource="http://lod.ehri-project-test.eu/ontology#Country"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">Elaborates on EHRI&apos;s identification work, which is ongoing since October 2010. This section also includes references to aggregators and country-specific research guides.</rdfs:comment>
-        <rdfs:label xml:lang="en">EHRI research (summary)</rdfs:label>
         <rdfs:label xml:lang="es">investigación del EHRI (resumen)</rdfs:label>
         <rdfs:label xml:lang="fr">recherche EHRI (récapitulatif)</rdfs:label>
+        <rdfs:label xml:lang="en">research by EHRI (summary)</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -637,6 +638,7 @@
 
     <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#AlternateAgentName">
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentName"/>
+        <rdfs:comment xml:lang="en">This class allows to represent any other name(s) used for the institution or by which it may be known. This could include other forms of the same name, abbreviations, acronyms, other institutional names, or changes of name over time (historical names).</rdfs:comment>
         <rdfs:label xml:lang="en">Alternative forms of the agent&apos;s name</rdfs:label>
         <rdfs:label xml:lang="es">Formas alternativas del nombre</rdfs:label>
         <rdfs:label xml:lang="fr">Formes alternatives du nom</rdfs:label>
@@ -648,6 +650,7 @@
 
     <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#City">
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Place"/>
+        <rdfs:comment xml:lang="en">This class represents a city as a more precise type of rico:Place.</rdfs:comment>
         <rdfs:label xml:lang="en">City</rdfs:label>
         <rdfs:label xml:lang="es">Ciudad</rdfs:label>
         <rdfs:label xml:lang="fr">Ville</rdfs:label>
@@ -659,6 +662,7 @@
 
     <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#CorporateBody">
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+        <rdfs:comment xml:lang="en">This is a specialisation of the rico:CorporateBody class created for its extension with additional properties.</rdfs:comment>
         <rdfs:label xml:lang="fr">Collectivité</rdfs:label>
         <rdfs:label xml:lang="en">Corporate body</rdfs:label>
         <rdfs:label xml:lang="es">Persona jurídica</rdfs:label>
@@ -670,6 +674,7 @@
 
     <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#Country">
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Place"/>
+        <rdfs:comment xml:lang="en">This class represents a country as a more precise type of rico:Place.</rdfs:comment>
         <rdfs:label xml:lang="en">Country</rdfs:label>
         <rdfs:label xml:lang="fr">Pays</rdfs:label>
         <rdfs:label xml:lang="es">País</rdfs:label>
@@ -681,6 +686,7 @@
 
     <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#Family">
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Family"/>
+        <rdfs:comment xml:lang="en">This is a specialisation of the rico:Family class created for its extension with additional properties.</rdfs:comment>
         <rdfs:label xml:lang="es">Familia</rdfs:label>
         <rdfs:label xml:lang="fr">Famille</rdfs:label>
         <rdfs:label xml:lang="en">Family</rdfs:label>
@@ -693,6 +699,7 @@
     <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#Institution">
         <rdfs:subClassOf rdf:resource="http://lod.ehri-project-test.eu/ontology#CorporateBody"/>
         <rdfs:subClassOf rdf:resource="http://schema.org/ArchiveOrganization"/>
+        <rdfs:comment xml:lang="en">This class is a specialisation of the rico:CorporateBody and ehri:CorporateBody classes, taking some additional properties from the schema:ArchiveOrganization class. By contrast to a Corporate Body, in EHRI&apos;s data model, an Institution always hold archival records which is in line with ISDIAH definition.</rdfs:comment>
         <rdfs:label xml:lang="es">Institución</rdfs:label>
         <rdfs:label xml:lang="en">Institution</rdfs:label>
         <rdfs:label xml:lang="fr">Institution</rdfs:label>
@@ -705,6 +712,7 @@
     <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#InstitutionAddress">
         <rdfs:subClassOf rdf:resource="http://schema.org/PostalAddress"/>
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#PhysicalLocation"/>
+        <rdfs:comment xml:lang="en">This class is a specialisation of the rico:PhysicalLocation extended with attributes coming from the schema:PostalAddress class to represent institution&apos;s addresses and contact information.</rdfs:comment>
         <rdfs:label xml:lang="fr">Adresse de l&apos;institution</rdfs:label>
         <rdfs:label xml:lang="es">Dirección de la institución</rdfs:label>
         <rdfs:label xml:lang="en">Institution&apos;s address</rdfs:label>
@@ -716,6 +724,7 @@
 
     <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#MaterialScript">
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Concept"/>
+        <rdfs:comment xml:lang="en">This class represents the scripts that can be found in a material. Similar to the language, each instance will be represented by an instance. Examples of scripts are: Latin, Cyrillic, etc.</rdfs:comment>
         <rdfs:label xml:lang="es">Escritura de la documentación</rdfs:label>
         <rdfs:label xml:lang="en">Script of materials</rdfs:label>
         <rdfs:label xml:lang="fr">Écriture des documents</rdfs:label>
@@ -727,6 +736,7 @@
 
     <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#ParallelAgentName">
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentName"/>
+        <rdfs:comment xml:lang="en">This class allows to represent the various forms in which the authorised form of name of an institution with archival holdings occurs in other languages or script form(s).</rdfs:comment>
         <rdfs:label xml:lang="es">Formas paralelas del nombre</rdfs:label>
         <rdfs:label xml:lang="fr">Formes parallèles du nom</rdfs:label>
         <rdfs:label xml:lang="en">Parallel forms of the agent&apos;s name</rdfs:label>
@@ -738,6 +748,7 @@
 
     <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#Person">
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
+        <rdfs:comment xml:lang="en">This is a specialisation of the rico:Person class created for its extension with additional properties.</rdfs:comment>
         <rdfs:label xml:lang="en">Person</rdfs:label>
         <rdfs:label xml:lang="es">Persona</rdfs:label>
         <rdfs:label xml:lang="fr">Personne</rdfs:label>
@@ -750,6 +761,10 @@
     <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#Record">
         <rdfs:subClassOf rdf:resource="http://lod.ehri-project-test.eu/ontology#RecordResource"/>
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
+        <rdfs:comment xml:lang="en">This is a specialisation of the rico:Record class created for its extension with additional properties.</rdfs:comment>
+        <rdfs:label xml:lang="es">Documento</rdfs:label>
+        <rdfs:label xml:lang="fr">Objet informationnel</rdfs:label>
+        <rdfs:label xml:lang="en">Record</rdfs:label>
     </owl:Class>
     
 
@@ -758,6 +773,7 @@
 
     <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#RecordResource">
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+        <rdfs:comment xml:lang="en">This is a specialisation of the rico:RecordResource class created for its extension with additional properties.</rdfs:comment>
         <rdfs:label xml:lang="en">Record Resource</rdfs:label>
         <rdfs:label xml:lang="es">Recurso documental</rdfs:label>
         <rdfs:label xml:lang="fr">Ressource archivistique</rdfs:label>
@@ -770,6 +786,10 @@
     <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#RecordSet">
         <rdfs:subClassOf rdf:resource="http://lod.ehri-project-test.eu/ontology#RecordResource"/>
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+        <rdfs:comment xml:lang="en">This is a specialisation of the rico:RecordSet class created for its extension with additional properties.</rdfs:comment>
+        <rdfs:label xml:lang="es">Agrupación documental</rdfs:label>
+        <rdfs:label xml:lang="fr">Ensemble d’objets informationnels</rdfs:label>
+        <rdfs:label xml:lang="en">Record set</rdfs:label>
     </owl:Class>
     
 
@@ -778,6 +798,7 @@
 
     <owl:Class rdf:about="http://lod.ehri-project-test.eu/ontology#Region">
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Place"/>
+        <rdfs:comment xml:lang="en">This class represents a region as a more precise type of rico:Place.</rdfs:comment>
         <rdfs:label xml:lang="en">Region</rdfs:label>
         <rdfs:label xml:lang="es">Región</rdfs:label>
         <rdfs:label xml:lang="fr">Région</rdfs:label>
@@ -883,20 +904,9 @@
         <rdfs:label xml:lang="en">sub-series</rdfs:label>
         <rdfs:label xml:lang="es">subserie</rdfs:label>
     </owl:NamedIndividual>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-   
 </rdf:RDF>
 
 
 
 <!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

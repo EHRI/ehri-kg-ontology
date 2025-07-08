@@ -13,7 +13,8 @@
                                             <http://purl.org/dc/elements/1.1/creator> "Herminio García-González (Kazerne Dossin)"@en ,
                                                                                       "Mike Bryant (NIOD)"@en ;
                                             <http://purl.org/dc/elements/1.1/title> "EHRI Ontology"@en ;
-                                            <http://purl.org/dc/terms/description> "This ontology defines the data model used by the EHRI-KG when representing the information hosted in the EHRI Portal. It does so by extending RiC-O v1.0.2 and reusing some of the schema.org concepts."@en ;
+                                            <http://purl.org/dc/terms/abstract> "This ontology defines the data model used by the EHRI-KG for the representation of the information hosted in the EHRI Portal. It does so by extending RiC-O v1.0.2 and reusing some of the schema.org concepts."@en ;
+                                            <http://purl.org/dc/terms/description> "The EHRI Portal is an aggregator for archival descriptions pertaining to the Holocaust, as such it had always strongly relied on the International Council on Archives (ICA) standards, like ISAD(G), ISAAR (CPF) and ISDIAH but with some specific adaptations to cater for the specific needs of this use case. With the apparition of RiC-O, EHRI has sought to embrace this new standard and explore the benefits that it can bring to the EHRI Portal and institutions alike. Therefore, this ontology is the result of this adoption effort in which the specificities of EHRI are converted to new axioms. Furthermore, some pieces of information bounded to previous standards are included as an extension of RiC-O with the aim to possibilitate a more staightforward translation from those widely-adopted standards."@en ;
                                             <http://purl.org/dc/terms/publisher> "EHRI-ERIC" ;
                                             <http://purl.org/vocab/vann/preferredNamespacePrefix> "ehri" ;
                                             <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
@@ -124,7 +125,7 @@
 :administrativeStructure rdf:type owl:DatatypeProperty ;
                          rdfs:domain :Institution ;
                          rdfs:range rdfs:Literal ;
-                         rdfs:comment "Represents the current administrative structure of an institution"@en ;
+                         rdfs:comment "Represents the current administrative structure of an institution."@en ;
                          rdfs:label "administrative structure"@en ,
                                     "estructura administrativa"@es ,
                                     "structure administrative"@fr .
@@ -145,7 +146,7 @@
                  rdfs:subPropertyOf <https://www.ica.org/standards/RiC/ontology#history> ;
                  rdfs:domain :Country ;
                  rdfs:range rdfs:Literal ;
-                 rdfs:comment "Holds information about the Holocaust and WWII and how it relates to the archival landscape."@en ;
+                 rdfs:comment "Holds information about the Holocaust and WWII and how it relates to the archival landscape in that country."@en ;
                  rdfs:label "archival history"@en ,
                             "histoire archivistique"@fr ,
                             "historia archivística"@es .
@@ -213,14 +214,14 @@
                            "general context"@en .
 
 
-###  http://lod.ehri-project-test.eu/ontology#institutionConditionOfAccess
-:institutionConditionOfAccess rdf:type owl:DatatypeProperty ;
-                              rdfs:domain :Institution ;
-                              rdfs:range rdfs:Literal ;
-                              rdfs:comment "Collects information about the conditions, requirements and procedures for access to, and use of institutional services"@en ;
-                              rdfs:label "condiciones de acceso"@es ,
-                                         "conditions d'accès"@fr ,
-                                         "conditions of access"@en .
+###  http://lod.ehri-project-test.eu/ontology#institutionConditionsOfAccess
+:institutionConditionsOfAccess rdf:type owl:DatatypeProperty ;
+                               rdfs:domain :Institution ;
+                               rdfs:range rdfs:Literal ;
+                               rdfs:comment "Collects information about the conditions, requirements and procedures for access to, and use of institutional services"@en ;
+                               rdfs:label "condiciones de acceso de una institución"@es ,
+                                          "conditions d'accès d'une institution"@fr ,
+                                          "conditions of access of an institution"@en .
 
 
 ###  http://lod.ehri-project-test.eu/ontology#institutionReproductionServices
@@ -247,8 +248,8 @@
 :locationOfOriginals rdf:type owl:DatatypeProperty ;
                      rdfs:domain :RecordResource ;
                      rdfs:range rdfs:Literal ;
-                     rdfs:comment "Indicates the existence, location, availability and/or destruction of originals where the unit of description consists of copies"@en ;
-                     rdfs:label "existence and location of copies"@en ,
+                     rdfs:comment "Indicates the existence, location, availability and/or destruction of originals where the unit of description consists of copies."@en ;
+                     rdfs:label "existence and location of originals"@en ,
                                 "existence et lieu des originaux"@fr ,
                                 "existencia y localización de los originales"@es .
 
@@ -268,9 +269,9 @@
                   rdfs:domain :RecordResource ;
                   rdfs:range rdfs:Literal ;
                   rdfs:comment "Provide information on the history of the unit of description that is significant for its authenticity, integrity and interpretation."@en ;
-                  rdfs:label "finding aids"@en ,
-                             "instrumentos de descripción"@es ,
-                             "instruments de recherche"@fr .
+                  rdfs:label "autres instruments de recherche"@fr ,
+                             "other finding aids"@en ,
+                             "otros instrumentos de descripción"@es .
 
 
 ###  http://lod.ehri-project-test.eu/ontology#physicalCharacterisiticsAndTechnicalRequirements
@@ -318,9 +319,9 @@
                    rdfs:domain :Country ;
                    rdfs:range rdfs:Literal ;
                    rdfs:comment "Offers information on how EHRI acquiered its data and integrated it into the Portal."@en ;
-                   rdfs:label "EHRI research (extensive)"@en ,
-                              "investigación del EHRI (ampliado)"@es ,
-                              "recherche EHRI (extensif)"@fr .
+                   rdfs:label "investigación del EHRI (ampliado)"@es ,
+                              "recherche par EHRI (extensif)"@fr ,
+                              "research by EHRI (extensive)"@en .
 
 
 ###  http://lod.ehri-project-test.eu/ontology#researchServices
@@ -338,9 +339,9 @@
                  rdfs:domain :Country ;
                  rdfs:range rdfs:Literal ;
                  rdfs:comment "Elaborates on EHRI's identification work, which is ongoing since October 2010. This section also includes references to aggregators and country-specific research guides."@en ;
-                 rdfs:label "EHRI research (summary)"@en ,
-                            "investigación del EHRI (resumen)"@es ,
-                            "recherche EHRI (récapitulatif)"@fr .
+                 rdfs:label "investigación del EHRI (resumen)"@es ,
+                            "recherche EHRI (récapitulatif)"@fr ,
+                            "research by EHRI (summary)"@en .
 
 
 ###  http://lod.ehri-project-test.eu/ontology#separatedMaterial
@@ -460,6 +461,7 @@
 ###  http://lod.ehri-project-test.eu/ontology#AlternateAgentName
 :AlternateAgentName rdf:type owl:Class ;
                     rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#AgentName> ;
+                    rdfs:comment "This class allows to represent any other name(s) used for the institution or by which it may be known. This could include other forms of the same name, abbreviations, acronyms, other institutional names, or changes of name over time (historical names)."@en ;
                     rdfs:label "Alternative forms of the agent's name"@en ,
                                "Formas alternativas del nombre"@es ,
                                "Formes alternatives du nom"@fr .
@@ -468,6 +470,7 @@
 ###  http://lod.ehri-project-test.eu/ontology#City
 :City rdf:type owl:Class ;
       rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#Place> ;
+      rdfs:comment "This class represents a city as a more precise type of rico:Place."@en ;
       rdfs:label "City"@en ,
                  "Ciudad"@es ,
                  "Ville"@fr .
@@ -476,6 +479,7 @@
 ###  http://lod.ehri-project-test.eu/ontology#CorporateBody
 :CorporateBody rdf:type owl:Class ;
                rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#CorporateBody> ;
+               rdfs:comment "This is a specialisation of the rico:CorporateBody class created for its extension with additional properties."@en ;
                rdfs:label "Collectivité"@fr ,
                           "Corporate body"@en ,
                           "Persona jurídica"@es .
@@ -484,6 +488,7 @@
 ###  http://lod.ehri-project-test.eu/ontology#Country
 :Country rdf:type owl:Class ;
          rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#Place> ;
+         rdfs:comment "This class represents a country as a more precise type of rico:Place."@en ;
          rdfs:label "Country"@en ,
                     "Pays"@fr ,
                     "País"@es .
@@ -492,6 +497,7 @@
 ###  http://lod.ehri-project-test.eu/ontology#Family
 :Family rdf:type owl:Class ;
         rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#Family> ;
+        rdfs:comment "This is a specialisation of the rico:Family class created for its extension with additional properties."@en ;
         rdfs:label "Familia"@es ,
                    "Famille"@fr ,
                    "Family"@en .
@@ -501,6 +507,7 @@
 :Institution rdf:type owl:Class ;
              rdfs:subClassOf :CorporateBody ,
                              <http://schema.org/ArchiveOrganization> ;
+             rdfs:comment "This class is a specialisation of the rico:CorporateBody and ehri:CorporateBody classes, taking some additional properties from the schema:ArchiveOrganization class. By contrast to a Corporate Body, in EHRI's data model, an Institution always hold archival records which is in line with ISDIAH definition."@en ;
              rdfs:label "Institución"@es ,
                         "Institution"@en ,
                         "Institution"@fr .
@@ -510,6 +517,7 @@
 :InstitutionAddress rdf:type owl:Class ;
                     rdfs:subClassOf <http://schema.org/PostalAddress> ,
                                     <https://www.ica.org/standards/RiC/ontology#PhysicalLocation> ;
+                    rdfs:comment "This class is a specialisation of the rico:PhysicalLocation extended with attributes coming from the schema:PostalAddress class to represent institution's addresses and contact information."@en ;
                     rdfs:label "Adresse de l'institution"@fr ,
                                "Dirección de la institución"@es ,
                                "Institution's address"@en .
@@ -518,6 +526,7 @@
 ###  http://lod.ehri-project-test.eu/ontology#MaterialScript
 :MaterialScript rdf:type owl:Class ;
                 rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#Concept> ;
+                rdfs:comment "This class represents the scripts that can be found in a material. Similar to the language, each instance will be represented by an instance. Examples of scripts are: Latin, Cyrillic, etc."@en ;
                 rdfs:label "Escritura de la documentación"@es ,
                            "Script of materials"@en ,
                            "Écriture des documents"@fr .
@@ -526,6 +535,7 @@
 ###  http://lod.ehri-project-test.eu/ontology#ParallelAgentName
 :ParallelAgentName rdf:type owl:Class ;
                    rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#AgentName> ;
+                   rdfs:comment "This class allows to represent the various forms in which the authorised form of name of an institution with archival holdings occurs in other languages or script form(s)."@en ;
                    rdfs:label "Formas paralelas del nombre"@es ,
                               "Formes parallèles du nom"@fr ,
                               "Parallel forms of the agent's name"@en .
@@ -534,6 +544,7 @@
 ###  http://lod.ehri-project-test.eu/ontology#Person
 :Person rdf:type owl:Class ;
         rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#Person> ;
+        rdfs:comment "This is a specialisation of the rico:Person class created for its extension with additional properties."@en ;
         rdfs:label "Person"@en ,
                    "Persona"@es ,
                    "Personne"@fr .
@@ -542,12 +553,17 @@
 ###  http://lod.ehri-project-test.eu/ontology#Record
 :Record rdf:type owl:Class ;
         rdfs:subClassOf :RecordResource ,
-                        <https://www.ica.org/standards/RiC/ontology#Record> .
+                        <https://www.ica.org/standards/RiC/ontology#Record> ;
+        rdfs:comment "This is a specialisation of the rico:Record class created for its extension with additional properties."@en ;
+        rdfs:label "Documento"@es ,
+                   "Objet informationnel"@fr ,
+                   "Record"@en .
 
 
 ###  http://lod.ehri-project-test.eu/ontology#RecordResource
 :RecordResource rdf:type owl:Class ;
                 rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#RecordResource> ;
+                rdfs:comment "This is a specialisation of the rico:RecordResource class created for its extension with additional properties."@en ;
                 rdfs:label "Record Resource"@en ,
                            "Recurso documental"@es ,
                            "Ressource archivistique"@fr .
@@ -556,12 +572,17 @@
 ###  http://lod.ehri-project-test.eu/ontology#RecordSet
 :RecordSet rdf:type owl:Class ;
            rdfs:subClassOf :RecordResource ,
-                           <https://www.ica.org/standards/RiC/ontology#RecordSet> .
+                           <https://www.ica.org/standards/RiC/ontology#RecordSet> ;
+           rdfs:comment "This is a specialisation of the rico:RecordSet class created for its extension with additional properties."@en ;
+           rdfs:label "Agrupación documental"@es ,
+                      "Ensemble d’objets informationnels"@fr ,
+                      "Record set"@en .
 
 
 ###  http://lod.ehri-project-test.eu/ontology#Region
 :Region rdf:type owl:Class ;
         rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#Place> ;
+        rdfs:comment "This class represents a region as a more precise type of rico:Place."@en ;
         rdfs:label "Region"@en ,
                    "Región"@es ,
                    "Région"@fr .
