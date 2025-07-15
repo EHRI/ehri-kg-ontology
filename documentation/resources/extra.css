@@ -137,3 +137,7 @@ dt {
 h1 + img {
     width: 150px;
 }
+
+#figure-data-model-ehri-portal {
+    text-align: center;
+}

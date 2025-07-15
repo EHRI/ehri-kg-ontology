@@ -22,7 +22,7 @@
         <dc:creator xml:lang="en">Mike Bryant (NIOD)</dc:creator>
         <dc:title xml:lang="en">EHRI Ontology</dc:title>
         <terms:abstract xml:lang="en">This ontology defines the data model used by the EHRI-KG for the representation of the information hosted in the EHRI Portal. It does so by extending RiC-O v1.0.2 and reusing some of the schema.org concepts.</terms:abstract>
-        <terms:description xml:lang="en">The EHRI Ontology extends some of the RiC-O types and foremostly adds new properties to represent all the data present in the EHRI Portal. Whenever a class is extended with new properties, a subclass bounded to the ehri prefix is created in order to preserve the original RiC-O axioms intact. In other cases, some classes are specialised and subclasses add more meaning to the superclass.</terms:description>
+        <terms:description xml:lang="en">The EHRI Ontology extends some of the RiC-O types and foremostly adds new properties to represent all the data present in the EHRI Portal. Whenever a class is extended with new properties, a subclass bounded to the ehri prefix is created in order to preserve the original RiC-O axioms intact. In other cases, some classes are specialised and therefore subclasses contribute additional meaning to the superclass.</terms:description>
         <terms:publisher>EHRI-ERIC</terms:publisher>
         <vann:preferredNamespacePrefix>ehri</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="http://lod.ehri-project-test.eu/ontology#"/>

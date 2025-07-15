@@ -71,7 +71,7 @@
   } ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "The EHRI Ontology extends some of the RiC-O types and foremostly adds new properties to represent all the data present in the EHRI Portal. Whenever a class is extended with new properties, a subclass bounded to the ehri prefix is created in order to preserve the original RiC-O axioms intact. In other cases, some classes are specialised and subclasses add more meaning to the superclass."
+    "@value" : "The EHRI Ontology extends some of the RiC-O types and foremostly adds new properties to represent all the data present in the EHRI Portal. Whenever a class is extended with new properties, a subclass bounded to the ehri prefix is created in order to preserve the original RiC-O axioms intact. In other cases, some classes are specialised and therefore subclasses contribute additional meaning to the superclass."
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@value" : "EHRI-ERIC"
