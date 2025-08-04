@@ -23,6 +23,16 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
+      "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+    }, {
+      "@id" : "https://www.ica.org/standards/RiC/ontology#RecordResource"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
       "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
     }, {
       "@id" : "https://www.ica.org/standards/RiC/ontology#Agent"
@@ -89,10 +99,10 @@
     "@id" : "https://www.ica.org/standards/RiC/ontology/1.0.2"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology/0.0.1"
+    "@id" : "http://lod.ehri-project-test.eu/ontology/0.0.2"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "v0.0.1"
+    "@value" : "v0.0.2"
   } ],
   "http://xmlns.com/foaf/0.1/logo" : [ {
     "@id" : "https://ehri-kg.ehri-project.eu/images/ehri-logo.svg"
@@ -242,6 +252,28 @@
     "@id" : "https://www.ica.org/standards/RiC/ontology#PhysicalLocation"
   } ]
 }, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#Item",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#RecordSetType" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "item"
+  }, {
+    "@language" : "fr",
+    "@value" : "pièce"
+  }, {
+    "@language" : "es",
+    "@value" : "unidad documental simple"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"
+  } ]
+}, {
   "@id" : "http://lod.ehri-project-test.eu/ontology#MaterialScript",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -260,6 +292,28 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://www.ica.org/standards/RiC/ontology#Concept"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#OtherLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#RecordSetType" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "autre niveau"
+  }, {
+    "@language" : "en",
+    "@value" : "other level"
+  }, {
+    "@language" : "en",
+    "@value" : "otro nivel"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"
   } ]
 }, {
   "@id" : "http://lod.ehri-project-test.eu/ontology#ParallelAgentName",
@@ -332,7 +386,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Record Resource"
+    "@value" : "Record resource"
   }, {
     "@language" : "es",
     "@value" : "Recurso documental"
@@ -553,6 +607,32 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#conditionsOfAccess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Collects information about the conditions, requirements and procedures for access to, and use of institutional services and/or specific records"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid13"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "condiciones de acceso"
+  }, {
+    "@language" : "fr",
+    "@value" : "conditions d'accès"
+  }, {
+    "@language" : "en",
+    "@value" : "conditions of access"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#conditionsOfAccess"
+  } ]
+}, {
   "@id" : "http://lod.ehri-project-test.eu/ontology#contactPerson",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -656,50 +736,33 @@
     "@id" : "http://lod.ehri-project-test.eu/ontology#isCopyOf"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#institutionConditionsOfAccess",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@id" : "http://lod.ehri-project-test.eu/ontology#hasOrHadScript",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Collects information about the conditions, requirements and procedures for access to, and use of institutional services"
+    "@value" : "This property allows to indicate the script present in the materials"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+    "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "condiciones de acceso de una institución"
-  }, {
     "@language" : "fr",
-    "@value" : "conditions d'accès d'une institution"
+    "@value" : "a ou a eu pour écriture"
   }, {
     "@language" : "en",
-    "@value" : "conditions of access of an institution"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
-  } ]
-}, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#institutionReproductionServices",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Gather information on the legal status or other regulations that restrict or affect access to the unit of description."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "reproduction services"
-  }, {
-    "@language" : "fr",
-    "@value" : "services de reproduction"
+    "@value" : "has or had script"
   }, {
     "@language" : "es",
-    "@value" : "servicios de reproducción"
+    "@value" : "tiene o tenía como escritura"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    "@id" : "http://lod.ehri-project-test.eu/ontology#MaterialScript"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#isRelatedTo"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#isOrWasScriptOf"
   } ]
 }, {
   "@id" : "http://lod.ehri-project-test.eu/ontology#isCopyOf",
@@ -727,6 +790,32 @@
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://www.ica.org/standards/RiC/ontology#isCopyOf"
   }, {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#isRelatedTo"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#isOrWasScriptOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property is the inverse of ehri:hasOrHadScript, allowing to relate a script back to the record where it appears."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#MaterialScript"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "es o era la escritura de"
+  }, {
+    "@language" : "fr",
+    "@value" : "est ou était l'ecriture de"
+  }, {
+    "@language" : "en",
+    "@value" : "is or was the script of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://www.ica.org/standards/RiC/ontology#isRelatedTo"
   } ]
 }, {
@@ -868,6 +957,29 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#publicationNote",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifies any publications that are about or are based on the use, study, or analysis of the unit of description."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "bibliographie"
+  }, {
+    "@language" : "es",
+    "@value" : "nota de publicaciones"
+  }, {
+    "@language" : "en",
+    "@value" : "publication note"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
   "@id" : "http://lod.ehri-project-test.eu/ontology#recordsManagementAndCollectingPolicies",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -909,6 +1021,29 @@
   }, {
     "@language" : "es",
     "@value" : "unidades de descripción relacionadas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#reproductionServices",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Gather information about reproduction services available to the public (microfilms, photocopies, photographs, digitised copies) and their general conditions and restrictions."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "reproduction services"
+  }, {
+    "@language" : "fr",
+    "@value" : "services de reproduction"
+  }, {
+    "@language" : "es",
+    "@value" : "servicios de reproducción"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
@@ -983,32 +1118,6 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#scriptOfMaterials",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This property allows to indicate the script present in the materials"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "la documentación tiene o tenía como escritura"
-  }, {
-    "@language" : "fr",
-    "@value" : "la documentation a ou a eu pour écriture"
-  }, {
-    "@language" : "en",
-    "@value" : "materials have or had script"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#MaterialScript"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://www.ica.org/standards/RiC/ontology#isRelatedTo"
-  } ]
-}, {
   "@id" : "http://lod.ehri-project-test.eu/ontology#separatedMaterial",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1039,7 +1148,7 @@
     "@value" : "Record notes on sources consulted in preparing the description and who prepared it."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid13"
+    "@id" : "_:genid16"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -1073,29 +1182,6 @@
   }, {
     "@language" : "fr",
     "@value" : "structure interne"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
-  } ]
-}, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#wasUsedAsSourceIn",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Identifies any publications that are about or are based on the use, study, or analysis of the unit of description."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "fr",
-    "@value" : "bibliographie"
-  }, {
-    "@language" : "es",
-    "@value" : "nota de publicaciones"
-  }, {
-    "@language" : "en",
-    "@value" : "publication note"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"

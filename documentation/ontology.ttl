@@ -7,7 +7,7 @@
 @base <http://lod.ehri-project-test.eu/ontology#> .
 
 <http://lod.ehri-project-test.eu/ontology> rdf:type owl:Ontology ;
-                                            owl:versionIRI <http://lod.ehri-project-test.eu/ontology/0.0.1> ;
+                                            owl:versionIRI <http://lod.ehri-project-test.eu/ontology/0.0.2> ;
                                             owl:imports <https://www.ica.org/standards/RiC/ontology/1.0.2> ;
                                             <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> ;
                                             <http://purl.org/dc/elements/1.1/creator> "Herminio García-González (Kazerne Dossin)"@en ,
@@ -19,7 +19,7 @@
                                             <http://purl.org/vocab/vann/preferredNamespacePrefix> "ehri" ;
                                             <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
                                             <http://schema.org/codeRepository> <https://github.com/EHRI/ehri-kg-ontology> ;
-                                            owl:versionInfo "v0.0.1" ;
+                                            owl:versionInfo "v0.0.2" ;
                                             <http://xmlns.com/foaf/0.1/logo> <https://ehri-kg.ehri-project.eu/images/ehri-logo.svg> .
 
 #################################################################
@@ -76,6 +76,18 @@
                     "tiene como copia"@es .
 
 
+###  http://lod.ehri-project-test.eu/ontology#hasOrHadScript
+:hasOrHadScript rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf <https://www.ica.org/standards/RiC/ontology#isRelatedTo> ;
+                owl:inverseOf :isOrWasScriptOf ;
+                rdfs:domain :RecordResource ;
+                rdfs:range :MaterialScript ;
+                rdfs:comment "This property allows to indicate the script present in the materials"@en ;
+                rdfs:label "a ou a eu pour écriture"@fr ,
+                           "has or had script"@en ,
+                           "tiene o tenía como escritura"@es .
+
+
 ###  http://lod.ehri-project-test.eu/ontology#isCopyOf
 :isCopyOf rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf <https://www.ica.org/standards/RiC/ontology#isCopyOf> ,
@@ -96,15 +108,15 @@
                      "is copy of"@en .
 
 
-###  http://lod.ehri-project-test.eu/ontology#scriptOfMaterials
-:scriptOfMaterials rdf:type owl:ObjectProperty ;
-                   rdfs:subPropertyOf <https://www.ica.org/standards/RiC/ontology#isRelatedTo> ;
-                   rdfs:domain :RecordResource ;
-                   rdfs:range :MaterialScript ;
-                   rdfs:comment "This property allows to indicate the script present in the materials"@en ;
-                   rdfs:label "la documentación tiene o tenía como escritura"@es ,
-                              "la documentation a ou a eu pour écriture"@fr ,
-                              "materials have or had script"@en .
+###  http://lod.ehri-project-test.eu/ontology#isOrWasScriptOf
+:isOrWasScriptOf rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf <https://www.ica.org/standards/RiC/ontology#isRelatedTo> ;
+                 rdfs:domain :MaterialScript ;
+                 rdfs:range :RecordResource ;
+                 rdfs:comment "This property is the inverse of ehri:hasOrHadScript, allowing to relate a script back to the record where it appears."@en ;
+                 rdfs:label "es o era la escritura de"@es ,
+                            "est ou était l'ecriture de"@fr ,
+                            "is or was the script of"@en .
 
 
 #################################################################
@@ -183,6 +195,21 @@
                       "edificio(s)"@es .
 
 
+###  http://lod.ehri-project-test.eu/ontology#conditionsOfAccess
+:conditionsOfAccess rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf <https://www.ica.org/standards/RiC/ontology#conditionsOfAccess> ;
+                    rdfs:domain [ rdf:type owl:Class ;
+                                  owl:unionOf ( :Institution
+                                                <https://www.ica.org/standards/RiC/ontology#RecordResource>
+                                              )
+                                ] ;
+                    rdfs:range rdfs:Literal ;
+                    rdfs:comment "Collects information about the conditions, requirements and procedures for access to, and use of institutional services and/or specific records"@en ;
+                    rdfs:label "condiciones de acceso"@es ,
+                               "conditions d'accès"@fr ,
+                               "conditions of access"@en .
+
+
 ###  http://lod.ehri-project-test.eu/ontology#contactPerson
 :contactPerson rdf:type owl:DatatypeProperty ;
                rdfs:domain :InstitutionAddress ;
@@ -212,26 +239,6 @@
                 rdfs:label "contexte général"@fr ,
                            "contexto general"@es ,
                            "general context"@en .
-
-
-###  http://lod.ehri-project-test.eu/ontology#institutionConditionsOfAccess
-:institutionConditionsOfAccess rdf:type owl:DatatypeProperty ;
-                               rdfs:domain :Institution ;
-                               rdfs:range rdfs:Literal ;
-                               rdfs:comment "Collects information about the conditions, requirements and procedures for access to, and use of institutional services"@en ;
-                               rdfs:label "condiciones de acceso de una institución"@es ,
-                                          "conditions d'accès d'une institution"@fr ,
-                                          "conditions of access of an institution"@en .
-
-
-###  http://lod.ehri-project-test.eu/ontology#institutionReproductionServices
-:institutionReproductionServices rdf:type owl:DatatypeProperty ;
-                                 rdfs:domain :Institution ;
-                                 rdfs:range rdfs:Literal ;
-                                 rdfs:comment "Gather information on the legal status or other regulations that restrict or affect access to the unit of description."@en ;
-                                 rdfs:label "reproduction services"@en ,
-                                            "services de reproduction"@fr ,
-                                            "servicios de reproducción"@es .
 
 
 ###  http://lod.ehri-project-test.eu/ontology#locationOfCopies
@@ -294,6 +301,16 @@
                         "public areas"@en .
 
 
+###  http://lod.ehri-project-test.eu/ontology#publicationNote
+:publicationNote rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :RecordResource ;
+                 rdfs:range rdfs:Literal ;
+                 rdfs:comment "Identifies any publications that are about or are based on the use, study, or analysis of the unit of description."@en ;
+                 rdfs:label "bibliographie"@fr ,
+                            "nota de publicaciones"@es ,
+                            "publication note"@en .
+
+
 ###  http://lod.ehri-project-test.eu/ontology#recordsManagementAndCollectingPolicies
 :recordsManagementAndCollectingPolicies rdf:type owl:DatatypeProperty ;
                                         rdfs:domain :Institution ;
@@ -312,6 +329,16 @@
                  rdfs:label "related units of description"@en ,
                             "sources complémentaires"@fr ,
                             "unidades de descripción relacionadas"@es .
+
+
+###  http://lod.ehri-project-test.eu/ontology#reproductionServices
+:reproductionServices rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Institution ;
+                      rdfs:range rdfs:Literal ;
+                      rdfs:comment "Gather information about reproduction services available to the public (microfilms, photocopies, photographs, digitised copies) and their general conditions and restrictions."@en ;
+                      rdfs:label "reproduction services"@en ,
+                                 "services de reproduction"@fr ,
+                                 "servicios de reproducción"@es .
 
 
 ###  http://lod.ehri-project-test.eu/ontology#researchExtensive
@@ -376,16 +403,6 @@
                       rdfs:label "estructura(s) interna(s)/genealogía"@es ,
                                  "internal structure"@en ,
                                  "structure interne"@fr .
-
-
-###  http://lod.ehri-project-test.eu/ontology#wasUsedAsSourceIn
-:wasUsedAsSourceIn rdf:type owl:DatatypeProperty ;
-                   rdfs:domain :RecordResource ;
-                   rdfs:range rdfs:Literal ;
-                   rdfs:comment "Identifies any publications that are about or are based on the use, study, or analysis of the unit of description."@en ;
-                   rdfs:label "bibliographie"@fr ,
-                              "nota de publicaciones"@es ,
-                              "publication note"@en .
 
 
 ###  http://schema.org/contactType
@@ -564,7 +581,7 @@
 :RecordResource rdf:type owl:Class ;
                 rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#RecordResource> ;
                 rdfs:comment "This is a specialisation of the rico:RecordResource class created for its extension with additional properties."@en ;
-                rdfs:label "Record Resource"@en ,
+                rdfs:label "Record resource"@en ,
                            "Recurso documental"@es ,
                            "Ressource archivistique"@fr .
 
@@ -603,6 +620,28 @@
 #################################################################
 #    Individuals
 #################################################################
+
+###  http://lod.ehri-project-test.eu/ontology#Item
+:Item rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ,
+               <https://www.ica.org/standards/RiC/ontology#RecordSetType> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> ;
+      <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> ;
+      rdfs:label "item"@en ,
+                 "pièce"@fr ,
+                 "unidad documental simple"@es .
+
+
+###  http://lod.ehri-project-test.eu/ontology#OtherLevel
+:OtherLevel rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/2004/02/skos/core#Concept> ,
+                     <https://www.ica.org/standards/RiC/ontology#RecordSetType> ;
+            <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> ;
+            <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> ;
+            rdfs:label "autre niveau"@fr ,
+                       "other level"@en ,
+                       "otro nivel"@en .
+
 
 ###  http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#RecordGroup
 <http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#RecordGroup> rdf:type owl:NamedIndividual ,
