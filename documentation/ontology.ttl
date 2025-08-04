@@ -19,7 +19,7 @@
                                             <http://purl.org/vocab/vann/preferredNamespacePrefix> "ehri" ;
                                             <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
                                             <http://schema.org/codeRepository> <https://github.com/EHRI/ehri-kg-ontology> ;
-                                            owl:versionInfo "v0.0.2" ;
+                                            owl:versionInfo "0.0.2" ;
                                             <http://xmlns.com/foaf/0.1/logo> <https://ehri-kg.ehri-project.eu/images/ehri-logo.svg> .
 
 #################################################################
@@ -200,7 +200,7 @@
                     rdfs:subPropertyOf <https://www.ica.org/standards/RiC/ontology#conditionsOfAccess> ;
                     rdfs:domain [ rdf:type owl:Class ;
                                   owl:unionOf ( :Institution
-                                                <https://www.ica.org/standards/RiC/ontology#RecordResource>
+                                                :RecordResource
                                               )
                                 ] ;
                     rdfs:range rdfs:Literal ;
