@@ -356,28 +356,6 @@
     "@id" : "https://www.ica.org/standards/RiC/ontology#Person"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#Record",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This is a specialisation of the rico:Record class created for its extension with additional properties."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Documento"
-  }, {
-    "@language" : "fr",
-    "@value" : "Objet informationnel"
-  }, {
-    "@language" : "en",
-    "@value" : "Record"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
-  }, {
-    "@id" : "https://www.ica.org/standards/RiC/ontology#Record"
-  } ]
-}, {
   "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -493,7 +471,7 @@
     "@value" : "Provides information on any appraisal, destruction and scheduling action."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#Record"
+    "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",

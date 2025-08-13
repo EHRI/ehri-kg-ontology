@@ -155,7 +155,7 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://lod.ehri-project-test.eu/ontology#appraisal
 <http://lod.ehri-project-test.eu/ontology#appraisal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://lod.ehri-project-test.eu/ontology#appraisal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lod.ehri-project-test.eu/ontology#Record> .
+<http://lod.ehri-project-test.eu/ontology#appraisal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lod.ehri-project-test.eu/ontology#RecordResource> .
 <http://lod.ehri-project-test.eu/ontology#appraisal> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <http://lod.ehri-project-test.eu/ontology#appraisal> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides information on any appraisal, destruction and scheduling action."@en .
 <http://lod.ehri-project-test.eu/ontology#appraisal> <http://www.w3.org/2000/01/rdf-schema#label> "appraisal"@en .
@@ -548,15 +548,6 @@ _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://lod.ehri-project-test.eu/ontology#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
 <http://lod.ehri-project-test.eu/ontology#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Persona"@es .
 <http://lod.ehri-project-test.eu/ontology#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Personne"@fr .
-# 
-# http://lod.ehri-project-test.eu/ontology#Record
-<http://lod.ehri-project-test.eu/ontology#Record> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://lod.ehri-project-test.eu/ontology#Record> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lod.ehri-project-test.eu/ontology#RecordResource> .
-<http://lod.ehri-project-test.eu/ontology#Record> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.ica.org/standards/RiC/ontology#Record> .
-<http://lod.ehri-project-test.eu/ontology#Record> <http://www.w3.org/2000/01/rdf-schema#comment> "This is a specialisation of the rico:Record class created for its extension with additional properties."@en .
-<http://lod.ehri-project-test.eu/ontology#Record> <http://www.w3.org/2000/01/rdf-schema#label> "Documento"@es .
-<http://lod.ehri-project-test.eu/ontology#Record> <http://www.w3.org/2000/01/rdf-schema#label> "Objet informationnel"@fr .
-<http://lod.ehri-project-test.eu/ontology#Record> <http://www.w3.org/2000/01/rdf-schema#label> "Record"@en .
 # 
 # http://lod.ehri-project-test.eu/ontology#RecordResource
 <http://lod.ehri-project-test.eu/ontology#RecordResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

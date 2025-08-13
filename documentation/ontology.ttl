@@ -145,7 +145,7 @@
 
 ###  http://lod.ehri-project-test.eu/ontology#appraisal
 :appraisal rdf:type owl:DatatypeProperty ;
-           rdfs:domain :Record ;
+           rdfs:domain :RecordResource ;
            rdfs:range rdfs:Literal ;
            rdfs:comment "Provides information on any appraisal, destruction and scheduling action."@en ;
            rdfs:label "appraisal"@en ,
@@ -565,16 +565,6 @@
         rdfs:label "Person"@en ,
                    "Persona"@es ,
                    "Personne"@fr .
-
-
-###  http://lod.ehri-project-test.eu/ontology#Record
-:Record rdf:type owl:Class ;
-        rdfs:subClassOf :RecordResource ,
-                        <https://www.ica.org/standards/RiC/ontology#Record> ;
-        rdfs:comment "This is a specialisation of the rico:Record class created for its extension with additional properties."@en ;
-        rdfs:label "Documento"@es ,
-                   "Objet informationnel"@fr ,
-                   "Record"@en .
 
 
 ###  http://lod.ehri-project-test.eu/ontology#RecordResource
