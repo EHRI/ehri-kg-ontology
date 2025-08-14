@@ -11,6 +11,7 @@
 <http://lod.ehri-project-test.eu/ontology> <http://purl.org/vocab/vann/preferredNamespacePrefix> "ehri" .
 <http://lod.ehri-project-test.eu/ontology> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://lod.ehri-project-test.eu/ontology#> .
 <http://lod.ehri-project-test.eu/ontology> <http://schema.org/codeRepository> <https://github.com/EHRI/ehri-kg-ontology> .
+<http://lod.ehri-project-test.eu/ontology> <http://www.w3.org/2002/07/owl#priorVersion> <http://lod.ehri-project-test.eu/ontology/0.0.1> .
 <http://lod.ehri-project-test.eu/ontology> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.2" .
 <http://lod.ehri-project-test.eu/ontology> <http://xmlns.com/foaf/0.1/logo> <https://ehri-kg.ehri-project.eu/images/ehri-logo.svg> .
 # 

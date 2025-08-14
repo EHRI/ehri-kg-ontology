@@ -19,6 +19,7 @@
                                             <http://purl.org/vocab/vann/preferredNamespacePrefix> "ehri" ;
                                             <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
                                             <http://schema.org/codeRepository> <https://github.com/EHRI/ehri-kg-ontology> ;
+                                            owl:priorVersion <http://lod.ehri-project-test.eu/ontology/0.0.1> ;
                                             owl:versionInfo "0.0.2" ;
                                             <http://xmlns.com/foaf/0.1/logo> <https://ehri-kg.ehri-project.eu/images/ehri-logo.svg> .
 

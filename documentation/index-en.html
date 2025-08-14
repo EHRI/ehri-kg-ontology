@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://lod.ehri-project-test.eu/ontology#","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://lod.ehri-project-test.eu/ontology#","name":"EHRI Ontology", "headline":"This ontology defines the data model used by the EHRI-KG for the representation of the information hosted in the EHRI Portal. It does so by extending RiC-O v1.0.2 and reusing some of the schema.org concepts.", "dateReleased":"Wed Aug 13 16:00:31 CEST 2025", "version":"0.0.2", "license":"https://creativecommons.org/licenses/by/4.0/", "codeRepository":"https://github.com/EHRI/ehri-kg-ontology", "author":[{"@type":"Person","name":"Herminio García-González (Kazerne Dossin)"},{"@type":"Person","name":"Mike Bryant (NIOD)"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://lod.ehri-project-test.eu/ontology#","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://lod.ehri-project-test.eu/ontology#","name":"EHRI Ontology", "headline":"This ontology defines the data model used by the EHRI-KG for the representation of the information hosted in the EHRI Portal. It does so by extending RiC-O v1.0.2 and reusing some of the schema.org concepts.", "dateReleased":"Thu Aug 14 09:26:47 CEST 2025", "version":"0.0.2", "license":"https://creativecommons.org/licenses/by/4.0/", "codeRepository":"https://github.com/EHRI/ehri-kg-ontology", "author":[{"@type":"Person","name":"Herminio García-González (Kazerne Dossin)"},{"@type":"Person","name":"Mike Bryant (NIOD)"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -62,6 +62,7 @@ function loadTOC(){
       $("#overview").load("sections/overview-en.html"); 
       $("#description").load("sections/description-en.html"); 
       $("#references").load("sections/references-en.html"); 
+      $("#changelog").load("sections/changelog-en.html"); 
       $("#crossref").load("sections/crossref-en.html", null, loadHash); 
     });
     </script> 
@@ -78,6 +79,8 @@ function loadTOC(){
 <dl>
 <dt>This version:</dt>
 <dd><a href="http://lod.ehri-project-test.eu/ontology/0.0.2">http://lod.ehri-project-test.eu/ontology/0.0.2</a></dd>
+<dt>Previous version:</dt>
+<dd><a href="http://lod.ehri-project-test.eu/ontology/0.0.1">http://lod.ehri-project-test.eu/ontology/0.0.1</a></dd>
 <dt>Revision:</dt>
 <dd>0.0.2</dd>
 <dt>Authors:</dt>
@@ -108,6 +111,7 @@ function loadTOC(){
      <div id="description"></div>
      <div id="crossref"></div>
      <div id="references"></div>
+     <div id="changelog"></div>
 <div id="acknowledgments">
 <h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <p>

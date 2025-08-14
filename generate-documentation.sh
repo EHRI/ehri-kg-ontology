@@ -10,9 +10,9 @@ java -jar widoco.jar -ontFile ./ontology/ehri.owl -outFolder ./documentation -ge
 java -jar widoco.jar -ontFile ./ontology/ehri.owl -outFolder ./documentation -getOntologyMetadata -rewriteAll -htaccess -excludeProvenance
 
 # Include static sections in the generated documentation
-cp documentationAdditionalContent/introduction-en.html documentation/sections/introduction-en.html
-cp documentationAdditionalContent/references-en.html documentation/sections/references-en.html
+cp configurations/documentationAdditionalContent/introduction-en.html documentation/sections/introduction-en.html
+cp configurations/documentationAdditionalContent/references-en.html documentation/sections/references-en.html
 mkdir documentation/images
-cp documentationAdditionalContent/ehriPortalDataModel.png documentation/images/ehriPortalDataModel.png
-cat documentationAdditionalContent/custom.css >> documentation/resources/extra.css
+cp configurations/documentationAdditionalContent/ehriPortalDataModel.png documentation/images/ehriPortalDataModel.png
+cat configurations/documentationAdditionalContent/custom.css >> documentation/resources/extra.css
 sed -i 's/<a href="https:\/\/www\.ica\.org\/standards\/RiC\/ontology">ontology<\/a>/<a href="https:\/\/www\.ica\.org\/standards\/RiC\/ontology\/1\.0\.2">RiC-O 1\.0\.2<\/a>/g' documentation/index-en.html

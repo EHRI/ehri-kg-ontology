@@ -98,6 +98,9 @@
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "https://www.ica.org/standards/RiC/ontology/1.0.2"
   } ],
+  "http://www.w3.org/2002/07/owl#priorVersion" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology/0.0.1"
+  } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "http://lod.ehri-project-test.eu/ontology/0.0.2"
   } ],

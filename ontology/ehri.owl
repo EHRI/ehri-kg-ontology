@@ -28,6 +28,7 @@
         <vann:preferredNamespacePrefix>ehri</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="http://lod.ehri-project-test.eu/ontology#"/>
         <schema:codeRepository rdf:resource="https://github.com/EHRI/ehri-kg-ontology"/>
+        <owl:priorVersion rdf:resource="http://lod.ehri-project-test.eu/ontology/0.0.1"/>
         <owl:versionInfo>0.0.2</owl:versionInfo>
         <foaf:logo rdf:resource="https://ehri-kg.ehri-project.eu/images/ehri-logo.svg"/>
     </owl:Ontology>
