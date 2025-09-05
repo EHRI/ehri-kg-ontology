@@ -33,9 +33,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+      "@id" : "http://lod.ehri-project-test.eu/ontology#Agent"
     }, {
-      "@id" : "https://www.ica.org/standards/RiC/ontology#Agent"
+      "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
     } ]
   } ]
 }, {
@@ -95,20 +95,46 @@
   "http://schema.org/codeRepository" : [ {
     "@id" : "https://github.com/EHRI/ehri-kg-ontology"
   } ],
+  "http://schema.org/funder" : [ {
+    "@id" : "https://oscars-project.eu/"
+  } ],
+  "http://schema.org/funding" : [ {
+    "@id" : "https://oscars-project.eu/projects/ehri-kg-european-holocaust-research-infrastructure-knowledge-graph"
+  } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "https://www.ica.org/standards/RiC/ontology/1.0.2"
   } ],
   "http://www.w3.org/2002/07/owl#priorVersion" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology/0.0.1"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "http://lod.ehri-project-test.eu/ontology/0.0.2"
   } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology/0.0.3"
+  } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.0.2"
+    "@value" : "0.0.3"
   } ],
   "http://xmlns.com/foaf/0.1/logo" : [ {
     "@id" : "https://ehri-kg.ehri-project.eu/images/ehri-logo.svg"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is a specialisation of the rico:Agent class created for its extension with additional properties."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Agent"
+  }, {
+    "@language" : "fr",
+    "@value" : "Agent"
+  }, {
+    "@language" : "es",
+    "@value" : "Agente"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#Agent"
   } ]
 }, {
   "@id" : "http://lod.ehri-project-test.eu/ontology#AlternateAgentName",
@@ -168,6 +194,8 @@
     "@value" : "Persona jurídica"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#Group"
+  }, {
     "@id" : "https://www.ica.org/standards/RiC/ontology#CorporateBody"
   } ]
 }, {
@@ -208,7 +236,31 @@
     "@value" : "Family"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#Group"
+  }, {
     "@id" : "https://www.ica.org/standards/RiC/ontology#Family"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#Group",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is a specialisation of the rico:Group class created for its extension with additional properties."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Group"
+  }, {
+    "@language" : "fr",
+    "@value" : "Groupe d'agents"
+  }, {
+    "@language" : "es",
+    "@value" : "Grupo de agentes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#Agent"
+  }, {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#Group"
   } ]
 }, {
   "@id" : "http://lod.ehri-project-test.eu/ontology#Institution",
@@ -356,6 +408,8 @@
     "@value" : "Personne"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#Agent"
+  }, {
     "@id" : "https://www.ica.org/standards/RiC/ontology#Person"
   } ]
 }, {
@@ -1152,7 +1206,7 @@
     "@value" : "Describes and/or represents the internal administrative structure(s) of a corporate body or the genealogy of a family."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://www.ica.org/standards/RiC/ontology#Agent"
+    "@id" : "http://lod.ehri-project-test.eu/ontology#Agent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -1376,6 +1430,12 @@
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
+}, {
+  "@id" : "http://schema.org/funder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/funding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://schema.org/openingHours",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],

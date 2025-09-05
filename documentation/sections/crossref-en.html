@@ -3,11 +3,13 @@ This section provides details for each class and property defined by EHRI Ontolo
 <div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
  <h3 id="classes-headline" class="list">Classes</h3>
  <ul class="hlist">
+  <li><a href="#Agent" title="http://lod.ehri-project-test.eu/ontology#Agent">Agent</a></li>
   <li><a href="#AlternateAgentName" title="http://lod.ehri-project-test.eu/ontology#AlternateAgentName">Alternative forms of the agent's name</a></li>
   <li><a href="#City" title="http://lod.ehri-project-test.eu/ontology#City">City</a></li>
   <li><a href="#CorporateBody" title="http://lod.ehri-project-test.eu/ontology#CorporateBody">Corporate body</a></li>
   <li><a href="#Country" title="http://lod.ehri-project-test.eu/ontology#Country">Country</a></li>
   <li><a href="#Family" title="http://lod.ehri-project-test.eu/ontology#Family">Family</a></li>
+  <li><a href="#Group" title="http://lod.ehri-project-test.eu/ontology#Group">Group</a></li>
   <li><a href="#Institution" title="http://lod.ehri-project-test.eu/ontology#Institution">Institution</a></li>
   <li><a href="#InstitutionAddress" title="http://lod.ehri-project-test.eu/ontology#InstitutionAddress">Institution's address</a></li>
   <li><a href="#ParallelAgentName" title="http://lod.ehri-project-test.eu/ontology#ParallelAgentName">Parallel forms of the agent's name</a></li>
@@ -17,6 +19,33 @@ This section provides details for each class and property defined by EHRI Ontolo
   <li><a href="#Region" title="http://lod.ehri-project-test.eu/ontology#Region">Region</a></li>
   <li><a href="#MaterialScript" title="http://lod.ehri-project-test.eu/ontology#MaterialScript">Script of materials</a></li>
  </ul>
+ <div class="entity" id="Agent">
+  <h3>Agent<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#Agent</p>
+  <div class="comment">
+   <span class="markdown">This is a specialisation of the rico:Agent class created for its extension with additional properties.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://www.ica.org/standards/RiC/ontology#Agent" target="_blank" title="https://www.ica.org/standards/RiC/ontology#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#Group" title="http://lod.ehri-project-test.eu/ontology#Group">Group</a> <sup class="type-c" title="class">c</sup>, <a href="#Person" title="http://lod.ehri-project-test.eu/ontology#Person">Person</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#structureOrGenealogy" title="http://lod.ehri-project-test.eu/ontology#structureOrGenealogy">internal structure</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#sources" title="http://lod.ehri-project-test.eu/ontology#sources">sources</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="AlternateAgentName">
   <h3>Alternative forms of the agent's name<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#AlternateAgentName</p>
@@ -58,7 +87,7 @@ This section provides details for each class and property defined by EHRI Ontolo
     has super-classes
    </dt>
    <dd>
-    <a href="https://www.ica.org/standards/RiC/ontology#CorporateBody" target="_blank" title="https://www.ica.org/standards/RiC/ontology#CorporateBody">Corporate Body</a> <sup class="type-c" title="class">c</sup>
+    <a href="https://www.ica.org/standards/RiC/ontology#CorporateBody" target="_blank" title="https://www.ica.org/standards/RiC/ontology#CorporateBody">Corporate Body</a> <sup class="type-c" title="class">c</sup>, <a href="#Group" title="http://lod.ehri-project-test.eu/ontology#Group">Group</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has sub-classes
@@ -100,7 +129,28 @@ This section provides details for each class and property defined by EHRI Ontolo
     has super-classes
    </dt>
    <dd>
-    <a href="https://www.ica.org/standards/RiC/ontology#Family" target="_blank" title="https://www.ica.org/standards/RiC/ontology#Family">Family</a> <sup class="type-c" title="class">c</sup>
+    <a href="https://www.ica.org/standards/RiC/ontology#Family" target="_blank" title="https://www.ica.org/standards/RiC/ontology#Family">Family</a> <sup class="type-c" title="class">c</sup>, <a href="#Group" title="http://lod.ehri-project-test.eu/ontology#Group">Group</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Group">
+  <h3>Group<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#Group</p>
+  <div class="comment">
+   <span class="markdown">This is a specialisation of the rico:Group class created for its extension with additional properties.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Agent" title="http://lod.ehri-project-test.eu/ontology#Agent">Agent</a> <sup class="type-c" title="class">c</sup>, <a href="https://www.ica.org/standards/RiC/ontology#Group" target="_blank" title="https://www.ica.org/standards/RiC/ontology#Group">Group</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#CorporateBody" title="http://lod.ehri-project-test.eu/ontology#CorporateBody">Corporate body</a> <sup class="type-c" title="class">c</sup>, <a href="#Family" title="http://lod.ehri-project-test.eu/ontology#Family">Family</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -178,7 +228,7 @@ This section provides details for each class and property defined by EHRI Ontolo
     has super-classes
    </dt>
    <dd>
-    <a href="https://www.ica.org/standards/RiC/ontology#Person" target="_blank" title="https://www.ica.org/standards/RiC/ontology#Person">Person</a> <sup class="type-c" title="class">c</sup>
+    <a href="#Agent" title="http://lod.ehri-project-test.eu/ontology#Agent">Agent</a> <sup class="type-c" title="class">c</sup>, <a href="https://www.ica.org/standards/RiC/ontology#Person" target="_blank" title="https://www.ica.org/standards/RiC/ontology#Person">Person</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -885,7 +935,7 @@ This section provides details for each class and property defined by EHRI Ontolo
      has domain
     </dt>
     <dd>
-     <a href="https://www.ica.org/standards/RiC/ontology#Agent" target="_blank" title="https://www.ica.org/standards/RiC/ontology#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+     <a href="#Agent" title="http://lod.ehri-project-test.eu/ontology#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
@@ -1244,7 +1294,7 @@ This section provides details for each class and property defined by EHRI Ontolo
      has domain
     </dt>
     <dd>
-     <a href="#RecordResource" title="http://lod.ehri-project-test.eu/ontology#RecordResource">Record resource</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="https://www.ica.org/standards/RiC/ontology#Agent" target="_blank" title="https://www.ica.org/standards/RiC/ontology#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+     <a href="#Agent" title="http://lod.ehri-project-test.eu/ontology#Agent">Agent</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#RecordResource" title="http://lod.ehri-project-test.eu/ontology#RecordResource">Record resource</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range

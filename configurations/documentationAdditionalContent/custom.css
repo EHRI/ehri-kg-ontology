@@ -7,3 +7,11 @@ h1 + img {
 #figure-data-model-ehri-portal {
     text-align: center;
 }
+
+#figure-ontology-diagram {
+    text-align: center;
+}
+
+#figure-ontology-diagram img {
+    max-width: 100%;
+}

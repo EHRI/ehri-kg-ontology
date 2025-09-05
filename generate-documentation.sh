@@ -11,8 +11,10 @@ java -jar widoco.jar -ontFile ./ontology/ehri.owl -outFolder ./documentation -ge
 
 # Include static sections in the generated documentation
 cp configurations/documentationAdditionalContent/introduction-en.html documentation/sections/introduction-en.html
+cp configurations/documentationAdditionalContent/description-en.html documentation/sections/description-en.html
 cp configurations/documentationAdditionalContent/references-en.html documentation/sections/references-en.html
 mkdir documentation/images
 cp configurations/documentationAdditionalContent/ehriPortalDataModel.png documentation/images/ehriPortalDataModel.png
+cp configurations/documentationAdditionalContent/ontologyDiagram.png documentation/images/ontologyDiagram.png
 cat configurations/documentationAdditionalContent/custom.css >> documentation/resources/extra.css
 sed -i 's/<a href="https:\/\/www\.ica\.org\/standards\/RiC\/ontology">ontology<\/a>/<a href="https:\/\/www\.ica\.org\/standards\/RiC\/ontology\/1\.0\.2">RiC-O 1\.0\.2<\/a>/g' documentation/index-en.html

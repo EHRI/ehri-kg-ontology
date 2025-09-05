@@ -7,7 +7,7 @@
 @base <http://lod.ehri-project-test.eu/ontology#> .
 
 <http://lod.ehri-project-test.eu/ontology> rdf:type owl:Ontology ;
-                                            owl:versionIRI <http://lod.ehri-project-test.eu/ontology/0.0.2> ;
+                                            owl:versionIRI <http://lod.ehri-project-test.eu/ontology/0.0.3> ;
                                             owl:imports <https://www.ica.org/standards/RiC/ontology/1.0.2> ;
                                             <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> ;
                                             <http://purl.org/dc/elements/1.1/creator> "Herminio García-González (Kazerne Dossin)"@en ,
@@ -19,8 +19,10 @@
                                             <http://purl.org/vocab/vann/preferredNamespacePrefix> "ehri" ;
                                             <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
                                             <http://schema.org/codeRepository> <https://github.com/EHRI/ehri-kg-ontology> ;
-                                            owl:priorVersion <http://lod.ehri-project-test.eu/ontology/0.0.1> ;
-                                            owl:versionInfo "0.0.2" ;
+                                            <http://schema.org/funder> <https://oscars-project.eu/> ;
+                                            <http://schema.org/funding> <https://oscars-project.eu/projects/ehri-kg-european-holocaust-research-infrastructure-knowledge-graph> ;
+                                            owl:priorVersion <http://lod.ehri-project-test.eu/ontology/0.0.2> ;
+                                            owl:versionInfo "0.0.3" ;
                                             <http://xmlns.com/foaf/0.1/logo> <https://ehri-kg.ehri-project.eu/images/ehri-logo.svg> .
 
 #################################################################
@@ -42,6 +44,14 @@
 
 ###  http://schema.org/codeRepository
 <http://schema.org/codeRepository> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/funder
+<http://schema.org/funder> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/funding
+<http://schema.org/funding> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#definition
@@ -385,8 +395,8 @@
 ###  http://lod.ehri-project-test.eu/ontology#sources
 :sources rdf:type owl:DatatypeProperty ;
          rdfs:domain [ rdf:type owl:Class ;
-                       owl:unionOf ( :RecordResource
-                                     <https://www.ica.org/standards/RiC/ontology#Agent>
+                       owl:unionOf ( :Agent
+                                     :RecordResource
                                    )
                      ] ;
          rdfs:range rdfs:Literal ;
@@ -398,7 +408,7 @@
 
 ###  http://lod.ehri-project-test.eu/ontology#structureOrGenealogy
 :structureOrGenealogy rdf:type owl:DatatypeProperty ;
-                      rdfs:domain <https://www.ica.org/standards/RiC/ontology#Agent> ;
+                      rdfs:domain :Agent ;
                       rdfs:range rdfs:Literal ;
                       rdfs:comment "Describes and/or represents the internal administrative structure(s) of a corporate body or the genealogy of a family."@en ;
                       rdfs:label "estructura(s) interna(s)/genealogía"@es ,
@@ -476,6 +486,15 @@
 #    Classes
 #################################################################
 
+###  http://lod.ehri-project-test.eu/ontology#Agent
+:Agent rdf:type owl:Class ;
+       rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#Agent> ;
+       rdfs:comment "This is a specialisation of the rico:Agent class created for its extension with additional properties."@en ;
+       rdfs:label "Agent"@en ,
+                  "Agent"@fr ,
+                  "Agente"@es .
+
+
 ###  http://lod.ehri-project-test.eu/ontology#AlternateAgentName
 :AlternateAgentName rdf:type owl:Class ;
                     rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#AgentName> ;
@@ -496,7 +515,8 @@
 
 ###  http://lod.ehri-project-test.eu/ontology#CorporateBody
 :CorporateBody rdf:type owl:Class ;
-               rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#CorporateBody> ;
+               rdfs:subClassOf :Group ,
+                               <https://www.ica.org/standards/RiC/ontology#CorporateBody> ;
                rdfs:comment "This is a specialisation of the rico:CorporateBody class created for its extension with additional properties."@en ;
                rdfs:label "Collectivité"@fr ,
                           "Corporate body"@en ,
@@ -514,11 +534,22 @@
 
 ###  http://lod.ehri-project-test.eu/ontology#Family
 :Family rdf:type owl:Class ;
-        rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#Family> ;
+        rdfs:subClassOf :Group ,
+                        <https://www.ica.org/standards/RiC/ontology#Family> ;
         rdfs:comment "This is a specialisation of the rico:Family class created for its extension with additional properties."@en ;
         rdfs:label "Familia"@es ,
                    "Famille"@fr ,
                    "Family"@en .
+
+
+###  http://lod.ehri-project-test.eu/ontology#Group
+:Group rdf:type owl:Class ;
+       rdfs:subClassOf :Agent ,
+                       <https://www.ica.org/standards/RiC/ontology#Group> ;
+       rdfs:comment "This is a specialisation of the rico:Group class created for its extension with additional properties."@en ;
+       rdfs:label "Group"@en ,
+                  "Groupe d'agents"@fr ,
+                  "Grupo de agentes"@es .
 
 
 ###  http://lod.ehri-project-test.eu/ontology#Institution
@@ -561,7 +592,8 @@
 
 ###  http://lod.ehri-project-test.eu/ontology#Person
 :Person rdf:type owl:Class ;
-        rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#Person> ;
+        rdfs:subClassOf :Agent ,
+                        <https://www.ica.org/standards/RiC/ontology#Person> ;
         rdfs:comment "This is a specialisation of the rico:Person class created for its extension with additional properties."@en ;
         rdfs:label "Person"@en ,
                    "Persona"@es ,

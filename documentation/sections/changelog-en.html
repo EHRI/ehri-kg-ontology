@@ -2,77 +2,33 @@
 <h2 id="changes" class="list">Changes from last version</h2>
 <h3 id="changeClass" class="list">Classes</h3>
 <details><summary><u>Modified classes</u></summary>
-<ul><li><a href="#RecordResource">http://lod.ehri-project-test.eu/ontology#RecordResource</a>
+<ul><li><a href="#CorporateBody">http://lod.ehri-project-test.eu/ontology#CorporateBody</a>
 <ul>
-<li>Added: rdfs:label "Record resource"@en</li>
-</ul>
-<ul>
-<li>Deleted: rdfs:label "Record Resource"@en</li>
+<li>Added: SubClass of http://lod.ehri-project-test.eu/ontology#Group</li>
 </ul>
 </li>
-</ul></details><details><summary><u>Deleted classes</u></summary>
-<ul><li><a href="#Record">http://lod.ehri-project-test.eu/ontology#Record</a>
-</li>
-<li><a href="#https://www.ica.org/standards/RiC/ontology#Record">https://www.ica.org/standards/RiC/ontology#Record</a>
-</li>
-</ul></details><h3 id="changeProp" class="list">Object Properties</h3>
-<details><summary><u>Added object properties</u></summary>
-<ul><li><a href="#hasOrHadScript">http://lod.ehri-project-test.eu/ontology#hasOrHadScript</a>
+<li><a href="#Family">http://lod.ehri-project-test.eu/ontology#Family</a>
 <ul>
-<li>Added: SubProperty of https://www.ica.org/standards/RiC/ontology#isRelatedTo</li>
-<li>Added: InverseObjectProperties InverseObjectProperties(&lt;http://lod.ehri-project-test.eu/ontology#hasOrHadScript&gt; &lt;http://lod.ehri-project-test.eu/ontology#isOrWasScriptOf&gt;)</li>
-<li>Added: Range http://lod.ehri-project-test.eu/ontology#MaterialScript</li>
-<li>Added: domain http://lod.ehri-project-test.eu/ontology#RecordResource</li>
+<li>Added: SubClass of http://lod.ehri-project-test.eu/ontology#Group</li>
 </ul>
 </li>
-<li><a href="#isOrWasScriptOf">http://lod.ehri-project-test.eu/ontology#isOrWasScriptOf</a>
+<li><a href="#Person">http://lod.ehri-project-test.eu/ontology#Person</a>
 <ul>
-<li>Added: Range http://lod.ehri-project-test.eu/ontology#RecordResource</li>
-<li>Added: InverseObjectProperties InverseObjectProperties(&lt;http://lod.ehri-project-test.eu/ontology#hasOrHadScript&gt; &lt;http://lod.ehri-project-test.eu/ontology#isOrWasScriptOf&gt;)</li>
-<li>Added: domain http://lod.ehri-project-test.eu/ontology#MaterialScript</li>
-<li>Added: SubProperty of https://www.ica.org/standards/RiC/ontology#isRelatedTo</li>
+<li>Added: SubClass of http://lod.ehri-project-test.eu/ontology#Agent</li>
 </ul>
 </li>
-</ul></details><details><summary><u>Deleted object properties</u></summary>
-<ul><li><a href="#scriptOfMaterials">http://lod.ehri-project-test.eu/ontology#scriptOfMaterials</a>
-</li>
-</ul></details><h3 id="changeDataProp" class="list">Data Properties</h3>
-<details><summary><u>Modified data properties</u></summary>
-<ul><li><a href="#appraisal">http://lod.ehri-project-test.eu/ontology#appraisal</a>
+</ul></details><details><summary><u>Added classes</u></summary>
+<ul><li><a href="#Agent">http://lod.ehri-project-test.eu/ontology#Agent</a>
 <ul>
-<li>Added: Domain http://lod.ehri-project-test.eu/ontology#RecordResource</li>
-</ul>
-<ul>
-<li>Deleted: Domain http://lod.ehri-project-test.eu/ontology#Record</li>
+<li>Added: SubClass of https://www.ica.org/standards/RiC/ontology#Agent</li>
 </ul>
 </li>
-</ul></details><details><summary><u>Added data properties</u></summary>
-<ul><li><a href="#conditionsOfAccess">http://lod.ehri-project-test.eu/ontology#conditionsOfAccess</a>
+<li><a href="#Group">http://lod.ehri-project-test.eu/ontology#Group</a>
 <ul>
-<li>Added: Domain Union of (http://lod.ehri-project-test.eu/ontology#Institution, http://lod.ehri-project-test.eu/ontology#RecordResource)</li>
-<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
-<li>Added: SubProperty of https://www.ica.org/standards/RiC/ontology#conditionsOfAccess</li>
+<li>Added: SubClass of https://www.ica.org/standards/RiC/ontology#Group</li>
+<li>Added: SubClass of http://lod.ehri-project-test.eu/ontology#Agent</li>
 </ul>
 </li>
-<li><a href="#publicationNote">http://lod.ehri-project-test.eu/ontology#publicationNote</a>
-<ul>
-<li>Added: Domain http://lod.ehri-project-test.eu/ontology#RecordResource</li>
-<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
-</ul>
-</li>
-<li><a href="#reproductionServices">http://lod.ehri-project-test.eu/ontology#reproductionServices</a>
-<ul>
-<li>Added: Domain http://lod.ehri-project-test.eu/ontology#Institution</li>
-<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
-</ul>
-</li>
-<li><a href="#https://www.ica.org/standards/RiC/ontology#conditionsOfAccess">https://www.ica.org/standards/RiC/ontology#conditionsOfAccess</a>
-</li>
-</ul></details><details><summary><u>Deleted data properties</u></summary>
-<ul><li><a href="#institutionConditionsOfAccess">http://lod.ehri-project-test.eu/ontology#institutionConditionsOfAccess</a>
-</li>
-<li><a href="#institutionReproductionServices">http://lod.ehri-project-test.eu/ontology#institutionReproductionServices</a>
-</li>
-<li><a href="#wasUsedAsSourceIn">http://lod.ehri-project-test.eu/ontology#wasUsedAsSourceIn</a>
+<li><a href="#https://www.ica.org/standards/RiC/ontology#Group">https://www.ica.org/standards/RiC/ontology#Group</a>
 </li>
 </ul></details></div>
