@@ -2,7 +2,15 @@
 <h2 id="changes" class="list">Changes from last version</h2>
 <h3 id="changeClass" class="list">Classes</h3>
 <details><summary><u>Modified classes</u></summary>
-<ul><li><a href="#CorporateBody">http://lod.ehri-project-test.eu/ontology#CorporateBody</a>
+<ul><li><a href="#AlternateAgentName">http://lod.ehri-project-test.eu/ontology#AlternateAgentName</a>
+<ul>
+<li>Added: rdfs:comment "This class allows to represent any other name(s) used for an institution, or by which it may be known. This could include other forms of the same name, abbreviations, acronyms, other institutional names, or changes of name over time (historical names)."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "This class allows to represent any other name(s) used for the institution or by which it may be known. This could include other forms of the same name, abbreviations, acronyms, other institutional names, or changes of name over time (historical names)."@en</li>
+</ul>
+</li>
+<li><a href="#CorporateBody">http://lod.ehri-project-test.eu/ontology#CorporateBody</a>
 <ul>
 <li>Added: SubClass of http://lod.ehri-project-test.eu/ontology#Group</li>
 </ul>
@@ -10,6 +18,38 @@
 <li><a href="#Family">http://lod.ehri-project-test.eu/ontology#Family</a>
 <ul>
 <li>Added: SubClass of http://lod.ehri-project-test.eu/ontology#Group</li>
+</ul>
+</li>
+<li><a href="#Institution">http://lod.ehri-project-test.eu/ontology#Institution</a>
+<ul>
+<li>Added: rdfs:comment "This class is a specialisation of the rico:CorporateBody and ehri:CorporateBody classes, taking some additional properties from the schema:ArchiveOrganization class. In contrast to a Corporate Body, an Institution in the EHRI data model always holds archival records, which is in line with ISDIAH definition."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "This class is a specialisation of the rico:CorporateBody and ehri:CorporateBody classes, taking some additional properties from the schema:ArchiveOrganization class. By contrast to a Corporate Body, in EHRI's data model, an Institution always hold archival records which is in line with ISDIAH definition."@en</li>
+</ul>
+</li>
+<li><a href="#InstitutionAddress">http://lod.ehri-project-test.eu/ontology#InstitutionAddress</a>
+<ul>
+<li>Added: rdfs:comment "This class is a specialisation of the rico:PhysicalLocation extended with attributes derived from the schema:PostalAddress class to represent addresses and contact information for archival institutions."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "This class is a specialisation of the rico:PhysicalLocation extended with attributes coming from the schema:PostalAddress class to represent institution's addresses and contact information."@en</li>
+</ul>
+</li>
+<li><a href="#MaterialScript">http://lod.ehri-project-test.eu/ontology#MaterialScript</a>
+<ul>
+<li>Added: rdfs:comment "This class represents the written scripts that can be found in some material. Similar to the written language, each will be represented by an instance. Examples of scripts are: Latin, Cyrillic, Hebrew, etc."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "This class represents the scripts that can be found in a material. Similar to the language, each instance will be represented by an instance. Examples of scripts are: Latin, Cyrillic, etc."@en</li>
+</ul>
+</li>
+<li><a href="#ParallelAgentName">http://lod.ehri-project-test.eu/ontology#ParallelAgentName</a>
+<ul>
+<li>Added: rdfs:comment "This class represents the various forms in which the authorised form of name of an institution with archival holdings occurs in other languages or script form(s)."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "This class allows to represent the various forms in which the authorised form of name of an institution with archival holdings occurs in other languages or script form(s)."@en</li>
 </ul>
 </li>
 <li><a href="#Person">http://lod.ehri-project-test.eu/ontology#Person</a>
@@ -30,5 +70,195 @@
 </ul>
 </li>
 <li><a href="#https://www.ica.org/standards/RiC/ontology#Group">https://www.ica.org/standards/RiC/ontology#Group</a>
+</li>
+</ul></details><h3 id="changeProp" class="list">Object Properties</h3>
+<details><summary><u>Modified object properties</u></summary>
+<ul><li><a href="#hasCopy">http://lod.ehri-project-test.eu/ontology#hasCopy</a>
+<ul>
+<li>Added: rdfs:comment "A generalisation of the rico:hasCopy property to expand the domain and range to ehri:Institution instances."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "This is a generalisation of the rico:hasCopy property to expand the domain and range to ehri:Institution instances."@en</li>
+</ul>
+</li>
+<li><a href="#hasOrHadScript">http://lod.ehri-project-test.eu/ontology#hasOrHadScript</a>
+<ul>
+<li>Added: rdfs:comment "Indicates the written script present in the materials."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "This property allows to indicate the script present in the materials"@en</li>
+</ul>
+</li>
+<li><a href="#isOrWasScriptOf">http://lod.ehri-project-test.eu/ontology#isOrWasScriptOf</a>
+<ul>
+<li>Added: rdfs:comment "The inverse of ehri:hasOrHadScript, allowing a script to be related back to the record where it appears."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "This property is the inverse of ehri:hasOrHadScript, allowing to relate a script back to the record where it appears."@en</li>
+</ul>
+</li>
+</ul></details><h3 id="changeDataProp" class="list">Data Properties</h3>
+<details><summary><u>Modified data properties</u></summary>
+<ul><li><a href="#accessibility">http://lod.ehri-project-test.eu/ontology#accessibility</a>
+<ul>
+<li>Added: rdfs:comment "Collects information about the accessibility of an institution with respect to its archival holdings and services."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Collects information about the institution's accesibility with respect to its archival holdings and services."@en</li>
+</ul>
+</li>
+<li><a href="#appraisal">http://lod.ehri-project-test.eu/ontology#appraisal</a>
+<ul>
+<li>Added: rdfs:comment "Provides information on appraisal, destruction and scheduling actions."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Provides information on any appraisal, destruction and scheduling action."@en</li>
+</ul>
+</li>
+<li><a href="#archivalHistory">http://lod.ehri-project-test.eu/ontology#archivalHistory</a>
+<ul>
+<li>Added: rdfs:comment "Provides information about the Holocaust and WWII and how it relates to the archival landscape in that country."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Holds information about the Holocaust and WWII and how it relates to the archival landscape in that country."@en</li>
+</ul>
+</li>
+<li><a href="#buildings">http://lod.ehri-project-test.eu/ontology#buildings</a>
+<ul>
+<li>Added: rdfs:comment "Provides information about the buildings of an institution."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Provides information about the buildings of the institution"@en</li>
+</ul>
+</li>
+<li><a href="#conditionsOfAccess">http://lod.ehri-project-test.eu/ontology#conditionsOfAccess</a>
+<ul>
+<li>Added: rdfs:comment "Collects information about the conditions, requirements and procedures for access to, and use of institutional services and/or specific records."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Collects information about the conditions, requirements and procedures for access to, and use of institutional services and/or specific records"@en</li>
+</ul>
+</li>
+<li><a href="#contactPerson">http://lod.ehri-project-test.eu/ontology#contactPerson</a>
+<ul>
+<li>Added: rdfs:comment "Provides information needed to contact members of the staff."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "To provide the information needed to contact members of the staff."@en</li>
+</ul>
+</li>
+<li><a href="#findingAids">http://lod.ehri-project-test.eu/ontology#findingAids</a>
+<ul>
+<li>Added: rdfs:comment "Provides a general overview of finding aids published by an institution."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Provides a general overview of the published and/or published finding aids."@en</li>
+</ul>
+</li>
+<li><a href="#generalContext">http://lod.ehri-project-test.eu/ontology#generalContext</a>
+<ul>
+<li>Added: rdfs:comment "Provides information about the geographical and cultural context of an institution."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Provides information about the geographical and cultural context of the institution."@en</li>
+</ul>
+</li>
+<li><a href="#locationOfOriginals">http://lod.ehri-project-test.eu/ontology#locationOfOriginals</a>
+<ul>
+<li>Added: rdfs:comment "Indicates the existence, location, availability and/or destruction of the original material, in cases where the unit of description consists of copies."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Indicates the existence, location, availability and/or destruction of originals where the unit of description consists of copies."@en</li>
+</ul>
+</li>
+<li><a href="#notes">http://lod.ehri-project-test.eu/ontology#notes</a>
+<ul>
+<li>Added: rdfs:comment "Provides information that cannot be accommodated in any of the other data properties."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Provides information that cannot be accommodated in any of the other data properties"@en</li>
+</ul>
+</li>
+<li><a href="#otherFindingAids">http://lod.ehri-project-test.eu/ontology#otherFindingAids</a>
+<ul>
+<li>Added: rdfs:comment "Provides information on the history of the unit of description that is significant for its authenticity, integrity and interpretation."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Provide information on the history of the unit of description that is significant for its authenticity, integrity and interpretation."@en</li>
+</ul>
+</li>
+<li><a href="#publicationNote">http://lod.ehri-project-test.eu/ontology#publicationNote</a>
+<ul>
+<li>Added: rdfs:comment "Identifies any publications that are about or are based on the use, study or analysis of the unit of description."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Identifies any publications that are about or are based on the use, study, or analysis of the unit of description."@en</li>
+</ul>
+</li>
+<li><a href="#recordsManagementAndCollectingPolicies">http://lod.ehri-project-test.eu/ontology#recordsManagementAndCollectingPolicies</a>
+<ul>
+<li>Added: rdfs:comment "Provides information about the records management and collecting policies of an institution with archival holdings."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Provides information about the records management and collecting policies of the institution with archival holdings."@en</li>
+</ul>
+</li>
+<li><a href="#reproductionServices">http://lod.ehri-project-test.eu/ontology#reproductionServices</a>
+<ul>
+<li>Added: rdfs:comment "Provides information about reproduction services available to the public (microfilms, photocopies, photographs, digitised copies) and their general conditions and restrictions."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Gather information about reproduction services available to the public (microfilms, photocopies, photographs, digitised copies) and their general conditions and restrictions."@en</li>
+</ul>
+</li>
+<li><a href="#researchExtensive">http://lod.ehri-project-test.eu/ontology#researchExtensive</a>
+<ul>
+<li>Added: rdfs:comment "Offers information on how EHRI acquired data relating to a country and integrated it into the EHRI Portal."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Offers information on how EHRI acquiered its data and integrated it into the Portal."@en</li>
+</ul>
+</li>
+<li><a href="#researchServices">http://lod.ehri-project-test.eu/ontology#researchServices</a>
+<ul>
+<li>Added: rdfs:comment "Describes the research services provided by an institution."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Describes the research services provided by the institution with archival holdings."@en</li>
+</ul>
+</li>
+<li><a href="#researchSummary">http://lod.ehri-project-test.eu/ontology#researchSummary</a>
+<ul>
+<li>Added: rdfs:comment "Describes the identification work carried out by EHRI, ongoing since October 2010. This section also includes references to aggregators and country-specific research guides."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Elaborates on EHRI's identification work, which is ongoing since October 2010. This section also includes references to aggregators and country-specific research guides."@en</li>
+</ul>
+</li>
+<li><a href="#sources">http://lod.ehri-project-test.eu/ontology#sources</a>
+<ul>
+<li>Added: Domain Union of (http://lod.ehri-project-test.eu/ontology#Agent, http://lod.ehri-project-test.eu/ontology#RecordResource)</li>
+<li>Added: rdfs:comment "Provides information on sources consulted in preparing the description and the personnel involved."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Record notes on sources consulted in preparing the description and who prepared it."@en</li>
+<li>Deleted: Domain Union of (http://lod.ehri-project-test.eu/ontology#RecordResource, https://www.ica.org/standards/RiC/ontology#Agent)</li>
+</ul>
+</li>
+<li><a href="#structureOrGenealogy">http://lod.ehri-project-test.eu/ontology#structureOrGenealogy</a>
+<ul>
+<li>Added: Domain http://lod.ehri-project-test.eu/ontology#Agent</li>
+</ul>
+<ul>
+<li>Deleted: Domain https://www.ica.org/standards/RiC/ontology#Agent</li>
+</ul>
+</li>
+<li><a href="#http://schema.org/contactType">http://schema.org/contactType</a>
+<ul>
+<li>Added: rdfs:comment "Specifies the type of contact point. A person or organization can have different contact points for different purposes, such as a sales contact point, a PR contact point and so on."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "A person or organization can have different contact points, for different purposes. For example, a sales contact point, a PR contact point and so on. This property is used to specify the kind of contact point."@en</li>
+</ul>
 </li>
 </ul></details></div>

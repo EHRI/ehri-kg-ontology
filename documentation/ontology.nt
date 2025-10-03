@@ -5,8 +5,8 @@
 <http://lod.ehri-project-test.eu/ontology> <http://purl.org/dc/elements/1.1/creator> "Herminio García-González (Kazerne Dossin)"@en .
 <http://lod.ehri-project-test.eu/ontology> <http://purl.org/dc/elements/1.1/creator> "Mike Bryant (NIOD)"@en .
 <http://lod.ehri-project-test.eu/ontology> <http://purl.org/dc/elements/1.1/title> "EHRI Ontology"@en .
-<http://lod.ehri-project-test.eu/ontology> <http://purl.org/dc/terms/abstract> "This ontology defines the data model used by the EHRI-KG for the representation of the information hosted in the EHRI Portal. It does so by extending RiC-O v1.0.2 and reusing some of the schema.org concepts."@en .
-<http://lod.ehri-project-test.eu/ontology> <http://purl.org/dc/terms/description> "The EHRI Ontology extends some of the RiC-O types and foremostly adds new properties to represent all the data present in the EHRI Portal. Whenever a class is extended with new properties, a subclass bounded to the ehri prefix is created in order to preserve the original RiC-O axioms intact. In other cases, some classes are specialised and therefore subclasses contribute additional meaning to the superclass."@en .
+<http://lod.ehri-project-test.eu/ontology> <http://purl.org/dc/terms/abstract> "This ontology defines the data model used by the EHRI Knowledge Graph for the representation of the information hosted in the EHRI Portal. It does so by extending RiC-O v1.0.2 and reusing some of the schema.org concepts."@en .
+<http://lod.ehri-project-test.eu/ontology> <http://purl.org/dc/terms/description> "The EHRI Ontology extends some of the RiC-O types and adds additional properties to represent data present in the EHRI Portal. Whenever a class is extended with new properties, a subclass bounded to the ehri prefix is created in order to maintain the original RiC-O axioms. In some cases, classes are specialised via subclassing in order to contribute additional meaning to the superclass."@en .
 <http://lod.ehri-project-test.eu/ontology> <http://purl.org/dc/terms/publisher> "EHRI-ERIC" .
 <http://lod.ehri-project-test.eu/ontology> <http://purl.org/vocab/vann/preferredNamespacePrefix> "ehri" .
 <http://lod.ehri-project-test.eu/ontology> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://lod.ehri-project-test.eu/ontology#> .
@@ -82,7 +82,7 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://lod.ehri-project-test.eu/ontology#Institution> .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://lod.ehri-project-test.eu/ontology#hasCopy> <http://www.w3.org/2000/01/rdf-schema#comment> "This is a generalisation of the rico:hasCopy property to expand the domain and range to ehri:Institution instances."@en .
+<http://lod.ehri-project-test.eu/ontology#hasCopy> <http://www.w3.org/2000/01/rdf-schema#comment> "A generalisation of the rico:hasCopy property to expand the domain and range to ehri:Institution instances."@en .
 <http://lod.ehri-project-test.eu/ontology#hasCopy> <http://www.w3.org/2000/01/rdf-schema#label> "a pour copie"@fr .
 <http://lod.ehri-project-test.eu/ontology#hasCopy> <http://www.w3.org/2000/01/rdf-schema#label> "has copy"@en .
 <http://lod.ehri-project-test.eu/ontology#hasCopy> <http://www.w3.org/2000/01/rdf-schema#label> "tiene como copia"@es .
@@ -93,7 +93,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://lod.ehri-project-test.eu/ontology#hasOrHadScript> <http://www.w3.org/2002/07/owl#inverseOf> <http://lod.ehri-project-test.eu/ontology#isOrWasScriptOf> .
 <http://lod.ehri-project-test.eu/ontology#hasOrHadScript> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lod.ehri-project-test.eu/ontology#RecordResource> .
 <http://lod.ehri-project-test.eu/ontology#hasOrHadScript> <http://www.w3.org/2000/01/rdf-schema#range> <http://lod.ehri-project-test.eu/ontology#MaterialScript> .
-<http://lod.ehri-project-test.eu/ontology#hasOrHadScript> <http://www.w3.org/2000/01/rdf-schema#comment> "This property allows to indicate the script present in the materials"@en .
+<http://lod.ehri-project-test.eu/ontology#hasOrHadScript> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the written script present in the materials."@en .
 <http://lod.ehri-project-test.eu/ontology#hasOrHadScript> <http://www.w3.org/2000/01/rdf-schema#label> "a ou a eu pour écriture"@fr .
 <http://lod.ehri-project-test.eu/ontology#hasOrHadScript> <http://www.w3.org/2000/01/rdf-schema#label> "has or had script"@en .
 <http://lod.ehri-project-test.eu/ontology#hasOrHadScript> <http://www.w3.org/2000/01/rdf-schema#label> "tiene o tenía como escritura"@es .
@@ -130,7 +130,7 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://lod.ehri-project-test.eu/ontology#isOrWasScriptOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.ica.org/standards/RiC/ontology#isRelatedTo> .
 <http://lod.ehri-project-test.eu/ontology#isOrWasScriptOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lod.ehri-project-test.eu/ontology#MaterialScript> .
 <http://lod.ehri-project-test.eu/ontology#isOrWasScriptOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://lod.ehri-project-test.eu/ontology#RecordResource> .
-<http://lod.ehri-project-test.eu/ontology#isOrWasScriptOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is the inverse of ehri:hasOrHadScript, allowing to relate a script back to the record where it appears."@en .
+<http://lod.ehri-project-test.eu/ontology#isOrWasScriptOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The inverse of ehri:hasOrHadScript, allowing a script to be related back to the record where it appears."@en .
 <http://lod.ehri-project-test.eu/ontology#isOrWasScriptOf> <http://www.w3.org/2000/01/rdf-schema#label> "es o era la escritura de"@es .
 <http://lod.ehri-project-test.eu/ontology#isOrWasScriptOf> <http://www.w3.org/2000/01/rdf-schema#label> "est ou était l'ecriture de"@fr .
 <http://lod.ehri-project-test.eu/ontology#isOrWasScriptOf> <http://www.w3.org/2000/01/rdf-schema#label> "is or was the script of"@en .
@@ -148,7 +148,7 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://lod.ehri-project-test.eu/ontology#accessibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://lod.ehri-project-test.eu/ontology#accessibility> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lod.ehri-project-test.eu/ontology#Institution> .
 <http://lod.ehri-project-test.eu/ontology#accessibility> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://lod.ehri-project-test.eu/ontology#accessibility> <http://www.w3.org/2000/01/rdf-schema#comment> "Collects information about the institution's accesibility with respect to its archival holdings and services."@en .
+<http://lod.ehri-project-test.eu/ontology#accessibility> <http://www.w3.org/2000/01/rdf-schema#comment> "Collects information about the accessibility of an institution with respect to its archival holdings and services."@en .
 <http://lod.ehri-project-test.eu/ontology#accessibility> <http://www.w3.org/2000/01/rdf-schema#label> "accesibilidad"@es .
 <http://lod.ehri-project-test.eu/ontology#accessibility> <http://www.w3.org/2000/01/rdf-schema#label> "accessibility"@en .
 <http://lod.ehri-project-test.eu/ontology#accessibility> <http://www.w3.org/2000/01/rdf-schema#label> "accessibilité"@fr .
@@ -166,7 +166,7 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://lod.ehri-project-test.eu/ontology#appraisal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://lod.ehri-project-test.eu/ontology#appraisal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lod.ehri-project-test.eu/ontology#RecordResource> .
 <http://lod.ehri-project-test.eu/ontology#appraisal> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://lod.ehri-project-test.eu/ontology#appraisal> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides information on any appraisal, destruction and scheduling action."@en .
+<http://lod.ehri-project-test.eu/ontology#appraisal> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides information on appraisal, destruction and scheduling actions."@en .
 <http://lod.ehri-project-test.eu/ontology#appraisal> <http://www.w3.org/2000/01/rdf-schema#label> "appraisal"@en .
 <http://lod.ehri-project-test.eu/ontology#appraisal> <http://www.w3.org/2000/01/rdf-schema#label> "valoración"@es .
 <http://lod.ehri-project-test.eu/ontology#appraisal> <http://www.w3.org/2000/01/rdf-schema#label> "évaluation"@fr .
@@ -176,7 +176,7 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://lod.ehri-project-test.eu/ontology#archivalHistory> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.ica.org/standards/RiC/ontology#history> .
 <http://lod.ehri-project-test.eu/ontology#archivalHistory> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lod.ehri-project-test.eu/ontology#Country> .
 <http://lod.ehri-project-test.eu/ontology#archivalHistory> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://lod.ehri-project-test.eu/ontology#archivalHistory> <http://www.w3.org/2000/01/rdf-schema#comment> "Holds information about the Holocaust and WWII and how it relates to the archival landscape in that country."@en .
+<http://lod.ehri-project-test.eu/ontology#archivalHistory> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides information about the Holocaust and WWII and how it relates to the archival landscape in that country."@en .
 <http://lod.ehri-project-test.eu/ontology#archivalHistory> <http://www.w3.org/2000/01/rdf-schema#label> "archival history"@en .
 <http://lod.ehri-project-test.eu/ontology#archivalHistory> <http://www.w3.org/2000/01/rdf-schema#label> "histoire archivistique"@fr .
 <http://lod.ehri-project-test.eu/ontology#archivalHistory> <http://www.w3.org/2000/01/rdf-schema#label> "historia archivística"@es .
@@ -204,7 +204,7 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://lod.ehri-project-test.eu/ontology#buildings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://lod.ehri-project-test.eu/ontology#buildings> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lod.ehri-project-test.eu/ontology#Institution> .
 <http://lod.ehri-project-test.eu/ontology#buildings> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://lod.ehri-project-test.eu/ontology#buildings> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides information about the buildings of the institution"@en .
+<http://lod.ehri-project-test.eu/ontology#buildings> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides information about the buildings of an institution."@en .
 <http://lod.ehri-project-test.eu/ontology#buildings> <http://www.w3.org/2000/01/rdf-schema#label> "building(s)"@en .
 <http://lod.ehri-project-test.eu/ontology#buildings> <http://www.w3.org/2000/01/rdf-schema#label> "bâtiment(s)"@fr .
 <http://lod.ehri-project-test.eu/ontology#buildings> <http://www.w3.org/2000/01/rdf-schema#label> "edificio(s)"@es .
@@ -222,7 +222,7 @@ _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://lod.ehri-pr
 _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#conditionsOfAccess> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://lod.ehri-project-test.eu/ontology#conditionsOfAccess> <http://www.w3.org/2000/01/rdf-schema#comment> "Collects information about the conditions, requirements and procedures for access to, and use of institutional services and/or specific records"@en .
+<http://lod.ehri-project-test.eu/ontology#conditionsOfAccess> <http://www.w3.org/2000/01/rdf-schema#comment> "Collects information about the conditions, requirements and procedures for access to, and use of institutional services and/or specific records."@en .
 <http://lod.ehri-project-test.eu/ontology#conditionsOfAccess> <http://www.w3.org/2000/01/rdf-schema#label> "condiciones de acceso"@es .
 <http://lod.ehri-project-test.eu/ontology#conditionsOfAccess> <http://www.w3.org/2000/01/rdf-schema#label> "conditions d'accès"@fr .
 <http://lod.ehri-project-test.eu/ontology#conditionsOfAccess> <http://www.w3.org/2000/01/rdf-schema#label> "conditions of access"@en .
@@ -231,7 +231,7 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://lod.ehri-project-test.eu/ontology#contactPerson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://lod.ehri-project-test.eu/ontology#contactPerson> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lod.ehri-project-test.eu/ontology#InstitutionAddress> .
 <http://lod.ehri-project-test.eu/ontology#contactPerson> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://lod.ehri-project-test.eu/ontology#contactPerson> <http://www.w3.org/2000/01/rdf-schema#comment> "To provide the information needed to contact members of the staff."@en .
+<http://lod.ehri-project-test.eu/ontology#contactPerson> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides information needed to contact members of the staff."@en .
 <http://lod.ehri-project-test.eu/ontology#contactPerson> <http://www.w3.org/2000/01/rdf-schema#label> "contact person"@en .
 <http://lod.ehri-project-test.eu/ontology#contactPerson> <http://www.w3.org/2000/01/rdf-schema#label> "persona de contacto"@es .
 <http://lod.ehri-project-test.eu/ontology#contactPerson> <http://www.w3.org/2000/01/rdf-schema#label> "personne de contact"@fr .
@@ -240,7 +240,7 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://lod.ehri-project-test.eu/ontology#findingAids> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://lod.ehri-project-test.eu/ontology#findingAids> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lod.ehri-project-test.eu/ontology#Institution> .
 <http://lod.ehri-project-test.eu/ontology#findingAids> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://lod.ehri-project-test.eu/ontology#findingAids> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides a general overview of the published and/or published finding aids."@en .
+<http://lod.ehri-project-test.eu/ontology#findingAids> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides a general overview of finding aids published by an institution."@en .
 <http://lod.ehri-project-test.eu/ontology#findingAids> <http://www.w3.org/2000/01/rdf-schema#label> "finding aids"@en .
 <http://lod.ehri-project-test.eu/ontology#findingAids> <http://www.w3.org/2000/01/rdf-schema#label> "instrumentos de descripción"@es .
 <http://lod.ehri-project-test.eu/ontology#findingAids> <http://www.w3.org/2000/01/rdf-schema#label> "instruments de recherche"@fr .
@@ -250,7 +250,7 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://lod.ehri-project-test.eu/ontology#generalContext> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.ica.org/standards/RiC/ontology#generalDescription> .
 <http://lod.ehri-project-test.eu/ontology#generalContext> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lod.ehri-project-test.eu/ontology#Institution> .
 <http://lod.ehri-project-test.eu/ontology#generalContext> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://lod.ehri-project-test.eu/ontology#generalContext> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides information about the geographical and cultural context of the institution."@en .
+<http://lod.ehri-project-test.eu/ontology#generalContext> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides information about the geographical and cultural context of an institution."@en .
 <http://lod.ehri-project-test.eu/ontology#generalContext> <http://www.w3.org/2000/01/rdf-schema#label> "contexte général"@fr .
 <http://lod.ehri-project-test.eu/ontology#generalContext> <http://www.w3.org/2000/01/rdf-schema#label> "contexto general"@es .
 <http://lod.ehri-project-test.eu/ontology#generalContext> <http://www.w3.org/2000/01/rdf-schema#label> "general context"@en .
@@ -268,7 +268,7 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://lod.ehri-project-test.eu/ontology#locationOfOriginals> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://lod.ehri-project-test.eu/ontology#locationOfOriginals> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lod.ehri-project-test.eu/ontology#RecordResource> .
 <http://lod.ehri-project-test.eu/ontology#locationOfOriginals> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://lod.ehri-project-test.eu/ontology#locationOfOriginals> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the existence, location, availability and/or destruction of originals where the unit of description consists of copies."@en .
+<http://lod.ehri-project-test.eu/ontology#locationOfOriginals> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the existence, location, availability and/or destruction of the original material, in cases where the unit of description consists of copies."@en .
 <http://lod.ehri-project-test.eu/ontology#locationOfOriginals> <http://www.w3.org/2000/01/rdf-schema#label> "existence and location of originals"@en .
 <http://lod.ehri-project-test.eu/ontology#locationOfOriginals> <http://www.w3.org/2000/01/rdf-schema#label> "existence et lieu des originaux"@fr .
 <http://lod.ehri-project-test.eu/ontology#locationOfOriginals> <http://www.w3.org/2000/01/rdf-schema#label> "existencia y localización de los originales"@es .
@@ -277,7 +277,7 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://lod.ehri-project-test.eu/ontology#notes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://lod.ehri-project-test.eu/ontology#notes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lod.ehri-project-test.eu/ontology#RecordResource> .
 <http://lod.ehri-project-test.eu/ontology#notes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://lod.ehri-project-test.eu/ontology#notes> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides information that cannot be accommodated in any of the other data properties"@en .
+<http://lod.ehri-project-test.eu/ontology#notes> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides information that cannot be accommodated in any of the other data properties."@en .
 <http://lod.ehri-project-test.eu/ontology#notes> <http://www.w3.org/2000/01/rdf-schema#label> "nota(s)"@es .
 <http://lod.ehri-project-test.eu/ontology#notes> <http://www.w3.org/2000/01/rdf-schema#label> "note(s)"@en .
 <http://lod.ehri-project-test.eu/ontology#notes> <http://www.w3.org/2000/01/rdf-schema#label> "note(s)"@fr .
@@ -286,7 +286,7 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://lod.ehri-project-test.eu/ontology#otherFindingAids> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://lod.ehri-project-test.eu/ontology#otherFindingAids> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lod.ehri-project-test.eu/ontology#RecordResource> .
 <http://lod.ehri-project-test.eu/ontology#otherFindingAids> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://lod.ehri-project-test.eu/ontology#otherFindingAids> <http://www.w3.org/2000/01/rdf-schema#comment> "Provide information on the history of the unit of description that is significant for its authenticity, integrity and interpretation."@en .
+<http://lod.ehri-project-test.eu/ontology#otherFindingAids> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides information on the history of the unit of description that is significant for its authenticity, integrity and interpretation."@en .
 <http://lod.ehri-project-test.eu/ontology#otherFindingAids> <http://www.w3.org/2000/01/rdf-schema#label> "autres instruments de recherche"@fr .
 <http://lod.ehri-project-test.eu/ontology#otherFindingAids> <http://www.w3.org/2000/01/rdf-schema#label> "other finding aids"@en .
 <http://lod.ehri-project-test.eu/ontology#otherFindingAids> <http://www.w3.org/2000/01/rdf-schema#label> "otros instrumentos de descripción"@es .
@@ -313,7 +313,7 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://lod.ehri-project-test.eu/ontology#publicationNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://lod.ehri-project-test.eu/ontology#publicationNote> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lod.ehri-project-test.eu/ontology#RecordResource> .
 <http://lod.ehri-project-test.eu/ontology#publicationNote> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://lod.ehri-project-test.eu/ontology#publicationNote> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifies any publications that are about or are based on the use, study, or analysis of the unit of description."@en .
+<http://lod.ehri-project-test.eu/ontology#publicationNote> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifies any publications that are about or are based on the use, study or analysis of the unit of description."@en .
 <http://lod.ehri-project-test.eu/ontology#publicationNote> <http://www.w3.org/2000/01/rdf-schema#label> "bibliographie"@fr .
 <http://lod.ehri-project-test.eu/ontology#publicationNote> <http://www.w3.org/2000/01/rdf-schema#label> "nota de publicaciones"@es .
 <http://lod.ehri-project-test.eu/ontology#publicationNote> <http://www.w3.org/2000/01/rdf-schema#label> "publication note"@en .
@@ -322,7 +322,7 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://lod.ehri-project-test.eu/ontology#recordsManagementAndCollectingPolicies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://lod.ehri-project-test.eu/ontology#recordsManagementAndCollectingPolicies> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lod.ehri-project-test.eu/ontology#Institution> .
 <http://lod.ehri-project-test.eu/ontology#recordsManagementAndCollectingPolicies> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://lod.ehri-project-test.eu/ontology#recordsManagementAndCollectingPolicies> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides information about the records management and collecting policies of the institution with archival holdings."@en .
+<http://lod.ehri-project-test.eu/ontology#recordsManagementAndCollectingPolicies> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides information about the records management and collecting policies of an institution with archival holdings."@en .
 <http://lod.ehri-project-test.eu/ontology#recordsManagementAndCollectingPolicies> <http://www.w3.org/2000/01/rdf-schema#label> "gestion des archives courantes et intermédiaires et politiques de collecte"@fr .
 <http://lod.ehri-project-test.eu/ontology#recordsManagementAndCollectingPolicies> <http://www.w3.org/2000/01/rdf-schema#label> "gestión de documentos y política de ingresos"@es .
 <http://lod.ehri-project-test.eu/ontology#recordsManagementAndCollectingPolicies> <http://www.w3.org/2000/01/rdf-schema#label> "records management and collecting policies"@en .
@@ -340,7 +340,7 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://lod.ehri-project-test.eu/ontology#reproductionServices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://lod.ehri-project-test.eu/ontology#reproductionServices> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lod.ehri-project-test.eu/ontology#Institution> .
 <http://lod.ehri-project-test.eu/ontology#reproductionServices> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://lod.ehri-project-test.eu/ontology#reproductionServices> <http://www.w3.org/2000/01/rdf-schema#comment> "Gather information about reproduction services available to the public (microfilms, photocopies, photographs, digitised copies) and their general conditions and restrictions."@en .
+<http://lod.ehri-project-test.eu/ontology#reproductionServices> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides information about reproduction services available to the public (microfilms, photocopies, photographs, digitised copies) and their general conditions and restrictions."@en .
 <http://lod.ehri-project-test.eu/ontology#reproductionServices> <http://www.w3.org/2000/01/rdf-schema#label> "reproduction services"@en .
 <http://lod.ehri-project-test.eu/ontology#reproductionServices> <http://www.w3.org/2000/01/rdf-schema#label> "services de reproduction"@fr .
 <http://lod.ehri-project-test.eu/ontology#reproductionServices> <http://www.w3.org/2000/01/rdf-schema#label> "servicios de reproducción"@es .
@@ -349,7 +349,7 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://lod.ehri-project-test.eu/ontology#researchExtensive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://lod.ehri-project-test.eu/ontology#researchExtensive> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lod.ehri-project-test.eu/ontology#Country> .
 <http://lod.ehri-project-test.eu/ontology#researchExtensive> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://lod.ehri-project-test.eu/ontology#researchExtensive> <http://www.w3.org/2000/01/rdf-schema#comment> "Offers information on how EHRI acquiered its data and integrated it into the Portal."@en .
+<http://lod.ehri-project-test.eu/ontology#researchExtensive> <http://www.w3.org/2000/01/rdf-schema#comment> "Offers information on how EHRI acquired data relating to a country and integrated it into the EHRI Portal."@en .
 <http://lod.ehri-project-test.eu/ontology#researchExtensive> <http://www.w3.org/2000/01/rdf-schema#label> "investigación del EHRI (ampliado)"@es .
 <http://lod.ehri-project-test.eu/ontology#researchExtensive> <http://www.w3.org/2000/01/rdf-schema#label> "recherche par EHRI (extensif)"@fr .
 <http://lod.ehri-project-test.eu/ontology#researchExtensive> <http://www.w3.org/2000/01/rdf-schema#label> "research by EHRI (extensive)"@en .
@@ -358,7 +358,7 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://lod.ehri-project-test.eu/ontology#researchServices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://lod.ehri-project-test.eu/ontology#researchServices> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lod.ehri-project-test.eu/ontology#Institution> .
 <http://lod.ehri-project-test.eu/ontology#researchServices> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://lod.ehri-project-test.eu/ontology#researchServices> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the research services provided by the institution with archival holdings."@en .
+<http://lod.ehri-project-test.eu/ontology#researchServices> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the research services provided by an institution."@en .
 <http://lod.ehri-project-test.eu/ontology#researchServices> <http://www.w3.org/2000/01/rdf-schema#label> "research services"@en .
 <http://lod.ehri-project-test.eu/ontology#researchServices> <http://www.w3.org/2000/01/rdf-schema#label> "services d'aide à la recherche"@fr .
 <http://lod.ehri-project-test.eu/ontology#researchServices> <http://www.w3.org/2000/01/rdf-schema#label> "servicios de ayuda a la investigación"@es .
@@ -367,7 +367,7 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://lod.ehri-project-test.eu/ontology#researchSummary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://lod.ehri-project-test.eu/ontology#researchSummary> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lod.ehri-project-test.eu/ontology#Country> .
 <http://lod.ehri-project-test.eu/ontology#researchSummary> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://lod.ehri-project-test.eu/ontology#researchSummary> <http://www.w3.org/2000/01/rdf-schema#comment> "Elaborates on EHRI's identification work, which is ongoing since October 2010. This section also includes references to aggregators and country-specific research guides."@en .
+<http://lod.ehri-project-test.eu/ontology#researchSummary> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the identification work carried out by EHRI, ongoing since October 2010. This section also includes references to aggregators and country-specific research guides."@en .
 <http://lod.ehri-project-test.eu/ontology#researchSummary> <http://www.w3.org/2000/01/rdf-schema#label> "investigación del EHRI (resumen)"@es .
 <http://lod.ehri-project-test.eu/ontology#researchSummary> <http://www.w3.org/2000/01/rdf-schema#label> "recherche EHRI (récapitulatif)"@fr .
 <http://lod.ehri-project-test.eu/ontology#researchSummary> <http://www.w3.org/2000/01/rdf-schema#label> "research by EHRI (summary)"@en .
@@ -393,7 +393,7 @@ _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://lod.ehri-pr
 _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#sources> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://lod.ehri-project-test.eu/ontology#sources> <http://www.w3.org/2000/01/rdf-schema#comment> "Record notes on sources consulted in preparing the description and who prepared it."@en .
+<http://lod.ehri-project-test.eu/ontology#sources> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides information on sources consulted in preparing the description and the personnel involved."@en .
 <http://lod.ehri-project-test.eu/ontology#sources> <http://www.w3.org/2000/01/rdf-schema#label> "fuentes"@es .
 <http://lod.ehri-project-test.eu/ontology#sources> <http://www.w3.org/2000/01/rdf-schema#label> "sources"@en .
 <http://lod.ehri-project-test.eu/ontology#sources> <http://www.w3.org/2000/01/rdf-schema#label> "sources"@fr .
@@ -411,7 +411,7 @@ _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://schema.org/contactType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://schema.org/contactType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/PostalAddress> .
 <http://schema.org/contactType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://schema.org/contactType> <http://www.w3.org/2000/01/rdf-schema#comment> "A person or organization can have different contact points, for different purposes. For example, a sales contact point, a PR contact point and so on. This property is used to specify the kind of contact point."@en .
+<http://schema.org/contactType> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the type of contact point. A person or organization can have different contact points for different purposes, such as a sales contact point, a PR contact point and so on."@en .
 <http://schema.org/contactType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/contactType> .
 <http://schema.org/contactType> <http://www.w3.org/2000/01/rdf-schema#label> "contact type"@en .
 <http://schema.org/contactType> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de contacto"@es .
@@ -487,7 +487,7 @@ _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://lod.ehri-project-test.eu/ontology#AlternateAgentName
 <http://lod.ehri-project-test.eu/ontology#AlternateAgentName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#AlternateAgentName> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.ica.org/standards/RiC/ontology#AgentName> .
-<http://lod.ehri-project-test.eu/ontology#AlternateAgentName> <http://www.w3.org/2000/01/rdf-schema#comment> "This class allows to represent any other name(s) used for the institution or by which it may be known. This could include other forms of the same name, abbreviations, acronyms, other institutional names, or changes of name over time (historical names)."@en .
+<http://lod.ehri-project-test.eu/ontology#AlternateAgentName> <http://www.w3.org/2000/01/rdf-schema#comment> "This class allows to represent any other name(s) used for an institution, or by which it may be known. This could include other forms of the same name, abbreviations, acronyms, other institutional names, or changes of name over time (historical names)."@en .
 <http://lod.ehri-project-test.eu/ontology#AlternateAgentName> <http://www.w3.org/2000/01/rdf-schema#label> "Alternative forms of the agent's name"@en .
 <http://lod.ehri-project-test.eu/ontology#AlternateAgentName> <http://www.w3.org/2000/01/rdf-schema#label> "Formas alternativas del nombre"@es .
 <http://lod.ehri-project-test.eu/ontology#AlternateAgentName> <http://www.w3.org/2000/01/rdf-schema#label> "Formes alternatives du nom"@fr .
@@ -539,7 +539,7 @@ _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://lod.ehri-project-test.eu/ontology#Institution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#Institution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lod.ehri-project-test.eu/ontology#CorporateBody> .
 <http://lod.ehri-project-test.eu/ontology#Institution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/ArchiveOrganization> .
-<http://lod.ehri-project-test.eu/ontology#Institution> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is a specialisation of the rico:CorporateBody and ehri:CorporateBody classes, taking some additional properties from the schema:ArchiveOrganization class. By contrast to a Corporate Body, in EHRI's data model, an Institution always hold archival records which is in line with ISDIAH definition."@en .
+<http://lod.ehri-project-test.eu/ontology#Institution> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is a specialisation of the rico:CorporateBody and ehri:CorporateBody classes, taking some additional properties from the schema:ArchiveOrganization class. In contrast to a Corporate Body, an Institution in the EHRI data model always holds archival records, which is in line with ISDIAH definition."@en .
 <http://lod.ehri-project-test.eu/ontology#Institution> <http://www.w3.org/2000/01/rdf-schema#label> "Institución"@es .
 <http://lod.ehri-project-test.eu/ontology#Institution> <http://www.w3.org/2000/01/rdf-schema#label> "Institution"@en .
 <http://lod.ehri-project-test.eu/ontology#Institution> <http://www.w3.org/2000/01/rdf-schema#label> "Institution"@fr .
@@ -548,7 +548,7 @@ _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://lod.ehri-project-test.eu/ontology#InstitutionAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#InstitutionAddress> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/PostalAddress> .
 <http://lod.ehri-project-test.eu/ontology#InstitutionAddress> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.ica.org/standards/RiC/ontology#PhysicalLocation> .
-<http://lod.ehri-project-test.eu/ontology#InstitutionAddress> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is a specialisation of the rico:PhysicalLocation extended with attributes coming from the schema:PostalAddress class to represent institution's addresses and contact information."@en .
+<http://lod.ehri-project-test.eu/ontology#InstitutionAddress> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is a specialisation of the rico:PhysicalLocation extended with attributes derived from the schema:PostalAddress class to represent addresses and contact information for archival institutions."@en .
 <http://lod.ehri-project-test.eu/ontology#InstitutionAddress> <http://www.w3.org/2000/01/rdf-schema#label> "Adresse de l'institution"@fr .
 <http://lod.ehri-project-test.eu/ontology#InstitutionAddress> <http://www.w3.org/2000/01/rdf-schema#label> "Dirección de la institución"@es .
 <http://lod.ehri-project-test.eu/ontology#InstitutionAddress> <http://www.w3.org/2000/01/rdf-schema#label> "Institution's address"@en .
@@ -556,7 +556,7 @@ _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://lod.ehri-project-test.eu/ontology#MaterialScript
 <http://lod.ehri-project-test.eu/ontology#MaterialScript> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#MaterialScript> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.ica.org/standards/RiC/ontology#Concept> .
-<http://lod.ehri-project-test.eu/ontology#MaterialScript> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents the scripts that can be found in a material. Similar to the language, each instance will be represented by an instance. Examples of scripts are: Latin, Cyrillic, etc."@en .
+<http://lod.ehri-project-test.eu/ontology#MaterialScript> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents the written scripts that can be found in some material. Similar to the written language, each will be represented by an instance. Examples of scripts are: Latin, Cyrillic, Hebrew, etc."@en .
 <http://lod.ehri-project-test.eu/ontology#MaterialScript> <http://www.w3.org/2000/01/rdf-schema#label> "Escritura de la documentación"@es .
 <http://lod.ehri-project-test.eu/ontology#MaterialScript> <http://www.w3.org/2000/01/rdf-schema#label> "Script of materials"@en .
 <http://lod.ehri-project-test.eu/ontology#MaterialScript> <http://www.w3.org/2000/01/rdf-schema#label> "Écriture des documents"@fr .
@@ -564,7 +564,7 @@ _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://lod.ehri-project-test.eu/ontology#ParallelAgentName
 <http://lod.ehri-project-test.eu/ontology#ParallelAgentName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#ParallelAgentName> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.ica.org/standards/RiC/ontology#AgentName> .
-<http://lod.ehri-project-test.eu/ontology#ParallelAgentName> <http://www.w3.org/2000/01/rdf-schema#comment> "This class allows to represent the various forms in which the authorised form of name of an institution with archival holdings occurs in other languages or script form(s)."@en .
+<http://lod.ehri-project-test.eu/ontology#ParallelAgentName> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents the various forms in which the authorised form of name of an institution with archival holdings occurs in other languages or script form(s)."@en .
 <http://lod.ehri-project-test.eu/ontology#ParallelAgentName> <http://www.w3.org/2000/01/rdf-schema#label> "Formas paralelas del nombre"@es .
 <http://lod.ehri-project-test.eu/ontology#ParallelAgentName> <http://www.w3.org/2000/01/rdf-schema#label> "Formes parallèles du nom"@fr .
 <http://lod.ehri-project-test.eu/ontology#ParallelAgentName> <http://www.w3.org/2000/01/rdf-schema#label> "Parallel forms of the agent's name"@en .
