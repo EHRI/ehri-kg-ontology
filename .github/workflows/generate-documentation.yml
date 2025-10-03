@@ -3,7 +3,7 @@ name: Generate EHRI Ontology documentation
 on: push
 
 jobs:
-  generate-codemeta:
+  generate-documentation:
     runs-on: ubuntu-latest
 
     permissions:
