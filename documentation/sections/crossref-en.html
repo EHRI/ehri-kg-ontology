@@ -50,7 +50,7 @@ This section provides details for each class and property defined by EHRI Ontolo
   <h3>Alternative forms of the agent's name<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#AlternateAgentName</p>
   <div class="comment">
-   <span class="markdown">This class allows to represent any other name(s) used for the institution or by which it may be known. This could include other forms of the same name, abbreviations, acronyms, other institutional names, or changes of name over time (historical names).</span>
+   <span class="markdown">This class allows to represent any other name(s) used for an institution, or by which it may be known. This could include other forms of the same name, abbreviations, acronyms, other institutional names, or changes of name over time (historical names).</span>
   </div>
   <dl class="description">
    <dt>
@@ -158,7 +158,7 @@ This section provides details for each class and property defined by EHRI Ontolo
   <h3>Institution<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#Institution</p>
   <div class="comment">
-   <span class="markdown">This class is a specialisation of the rico:CorporateBody and ehri:CorporateBody classes, taking some additional properties from the schema:ArchiveOrganization class. By contrast to a Corporate Body, in EHRI's data model, an Institution always hold archival records which is in line with ISDIAH definition.</span>
+   <span class="markdown">This class is a specialisation of the rico:CorporateBody and ehri:CorporateBody classes, taking some additional properties from the schema:ArchiveOrganization class. In contrast to a Corporate Body, an Institution in the EHRI data model always holds archival records, which is in line with ISDIAH definition.</span>
   </div>
   <dl class="description">
    <dt>
@@ -185,7 +185,7 @@ This section provides details for each class and property defined by EHRI Ontolo
   <h3>Institution's address<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#InstitutionAddress</p>
   <div class="comment">
-   <span class="markdown">This class is a specialisation of the rico:PhysicalLocation extended with attributes coming from the schema:PostalAddress class to represent institution's addresses and contact information.</span>
+   <span class="markdown">This class is a specialisation of the rico:PhysicalLocation extended with attributes derived from the schema:PostalAddress class to represent addresses and contact information for archival institutions.</span>
   </div>
   <dl class="description">
    <dt>
@@ -206,7 +206,7 @@ This section provides details for each class and property defined by EHRI Ontolo
   <h3>Parallel forms of the agent's name<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#ParallelAgentName</p>
   <div class="comment">
-   <span class="markdown">This class allows to represent the various forms in which the authorised form of name of an institution with archival holdings occurs in other languages or script form(s).</span>
+   <span class="markdown">This class represents the various forms in which the authorised form of name of an institution with archival holdings occurs in other languages or script form(s).</span>
   </div>
   <dl class="description">
    <dt>
@@ -299,7 +299,7 @@ This section provides details for each class and property defined by EHRI Ontolo
   <h3>Script of materials<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#MaterialScript</p>
   <div class="comment">
-   <span class="markdown">This class represents the scripts that can be found in a material. Similar to the language, each instance will be represented by an instance. Examples of scripts are: Latin, Cyrillic, etc.</span>
+   <span class="markdown">This class represents the written scripts that can be found in some material. Similar to the written language, each will be represented by an instance. Examples of scripts are: Latin, Cyrillic, Hebrew, etc.</span>
   </div>
   <dl class="description">
    <dt>
@@ -334,7 +334,7 @@ This section provides details for each class and property defined by EHRI Ontolo
   <h3>has copy<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#hasCopy</p>
   <div class="comment">
-   <span class="markdown">This is a generalisation of the rico:hasCopy property to expand the domain and range to ehri:Institution instances.</span>
+   <span class="markdown">A generalisation of the rico:hasCopy property to expand the domain and range to ehri:Institution instances.</span>
   </div>
   <div class="description">
    <dl>
@@ -369,7 +369,7 @@ This section provides details for each class and property defined by EHRI Ontolo
   <h3>has or had script<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#hasOrHadScript</p>
   <div class="comment">
-   <span class="markdown">This property allows to indicate the script present in the materials</span>
+   <span class="markdown">Indicates the written script present in the materials.</span>
   </div>
   <div class="description">
    <dl>
@@ -439,7 +439,7 @@ This section provides details for each class and property defined by EHRI Ontolo
   <h3>is or was the script of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#isOrWasScriptOf</p>
   <div class="comment">
-   <span class="markdown">This property is the inverse of ehri:hasOrHadScript, allowing to relate a script back to the record where it appears.</span>
+   <span class="markdown">The inverse of ehri:hasOrHadScript, allowing a script to be related back to the record where it appears.</span>
   </div>
   <div class="description">
    <dl>
@@ -511,7 +511,7 @@ This section provides details for each class and property defined by EHRI Ontolo
   <h3>accessibility<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#accessibility</p>
   <div class="comment">
-   <span class="markdown">Collects information about the institution's accesibility with respect to its archival holdings and services.</span>
+   <span class="markdown">Collects information about the accessibility of an institution with respect to its archival holdings and services.</span>
   </div>
   <div class="description">
    <dl>
@@ -557,7 +557,7 @@ This section provides details for each class and property defined by EHRI Ontolo
   <h3>appraisal<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#appraisal</p>
   <div class="comment">
-   <span class="markdown">Provides information on any appraisal, destruction and scheduling action.</span>
+   <span class="markdown">Provides information on appraisal, destruction and scheduling actions.</span>
   </div>
   <div class="description">
    <dl>
@@ -580,7 +580,7 @@ This section provides details for each class and property defined by EHRI Ontolo
   <h3>archival history<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#archivalHistory</p>
   <div class="comment">
-   <span class="markdown">Holds information about the Holocaust and WWII and how it relates to the archival landscape in that country.</span>
+   <span class="markdown">Provides information about the Holocaust and WWII and how it relates to the archival landscape in that country.</span>
   </div>
   <div class="description">
    <dl>
@@ -661,7 +661,7 @@ This section provides details for each class and property defined by EHRI Ontolo
   <h3>building(s)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#buildings</p>
   <div class="comment">
-   <span class="markdown">Provides information about the buildings of the institution</span>
+   <span class="markdown">Provides information about the buildings of an institution.</span>
   </div>
   <div class="description">
    <dl>
@@ -684,7 +684,7 @@ This section provides details for each class and property defined by EHRI Ontolo
   <h3>conditions of access<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#conditionsOfAccess</p>
   <div class="comment">
-   <span class="markdown">Collects information about the conditions, requirements and procedures for access to, and use of institutional services and/or specific records</span>
+   <span class="markdown">Collects information about the conditions, requirements and procedures for access to, and use of institutional services and/or specific records.</span>
   </div>
   <div class="description">
    <dl>
@@ -713,7 +713,7 @@ This section provides details for each class and property defined by EHRI Ontolo
   <h3>contact person<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#contactPerson</p>
   <div class="comment">
-   <span class="markdown">To provide the information needed to contact members of the staff.</span>
+   <span class="markdown">Provides information needed to contact members of the staff.</span>
   </div>
   <div class="description">
    <dl>
@@ -736,7 +736,7 @@ This section provides details for each class and property defined by EHRI Ontolo
   <h3>contact type<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://schema.org/contactType</p>
   <div class="comment">
-   <span class="markdown">A person or organization can have different contact points, for different purposes. For example, a sales contact point, a PR contact point and so on. This property is used to specify the kind of contact point.</span>
+   <span class="markdown">Specifies the type of contact point. A person or organization can have different contact points for different purposes, such as a sales contact point, a PR contact point and so on.</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -821,7 +821,7 @@ This section provides details for each class and property defined by EHRI Ontolo
   <h3>existence and location of originals<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#locationOfOriginals</p>
   <div class="comment">
-   <span class="markdown">Indicates the existence, location, availability and/or destruction of originals where the unit of description consists of copies.</span>
+   <span class="markdown">Indicates the existence, location, availability and/or destruction of the original material, in cases where the unit of description consists of copies.</span>
   </div>
   <div class="description">
    <dl>
@@ -875,7 +875,7 @@ This section provides details for each class and property defined by EHRI Ontolo
   <h3>finding aids<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#findingAids</p>
   <div class="comment">
-   <span class="markdown">Provides a general overview of the published and/or published finding aids.</span>
+   <span class="markdown">Provides a general overview of finding aids published by an institution.</span>
   </div>
   <div class="description">
    <dl>
@@ -898,7 +898,7 @@ This section provides details for each class and property defined by EHRI Ontolo
   <h3>general context<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#generalContext</p>
   <div class="comment">
-   <span class="markdown">Provides information about the geographical and cultural context of the institution.</span>
+   <span class="markdown">Provides information about the geographical and cultural context of an institution.</span>
   </div>
   <div class="description">
    <dl>
@@ -950,7 +950,7 @@ This section provides details for each class and property defined by EHRI Ontolo
   <h3>note(s)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#notes</p>
   <div class="comment">
-   <span class="markdown">Provides information that cannot be accommodated in any of the other data properties</span>
+   <span class="markdown">Provides information that cannot be accommodated in any of the other data properties.</span>
   </div>
   <div class="description">
    <dl>
@@ -1002,7 +1002,7 @@ This section provides details for each class and property defined by EHRI Ontolo
   <h3>other finding aids<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#otherFindingAids</p>
   <div class="comment">
-   <span class="markdown">Provide information on the history of the unit of description that is significant for its authenticity, integrity and interpretation.</span>
+   <span class="markdown">Provides information on the history of the unit of description that is significant for its authenticity, integrity and interpretation.</span>
   </div>
   <div class="description">
    <dl>
@@ -1102,7 +1102,7 @@ This section provides details for each class and property defined by EHRI Ontolo
   <h3>publication note<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#publicationNote</p>
   <div class="comment">
-   <span class="markdown">Identifies any publications that are about or are based on the use, study, or analysis of the unit of description.</span>
+   <span class="markdown">Identifies any publications that are about or are based on the use, study or analysis of the unit of description.</span>
   </div>
   <div class="description">
    <dl>
@@ -1125,7 +1125,7 @@ This section provides details for each class and property defined by EHRI Ontolo
   <h3>records management and collecting policies<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#recordsManagementAndCollectingPolicies</p>
   <div class="comment">
-   <span class="markdown">Provides information about the records management and collecting policies of the institution with archival holdings.</span>
+   <span class="markdown">Provides information about the records management and collecting policies of an institution with archival holdings.</span>
   </div>
   <div class="description">
    <dl>
@@ -1171,7 +1171,7 @@ This section provides details for each class and property defined by EHRI Ontolo
   <h3>reproduction services<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#reproductionServices</p>
   <div class="comment">
-   <span class="markdown">Gather information about reproduction services available to the public (microfilms, photocopies, photographs, digitised copies) and their general conditions and restrictions.</span>
+   <span class="markdown">Provides information about reproduction services available to the public (microfilms, photocopies, photographs, digitised copies) and their general conditions and restrictions.</span>
   </div>
   <div class="description">
    <dl>
@@ -1194,7 +1194,7 @@ This section provides details for each class and property defined by EHRI Ontolo
   <h3>research by EHRI (extensive)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#researchExtensive</p>
   <div class="comment">
-   <span class="markdown">Offers information on how EHRI acquiered its data and integrated it into the Portal.</span>
+   <span class="markdown">Offers information on how EHRI acquired data relating to a country and integrated it into the EHRI Portal.</span>
   </div>
   <div class="description">
    <dl>
@@ -1217,7 +1217,7 @@ This section provides details for each class and property defined by EHRI Ontolo
   <h3>research by EHRI (summary)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#researchSummary</p>
   <div class="comment">
-   <span class="markdown">Elaborates on EHRI's identification work, which is ongoing since October 2010. This section also includes references to aggregators and country-specific research guides.</span>
+   <span class="markdown">Describes the identification work carried out by EHRI, ongoing since October 2010. This section also includes references to aggregators and country-specific research guides.</span>
   </div>
   <div class="description">
    <dl>
@@ -1240,7 +1240,7 @@ This section provides details for each class and property defined by EHRI Ontolo
   <h3>research services<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#researchServices</p>
   <div class="comment">
-   <span class="markdown">Describes the research services provided by the institution with archival holdings.</span>
+   <span class="markdown">Describes the research services provided by an institution.</span>
   </div>
   <div class="description">
    <dl>
@@ -1286,7 +1286,7 @@ This section provides details for each class and property defined by EHRI Ontolo
   <h3>sources<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#sources</p>
   <div class="comment">
-   <span class="markdown">Record notes on sources consulted in preparing the description and who prepared it.</span>
+   <span class="markdown">Provides information on sources consulted in preparing the description and the personnel involved.</span>
   </div>
   <div class="description">
    <dl>

@@ -13,8 +13,8 @@
                                             <http://purl.org/dc/elements/1.1/creator> "Herminio García-González (Kazerne Dossin)"@en ,
                                                                                       "Mike Bryant (NIOD)"@en ;
                                             <http://purl.org/dc/elements/1.1/title> "EHRI Ontology"@en ;
-                                            <http://purl.org/dc/terms/abstract> "This ontology defines the data model used by the EHRI-KG for the representation of the information hosted in the EHRI Portal. It does so by extending RiC-O v1.0.2 and reusing some of the schema.org concepts."@en ;
-                                            <http://purl.org/dc/terms/description> "The EHRI Ontology extends some of the RiC-O types and foremostly adds new properties to represent all the data present in the EHRI Portal. Whenever a class is extended with new properties, a subclass bounded to the ehri prefix is created in order to preserve the original RiC-O axioms intact. In other cases, some classes are specialised and therefore subclasses contribute additional meaning to the superclass."@en ;
+                                            <http://purl.org/dc/terms/abstract> "This ontology defines the data model used by the EHRI Knowledge Graph for the representation of the information hosted in the EHRI Portal. It does so by extending RiC-O v1.0.2 and reusing some of the schema.org concepts."@en ;
+                                            <http://purl.org/dc/terms/description> "The EHRI Ontology extends some of the RiC-O types and adds additional properties to represent data present in the EHRI Portal. Whenever a class is extended with new properties, a subclass bounded to the ehri prefix is created in order to maintain the original RiC-O axioms. In some cases, classes are specialised via subclassing in order to contribute additional meaning to the superclass."@en ;
                                             <http://purl.org/dc/terms/publisher> "EHRI-ERIC" ;
                                             <http://purl.org/vocab/vann/preferredNamespacePrefix> "ehri" ;
                                             <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
@@ -81,7 +81,7 @@
                                     :RecordResource
                                   )
                     ] ;
-         rdfs:comment "This is a generalisation of the rico:hasCopy property to expand the domain and range to ehri:Institution instances."@en ;
+         rdfs:comment "A generalisation of the rico:hasCopy property to expand the domain and range to ehri:Institution instances."@en ;
          rdfs:label "a pour copie"@fr ,
                     "has copy"@en ,
                     "tiene como copia"@es .
@@ -93,7 +93,7 @@
                 owl:inverseOf :isOrWasScriptOf ;
                 rdfs:domain :RecordResource ;
                 rdfs:range :MaterialScript ;
-                rdfs:comment "This property allows to indicate the script present in the materials"@en ;
+                rdfs:comment "Indicates the written script present in the materials."@en ;
                 rdfs:label "a ou a eu pour écriture"@fr ,
                            "has or had script"@en ,
                            "tiene o tenía como escritura"@es .
@@ -124,7 +124,7 @@
                  rdfs:subPropertyOf <https://www.ica.org/standards/RiC/ontology#isRelatedTo> ;
                  rdfs:domain :MaterialScript ;
                  rdfs:range :RecordResource ;
-                 rdfs:comment "This property is the inverse of ehri:hasOrHadScript, allowing to relate a script back to the record where it appears."@en ;
+                 rdfs:comment "The inverse of ehri:hasOrHadScript, allowing a script to be related back to the record where it appears."@en ;
                  rdfs:label "es o era la escritura de"@es ,
                             "est ou était l'ecriture de"@fr ,
                             "is or was the script of"@en .
@@ -138,7 +138,7 @@
 :accessibility rdf:type owl:DatatypeProperty ;
                rdfs:domain :Institution ;
                rdfs:range rdfs:Literal ;
-               rdfs:comment "Collects information about the institution's accesibility with respect to its archival holdings and services."@en ;
+               rdfs:comment "Collects information about the accessibility of an institution with respect to its archival holdings and services."@en ;
                rdfs:label "accesibilidad"@es ,
                           "accessibility"@en ,
                           "accessibilité"@fr .
@@ -158,7 +158,7 @@
 :appraisal rdf:type owl:DatatypeProperty ;
            rdfs:domain :RecordResource ;
            rdfs:range rdfs:Literal ;
-           rdfs:comment "Provides information on any appraisal, destruction and scheduling action."@en ;
+           rdfs:comment "Provides information on appraisal, destruction and scheduling actions."@en ;
            rdfs:label "appraisal"@en ,
                       "valoración"@es ,
                       "évaluation"@fr .
@@ -169,7 +169,7 @@
                  rdfs:subPropertyOf <https://www.ica.org/standards/RiC/ontology#history> ;
                  rdfs:domain :Country ;
                  rdfs:range rdfs:Literal ;
-                 rdfs:comment "Holds information about the Holocaust and WWII and how it relates to the archival landscape in that country."@en ;
+                 rdfs:comment "Provides information about the Holocaust and WWII and how it relates to the archival landscape in that country."@en ;
                  rdfs:label "archival history"@en ,
                             "histoire archivistique"@fr ,
                             "historia archivística"@es .
@@ -200,7 +200,7 @@
 :buildings rdf:type owl:DatatypeProperty ;
            rdfs:domain :Institution ;
            rdfs:range rdfs:Literal ;
-           rdfs:comment "Provides information about the buildings of the institution"@en ;
+           rdfs:comment "Provides information about the buildings of an institution."@en ;
            rdfs:label "building(s)"@en ,
                       "bâtiment(s)"@fr ,
                       "edificio(s)"@es .
@@ -215,7 +215,7 @@
                                               )
                                 ] ;
                     rdfs:range rdfs:Literal ;
-                    rdfs:comment "Collects information about the conditions, requirements and procedures for access to, and use of institutional services and/or specific records"@en ;
+                    rdfs:comment "Collects information about the conditions, requirements and procedures for access to, and use of institutional services and/or specific records."@en ;
                     rdfs:label "condiciones de acceso"@es ,
                                "conditions d'accès"@fr ,
                                "conditions of access"@en .
@@ -225,7 +225,7 @@
 :contactPerson rdf:type owl:DatatypeProperty ;
                rdfs:domain :InstitutionAddress ;
                rdfs:range rdfs:Literal ;
-               rdfs:comment "To provide the information needed to contact members of the staff."@en ;
+               rdfs:comment "Provides information needed to contact members of the staff."@en ;
                rdfs:label "contact person"@en ,
                           "persona de contacto"@es ,
                           "personne de contact"@fr .
@@ -235,7 +235,7 @@
 :findingAids rdf:type owl:DatatypeProperty ;
              rdfs:domain :Institution ;
              rdfs:range rdfs:Literal ;
-             rdfs:comment "Provides a general overview of the published and/or published finding aids."@en ;
+             rdfs:comment "Provides a general overview of finding aids published by an institution."@en ;
              rdfs:label "finding aids"@en ,
                         "instrumentos de descripción"@es ,
                         "instruments de recherche"@fr .
@@ -246,7 +246,7 @@
                 rdfs:subPropertyOf <https://www.ica.org/standards/RiC/ontology#generalDescription> ;
                 rdfs:domain :Institution ;
                 rdfs:range rdfs:Literal ;
-                rdfs:comment "Provides information about the geographical and cultural context of the institution."@en ;
+                rdfs:comment "Provides information about the geographical and cultural context of an institution."@en ;
                 rdfs:label "contexte général"@fr ,
                            "contexto general"@es ,
                            "general context"@en .
@@ -266,7 +266,7 @@
 :locationOfOriginals rdf:type owl:DatatypeProperty ;
                      rdfs:domain :RecordResource ;
                      rdfs:range rdfs:Literal ;
-                     rdfs:comment "Indicates the existence, location, availability and/or destruction of originals where the unit of description consists of copies."@en ;
+                     rdfs:comment "Indicates the existence, location, availability and/or destruction of the original material, in cases where the unit of description consists of copies."@en ;
                      rdfs:label "existence and location of originals"@en ,
                                 "existence et lieu des originaux"@fr ,
                                 "existencia y localización de los originales"@es .
@@ -276,7 +276,7 @@
 :notes rdf:type owl:DatatypeProperty ;
        rdfs:domain :RecordResource ;
        rdfs:range rdfs:Literal ;
-       rdfs:comment "Provides information that cannot be accommodated in any of the other data properties"@en ;
+       rdfs:comment "Provides information that cannot be accommodated in any of the other data properties."@en ;
        rdfs:label "nota(s)"@es ,
                   "note(s)"@en ,
                   "note(s)"@fr .
@@ -286,7 +286,7 @@
 :otherFindingAids rdf:type owl:DatatypeProperty ;
                   rdfs:domain :RecordResource ;
                   rdfs:range rdfs:Literal ;
-                  rdfs:comment "Provide information on the history of the unit of description that is significant for its authenticity, integrity and interpretation."@en ;
+                  rdfs:comment "Provides information on the history of the unit of description that is significant for its authenticity, integrity and interpretation."@en ;
                   rdfs:label "autres instruments de recherche"@fr ,
                              "other finding aids"@en ,
                              "otros instrumentos de descripción"@es .
@@ -316,7 +316,7 @@
 :publicationNote rdf:type owl:DatatypeProperty ;
                  rdfs:domain :RecordResource ;
                  rdfs:range rdfs:Literal ;
-                 rdfs:comment "Identifies any publications that are about or are based on the use, study, or analysis of the unit of description."@en ;
+                 rdfs:comment "Identifies any publications that are about or are based on the use, study or analysis of the unit of description."@en ;
                  rdfs:label "bibliographie"@fr ,
                             "nota de publicaciones"@es ,
                             "publication note"@en .
@@ -326,7 +326,7 @@
 :recordsManagementAndCollectingPolicies rdf:type owl:DatatypeProperty ;
                                         rdfs:domain :Institution ;
                                         rdfs:range rdfs:Literal ;
-                                        rdfs:comment "Provides information about the records management and collecting policies of the institution with archival holdings."@en ;
+                                        rdfs:comment "Provides information about the records management and collecting policies of an institution with archival holdings."@en ;
                                         rdfs:label "gestion des archives courantes et intermédiaires et politiques de collecte"@fr ,
                                                    "gestión de documentos y política de ingresos"@es ,
                                                    "records management and collecting policies"@en .
@@ -346,7 +346,7 @@
 :reproductionServices rdf:type owl:DatatypeProperty ;
                       rdfs:domain :Institution ;
                       rdfs:range rdfs:Literal ;
-                      rdfs:comment "Gather information about reproduction services available to the public (microfilms, photocopies, photographs, digitised copies) and their general conditions and restrictions."@en ;
+                      rdfs:comment "Provides information about reproduction services available to the public (microfilms, photocopies, photographs, digitised copies) and their general conditions and restrictions."@en ;
                       rdfs:label "reproduction services"@en ,
                                  "services de reproduction"@fr ,
                                  "servicios de reproducción"@es .
@@ -356,7 +356,7 @@
 :researchExtensive rdf:type owl:DatatypeProperty ;
                    rdfs:domain :Country ;
                    rdfs:range rdfs:Literal ;
-                   rdfs:comment "Offers information on how EHRI acquiered its data and integrated it into the Portal."@en ;
+                   rdfs:comment "Offers information on how EHRI acquired data relating to a country and integrated it into the EHRI Portal."@en ;
                    rdfs:label "investigación del EHRI (ampliado)"@es ,
                               "recherche par EHRI (extensif)"@fr ,
                               "research by EHRI (extensive)"@en .
@@ -366,7 +366,7 @@
 :researchServices rdf:type owl:DatatypeProperty ;
                   rdfs:domain :Institution ;
                   rdfs:range rdfs:Literal ;
-                  rdfs:comment "Describes the research services provided by the institution with archival holdings."@en ;
+                  rdfs:comment "Describes the research services provided by an institution."@en ;
                   rdfs:label "research services"@en ,
                              "services d'aide à la recherche"@fr ,
                              "servicios de ayuda a la investigación"@es .
@@ -376,7 +376,7 @@
 :researchSummary rdf:type owl:DatatypeProperty ;
                  rdfs:domain :Country ;
                  rdfs:range rdfs:Literal ;
-                 rdfs:comment "Elaborates on EHRI's identification work, which is ongoing since October 2010. This section also includes references to aggregators and country-specific research guides."@en ;
+                 rdfs:comment "Describes the identification work carried out by EHRI, ongoing since October 2010. This section also includes references to aggregators and country-specific research guides."@en ;
                  rdfs:label "investigación del EHRI (resumen)"@es ,
                             "recherche EHRI (récapitulatif)"@fr ,
                             "research by EHRI (summary)"@en .
@@ -400,7 +400,7 @@
                                    )
                      ] ;
          rdfs:range rdfs:Literal ;
-         rdfs:comment "Record notes on sources consulted in preparing the description and who prepared it."@en ;
+         rdfs:comment "Provides information on sources consulted in preparing the description and the personnel involved."@en ;
          rdfs:label "fuentes"@es ,
                     "sources"@en ,
                     "sources"@fr .
@@ -420,7 +420,7 @@
 <http://schema.org/contactType> rdf:type owl:DatatypeProperty ;
                                 rdfs:domain <http://schema.org/PostalAddress> ;
                                 rdfs:range rdfs:Literal ;
-                                rdfs:comment "A person or organization can have different contact points, for different purposes. For example, a sales contact point, a PR contact point and so on. This property is used to specify the kind of contact point."@en ;
+                                rdfs:comment "Specifies the type of contact point. A person or organization can have different contact points for different purposes, such as a sales contact point, a PR contact point and so on."@en ;
                                 rdfs:isDefinedBy <http://schema.org/contactType> ;
                                 rdfs:label "contact type"@en ,
                                            "tipo de contacto"@es ,
@@ -498,7 +498,7 @@
 ###  http://lod.ehri-project-test.eu/ontology#AlternateAgentName
 :AlternateAgentName rdf:type owl:Class ;
                     rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#AgentName> ;
-                    rdfs:comment "This class allows to represent any other name(s) used for the institution or by which it may be known. This could include other forms of the same name, abbreviations, acronyms, other institutional names, or changes of name over time (historical names)."@en ;
+                    rdfs:comment "This class allows to represent any other name(s) used for an institution, or by which it may be known. This could include other forms of the same name, abbreviations, acronyms, other institutional names, or changes of name over time (historical names)."@en ;
                     rdfs:label "Alternative forms of the agent's name"@en ,
                                "Formas alternativas del nombre"@es ,
                                "Formes alternatives du nom"@fr .
@@ -556,7 +556,7 @@
 :Institution rdf:type owl:Class ;
              rdfs:subClassOf :CorporateBody ,
                              <http://schema.org/ArchiveOrganization> ;
-             rdfs:comment "This class is a specialisation of the rico:CorporateBody and ehri:CorporateBody classes, taking some additional properties from the schema:ArchiveOrganization class. By contrast to a Corporate Body, in EHRI's data model, an Institution always hold archival records which is in line with ISDIAH definition."@en ;
+             rdfs:comment "This class is a specialisation of the rico:CorporateBody and ehri:CorporateBody classes, taking some additional properties from the schema:ArchiveOrganization class. In contrast to a Corporate Body, an Institution in the EHRI data model always holds archival records, which is in line with ISDIAH definition."@en ;
              rdfs:label "Institución"@es ,
                         "Institution"@en ,
                         "Institution"@fr .
@@ -566,7 +566,7 @@
 :InstitutionAddress rdf:type owl:Class ;
                     rdfs:subClassOf <http://schema.org/PostalAddress> ,
                                     <https://www.ica.org/standards/RiC/ontology#PhysicalLocation> ;
-                    rdfs:comment "This class is a specialisation of the rico:PhysicalLocation extended with attributes coming from the schema:PostalAddress class to represent institution's addresses and contact information."@en ;
+                    rdfs:comment "This class is a specialisation of the rico:PhysicalLocation extended with attributes derived from the schema:PostalAddress class to represent addresses and contact information for archival institutions."@en ;
                     rdfs:label "Adresse de l'institution"@fr ,
                                "Dirección de la institución"@es ,
                                "Institution's address"@en .
@@ -575,7 +575,7 @@
 ###  http://lod.ehri-project-test.eu/ontology#MaterialScript
 :MaterialScript rdf:type owl:Class ;
                 rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#Concept> ;
-                rdfs:comment "This class represents the scripts that can be found in a material. Similar to the language, each instance will be represented by an instance. Examples of scripts are: Latin, Cyrillic, etc."@en ;
+                rdfs:comment "This class represents the written scripts that can be found in some material. Similar to the written language, each will be represented by an instance. Examples of scripts are: Latin, Cyrillic, Hebrew, etc."@en ;
                 rdfs:label "Escritura de la documentación"@es ,
                            "Script of materials"@en ,
                            "Écriture des documents"@fr .
@@ -584,7 +584,7 @@
 ###  http://lod.ehri-project-test.eu/ontology#ParallelAgentName
 :ParallelAgentName rdf:type owl:Class ;
                    rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#AgentName> ;
-                   rdfs:comment "This class allows to represent the various forms in which the authorised form of name of an institution with archival holdings occurs in other languages or script form(s)."@en ;
+                   rdfs:comment "This class represents the various forms in which the authorised form of name of an institution with archival holdings occurs in other languages or script form(s)."@en ;
                    rdfs:label "Formas paralelas del nombre"@es ,
                               "Formes parallèles du nom"@fr ,
                               "Parallel forms of the agent's name"@en .
