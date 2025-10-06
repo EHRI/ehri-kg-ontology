@@ -1,6 +1,9 @@
 name: Generate EHRI Ontology documentation
 
-on: push
+on:
+  push:
+    paths:
+      - 'ontology/ehri.owl'
 
 jobs:
   generate-documentation:
