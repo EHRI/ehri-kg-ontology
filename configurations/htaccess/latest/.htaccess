@@ -15,4 +15,4 @@ RewriteBase /ontology
 
 RewriteRule ^0\.0\.1$ 0\.0\.1/ [R=303,L]
 RewriteRule ^0\.0\.2$ 0\.0\.2/ [R=303,L]
-RewriteRule ^$ 0\.0\.3/ [R=303,L]
+RewriteRule ^$ 0\.1\.0/ [R=303,L]
