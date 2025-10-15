@@ -108,10 +108,10 @@
     "@id" : "http://lod.ehri-project-test.eu/ontology/0.0.2"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology/0.0.3"
+    "@id" : "http://lod.ehri-project-test.eu/ontology/0.1.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.0.3"
+    "@value" : "0.1.0"
   } ],
   "http://xmlns.com/foaf/0.1/logo" : [ {
     "@id" : "https://ehri-kg.ehri-project.eu/images/ehri-logo.svg"

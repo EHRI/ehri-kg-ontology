@@ -1,5 +1,5 @@
 <http://lod.ehri-project-test.eu/ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://lod.ehri-project-test.eu/ontology> <http://www.w3.org/2002/07/owl#versionIRI> <http://lod.ehri-project-test.eu/ontology/0.0.3> .
+<http://lod.ehri-project-test.eu/ontology> <http://www.w3.org/2002/07/owl#versionIRI> <http://lod.ehri-project-test.eu/ontology/0.1.0> .
 <http://lod.ehri-project-test.eu/ontology> <http://www.w3.org/2002/07/owl#imports> <https://www.ica.org/standards/RiC/ontology/1.0.2> .
 <http://lod.ehri-project-test.eu/ontology> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
 <http://lod.ehri-project-test.eu/ontology> <http://purl.org/dc/elements/1.1/creator> "Herminio García-González (Kazerne Dossin)"@en .
@@ -14,7 +14,7 @@
 <http://lod.ehri-project-test.eu/ontology> <http://schema.org/funder> <https://oscars-project.eu/> .
 <http://lod.ehri-project-test.eu/ontology> <http://schema.org/funding> <https://oscars-project.eu/projects/ehri-kg-european-holocaust-research-infrastructure-knowledge-graph> .
 <http://lod.ehri-project-test.eu/ontology> <http://www.w3.org/2002/07/owl#priorVersion> <http://lod.ehri-project-test.eu/ontology/0.0.2> .
-<http://lod.ehri-project-test.eu/ontology> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.3" .
+<http://lod.ehri-project-test.eu/ontology> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.0" .
 <http://lod.ehri-project-test.eu/ontology> <http://xmlns.com/foaf/0.1/logo> <https://ehri-kg.ehri-project.eu/images/ehri-logo.svg> .
 # 
 # 

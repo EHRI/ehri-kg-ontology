@@ -7,7 +7,7 @@
 @base <http://lod.ehri-project-test.eu/ontology#> .
 
 <http://lod.ehri-project-test.eu/ontology> rdf:type owl:Ontology ;
-                                            owl:versionIRI <http://lod.ehri-project-test.eu/ontology/0.0.3> ;
+                                            owl:versionIRI <http://lod.ehri-project-test.eu/ontology/0.1.0> ;
                                             owl:imports <https://www.ica.org/standards/RiC/ontology/1.0.2> ;
                                             <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> ;
                                             <http://purl.org/dc/elements/1.1/creator> "Herminio García-González (Kazerne Dossin)"@en ,
@@ -22,7 +22,7 @@
                                             <http://schema.org/funder> <https://oscars-project.eu/> ;
                                             <http://schema.org/funding> <https://oscars-project.eu/projects/ehri-kg-european-holocaust-research-infrastructure-knowledge-graph> ;
                                             owl:priorVersion <http://lod.ehri-project-test.eu/ontology/0.0.2> ;
-                                            owl:versionInfo "0.0.3" ;
+                                            owl:versionInfo "0.1.0" ;
                                             <http://xmlns.com/foaf/0.1/logo> <https://ehri-kg.ehri-project.eu/images/ehri-logo.svg> .
 
 #################################################################
