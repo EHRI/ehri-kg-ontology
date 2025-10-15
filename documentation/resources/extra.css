@@ -133,3 +133,19 @@ dt {
     color:var(--literal);
     font-style:italic;
 }
+
+h1 + img {
+    width: 150px;
+}
+
+#figure-data-model-ehri-portal {
+    text-align: center;
+}
+
+#figure-ontology-diagram {
+    text-align: center;
+}
+
+#figure-ontology-diagram img {
+    max-width: 100%;
+}

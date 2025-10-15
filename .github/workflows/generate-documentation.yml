@@ -1,0 +1,25 @@
+name: Generate EHRI Ontology documentation
+
+on:
+  push:
+    paths:
+      - 'ontology/ehri.owl'
+
+jobs:
+  generate-documentation:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+      
+      - name: Run documentation generation script
+        run: bash generate-documentation.sh
+      
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with: 
+          commit_message: New documentation version generated
