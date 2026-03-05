@@ -1,4 +1,6 @@
 # EHRI Ontology
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17358935.svg)](https://doi.org/10.5281/zenodo.17358935)
+[![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/EHRI/ehri-kg-ontology/)](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/EHRI/ehri-kg-ontology)
 
 This is the repository for the [EHRI Ontology](https://lod.ehri-project-test.eu/ontology/) which hosts the OWL source code, the documentation, and the scripts to automatically generate the said documentation.
 

@@ -1,5 +1,5 @@
 <http://lod.ehri-project-test.eu/ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://lod.ehri-project-test.eu/ontology> <http://www.w3.org/2002/07/owl#versionIRI> <http://lod.ehri-project-test.eu/ontology/0.1.0> .
+<http://lod.ehri-project-test.eu/ontology> <http://www.w3.org/2002/07/owl#versionIRI> <http://lod.ehri-project-test.eu/ontology/0.1.1> .
 <http://lod.ehri-project-test.eu/ontology> <http://www.w3.org/2002/07/owl#imports> <https://www.ica.org/standards/RiC/ontology/1.0.2> .
 <http://lod.ehri-project-test.eu/ontology> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
 <http://lod.ehri-project-test.eu/ontology> <http://purl.org/dc/elements/1.1/creator> "Herminio García-González (Kazerne Dossin)"@en .
@@ -13,8 +13,8 @@
 <http://lod.ehri-project-test.eu/ontology> <http://schema.org/codeRepository> <https://github.com/EHRI/ehri-kg-ontology> .
 <http://lod.ehri-project-test.eu/ontology> <http://schema.org/funder> <https://oscars-project.eu/> .
 <http://lod.ehri-project-test.eu/ontology> <http://schema.org/funding> <https://oscars-project.eu/projects/ehri-kg-european-holocaust-research-infrastructure-knowledge-graph> .
-<http://lod.ehri-project-test.eu/ontology> <http://www.w3.org/2002/07/owl#priorVersion> <http://lod.ehri-project-test.eu/ontology/0.0.2> .
-<http://lod.ehri-project-test.eu/ontology> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.0" .
+<http://lod.ehri-project-test.eu/ontology> <http://www.w3.org/2002/07/owl#priorVersion> <http://lod.ehri-project-test.eu/ontology/0.1.0> .
+<http://lod.ehri-project-test.eu/ontology> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.1" .
 <http://lod.ehri-project-test.eu/ontology> <http://xmlns.com/foaf/0.1/logo> <https://ehri-kg.ehri-project.eu/images/ehri-logo.svg> .
 # 
 # 
@@ -286,7 +286,7 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://lod.ehri-project-test.eu/ontology#otherFindingAids> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://lod.ehri-project-test.eu/ontology#otherFindingAids> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lod.ehri-project-test.eu/ontology#RecordResource> .
 <http://lod.ehri-project-test.eu/ontology#otherFindingAids> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://lod.ehri-project-test.eu/ontology#otherFindingAids> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides information on the history of the unit of description that is significant for its authenticity, integrity and interpretation."@en .
+<http://lod.ehri-project-test.eu/ontology#otherFindingAids> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifies and gives information about any finding aids related to the unit of description."@en .
 <http://lod.ehri-project-test.eu/ontology#otherFindingAids> <http://www.w3.org/2000/01/rdf-schema#label> "autres instruments de recherche"@fr .
 <http://lod.ehri-project-test.eu/ontology#otherFindingAids> <http://www.w3.org/2000/01/rdf-schema#label> "other finding aids"@en .
 <http://lod.ehri-project-test.eu/ontology#otherFindingAids> <http://www.w3.org/2000/01/rdf-schema#label> "otros instrumentos de descripción"@es .
@@ -476,6 +476,14 @@ _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # #################################################################
 # 
 # 
+# http://lod.ehri-project-test.eu/ontology#AcquisitionType
+<http://lod.ehri-project-test.eu/ontology#AcquisitionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lod.ehri-project-test.eu/ontology#AcquisitionType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.ica.org/standards/RiC/ontology#ActivityType> .
+<http://lod.ehri-project-test.eu/ontology#AcquisitionType> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the type of the acquisition as a specialisation of rico:ActivityType."@en .
+<http://lod.ehri-project-test.eu/ontology#AcquisitionType> <http://www.w3.org/2000/01/rdf-schema#label> "Acquisition type"@en .
+<http://lod.ehri-project-test.eu/ontology#AcquisitionType> <http://www.w3.org/2000/01/rdf-schema#label> "Tipo de adquisición"@es .
+<http://lod.ehri-project-test.eu/ontology#AcquisitionType> <http://www.w3.org/2000/01/rdf-schema#label> "Type d'acquisition"@fr .
+# 
 # http://lod.ehri-project-test.eu/ontology#Agent
 <http://lod.ehri-project-test.eu/ontology#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.ica.org/standards/RiC/ontology#Agent> .
@@ -525,6 +533,14 @@ _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://lod.ehri-project-test.eu/ontology#Family> <http://www.w3.org/2000/01/rdf-schema#label> "Familia"@es .
 <http://lod.ehri-project-test.eu/ontology#Family> <http://www.w3.org/2000/01/rdf-schema#label> "Famille"@fr .
 <http://lod.ehri-project-test.eu/ontology#Family> <http://www.w3.org/2000/01/rdf-schema#label> "Family"@en .
+# 
+# http://lod.ehri-project-test.eu/ontology#FunctionType
+<http://lod.ehri-project-test.eu/ontology#FunctionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lod.ehri-project-test.eu/ontology#FunctionType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.ica.org/standards/RiC/ontology#ActivityType> .
+<http://lod.ehri-project-test.eu/ontology#FunctionType> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the function type as a specialisation of rico:ActivityType."@en .
+<http://lod.ehri-project-test.eu/ontology#FunctionType> <http://www.w3.org/2000/01/rdf-schema#label> "Function type"@en .
+<http://lod.ehri-project-test.eu/ontology#FunctionType> <http://www.w3.org/2000/01/rdf-schema#label> "Tipo de función"@es .
+<http://lod.ehri-project-test.eu/ontology#FunctionType> <http://www.w3.org/2000/01/rdf-schema#label> "Type de fonction"@fr .
 # 
 # http://lod.ehri-project-test.eu/ontology#Group
 <http://lod.ehri-project-test.eu/ontology#Group> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
