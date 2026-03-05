@@ -286,7 +286,7 @@
 :otherFindingAids rdf:type owl:DatatypeProperty ;
                   rdfs:domain :RecordResource ;
                   rdfs:range rdfs:Literal ;
-                  rdfs:comment "Provides information on the history of the unit of description that is significant for its authenticity, integrity and interpretation."@en ;
+                  rdfs:comment "Identifies and gives information about any finding aids related to the unit of description."@en ;
                   rdfs:label "autres instruments de recherche"@fr ,
                              "other finding aids"@en ,
                              "otros instrumentos de descripción"@es .
@@ -486,6 +486,15 @@
 #    Classes
 #################################################################
 
+###  http://lod.ehri-project-test.eu/ontology#AcquisitionType
+:AcquisitionType rdf:type owl:Class ;
+                 rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#ActivityType> ;
+                 rdfs:comment "Represents the type of the acquisition as a specialisation of rico:ActivityType."@en ;
+                 rdfs:label "Acquisition type"@en ,
+                            "Tipo de adquisición"@es ,
+                            "Type d'acquisition"@fr .
+
+
 ###  http://lod.ehri-project-test.eu/ontology#Agent
 :Agent rdf:type owl:Class ;
        rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#Agent> ;
@@ -540,6 +549,15 @@
         rdfs:label "Familia"@es ,
                    "Famille"@fr ,
                    "Family"@en .
+
+
+###  http://lod.ehri-project-test.eu/ontology#FunctionType
+:FunctionType rdf:type owl:Class ;
+              rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#ActivityType> ;
+              rdfs:comment "Represents the function type as a specialisation of rico:ActivityType."@en ;
+              rdfs:label "Function type"@en ,
+                         "Tipo de función"@es ,
+                         "Type de fonction"@fr .
 
 
 ###  http://lod.ehri-project-test.eu/ontology#Group
