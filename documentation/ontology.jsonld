@@ -105,16 +105,36 @@
     "@id" : "https://www.ica.org/standards/RiC/ontology/1.0.2"
   } ],
   "http://www.w3.org/2002/07/owl#priorVersion" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology/0.0.2"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "http://lod.ehri-project-test.eu/ontology/0.1.0"
   } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology/0.1.1"
+  } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.1.0"
+    "@value" : "0.1.1"
   } ],
   "http://xmlns.com/foaf/0.1/logo" : [ {
     "@id" : "https://ehri-kg.ehri-project.eu/images/ehri-logo.svg"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#AcquisitionType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents the type of the acquisition as a specialisation of rico:ActivityType."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Acquisition type"
+  }, {
+    "@language" : "es",
+    "@value" : "Tipo de adquisición"
+  }, {
+    "@language" : "fr",
+    "@value" : "Type d'acquisition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#ActivityType"
   } ]
 }, {
   "@id" : "http://lod.ehri-project-test.eu/ontology#Agent",
@@ -239,6 +259,26 @@
     "@id" : "http://lod.ehri-project-test.eu/ontology#Group"
   }, {
     "@id" : "https://www.ica.org/standards/RiC/ontology#Family"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#FunctionType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents the function type as a specialisation of rico:ActivityType."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Function type"
+  }, {
+    "@language" : "es",
+    "@value" : "Tipo de función"
+  }, {
+    "@language" : "fr",
+    "@value" : "Type de fonction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#ActivityType"
   } ]
 }, {
   "@id" : "http://lod.ehri-project-test.eu/ontology#Group",
@@ -927,7 +967,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Provides information on the history of the unit of description that is significant for its authenticity, integrity and interpretation."
+    "@value" : "Identifies and gives information about any finding aids related to the unit of description."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
