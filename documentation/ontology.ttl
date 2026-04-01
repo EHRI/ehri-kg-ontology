@@ -7,13 +7,13 @@
 @base <http://lod.ehri-project-test.eu/ontology#> .
 
 <http://lod.ehri-project-test.eu/ontology> rdf:type owl:Ontology ;
-                                            owl:versionIRI <http://lod.ehri-project-test.eu/ontology/0.1.1> ;
-                                            owl:imports <https://www.ica.org/standards/RiC/ontology/1.0.2> ;
+                                            owl:versionIRI <http://lod.ehri-project-test.eu/ontology/0.2.0> ;
+                                            owl:imports <https://www.ica.org/standards/RiC/ontology/1.1> ;
                                             <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> ;
                                             <http://purl.org/dc/elements/1.1/creator> "Herminio García-González (Kazerne Dossin)"@en ,
                                                                                       "Mike Bryant (NIOD)"@en ;
                                             <http://purl.org/dc/elements/1.1/title> "EHRI Ontology"@en ;
-                                            <http://purl.org/dc/terms/abstract> "This ontology defines the data model used by the EHRI Knowledge Graph for the representation of the information hosted in the EHRI Portal. It does so by extending RiC-O v1.0.2 and reusing some of the schema.org concepts."@en ;
+                                            <http://purl.org/dc/terms/abstract> "This ontology defines the data model used by the EHRI Knowledge Graph for the representation of the information hosted in the EHRI Portal. It does so by extending RiC-O v1.1 and reusing some of the schema.org concepts."@en ;
                                             <http://purl.org/dc/terms/description> "The EHRI Ontology extends some of the RiC-O types and adds additional properties to represent data present in the EHRI Portal. Whenever a class is extended with new properties, a subclass bounded to the ehri prefix is created in order to maintain the original RiC-O axioms. In some cases, classes are specialised via subclassing in order to contribute additional meaning to the superclass."@en ;
                                             <http://purl.org/dc/terms/publisher> "EHRI-ERIC" ;
                                             <http://purl.org/vocab/vann/preferredNamespacePrefix> "ehri" ;
@@ -22,7 +22,7 @@
                                             <http://schema.org/funder> <https://oscars-project.eu/> ;
                                             <http://schema.org/funding> <https://oscars-project.eu/projects/ehri-kg-european-holocaust-research-infrastructure-knowledge-graph> ;
                                             owl:priorVersion <http://lod.ehri-project-test.eu/ontology/0.1.0> ;
-                                            owl:versionInfo "0.1.1" ;
+                                            owl:versionInfo "0.2.0" ;
                                             <http://xmlns.com/foaf/0.1/logo> <https://ehri-kg.ehri-project.eu/images/ehri-logo.svg> .
 
 #################################################################
@@ -99,6 +99,17 @@
                            "tiene o tenía como escritura"@es .
 
 
+###  http://lod.ehri-project-test.eu/ontology#has_copy_relation_role
+:has_copy_relation_role rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf <https://www.ica.org/standards/RiC/ontology#relation_role> ;
+                        rdfs:domain :HasCopyRelation ;
+                        rdfs:range :HasCopyRelation ;
+                        rdfs:comment "Connects a HasCopyRelation to itself."@en ;
+                        rdfs:label "a le rôle de la relation de propriété de copie"@fr ,
+                                   "desempeña el rol de la relación de tenencia de copia"@es ,
+                                   "has the role of the Has copy relation"@en .
+
+
 ###  http://lod.ehri-project-test.eu/ontology#isCopyOf
 :isCopyOf rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf <https://www.ica.org/standards/RiC/ontology#isCopyOf> ,
@@ -128,6 +139,17 @@
                  rdfs:label "es o era la escritura de"@es ,
                             "est ou était l'ecriture de"@fr ,
                             "is or was the script of"@en .
+
+
+###  http://lod.ehri-project-test.eu/ontology#is_copy_of_relation_role
+:is_copy_of_relation_role rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf <https://www.ica.org/standards/RiC/ontology#relation_role> ;
+                          rdfs:domain :IsCopyOfRelation ;
+                          rdfs:range :IsCopyOfRelation ;
+                          rdfs:comment "Connects a IsCopyOfRelation to itself."@en ;
+                          rdfs:label "a le rôle de la relation de copie de"@fr ,
+                                     "desempeña el rol de la relación de es copia de"@es ,
+                                     "has the role of the Is copy of relation"@en .
 
 
 #################################################################
@@ -167,7 +189,11 @@
 ###  http://lod.ehri-project-test.eu/ontology#archivalHistory
 :archivalHistory rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf <https://www.ica.org/standards/RiC/ontology#history> ;
-                 rdfs:domain :Country ;
+                 rdfs:domain [ rdf:type owl:Class ;
+                               owl:unionOf ( :Country
+                                             :RecordResource
+                                           )
+                             ] ;
                  rdfs:range rdfs:Literal ;
                  rdfs:comment "Provides information about the Holocaust and WWII and how it relates to the archival landscape in that country."@en ;
                  rdfs:label "archival history"@en ,
@@ -187,13 +213,28 @@
 
 ###  http://lod.ehri-project-test.eu/ontology#archivistNote
 :archivistNote rdf:type owl:DatatypeProperty ;
-               rdfs:subPropertyOf :notes ;
+               rdfs:subPropertyOf <https://www.ica.org/standards/RiC/ontology#note> ;
                rdfs:domain :RecordResource ;
                rdfs:range rdfs:Literal ;
                rdfs:comment "Explains how the description was prepared and by whom."@en ;
                rdfs:label "archivist note"@en ,
                           "nota del archivero/a"@es ,
                           "notes de l'archiviste"@fr .
+
+
+###  http://lod.ehri-project-test.eu/ontology#biographicalHistory
+:biographicalHistory rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf <https://www.ica.org/standards/RiC/ontology#history> ;
+                     rdfs:domain [ rdf:type owl:Class ;
+                                   owl:unionOf ( :Person
+                                                 :RecordResource
+                                               )
+                                 ] ;
+                     rdfs:range rdfs:Literal ;
+                     rdfs:comment "Records concisely any significant information on the origin, progress, development and work of the organisation (or organisations) or on the life and work of the individual (or individuals)."@en ;
+                     rdfs:label "biographical history"@en ,
+                                "notice biographique"@fr ,
+                                "reseña biográfica"@es .
 
 
 ###  http://lod.ehri-project-test.eu/ontology#buildings
@@ -272,16 +313,6 @@
                                 "existencia y localización de los originales"@es .
 
 
-###  http://lod.ehri-project-test.eu/ontology#notes
-:notes rdf:type owl:DatatypeProperty ;
-       rdfs:domain :RecordResource ;
-       rdfs:range rdfs:Literal ;
-       rdfs:comment "Provides information that cannot be accommodated in any of the other data properties."@en ;
-       rdfs:label "nota(s)"@es ,
-                  "note(s)"@en ,
-                  "note(s)"@fr .
-
-
 ###  http://lod.ehri-project-test.eu/ontology#otherFindingAids
 :otherFindingAids rdf:type owl:DatatypeProperty ;
                   rdfs:domain :RecordResource ;
@@ -292,14 +323,14 @@
                              "otros instrumentos de descripción"@es .
 
 
-###  http://lod.ehri-project-test.eu/ontology#physicalCharacterisiticsAndTechnicalRequirements
-:physicalCharacterisiticsAndTechnicalRequirements rdf:type owl:DatatypeProperty ;
-                                                  rdfs:domain :RecordResource ;
-                                                  rdfs:range rdfs:Literal ;
-                                                  rdfs:comment "Collects information about any important physical characteristics or technical requirements that affect use of the unit of description."@en ;
-                                                  rdfs:label "características físicas y requisitos técnicos"@es ,
-                                                             "caractéristiques matérielles et contraintes techniques"@fr ,
-                                                             "physical characteristics and technical requirements"@en .
+###  http://lod.ehri-project-test.eu/ontology#physicalCharacteristicsAndTechnicalRequirements
+:physicalCharacteristicsAndTechnicalRequirements rdf:type owl:DatatypeProperty ;
+                                                 rdfs:domain :RecordResource ;
+                                                 rdfs:range rdfs:Literal ;
+                                                 rdfs:comment "Collects information about any important physical characteristics or technical requirements that affect use of the unit of description."@en ;
+                                                 rdfs:label "características físicas y requisitos técnicos"@es ,
+                                                            "caractéristiques matérielles et contraintes techniques"@fr ,
+                                                            "physical characteristics and technical requirements"@en .
 
 
 ###  http://lod.ehri-project-test.eu/ontology#publicAreas
@@ -389,16 +420,12 @@
                    rdfs:comment "Information about materials that are associated by provenance to the described materials but that have been physically separated or removed. Items may be separated for various reasons, including the dispersal of special formats to more appropriate custodial units; the outright destruction of duplicate or nonessential material; and the deliberate or unintentional scattering of fonds among different repositories."@en ;
                    rdfs:label "separated units of description"@en ,
                               "sources séparées"@fr ,
-                              "unidadades de descripción separadas"@es .
+                              "unidades de descripción separadas"@es .
 
 
 ###  http://lod.ehri-project-test.eu/ontology#sources
 :sources rdf:type owl:DatatypeProperty ;
-         rdfs:domain [ rdf:type owl:Class ;
-                       owl:unionOf ( :Agent
-                                     :RecordResource
-                                   )
-                     ] ;
+         rdfs:domain :Agent ;
          rdfs:range rdfs:Literal ;
          rdfs:comment "Provides information on sources consulted in preparing the description and the personnel involved."@en ;
          rdfs:label "fuentes"@es ,
@@ -454,8 +481,8 @@
                                  rdfs:domain <http://schema.org/ArchiveOrganization> ;
                                  rdfs:range rdfs:Literal ;
                                  rdfs:comment "The general opening hours for a business."@en ;
-                                 rdfs:label <http://schema.org/openingHours> ,
-                                            "heures d'ouverture"@fr ,
+                                 rdfs:isDefinedBy <http://schema.org/openingHours> ;
+                                 rdfs:label "heures d'ouverture"@fr ,
                                             "horarios de apertura"@es ,
                                             "opening hours"@en .
 
@@ -570,6 +597,37 @@
                   "Grupo de agentes"@es .
 
 
+###  http://lod.ehri-project-test.eu/ontology#HasCopyRelation
+:HasCopyRelation rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Restriction ;
+                                       owl:onProperty :has_copy_relation_role ;
+                                       owl:hasSelf "true"^^xsd:boolean
+                                     ] ;
+                 rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#Relation> ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <https://www.ica.org/standards/RiC/ontology#relationHasSource> ;
+                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass [ rdf:type owl:Class ;
+                                                 owl:unionOf ( :Institution
+                                                               :RecordResource
+                                                             )
+                                               ]
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <https://www.ica.org/standards/RiC/ontology#relationHasTarget> ;
+                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass [ rdf:type owl:Class ;
+                                                 owl:unionOf ( :Institution
+                                                               :RecordResource
+                                                             )
+                                               ]
+                                 ] ;
+                 rdfs:comment "Connects an Institution or a RecordResource to another Institution which has a copy of it (or part of it) or to a RecordResource which is a copy of the former."@en ;
+                 rdfs:label "Has copy relation"@en ,
+                            "Relación de tenencia de copia"@es ,
+                            "Relation de propriété de copie"@fr .
+
+
 ###  http://lod.ehri-project-test.eu/ontology#Institution
 :Institution rdf:type owl:Class ;
              rdfs:subClassOf :CorporateBody ,
@@ -588,6 +646,37 @@
                     rdfs:label "Adresse de l'institution"@fr ,
                                "Dirección de la institución"@es ,
                                "Institution's address"@en .
+
+
+###  http://lod.ehri-project-test.eu/ontology#IsCopyOfRelation
+:IsCopyOfRelation rdf:type owl:Class ;
+                  owl:equivalentClass [ rdf:type owl:Restriction ;
+                                        owl:onProperty :is_copy_of_relation_role ;
+                                        owl:hasSelf "true"^^xsd:boolean
+                                      ] ;
+                  rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#Relation> ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <https://www.ica.org/standards/RiC/ontology#relationHasSource> ;
+                                    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass [ rdf:type owl:Class ;
+                                                  owl:unionOf ( :Institution
+                                                                :RecordResource
+                                                              )
+                                                ]
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <https://www.ica.org/standards/RiC/ontology#relationHasTarget> ;
+                                    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass [ rdf:type owl:Class ;
+                                                  owl:unionOf ( :Institution
+                                                                :RecordResource
+                                                              )
+                                                ]
+                                  ] ;
+                  rdfs:comment "Connects an Institution or an RecordResource to another Institution whose originals have been copied (or part of them) or to a RecordResource which is the original of the this copy."@en ;
+                  rdfs:label "Is copy of relation"@en ,
+                             "Relación de copia de"@es ,
+                             "Relation de copie de"@fr .
 
 
 ###  http://lod.ehri-project-test.eu/ontology#MaterialScript
@@ -681,7 +770,7 @@
             <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> ;
             rdfs:label "autre niveau"@fr ,
                        "other level"@en ,
-                       "otro nivel"@en .
+                       "otro nivel"@es .
 
 
 ###  http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#RecordGroup

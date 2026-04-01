@@ -12,8 +12,10 @@ This section provides details for each class and property defined by EHRI Ontolo
   <li><a href="#Family" title="http://lod.ehri-project-test.eu/ontology#Family">Family</a></li>
   <li><a href="#FunctionType" title="http://lod.ehri-project-test.eu/ontology#FunctionType">Function type</a></li>
   <li><a href="#Group" title="http://lod.ehri-project-test.eu/ontology#Group">Group</a></li>
+  <li><a href="#HasCopyRelation" title="http://lod.ehri-project-test.eu/ontology#HasCopyRelation">Has copy relation</a></li>
   <li><a href="#Institution" title="http://lod.ehri-project-test.eu/ontology#Institution">Institution</a></li>
   <li><a href="#InstitutionAddress" title="http://lod.ehri-project-test.eu/ontology#InstitutionAddress">Institution's address</a></li>
+  <li><a href="#IsCopyOfRelation" title="http://lod.ehri-project-test.eu/ontology#IsCopyOfRelation">Is copy of relation</a></li>
   <li><a href="#ParallelAgentName" title="http://lod.ehri-project-test.eu/ontology#ParallelAgentName">Parallel forms of the agent's name</a></li>
   <li><a href="#Person" title="http://lod.ehri-project-test.eu/ontology#Person">Person</a></li>
   <li><a href="#RecordResource" title="http://lod.ehri-project-test.eu/ontology#RecordResource">Record resource</a></li>
@@ -186,6 +188,39 @@ This section provides details for each class and property defined by EHRI Ontolo
    </dd>
   </dl>
  </div>
+ <div class="entity" id="HasCopyRelation">
+  <h3>Has copy relation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#HasCopyRelation</p>
+  <div class="comment">
+   <span class="markdown">Connects an Institution or a RecordResource to another Institution which has a copy of it (or part of it) or to a RecordResource which is a copy of the former.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#has_copy_relation_role" title="http://lod.ehri-project-test.eu/ontology#has_copy_relation_role">has the role of the Has copy relation</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://www.ica.org/standards/RiC/ontology#Relation" target="_blank" title="https://www.ica.org/standards/RiC/ontology#Relation">Relation</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#has_copy_relation_role" title="http://lod.ehri-project-test.eu/ontology#has_copy_relation_role">has the role of the Has copy relation</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#has_copy_relation_role" title="http://lod.ehri-project-test.eu/ontology#has_copy_relation_role">has the role of the Has copy relation</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="Institution">
   <h3>Institution<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#Institution</p>
@@ -234,6 +269,39 @@ This section provides details for each class and property defined by EHRI Ontolo
    </dd>
   </dl>
  </div>
+ <div class="entity" id="IsCopyOfRelation">
+  <h3>Is copy of relation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#IsCopyOfRelation</p>
+  <div class="comment">
+   <span class="markdown">Connects an Institution or an RecordResource to another Institution whose originals have been copied (or part of them) or to a RecordResource which is the original of the this copy.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#is_copy_of_relation_role" title="http://lod.ehri-project-test.eu/ontology#is_copy_of_relation_role">has the role of the Is copy of relation</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://www.ica.org/standards/RiC/ontology#Relation" target="_blank" title="https://www.ica.org/standards/RiC/ontology#Relation">Relation</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#is_copy_of_relation_role" title="http://lod.ehri-project-test.eu/ontology#is_copy_of_relation_role">has the role of the Is copy of relation</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#is_copy_of_relation_role" title="http://lod.ehri-project-test.eu/ontology#is_copy_of_relation_role">has the role of the Is copy of relation</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="ParallelAgentName">
   <h3>Parallel forms of the agent's name<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#ParallelAgentName</p>
@@ -262,6 +330,12 @@ This section provides details for each class and property defined by EHRI Ontolo
    <dd>
     <a href="#Agent" title="http://lod.ehri-project-test.eu/ontology#Agent">Agent</a> <sup class="type-c" title="class">c</sup>, <a href="https://www.ica.org/standards/RiC/ontology#Person" target="_blank" title="https://www.ica.org/standards/RiC/ontology#Person">Person</a> <sup class="type-c" title="class">c</sup>
    </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#biographicalHistory" title="http://lod.ehri-project-test.eu/ontology#biographicalHistory">biographical history</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
   </dl>
  </div>
  <div class="entity" id="RecordResource">
@@ -287,7 +361,7 @@ This section provides details for each class and property defined by EHRI Ontolo
     is in domain of
    </dt>
    <dd>
-    <a href="#appraisal" title="http://lod.ehri-project-test.eu/ontology#appraisal">appraisal</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#archivistNote" title="http://lod.ehri-project-test.eu/ontology#archivistNote">archivist note</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#conditionsOfAccess" title="http://lod.ehri-project-test.eu/ontology#conditionsOfAccess">conditions of access</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#locationOfCopies" title="http://lod.ehri-project-test.eu/ontology#locationOfCopies">existence and location of copies</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#locationOfOriginals" title="http://lod.ehri-project-test.eu/ontology#locationOfOriginals">existence and location of originals</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCopy" title="http://lod.ehri-project-test.eu/ontology#hasCopy">has copy</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasOrHadScript" title="http://lod.ehri-project-test.eu/ontology#hasOrHadScript">has or had script</a> <sup class="type-op" title="object property">op</sup>, <a href="#isCopyOf" title="http://lod.ehri-project-test.eu/ontology#isCopyOf">is copy of</a> <sup class="type-op" title="object property">op</sup>, <a href="#notes" title="http://lod.ehri-project-test.eu/ontology#notes">note(s)</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#otherFindingAids" title="http://lod.ehri-project-test.eu/ontology#otherFindingAids">other finding aids</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#physicalCharacterisiticsAndTechnicalRequirements" title="http://lod.ehri-project-test.eu/ontology#physicalCharacterisiticsAndTechnicalRequirements">physical characteristics and technical requirements</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#publicationNote" title="http://lod.ehri-project-test.eu/ontology#publicationNote">publication note</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#relatedMaterial" title="http://lod.ehri-project-test.eu/ontology#relatedMaterial">related units of description</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#separatedMaterial" title="http://lod.ehri-project-test.eu/ontology#separatedMaterial">separated units of description</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#sources" title="http://lod.ehri-project-test.eu/ontology#sources">sources</a> <sup class="type-dp" title="data property">dp</sup>
+    <a href="#appraisal" title="http://lod.ehri-project-test.eu/ontology#appraisal">appraisal</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#archivalHistory" title="http://lod.ehri-project-test.eu/ontology#archivalHistory">archival history</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#archivistNote" title="http://lod.ehri-project-test.eu/ontology#archivistNote">archivist note</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#biographicalHistory" title="http://lod.ehri-project-test.eu/ontology#biographicalHistory">biographical history</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#conditionsOfAccess" title="http://lod.ehri-project-test.eu/ontology#conditionsOfAccess">conditions of access</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#locationOfCopies" title="http://lod.ehri-project-test.eu/ontology#locationOfCopies">existence and location of copies</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#locationOfOriginals" title="http://lod.ehri-project-test.eu/ontology#locationOfOriginals">existence and location of originals</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCopy" title="http://lod.ehri-project-test.eu/ontology#hasCopy">has copy</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasOrHadScript" title="http://lod.ehri-project-test.eu/ontology#hasOrHadScript">has or had script</a> <sup class="type-op" title="object property">op</sup>, <a href="#isCopyOf" title="http://lod.ehri-project-test.eu/ontology#isCopyOf">is copy of</a> <sup class="type-op" title="object property">op</sup>, <a href="#otherFindingAids" title="http://lod.ehri-project-test.eu/ontology#otherFindingAids">other finding aids</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#physicalCharacteristicsAndTechnicalRequirements" title="http://lod.ehri-project-test.eu/ontology#physicalCharacteristicsAndTechnicalRequirements">physical characteristics and technical requirements</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#publicationNote" title="http://lod.ehri-project-test.eu/ontology#publicationNote">publication note</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#relatedMaterial" title="http://lod.ehri-project-test.eu/ontology#relatedMaterial">related units of description</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#separatedMaterial" title="http://lod.ehri-project-test.eu/ontology#separatedMaterial">separated units of description</a> <sup class="type-dp" title="data property">dp</sup>
    </dd>
    <dt>
     is in range of
@@ -359,6 +433,8 @@ This section provides details for each class and property defined by EHRI Ontolo
  <ul class="hlist">
   <li><a href="#hasCopy" title="http://lod.ehri-project-test.eu/ontology#hasCopy">has copy</a></li>
   <li><a href="#hasOrHadScript" title="http://lod.ehri-project-test.eu/ontology#hasOrHadScript">has or had script</a></li>
+  <li><a href="#has_copy_relation_role" title="http://lod.ehri-project-test.eu/ontology#has_copy_relation_role">has the role of the Has copy relation</a></li>
+  <li><a href="#is_copy_of_relation_role" title="http://lod.ehri-project-test.eu/ontology#is_copy_of_relation_role">has the role of the Is copy of relation</a></li>
   <li><a href="#isCopyOf" title="http://lod.ehri-project-test.eu/ontology#isCopyOf">is copy of</a></li>
   <li><a href="#isOrWasScriptOf" title="http://lod.ehri-project-test.eu/ontology#isOrWasScriptOf">is or was the script of</a></li>
  </ul>
@@ -428,6 +504,64 @@ This section provides details for each class and property defined by EHRI Ontolo
     </dt>
     <dd>
      <a href="#isOrWasScriptOf" title="http://lod.ehri-project-test.eu/ontology#isOrWasScriptOf">is or was the script of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="has_copy_relation_role">
+  <h3>has the role of the Has copy relation<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#has_copy_relation_role</p>
+  <div class="comment">
+   <span class="markdown">Connects a HasCopyRelation to itself.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://www.ica.org/standards/RiC/ontology#relation_role" target="_blank" title="https://www.ica.org/standards/RiC/ontology#relation_role">has the role of the Relation</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#HasCopyRelation" title="http://lod.ehri-project-test.eu/ontology#HasCopyRelation">Has copy relation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#HasCopyRelation" title="http://lod.ehri-project-test.eu/ontology#HasCopyRelation">Has copy relation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="is_copy_of_relation_role">
+  <h3>has the role of the Is copy of relation<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#is_copy_of_relation_role</p>
+  <div class="comment">
+   <span class="markdown">Connects a IsCopyOfRelation to itself.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://www.ica.org/standards/RiC/ontology#relation_role" target="_blank" title="https://www.ica.org/standards/RiC/ontology#relation_role">has the role of the Relation</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#IsCopyOfRelation" title="http://lod.ehri-project-test.eu/ontology#IsCopyOfRelation">Is copy of relation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#IsCopyOfRelation" title="http://lod.ehri-project-test.eu/ontology#IsCopyOfRelation">Is copy of relation</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -511,6 +645,7 @@ This section provides details for each class and property defined by EHRI Ontolo
   <li><a href="#archivalHistory" title="http://lod.ehri-project-test.eu/ontology#archivalHistory">archival history</a></li>
   <li><a href="#archivalSituation" title="http://lod.ehri-project-test.eu/ontology#archivalSituation">archival situation</a></li>
   <li><a href="#archivistNote" title="http://lod.ehri-project-test.eu/ontology#archivistNote">archivist note</a></li>
+  <li><a href="#biographicalHistory" title="http://lod.ehri-project-test.eu/ontology#biographicalHistory">biographical history</a></li>
   <li><a href="#buildings" title="http://lod.ehri-project-test.eu/ontology#buildings">building(s)</a></li>
   <li><a href="#conditionsOfAccess" title="http://lod.ehri-project-test.eu/ontology#conditionsOfAccess">conditions of access</a></li>
   <li><a href="#contactPerson" title="http://lod.ehri-project-test.eu/ontology#contactPerson">contact person</a></li>
@@ -522,10 +657,9 @@ This section provides details for each class and property defined by EHRI Ontolo
   <li><a href="#findingAids" title="http://lod.ehri-project-test.eu/ontology#findingAids">finding aids</a></li>
   <li><a href="#generalContext" title="http://lod.ehri-project-test.eu/ontology#generalContext">general context</a></li>
   <li><a href="#structureOrGenealogy" title="http://lod.ehri-project-test.eu/ontology#structureOrGenealogy">internal structure</a></li>
-  <li><a href="#notes" title="http://lod.ehri-project-test.eu/ontology#notes">note(s)</a></li>
   <li><a href="#http://schema.org/openingHours" title="http://schema.org/openingHours">opening hours</a></li>
   <li><a href="#otherFindingAids" title="http://lod.ehri-project-test.eu/ontology#otherFindingAids">other finding aids</a></li>
-  <li><a href="#physicalCharacterisiticsAndTechnicalRequirements" title="http://lod.ehri-project-test.eu/ontology#physicalCharacterisiticsAndTechnicalRequirements">physical characteristics and technical requirements</a></li>
+  <li><a href="#physicalCharacteristicsAndTechnicalRequirements" title="http://lod.ehri-project-test.eu/ontology#physicalCharacteristicsAndTechnicalRequirements">physical characteristics and technical requirements</a></li>
   <li><a href="#http://schema.org/postalCode" title="http://schema.org/postalCode">postal code</a></li>
   <li><a href="#publicAreas" title="http://lod.ehri-project-test.eu/ontology#publicAreas">public areas</a></li>
   <li><a href="#publicationNote" title="http://lod.ehri-project-test.eu/ontology#publicationNote">publication note</a></li>
@@ -626,7 +760,7 @@ This section provides details for each class and property defined by EHRI Ontolo
      has domain
     </dt>
     <dd>
-     <a href="#Country" title="http://lod.ehri-project-test.eu/ontology#Country">Country</a> <sup class="type-c" title="class">c</sup>
+     <a href="#Country" title="http://lod.ehri-project-test.eu/ontology#Country">Country</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#RecordResource" title="http://lod.ehri-project-test.eu/ontology#RecordResource">Record resource</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
@@ -672,13 +806,42 @@ This section provides details for each class and property defined by EHRI Ontolo
      has super-properties
     </dt>
     <dd>
-     <a href="#notes" title="http://lod.ehri-project-test.eu/ontology#notes">note(s)</a> <sup class="type-dp" title="data property">dp</sup>
+     <a href="https://www.ica.org/standards/RiC/ontology#note" target="_blank" title="https://www.ica.org/standards/RiC/ontology#note">note</a> <sup class="type-dp" title="data property">dp</sup>
     </dd>
     <dt>
      has domain
     </dt>
     <dd>
      <a href="#RecordResource" title="http://lod.ehri-project-test.eu/ontology#RecordResource">Record resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2000/01/rdf-schema#Literal" target="_blank" title="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="biographicalHistory">
+  <h3>biographical history<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#biographicalHistory</p>
+  <div class="comment">
+   <span class="markdown">Records concisely any significant information on the origin, progress, development and work of the organisation (or organisations) or on the life and work of the individual (or individuals).</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://www.ica.org/standards/RiC/ontology#history" target="_blank" title="https://www.ica.org/standards/RiC/ontology#history">history</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Person" title="http://lod.ehri-project-test.eu/ontology#Person">Person</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#RecordResource" title="http://lod.ehri-project-test.eu/ontology#RecordResource">Record resource</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
@@ -978,41 +1141,20 @@ This section provides details for each class and property defined by EHRI Ontolo
    </dl>
   </div>
  </div>
- <div class="entity" id="notes">
-  <h3>note(s)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#notes</p>
-  <div class="comment">
-   <span class="markdown">Provides information that cannot be accommodated in any of the other data properties.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has sub-properties
-    </dt>
-    <dd>
-     <a href="#archivistNote" title="http://lod.ehri-project-test.eu/ontology#archivistNote">archivist note</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#RecordResource" title="http://lod.ehri-project-test.eu/ontology#RecordResource">Record resource</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2000/01/rdf-schema#Literal" target="_blank" title="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
-    </dd>
-   </dl>
-  </div>
- </div>
  <div class="entity" id="http://schema.org/openingHours">
   <h3>opening hours<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://schema.org/openingHours</p>
   <div class="comment">
    <span class="markdown">The general opening hours for a business.</span>
   </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://schema.org/openingHours">http://schema.org/openingHours</a>
+   </dd>
+  </dl>
   <div class="description">
    <dl>
     <dt>
@@ -1053,9 +1195,9 @@ This section provides details for each class and property defined by EHRI Ontolo
    </dl>
   </div>
  </div>
- <div class="entity" id="physicalCharacterisiticsAndTechnicalRequirements">
+ <div class="entity" id="physicalCharacteristicsAndTechnicalRequirements">
   <h3>physical characteristics and technical requirements<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#physicalCharacterisiticsAndTechnicalRequirements</p>
+  <p><strong>IRI:</strong> http://lod.ehri-project-test.eu/ontology#physicalCharacteristicsAndTechnicalRequirements</p>
   <div class="comment">
    <span class="markdown">Collects information about any important physical characteristics or technical requirements that affect use of the unit of description.</span>
   </div>
@@ -1326,7 +1468,7 @@ This section provides details for each class and property defined by EHRI Ontolo
      has domain
     </dt>
     <dd>
-     <a href="#Agent" title="http://lod.ehri-project-test.eu/ontology#Agent">Agent</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#RecordResource" title="http://lod.ehri-project-test.eu/ontology#RecordResource">Record resource</a> <sup class="type-c" title="class">c</sup>
+     <a href="#Agent" title="http://lod.ehri-project-test.eu/ontology#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range

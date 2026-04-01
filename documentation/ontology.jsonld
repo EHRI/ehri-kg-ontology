@@ -23,7 +23,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+      "@id" : "http://lod.ehri-project-test.eu/ontology#Country"
     }, {
       "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
     } ]
@@ -33,7 +33,129 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://lod.ehri-project-test.eu/ontology#Agent"
+      "@id" : "http://lod.ehri-project-test.eu/ontology#Person"
+    }, {
+      "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+    }, {
+      "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasSelf" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#has_copy_relation_role"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "_:genid24"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#relationHasSource"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+    }, {
+      "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "_:genid28"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#relationHasTarget"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+    }, {
+      "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasSelf" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#is_copy_of_relation_role"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "_:genid33"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#relationHasSource"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+    }, {
+      "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "_:genid37"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#relationHasTarget"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
     }, {
       "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
     } ]
@@ -77,7 +199,7 @@
   } ],
   "http://purl.org/dc/terms/abstract" : [ {
     "@language" : "en",
-    "@value" : "This ontology defines the data model used by the EHRI Knowledge Graph for the representation of the information hosted in the EHRI Portal. It does so by extending RiC-O v1.0.2 and reusing some of the schema.org concepts."
+    "@value" : "This ontology defines the data model used by the EHRI Knowledge Graph for the representation of the information hosted in the EHRI Portal. It does so by extending RiC-O v1.1 and reusing some of the schema.org concepts."
   } ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -102,16 +224,16 @@
     "@id" : "https://oscars-project.eu/projects/ehri-kg-european-holocaust-research-infrastructure-knowledge-graph"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "https://www.ica.org/standards/RiC/ontology/1.0.2"
+    "@id" : "https://www.ica.org/standards/RiC/ontology/1.1"
   } ],
   "http://www.w3.org/2002/07/owl#priorVersion" : [ {
     "@id" : "http://lod.ehri-project-test.eu/ontology/0.1.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology/0.1.1"
+    "@id" : "http://lod.ehri-project-test.eu/ontology/0.2.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.1.1"
+    "@value" : "0.2.0"
   } ],
   "http://xmlns.com/foaf/0.1/logo" : [ {
     "@id" : "https://ehri-kg.ehri-project.eu/images/ehri-logo.svg"
@@ -303,6 +425,33 @@
     "@id" : "https://www.ica.org/standards/RiC/ontology#Group"
   } ]
 }, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#HasCopyRelation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects an Institution or a RecordResource to another Institution which has a copy of it (or part of it) or to a RecordResource which is a copy of the former."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has copy relation"
+  }, {
+    "@language" : "es",
+    "@value" : "Relación de tenencia de copia"
+  }, {
+    "@language" : "fr",
+    "@value" : "Relation de propriété de copie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#Relation"
+  }, {
+    "@id" : "_:genid23"
+  }, {
+    "@id" : "_:genid27"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid22"
+  } ]
+}, {
   "@id" : "http://lod.ehri-project-test.eu/ontology#Institution",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -345,6 +494,33 @@
     "@id" : "http://schema.org/PostalAddress"
   }, {
     "@id" : "https://www.ica.org/standards/RiC/ontology#PhysicalLocation"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#IsCopyOfRelation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects an Institution or an RecordResource to another Institution whose originals have been copied (or part of them) or to a RecordResource which is the original of the this copy."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Is copy of relation"
+  }, {
+    "@language" : "es",
+    "@value" : "Relación de copia de"
+  }, {
+    "@language" : "fr",
+    "@value" : "Relation de copie de"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#Relation"
+  }, {
+    "@id" : "_:genid32"
+  }, {
+    "@id" : "_:genid36"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid31"
   } ]
 }, {
   "@id" : "http://lod.ehri-project-test.eu/ontology#Item",
@@ -401,7 +577,7 @@
     "@language" : "en",
     "@value" : "other level"
   }, {
-    "@language" : "en",
+    "@language" : "es",
     "@value" : "otro nivel"
   } ],
   "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
@@ -591,7 +767,7 @@
     "@value" : "Provides information about the Holocaust and WWII and how it relates to the archival landscape in that country."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#Country"
+    "@id" : "_:genid13"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -656,7 +832,33 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#notes"
+    "@id" : "https://www.ica.org/standards/RiC/ontology#note"
+  } ]
+}, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#biographicalHistory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Records concisely any significant information on the origin, progress, development and work of the organisation (or organisations) or on the life and work of the individual (or individuals)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid16"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "biographical history"
+  }, {
+    "@language" : "fr",
+    "@value" : "notice biographique"
+  }, {
+    "@language" : "es",
+    "@value" : "reseña biográfica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#history"
   } ]
 }, {
   "@id" : "http://lod.ehri-project-test.eu/ontology#buildings",
@@ -689,7 +891,7 @@
     "@value" : "Collects information about the conditions, requirements and procedures for access to, and use of institutional services and/or specific records."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid13"
+    "@id" : "_:genid19"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -840,6 +1042,32 @@
     "@id" : "http://lod.ehri-project-test.eu/ontology#isOrWasScriptOf"
   } ]
 }, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#has_copy_relation_role",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects a HasCopyRelation to itself."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#HasCopyRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "a le rôle de la relation de propriété de copie"
+  }, {
+    "@language" : "es",
+    "@value" : "desempeña el rol de la relación de tenencia de copia"
+  }, {
+    "@language" : "en",
+    "@value" : "has the role of the Has copy relation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#HasCopyRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#relation_role"
+  } ]
+}, {
   "@id" : "http://lod.ehri-project-test.eu/ontology#isCopyOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -894,6 +1122,32 @@
     "@id" : "https://www.ica.org/standards/RiC/ontology#isRelatedTo"
   } ]
 }, {
+  "@id" : "http://lod.ehri-project-test.eu/ontology#is_copy_of_relation_role",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects a IsCopyOfRelation to itself."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#IsCopyOfRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "a le rôle de la relation de copie de"
+  }, {
+    "@language" : "es",
+    "@value" : "desempeña el rol de la relación de es copia de"
+  }, {
+    "@language" : "en",
+    "@value" : "has the role of the Is copy of relation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://lod.ehri-project-test.eu/ontology#IsCopyOfRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#relation_role"
+  } ]
+}, {
   "@id" : "http://lod.ehri-project-test.eu/ontology#locationOfCopies",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -940,29 +1194,6 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#notes",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Provides information that cannot be accommodated in any of the other data properties."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "nota(s)"
-  }, {
-    "@language" : "en",
-    "@value" : "note(s)"
-  }, {
-    "@language" : "fr",
-    "@value" : "note(s)"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
-  } ]
-}, {
   "@id" : "http://lod.ehri-project-test.eu/ontology#otherFindingAids",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -986,7 +1217,7 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#physicalCharacterisiticsAndTechnicalRequirements",
+  "@id" : "http://lod.ehri-project-test.eu/ontology#physicalCharacteristicsAndTechnicalRequirements",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1210,7 +1441,7 @@
     "@value" : "sources séparées"
   }, {
     "@language" : "es",
-    "@value" : "unidadades de descripción separadas"
+    "@value" : "unidades de descripción separadas"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
@@ -1223,7 +1454,7 @@
     "@value" : "Provides information on sources consulted in preparing the description and the personnel involved."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid16"
+    "@id" : "http://lod.ehri-project-test.eu/ontology#Agent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -1486,9 +1717,10 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://schema.org/ArchiveOrganization"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://schema.org/openingHours"
-  }, {
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fr",
     "@value" : "heures d'ouverture"
   }, {
