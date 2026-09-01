@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://lod.ehri-project-test.eu/ontology#","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://lod.ehri-project-test.eu/ontology#","name":"EHRI Ontology", "headline":"This ontology defines the data model used by the EHRI Knowledge Graph for the representation of the information hosted in the EHRI Portal. It does so by extending RiC-O v1.1 and reusing some of the schema.org concepts.", "dateReleased":"Tue Sep 01 14:02:12 UTC 2026", "version":"0.2.0", "license":"https://creativecommons.org/licenses/by/4.0/", "codeRepository":"https://github.com/EHRI/ehri-kg-ontology", "author":[{"@type":"Person","name":"Herminio García-González (Kazerne Dossin)"},{"@type":"Person","name":"Mike Bryant (NIOD)"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://lod.ehri-project-test.eu/ontology#","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://lod.ehri-project-test.eu/ontology#","name":"EHRI Ontology", "headline":"This ontology defines the data model used by the EHRI Knowledge Graph for the representation of the information hosted in the EHRI Portal. It does so by extending RiC-O v1.1 and reusing some of the schema.org concepts.", "dateReleased":"Tue Sep 01 14:07:34 UTC 2026", "version":"0.2.0", "license":"https://creativecommons.org/licenses/by/4.0/", "codeRepository":"https://github.com/EHRI/ehri-kg-ontology", "author":[{"@type":"Person","name":"Herminio García-González (Kazerne Dossin)"},{"@type":"Person","name":"Mike Bryant (NIOD)"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -62,6 +62,7 @@ function loadTOC(){
       $("#overview").load("sections/overview-en.html"); 
       $("#description").load("sections/description-en.html"); 
       $("#references").load("sections/references-en.html"); 
+      $("#changelog").load("sections/changelog-en.html"); 
       $("#crossref").load("sections/crossref-en.html", null, loadHash); 
     });
     </script> 
@@ -87,6 +88,9 @@ function loadTOC(){
 
 <dt>Publisher:</dt>
 <dd>EHRI-ERIC</dd>
+<dt>Imported Ontologies:</dt>
+<dd><a href="https://www.ica.org/standards/RiC/ontology/1.1">RiC-O 1.1</a></dd>
+
 <dt>Funder:</dt>
 <dd><a href="https://oscars-project.eu/">https://oscars-project.eu/</a></dd>
 
