@@ -12,8 +12,7 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:schema="http://schema.org/"
-     xmlns:ontology="https://www.ica.org/standards/RiC/ontology#">
+     xmlns:schema="http://schema.org/">
     <owl:Ontology rdf:about="http://lod.ehri-project-test.eu/ontology">
         <owl:versionIRI rdf:resource="http://lod.ehri-project-test.eu/ontology/0.2.0"/>
         <owl:imports rdf:resource="https://www.ica.org/standards/RiC/ontology/1.1"/>
@@ -48,12 +47,54 @@
     
 
 
+    <!-- http://creativecommons.org/ns#license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/contributor -->
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
     
 
 
@@ -92,10 +133,31 @@
     
 
 
+    <!-- http://www.w3.org/2002/07/owl#minQualifiedCardinality -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#minQualifiedCardinality"/>
+    
+
+
     <!-- http://www.w3.org/2004/02/skos/core#definition -->
 
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
     
 
 
@@ -237,6 +299,34 @@
         <rdfs:label xml:lang="es">desempeña el rol de la relación de es copia de</rdfs:label>
         <rdfs:label xml:lang="en">has the role of the Is copy of relation</rdfs:label>
     </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#hasCopy -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasCopy"/>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#isCopyOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isCopyOf"/>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#isRelatedTo -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#relation_role -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#relation_role"/>
     
 
 
@@ -746,6 +836,34 @@
     
 
 
+    <!-- https://www.ica.org/standards/RiC/ontology#conditionsOfAccess -->
+
+
+    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#conditionsOfAccess"/>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#generalDescription -->
+
+
+    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#generalDescription"/>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#history -->
+
+
+    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#history"/>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#note -->
+
+
+    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#note"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -888,35 +1006,9 @@
                 <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
             </owl:Restriction>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error3"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error4"/>
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Relation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://lod.ehri-project-test.eu/ontology#Institution"/>
-                            <rdf:Description rdf:about="http://lod.ehri-project-test.eu/ontology#RecordResource"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:onClass>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://lod.ehri-project-test.eu/ontology#Institution"/>
-                            <rdf:Description rdf:about="http://lod.ehri-project-test.eu/ontology#RecordResource"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:onClass>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Connects an Institution or a RecordResource to another Institution which has a copy of it (or part of it) or to a RecordResource which is a copy of the former.</rdfs:comment>
         <rdfs:label xml:lang="en">Has copy relation</rdfs:label>
         <rdfs:label xml:lang="es">Relación de tenencia de copia</rdfs:label>
@@ -963,35 +1055,9 @@
                 <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
             </owl:Restriction>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error1"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error2"/>
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Relation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://lod.ehri-project-test.eu/ontology#Institution"/>
-                            <rdf:Description rdf:about="http://lod.ehri-project-test.eu/ontology#RecordResource"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:onClass>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://lod.ehri-project-test.eu/ontology#Institution"/>
-                            <rdf:Description rdf:about="http://lod.ehri-project-test.eu/ontology#RecordResource"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:onClass>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Connects an Institution or an RecordResource to another Institution whose originals have been copied (or part of them) or to a RecordResource which is the original of the this copy.</rdfs:comment>
         <rdfs:label xml:lang="en">Is copy of relation</rdfs:label>
         <rdfs:label xml:lang="es">Relación de copia de</rdfs:label>
@@ -1080,6 +1146,34 @@
     
 
 
+    <!-- http://org.semanticweb.owlapi/error#Error1 -->
+
+
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error1"/>
+    
+
+
+    <!-- http://org.semanticweb.owlapi/error#Error2 -->
+
+
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error2"/>
+    
+
+
+    <!-- http://org.semanticweb.owlapi/error#Error3 -->
+
+
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error3"/>
+    
+
+
+    <!-- http://org.semanticweb.owlapi/error#Error4 -->
+
+
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error4"/>
+    
+
+
     <!-- http://schema.org/ArchiveOrganization -->
 
 
@@ -1097,9 +1191,114 @@
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
 
-    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
-    </rdf:Description>
+    </owl:Class>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#ActivityType -->
+
+
+    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#ActivityType"/>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#Agent -->
+
+
+    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#Agent"/>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#AgentName -->
+
+
+    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#AgentName"/>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#Concept -->
+
+
+    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#Concept"/>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#CorporateBody -->
+
+
+    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#Family -->
+
+
+    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#Family"/>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#Group -->
+
+
+    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#Group"/>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#Person -->
+
+
+    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#Person"/>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#PhysicalLocation -->
+
+
+    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#PhysicalLocation"/>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#Place -->
+
+
+    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#Place"/>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#RecordResource -->
+
+
+    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#RecordSet -->
+
+
+    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#RecordSetType -->
+
+
+    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#Relation -->
+
+
+    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#Relation"/>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#Thing -->
+
+
+    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#Thing"/>
     
 
 
@@ -1121,11 +1320,11 @@
     <owl:NamedIndividual rdf:about="http://lod.ehri-project-test.eu/ontology#Item">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
-        <skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
-        <skos:topConceptOf rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
         <rdfs:label xml:lang="en">item</rdfs:label>
         <rdfs:label xml:lang="fr">pièce</rdfs:label>
         <rdfs:label xml:lang="es">unidad documental simple</rdfs:label>
+        <skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
+        <skos:topConceptOf rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
     </owl:NamedIndividual>
     
 
@@ -1136,11 +1335,11 @@
     <owl:NamedIndividual rdf:about="http://lod.ehri-project-test.eu/ontology#OtherLevel">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
-        <skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
-        <skos:topConceptOf rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
         <rdfs:label xml:lang="fr">autre niveau</rdfs:label>
         <rdfs:label xml:lang="en">other level</rdfs:label>
         <rdfs:label xml:lang="es">otro nivel</rdfs:label>
+        <skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
+        <skos:topConceptOf rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
     </owl:NamedIndividual>
     
 
@@ -1151,11 +1350,11 @@
     <owl:NamedIndividual rdf:about="http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#RecordGroup">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
-        <skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
-        <skos:topConceptOf rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
         <rdfs:label xml:lang="fr">groupe d&apos;enregistrement</rdfs:label>
         <rdfs:label xml:lang="en">record group</rdfs:label>
         <rdfs:label xml:lang="es">unidad documental compuesta</rdfs:label>
+        <skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
+        <skos:topConceptOf rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
     </owl:NamedIndividual>
     
 
@@ -1166,11 +1365,11 @@
     <owl:NamedIndividual rdf:about="http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subcollection">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
-        <skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
-        <skos:topConceptOf rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
         <rdfs:label xml:lang="fr">sous-collection</rdfs:label>
         <rdfs:label xml:lang="en">sub-collection</rdfs:label>
         <rdfs:label xml:lang="es">subcolección</rdfs:label>
+        <skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
+        <skos:topConceptOf rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
     </owl:NamedIndividual>
     
 
@@ -1181,11 +1380,11 @@
     <owl:NamedIndividual rdf:about="http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subfonds">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
-        <skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
-        <skos:topConceptOf rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
         <rdfs:label xml:lang="fr">sous-fonds</rdfs:label>
         <rdfs:label xml:lang="en">sub-fonds</rdfs:label>
         <rdfs:label xml:lang="es">subfondo</rdfs:label>
+        <skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
+        <skos:topConceptOf rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
     </owl:NamedIndividual>
     
 
@@ -1196,11 +1395,11 @@
     <owl:NamedIndividual rdf:about="http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subgroup">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
-        <skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
-        <skos:topConceptOf rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
         <rdfs:label xml:lang="fr">sous-groupe</rdfs:label>
         <rdfs:label xml:lang="en">sub-group</rdfs:label>
         <rdfs:label xml:lang="es">subunidad documental compuesta</rdfs:label>
+        <skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
+        <skos:topConceptOf rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
     </owl:NamedIndividual>
     
 
@@ -1211,12 +1410,24 @@
     <owl:NamedIndividual rdf:about="http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subseries">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
-        <skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
-        <skos:topConceptOf rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
         <rdfs:label xml:lang="fr">sous-série</rdfs:label>
         <rdfs:label xml:lang="en">sub-series</rdfs:label>
         <rdfs:label xml:lang="es">subserie</rdfs:label>
+        <skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
+        <skos:topConceptOf rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
     </owl:NamedIndividual>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
 </rdf:RDF>
 
 
