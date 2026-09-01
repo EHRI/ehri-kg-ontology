@@ -17,4 +17,4 @@ mkdir documentation/images
 cp configurations/documentationAdditionalContent/ehriPortalDataModel.png documentation/images/ehriPortalDataModel.png
 cp configurations/documentationAdditionalContent/ontologyDiagram.png documentation/images/ontologyDiagram.png
 cat configurations/documentationAdditionalContent/custom.css >> documentation/resources/extra.css
-sed -i 's/<a href="https:\/\/www\.ica\.org\/standards\/RiC\/ontology">ontology<\/a>/<a href="https:\/\/www\.ica\.org\/standards\/RiC\/ontology\/1\.0\.2">RiC-O 1\.0\.2<\/a>/g' documentation/index-en.html
+sed -i 's/<a href="https:\/\/www\.ica\.org\/standards\/RiC\/ontology">ontology<\/a>/<a href="https:\/\/www\.ica\.org\/standards\/RiC\/ontology\/1\.1">RiC-O 1\.1<\/a>/g' documentation/index-en.html

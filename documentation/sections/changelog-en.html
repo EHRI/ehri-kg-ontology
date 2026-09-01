@@ -12,6 +12,113 @@
 <li>Added: SubClass of https://www.ica.org/standards/RiC/ontology#ActivityType</li>
 </ul>
 </li>
+<li><a href="#HasCopyRelation">http://lod.ehri-project-test.eu/ontology#HasCopyRelation</a>
+<ul>
+<li><li>Added: SubClass of https://www.ica.org/standards/RiC/ontology#Relation</li>
+<li><li>Added: EquivalentClasses EquivalentClasses(&lt;http://lod.ehri-project-test.eu/ontology#HasCopyRelation&gt; ObjectHasSelf(&lt;http://lod.ehri-project-test.eu/ontology#has_copy_relation_role&gt;))</li>
+</ul>
+</li>
+<li><a href="#IsCopyOfRelation">http://lod.ehri-project-test.eu/ontology#IsCopyOfRelation</a>
+<ul>
+<li>Added: SubClass of https://www.ica.org/standards/RiC/ontology#Relation</li>
+<li><li>Added: EquivalentClasses EquivalentClasses(&lt;http://lod.ehri-project-test.eu/ontology#IsCopyOfRelation&gt; ObjectHasSelf(&lt;http://lod.ehri-project-test.eu/ontology#is_copy_of_relation_role&gt;))</li>
+<li></ul>
+</li>
 <li><a href="#https://www.ica.org/standards/RiC/ontology#ActivityType">https://www.ica.org/standards/RiC/ontology#ActivityType</a>
+</li>
+<li><a href="#https://www.ica.org/standards/RiC/ontology#Relation">https://www.ica.org/standards/RiC/ontology#Relation</a>
+</li>
+</ul></details><h3 id="changeProp" class="list">Object Properties</h3>
+<details><summary><u>Added object properties</u></summary>
+<ul><li><a href="#has_copy_relation_role">http://lod.ehri-project-test.eu/ontology#has_copy_relation_role</a>
+<ul>
+<li>Added: SubProperty of https://www.ica.org/standards/RiC/ontology#relation_role</li>
+<li>Added: domain http://lod.ehri-project-test.eu/ontology#HasCopyRelation</li>
+<li>Added: Range http://lod.ehri-project-test.eu/ontology#HasCopyRelation</li>
+</ul>
+</li>
+<li><a href="#is_copy_of_relation_role">http://lod.ehri-project-test.eu/ontology#is_copy_of_relation_role</a>
+<ul>
+<li>Added: Range http://lod.ehri-project-test.eu/ontology#IsCopyOfRelation</li>
+<li>Added: SubProperty of https://www.ica.org/standards/RiC/ontology#relation_role</li>
+<li>Added: domain http://lod.ehri-project-test.eu/ontology#IsCopyOfRelation</li>
+</ul>
+</li>
+<li><a href="#https://www.ica.org/standards/RiC/ontology#relationHasSource">https://www.ica.org/standards/RiC/ontology#relationHasSource</a>
+</li>
+<li><a href="#https://www.ica.org/standards/RiC/ontology#relationHasTarget">https://www.ica.org/standards/RiC/ontology#relationHasTarget</a>
+</li>
+<li><a href="#https://www.ica.org/standards/RiC/ontology#relation_role">https://www.ica.org/standards/RiC/ontology#relation_role</a>
+</li>
+</ul></details><h3 id="changeDataProp" class="list">Data Properties</h3>
+<details><summary><u>Modified data properties</u></summary>
+<ul><li><a href="#archivalHistory">http://lod.ehri-project-test.eu/ontology#archivalHistory</a>
+<ul>
+<li>Added: Domain Union of (http://lod.ehri-project-test.eu/ontology#Country, http://lod.ehri-project-test.eu/ontology#RecordResource)</li>
+</ul>
+<ul>
+<li>Deleted: Domain http://lod.ehri-project-test.eu/ontology#Country</li>
+</ul>
+</li>
+<li><a href="#archivistNote">http://lod.ehri-project-test.eu/ontology#archivistNote</a>
+<ul>
+<li>Added: SubProperty of https://www.ica.org/standards/RiC/ontology#note</li>
+</ul>
+<ul>
+<li>Deleted: SubProperty of http://lod.ehri-project-test.eu/ontology#notes</li>
+</ul>
+</li>
+<li><a href="#otherFindingAids">http://lod.ehri-project-test.eu/ontology#otherFindingAids</a>
+<ul>
+<li>Added: rdfs:comment "Identifies and gives information about any finding aids related to the unit of description."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Provides information on the history of the unit of description that is significant for its authenticity, integrity and interpretation."@en</li>
+</ul>
+</li>
+<li><a href="#separatedMaterial">http://lod.ehri-project-test.eu/ontology#separatedMaterial</a>
+<ul>
+<li>Added: rdfs:label "unidades de descripción separadas"@es</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "unidadades de descripción separadas"@es</li>
+</ul>
+</li>
+<li><a href="#sources">http://lod.ehri-project-test.eu/ontology#sources</a>
+<ul>
+<li>Added: Domain http://lod.ehri-project-test.eu/ontology#Agent</li>
+</ul>
+<ul>
+<li>Deleted: Domain Union of (http://lod.ehri-project-test.eu/ontology#Agent, http://lod.ehri-project-test.eu/ontology#RecordResource)</li>
+</ul>
+</li>
+<li><a href="#http://schema.org/openingHours">http://schema.org/openingHours</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://schema.org/openingHours</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label http://schema.org/openingHours</li>
+</ul>
+</li>
+</ul></details><details><summary><u>Added data properties</u></summary>
+<ul><li><a href="#biographicalHistory">http://lod.ehri-project-test.eu/ontology#biographicalHistory</a>
+<ul>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+<li>Added: SubProperty of https://www.ica.org/standards/RiC/ontology#history</li>
+<li>Added: Domain Union of (http://lod.ehri-project-test.eu/ontology#Person, http://lod.ehri-project-test.eu/ontology#RecordResource)</li>
+</ul>
+</li>
+<li><a href="#physicalCharacteristicsAndTechnicalRequirements">http://lod.ehri-project-test.eu/ontology#physicalCharacteristicsAndTechnicalRequirements</a>
+<ul>
+<li>Added: Domain http://lod.ehri-project-test.eu/ontology#RecordResource</li>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+</ul>
+</li>
+<li><a href="#https://www.ica.org/standards/RiC/ontology#note">https://www.ica.org/standards/RiC/ontology#note</a>
+</li>
+</ul></details><details><summary><u>Deleted data properties</u></summary>
+<ul><li><a href="#notes">http://lod.ehri-project-test.eu/ontology#notes</a>
+</li>
+<li><a href="#physicalCharacterisiticsAndTechnicalRequirements">http://lod.ehri-project-test.eu/ontology#physicalCharacterisiticsAndTechnicalRequirements</a>
 </li>
 </ul></details></div>
