@@ -17,6 +17,9 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
       
+      - name: Install uv
+        run: snap install astral-uv --classic
+
       - name: Run documentation generation script
         run: bash generate-documentation.sh
       
