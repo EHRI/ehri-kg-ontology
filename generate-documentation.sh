@@ -10,7 +10,7 @@ proxy_pid=$!
 
 sleep 30s
 
-keytool -importcert -noprompt -alias mitmproxy -storepass changeit -keystore $JAVA_HOME/lib/security/cacerts -trustcacerts -file ~/.mitmproxy/mitmproxy-ca-cert.pem
+sudo keytool -importcert -noprompt -alias mitmproxy -storepass changeit -keystore $JAVA_HOME/lib/security/cacerts -trustcacerts -file ~/.mitmproxy/mitmproxy-ca-cert.pem
 
 # Generate documentation with OOPS evaluation
 java -Dhttps.proxyHost=localhost -Dhttps.proxyPort=8080 -Dhttp.proxyHost=localhost -Dhttp.proxyPort=8080 -jar widoco.jar -ontFile ./ontology/ehri.owl -outFolder ./documentation -getOntologyMetadata -oops -rewriteAll -htaccess -excludeProvenance -import rico-v1.0.2.rdf
