@@ -14,7 +14,7 @@ proxy_pid=$!
 
 sleep 30s
 
-if [ `$with_sudo keytool -list -cacerts -alias mitmproxy -storepass changeit | grep "Certificate fingerprint" | wc -l` -gt 1 ]; then
+if [ `$with_sudo keytool -list -cacerts -alias mitmproxy -storepass changeit | grep "Certificate fingerprint" | wc -l` -lt 1 ]; then
     echo "Importing mitmproxy certificate into Java cacerts"
     $with_sudo keytool -importcert -noprompt -alias mitmproxy -storepass changeit -keystore $JAVA_HOME/lib/security/cacerts -trustcacerts -file ~/.mitmproxy/mitmproxy-ca-cert.pem
 fi
