@@ -25,9 +25,27 @@
 # #################################################################
 # 
 # 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/elements/1.1/contributor
 <http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 <http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2000/01/rdf-schema#comment> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/vocab/vann/preferredNamespacePrefix
 <http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -44,8 +62,17 @@
 # http://schema.org/funding
 <http://schema.org/funding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://www.w3.org/2002/07/owl#minQualifiedCardinality
+<http://www.w3.org/2002/07/owl#minQualifiedCardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://www.w3.org/2004/02/skos/core#definition
 <http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#topConceptOf
+<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://xmlns.com/foaf/0.1/logo
 <http://xmlns.com/foaf/0.1/logo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -62,7 +89,9 @@
 # http://lod.ehri-project-test.eu/ontology#hasCopy
 <http://lod.ehri-project-test.eu/ontology#hasCopy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://lod.ehri-project-test.eu/ontology#hasCopy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.ica.org/standards/RiC/ontology#hasCopy> .
+<https://www.ica.org/standards/RiC/ontology#hasCopy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://lod.ehri-project-test.eu/ontology#hasCopy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.ica.org/standards/RiC/ontology#isRelatedTo> .
+<https://www.ica.org/standards/RiC/ontology#isRelatedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://lod.ehri-project-test.eu/ontology#hasCopy> <http://www.w3.org/2002/07/owl#inverseOf> <http://lod.ehri-project-test.eu/ontology#isCopyOf> .
 <http://lod.ehri-project-test.eu/ontology#hasCopy> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
 _:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
@@ -101,6 +130,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # http://lod.ehri-project-test.eu/ontology#has_copy_relation_role
 <http://lod.ehri-project-test.eu/ontology#has_copy_relation_role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://lod.ehri-project-test.eu/ontology#has_copy_relation_role> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.ica.org/standards/RiC/ontology#relation_role> .
+<https://www.ica.org/standards/RiC/ontology#relation_role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://lod.ehri-project-test.eu/ontology#has_copy_relation_role> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lod.ehri-project-test.eu/ontology#HasCopyRelation> .
 <http://lod.ehri-project-test.eu/ontology#has_copy_relation_role> <http://www.w3.org/2000/01/rdf-schema#range> <http://lod.ehri-project-test.eu/ontology#HasCopyRelation> .
 <http://lod.ehri-project-test.eu/ontology#has_copy_relation_role> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a HasCopyRelation to itself."@en .
@@ -111,6 +141,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # http://lod.ehri-project-test.eu/ontology#isCopyOf
 <http://lod.ehri-project-test.eu/ontology#isCopyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://lod.ehri-project-test.eu/ontology#isCopyOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.ica.org/standards/RiC/ontology#isCopyOf> .
+<https://www.ica.org/standards/RiC/ontology#isCopyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://lod.ehri-project-test.eu/ontology#isCopyOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.ica.org/standards/RiC/ontology#isRelatedTo> .
 <http://lod.ehri-project-test.eu/ontology#isCopyOf> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid7 .
 _:genid7 <http://www.w3.org/2002/07/owl#unionOf> _:genid9 .
@@ -155,6 +186,14 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://lod.ehri-project-test.eu/ontology#is_copy_of_relation_role> <http://www.w3.org/2000/01/rdf-schema#label> "desempeña el rol de la relación de es copia de"@es .
 <http://lod.ehri-project-test.eu/ontology#is_copy_of_relation_role> <http://www.w3.org/2000/01/rdf-schema#label> "has the role of the Is copy of relation"@en .
 # 
+# https://www.ica.org/standards/RiC/ontology#hasCopy
+# 
+# https://www.ica.org/standards/RiC/ontology#isCopyOf
+# 
+# https://www.ica.org/standards/RiC/ontology#isRelatedTo
+# 
+# https://www.ica.org/standards/RiC/ontology#relation_role
+# 
 # 
 # 
 # #################################################################
@@ -194,6 +233,7 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://lod.ehri-project-test.eu/ontology#archivalHistory
 <http://lod.ehri-project-test.eu/ontology#archivalHistory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://lod.ehri-project-test.eu/ontology#archivalHistory> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.ica.org/standards/RiC/ontology#history> .
+<https://www.ica.org/standards/RiC/ontology#history> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://lod.ehri-project-test.eu/ontology#archivalHistory> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid13 .
 _:genid13 <http://www.w3.org/2002/07/owl#unionOf> _:genid15 .
 _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
@@ -221,6 +261,7 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://lod.ehri-project-test.eu/ontology#archivistNote
 <http://lod.ehri-project-test.eu/ontology#archivistNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://lod.ehri-project-test.eu/ontology#archivistNote> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.ica.org/standards/RiC/ontology#note> .
+<https://www.ica.org/standards/RiC/ontology#note> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://lod.ehri-project-test.eu/ontology#archivistNote> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lod.ehri-project-test.eu/ontology#RecordResource> .
 <http://lod.ehri-project-test.eu/ontology#archivistNote> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <http://lod.ehri-project-test.eu/ontology#archivistNote> <http://www.w3.org/2000/01/rdf-schema#comment> "Explains how the description was prepared and by whom."@en .
@@ -258,6 +299,7 @@ _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://lod.ehri-project-test.eu/ontology#conditionsOfAccess
 <http://lod.ehri-project-test.eu/ontology#conditionsOfAccess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://lod.ehri-project-test.eu/ontology#conditionsOfAccess> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.ica.org/standards/RiC/ontology#conditionsOfAccess> .
+<https://www.ica.org/standards/RiC/ontology#conditionsOfAccess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://lod.ehri-project-test.eu/ontology#conditionsOfAccess> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid19 .
 _:genid19 <http://www.w3.org/2002/07/owl#unionOf> _:genid21 .
 _:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
@@ -294,6 +336,7 @@ _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://lod.ehri-project-test.eu/ontology#generalContext
 <http://lod.ehri-project-test.eu/ontology#generalContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://lod.ehri-project-test.eu/ontology#generalContext> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.ica.org/standards/RiC/ontology#generalDescription> .
+<https://www.ica.org/standards/RiC/ontology#generalDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://lod.ehri-project-test.eu/ontology#generalContext> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lod.ehri-project-test.eu/ontology#Institution> .
 <http://lod.ehri-project-test.eu/ontology#generalContext> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <http://lod.ehri-project-test.eu/ontology#generalContext> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides information about the geographical and cultural context of an institution."@en .
@@ -496,6 +539,14 @@ _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://schema.org/telephone> <http://www.w3.org/2000/01/rdf-schema#label> "número de teléfono"@es .
 <http://schema.org/telephone> <http://www.w3.org/2000/01/rdf-schema#label> "telephone number"@en .
 # 
+# https://www.ica.org/standards/RiC/ontology#conditionsOfAccess
+# 
+# https://www.ica.org/standards/RiC/ontology#generalDescription
+# 
+# https://www.ica.org/standards/RiC/ontology#history
+# 
+# https://www.ica.org/standards/RiC/ontology#note
+# 
 # 
 # 
 # #################################################################
@@ -508,6 +559,7 @@ _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://lod.ehri-project-test.eu/ontology#AcquisitionType
 <http://lod.ehri-project-test.eu/ontology#AcquisitionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#AcquisitionType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.ica.org/standards/RiC/ontology#ActivityType> .
+<https://www.ica.org/standards/RiC/ontology#ActivityType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#AcquisitionType> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the type of the acquisition as a specialisation of rico:ActivityType."@en .
 <http://lod.ehri-project-test.eu/ontology#AcquisitionType> <http://www.w3.org/2000/01/rdf-schema#label> "Acquisition type"@en .
 <http://lod.ehri-project-test.eu/ontology#AcquisitionType> <http://www.w3.org/2000/01/rdf-schema#label> "Tipo de adquisición"@es .
@@ -516,6 +568,7 @@ _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://lod.ehri-project-test.eu/ontology#Agent
 <http://lod.ehri-project-test.eu/ontology#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.ica.org/standards/RiC/ontology#Agent> .
+<https://www.ica.org/standards/RiC/ontology#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "This is a specialisation of the rico:Agent class created for its extension with additional properties."@en .
 <http://lod.ehri-project-test.eu/ontology#Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent"@en .
 <http://lod.ehri-project-test.eu/ontology#Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent"@fr .
@@ -524,6 +577,7 @@ _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://lod.ehri-project-test.eu/ontology#AlternateAgentName
 <http://lod.ehri-project-test.eu/ontology#AlternateAgentName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#AlternateAgentName> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.ica.org/standards/RiC/ontology#AgentName> .
+<https://www.ica.org/standards/RiC/ontology#AgentName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#AlternateAgentName> <http://www.w3.org/2000/01/rdf-schema#comment> "This class allows to represent any other name(s) used for an institution, or by which it may be known. This could include other forms of the same name, abbreviations, acronyms, other institutional names, or changes of name over time (historical names)."@en .
 <http://lod.ehri-project-test.eu/ontology#AlternateAgentName> <http://www.w3.org/2000/01/rdf-schema#label> "Alternative forms of the agent's name"@en .
 <http://lod.ehri-project-test.eu/ontology#AlternateAgentName> <http://www.w3.org/2000/01/rdf-schema#label> "Formas alternativas del nombre"@es .
@@ -532,6 +586,7 @@ _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://lod.ehri-project-test.eu/ontology#City
 <http://lod.ehri-project-test.eu/ontology#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.ica.org/standards/RiC/ontology#Place> .
+<https://www.ica.org/standards/RiC/ontology#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#City> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents a city as a more precise type of rico:Place."@en .
 <http://lod.ehri-project-test.eu/ontology#City> <http://www.w3.org/2000/01/rdf-schema#label> "City"@en .
 <http://lod.ehri-project-test.eu/ontology#City> <http://www.w3.org/2000/01/rdf-schema#label> "Ciudad"@es .
@@ -541,6 +596,7 @@ _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://lod.ehri-project-test.eu/ontology#CorporateBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#CorporateBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lod.ehri-project-test.eu/ontology#Group> .
 <http://lod.ehri-project-test.eu/ontology#CorporateBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.ica.org/standards/RiC/ontology#CorporateBody> .
+<https://www.ica.org/standards/RiC/ontology#CorporateBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#CorporateBody> <http://www.w3.org/2000/01/rdf-schema#comment> "This is a specialisation of the rico:CorporateBody class created for its extension with additional properties."@en .
 <http://lod.ehri-project-test.eu/ontology#CorporateBody> <http://www.w3.org/2000/01/rdf-schema#label> "Collectivité"@fr .
 <http://lod.ehri-project-test.eu/ontology#CorporateBody> <http://www.w3.org/2000/01/rdf-schema#label> "Corporate body"@en .
@@ -558,6 +614,7 @@ _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://lod.ehri-project-test.eu/ontology#Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#Family> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lod.ehri-project-test.eu/ontology#Group> .
 <http://lod.ehri-project-test.eu/ontology#Family> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.ica.org/standards/RiC/ontology#Family> .
+<https://www.ica.org/standards/RiC/ontology#Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#Family> <http://www.w3.org/2000/01/rdf-schema#comment> "This is a specialisation of the rico:Family class created for its extension with additional properties."@en .
 <http://lod.ehri-project-test.eu/ontology#Family> <http://www.w3.org/2000/01/rdf-schema#label> "Familia"@es .
 <http://lod.ehri-project-test.eu/ontology#Family> <http://www.w3.org/2000/01/rdf-schema#label> "Famille"@fr .
@@ -575,6 +632,7 @@ _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://lod.ehri-project-test.eu/ontology#Group> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#Group> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lod.ehri-project-test.eu/ontology#Agent> .
 <http://lod.ehri-project-test.eu/ontology#Group> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.ica.org/standards/RiC/ontology#Group> .
+<https://www.ica.org/standards/RiC/ontology#Group> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#Group> <http://www.w3.org/2000/01/rdf-schema#comment> "This is a specialisation of the rico:Group class created for its extension with additional properties."@en .
 <http://lod.ehri-project-test.eu/ontology#Group> <http://www.w3.org/2000/01/rdf-schema#label> "Group"@en .
 <http://lod.ehri-project-test.eu/ontology#Group> <http://www.w3.org/2000/01/rdf-schema#label> "Groupe d'agents"@fr .
@@ -586,33 +644,12 @@ _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid22 <http://www.w3.org/2002/07/owl#hasSelf> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 _:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://lod.ehri-project-test.eu/ontology#has_copy_relation_role> .
 _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://lod.ehri-project-test.eu/ontology#HasCopyRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error3> .
+<http://org.semanticweb.owlapi/error#Error3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lod.ehri-project-test.eu/ontology#HasCopyRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error4> .
+<http://org.semanticweb.owlapi/error#Error4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#HasCopyRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.ica.org/standards/RiC/ontology#Relation> .
-<http://lod.ehri-project-test.eu/ontology#HasCopyRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
-_:genid23 <http://www.w3.org/2002/07/owl#onClass> _:genid24 .
-_:genid24 <http://www.w3.org/2002/07/owl#unionOf> _:genid26 .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://lod.ehri-project-test.eu/ontology#RecordResource> .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://lod.ehri-project-test.eu/ontology#Institution> .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid23 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://www.ica.org/standards/RiC/ontology#relationHasSource> .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://lod.ehri-project-test.eu/ontology#HasCopyRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
-_:genid27 <http://www.w3.org/2002/07/owl#onClass> _:genid28 .
-_:genid28 <http://www.w3.org/2002/07/owl#unionOf> _:genid30 .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://lod.ehri-project-test.eu/ontology#RecordResource> .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://lod.ehri-project-test.eu/ontology#Institution> .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid27 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://www.ica.org/standards/RiC/ontology#relationHasTarget> .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.ica.org/standards/RiC/ontology#Relation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#HasCopyRelation> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects an Institution or a RecordResource to another Institution which has a copy of it (or part of it) or to a RecordResource which is a copy of the former."@en .
 <http://lod.ehri-project-test.eu/ontology#HasCopyRelation> <http://www.w3.org/2000/01/rdf-schema#label> "Has copy relation"@en .
 <http://lod.ehri-project-test.eu/ontology#HasCopyRelation> <http://www.w3.org/2000/01/rdf-schema#label> "Relación de tenencia de copia"@es .
@@ -631,6 +668,7 @@ _:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://lod.ehri-project-test.eu/ontology#InstitutionAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#InstitutionAddress> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/PostalAddress> .
 <http://lod.ehri-project-test.eu/ontology#InstitutionAddress> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.ica.org/standards/RiC/ontology#PhysicalLocation> .
+<https://www.ica.org/standards/RiC/ontology#PhysicalLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#InstitutionAddress> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is a specialisation of the rico:PhysicalLocation extended with attributes derived from the schema:PostalAddress class to represent addresses and contact information for archival institutions."@en .
 <http://lod.ehri-project-test.eu/ontology#InstitutionAddress> <http://www.w3.org/2000/01/rdf-schema#label> "Adresse de l'institution"@fr .
 <http://lod.ehri-project-test.eu/ontology#InstitutionAddress> <http://www.w3.org/2000/01/rdf-schema#label> "Dirección de la institución"@es .
@@ -638,37 +676,15 @@ _:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://lod.ehri-project-test.eu/ontology#IsCopyOfRelation
 <http://lod.ehri-project-test.eu/ontology#IsCopyOfRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://lod.ehri-project-test.eu/ontology#IsCopyOfRelation> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid31 .
-_:genid31 <http://www.w3.org/2002/07/owl#hasSelf> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://lod.ehri-project-test.eu/ontology#is_copy_of_relation_role> .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://lod.ehri-project-test.eu/ontology#IsCopyOfRelation> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#hasSelf> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://lod.ehri-project-test.eu/ontology#is_copy_of_relation_role> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://lod.ehri-project-test.eu/ontology#IsCopyOfRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error1> .
+<http://org.semanticweb.owlapi/error#Error1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lod.ehri-project-test.eu/ontology#IsCopyOfRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error2> .
+<http://org.semanticweb.owlapi/error#Error2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#IsCopyOfRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.ica.org/standards/RiC/ontology#Relation> .
-<http://lod.ehri-project-test.eu/ontology#IsCopyOfRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
-_:genid32 <http://www.w3.org/2002/07/owl#onClass> _:genid33 .
-_:genid33 <http://www.w3.org/2002/07/owl#unionOf> _:genid35 .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://lod.ehri-project-test.eu/ontology#RecordResource> .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://lod.ehri-project-test.eu/ontology#Institution> .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid32 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <https://www.ica.org/standards/RiC/ontology#relationHasSource> .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://lod.ehri-project-test.eu/ontology#IsCopyOfRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
-_:genid36 <http://www.w3.org/2002/07/owl#onClass> _:genid37 .
-_:genid37 <http://www.w3.org/2002/07/owl#unionOf> _:genid39 .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://lod.ehri-project-test.eu/ontology#RecordResource> .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://lod.ehri-project-test.eu/ontology#Institution> .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid36 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <https://www.ica.org/standards/RiC/ontology#relationHasTarget> .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://lod.ehri-project-test.eu/ontology#IsCopyOfRelation> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects an Institution or an RecordResource to another Institution whose originals have been copied (or part of them) or to a RecordResource which is the original of the this copy."@en .
 <http://lod.ehri-project-test.eu/ontology#IsCopyOfRelation> <http://www.w3.org/2000/01/rdf-schema#label> "Is copy of relation"@en .
 <http://lod.ehri-project-test.eu/ontology#IsCopyOfRelation> <http://www.w3.org/2000/01/rdf-schema#label> "Relación de copia de"@es .
@@ -677,6 +693,7 @@ _:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://lod.ehri-project-test.eu/ontology#MaterialScript
 <http://lod.ehri-project-test.eu/ontology#MaterialScript> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#MaterialScript> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.ica.org/standards/RiC/ontology#Concept> .
+<https://www.ica.org/standards/RiC/ontology#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#MaterialScript> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents the written scripts that can be found in some material. Similar to the written language, each will be represented by an instance. Examples of scripts are: Latin, Cyrillic, Hebrew, etc."@en .
 <http://lod.ehri-project-test.eu/ontology#MaterialScript> <http://www.w3.org/2000/01/rdf-schema#label> "Escritura de la documentación"@es .
 <http://lod.ehri-project-test.eu/ontology#MaterialScript> <http://www.w3.org/2000/01/rdf-schema#label> "Script of materials"@en .
@@ -694,6 +711,7 @@ _:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://lod.ehri-project-test.eu/ontology#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lod.ehri-project-test.eu/ontology#Agent> .
 <http://lod.ehri-project-test.eu/ontology#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.ica.org/standards/RiC/ontology#Person> .
+<https://www.ica.org/standards/RiC/ontology#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "This is a specialisation of the rico:Person class created for its extension with additional properties."@en .
 <http://lod.ehri-project-test.eu/ontology#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
 <http://lod.ehri-project-test.eu/ontology#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Persona"@es .
@@ -702,6 +720,7 @@ _:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://lod.ehri-project-test.eu/ontology#RecordResource
 <http://lod.ehri-project-test.eu/ontology#RecordResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#RecordResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.ica.org/standards/RiC/ontology#RecordResource> .
+<https://www.ica.org/standards/RiC/ontology#RecordResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#RecordResource> <http://www.w3.org/2000/01/rdf-schema#comment> "This is a specialisation of the rico:RecordResource class created for its extension with additional properties."@en .
 <http://lod.ehri-project-test.eu/ontology#RecordResource> <http://www.w3.org/2000/01/rdf-schema#label> "Record resource"@en .
 <http://lod.ehri-project-test.eu/ontology#RecordResource> <http://www.w3.org/2000/01/rdf-schema#label> "Recurso documental"@es .
@@ -711,6 +730,7 @@ _:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://lod.ehri-project-test.eu/ontology#RecordSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#RecordSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lod.ehri-project-test.eu/ontology#RecordResource> .
 <http://lod.ehri-project-test.eu/ontology#RecordSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.ica.org/standards/RiC/ontology#RecordSet> .
+<https://www.ica.org/standards/RiC/ontology#RecordSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lod.ehri-project-test.eu/ontology#RecordSet> <http://www.w3.org/2000/01/rdf-schema#comment> "This is a specialisation of the rico:RecordSet class created for its extension with additional properties."@en .
 <http://lod.ehri-project-test.eu/ontology#RecordSet> <http://www.w3.org/2000/01/rdf-schema#label> "Agrupación documental"@es .
 <http://lod.ehri-project-test.eu/ontology#RecordSet> <http://www.w3.org/2000/01/rdf-schema#label> "Ensemble d’objets informationnels"@fr .
@@ -724,6 +744,14 @@ _:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://lod.ehri-project-test.eu/ontology#Region> <http://www.w3.org/2000/01/rdf-schema#label> "Región"@es .
 <http://lod.ehri-project-test.eu/ontology#Region> <http://www.w3.org/2000/01/rdf-schema#label> "Région"@fr .
 # 
+# http://org.semanticweb.owlapi/error#Error1
+# 
+# http://org.semanticweb.owlapi/error#Error2
+# 
+# http://org.semanticweb.owlapi/error#Error3
+# 
+# http://org.semanticweb.owlapi/error#Error4
+# 
 # http://schema.org/ArchiveOrganization
 <http://schema.org/ArchiveOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
@@ -731,7 +759,40 @@ _:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://schema.org/PostalAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.ica.org/standards/RiC/ontology#Thing> .
+<https://www.ica.org/standards/RiC/ontology#Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://www.ica.org/standards/RiC/ontology#ActivityType
+# 
+# https://www.ica.org/standards/RiC/ontology#Agent
+# 
+# https://www.ica.org/standards/RiC/ontology#AgentName
+# 
+# https://www.ica.org/standards/RiC/ontology#Concept
+# 
+# https://www.ica.org/standards/RiC/ontology#CorporateBody
+# 
+# https://www.ica.org/standards/RiC/ontology#Family
+# 
+# https://www.ica.org/standards/RiC/ontology#Group
+# 
+# https://www.ica.org/standards/RiC/ontology#Person
+# 
+# https://www.ica.org/standards/RiC/ontology#PhysicalLocation
+# 
+# https://www.ica.org/standards/RiC/ontology#Place
+# 
+# https://www.ica.org/standards/RiC/ontology#RecordResource
+# 
+# https://www.ica.org/standards/RiC/ontology#RecordSet
+# 
+# https://www.ica.org/standards/RiC/ontology#RecordSetType
+<https://www.ica.org/standards/RiC/ontology#RecordSetType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://www.ica.org/standards/RiC/ontology#Relation
+# 
+# https://www.ica.org/standards/RiC/ontology#Thing
 # 
 # 
 # 
@@ -746,70 +807,74 @@ _:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://lod.ehri-project-test.eu/ontology#Item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://lod.ehri-project-test.eu/ontology#Item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://lod.ehri-project-test.eu/ontology#Item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.ica.org/standards/RiC/ontology#RecordSetType> .
-<http://lod.ehri-project-test.eu/ontology#Item> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
-<http://lod.ehri-project-test.eu/ontology#Item> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
 <http://lod.ehri-project-test.eu/ontology#Item> <http://www.w3.org/2000/01/rdf-schema#label> "item"@en .
 <http://lod.ehri-project-test.eu/ontology#Item> <http://www.w3.org/2000/01/rdf-schema#label> "pièce"@fr .
 <http://lod.ehri-project-test.eu/ontology#Item> <http://www.w3.org/2000/01/rdf-schema#label> "unidad documental simple"@es .
+<http://lod.ehri-project-test.eu/ontology#Item> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
+<http://lod.ehri-project-test.eu/ontology#Item> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
 # 
 # http://lod.ehri-project-test.eu/ontology#OtherLevel
 <http://lod.ehri-project-test.eu/ontology#OtherLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://lod.ehri-project-test.eu/ontology#OtherLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://lod.ehri-project-test.eu/ontology#OtherLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.ica.org/standards/RiC/ontology#RecordSetType> .
-<http://lod.ehri-project-test.eu/ontology#OtherLevel> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
-<http://lod.ehri-project-test.eu/ontology#OtherLevel> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
 <http://lod.ehri-project-test.eu/ontology#OtherLevel> <http://www.w3.org/2000/01/rdf-schema#label> "autre niveau"@fr .
 <http://lod.ehri-project-test.eu/ontology#OtherLevel> <http://www.w3.org/2000/01/rdf-schema#label> "other level"@en .
 <http://lod.ehri-project-test.eu/ontology#OtherLevel> <http://www.w3.org/2000/01/rdf-schema#label> "otro nivel"@es .
+<http://lod.ehri-project-test.eu/ontology#OtherLevel> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
+<http://lod.ehri-project-test.eu/ontology#OtherLevel> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
 # 
 # http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#RecordGroup
 <http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#RecordGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#RecordGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#RecordGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.ica.org/standards/RiC/ontology#RecordSetType> .
-<http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#RecordGroup> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
-<http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#RecordGroup> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
 <http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#RecordGroup> <http://www.w3.org/2000/01/rdf-schema#label> "groupe d'enregistrement"@fr .
 <http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#RecordGroup> <http://www.w3.org/2000/01/rdf-schema#label> "record group"@en .
 <http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#RecordGroup> <http://www.w3.org/2000/01/rdf-schema#label> "unidad documental compuesta"@es .
+<http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#RecordGroup> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
+<http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#RecordGroup> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
 # 
 # http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subcollection
 <http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subcollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subcollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subcollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.ica.org/standards/RiC/ontology#RecordSetType> .
-<http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subcollection> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
-<http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subcollection> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
 <http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subcollection> <http://www.w3.org/2000/01/rdf-schema#label> "sous-collection"@fr .
 <http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subcollection> <http://www.w3.org/2000/01/rdf-schema#label> "sub-collection"@en .
 <http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subcollection> <http://www.w3.org/2000/01/rdf-schema#label> "subcolección"@es .
+<http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subcollection> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
+<http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subcollection> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
 # 
 # http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subfonds
 <http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subfonds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subfonds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subfonds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.ica.org/standards/RiC/ontology#RecordSetType> .
-<http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subfonds> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
-<http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subfonds> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
 <http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subfonds> <http://www.w3.org/2000/01/rdf-schema#label> "sous-fonds"@fr .
 <http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subfonds> <http://www.w3.org/2000/01/rdf-schema#label> "sub-fonds"@en .
 <http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subfonds> <http://www.w3.org/2000/01/rdf-schema#label> "subfondo"@es .
+<http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subfonds> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
+<http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subfonds> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
 # 
 # http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subgroup
 <http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subgroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subgroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subgroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.ica.org/standards/RiC/ontology#RecordSetType> .
-<http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subgroup> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
-<http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subgroup> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
 <http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subgroup> <http://www.w3.org/2000/01/rdf-schema#label> "sous-groupe"@fr .
 <http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subgroup> <http://www.w3.org/2000/01/rdf-schema#label> "sub-group"@en .
 <http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subgroup> <http://www.w3.org/2000/01/rdf-schema#label> "subunidad documental compuesta"@es .
+<http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subgroup> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
+<http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subgroup> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
 # 
 # http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subseries
 <http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subseries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subseries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subseries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.ica.org/standards/RiC/ontology#RecordSetType> .
-<http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subseries> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
-<http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subseries> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
 <http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subseries> <http://www.w3.org/2000/01/rdf-schema#label> "sous-série"@fr .
 <http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subseries> <http://www.w3.org/2000/01/rdf-schema#label> "sub-series"@en .
 <http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subseries> <http://www.w3.org/2000/01/rdf-schema#label> "subserie"@es .
+<http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subseries> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
+<http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subseries> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
 # 
+_:genid24 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid25 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid26 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid27 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
