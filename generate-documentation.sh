@@ -1,21 +1,28 @@
 #!/bin/bash
 
+if [ "$1" = "-sudo" ]; then
+    with_sudo=sudo
+fi
+
 if [ ! -f widoco.jar ]; then
     curl -L https://github.com/dgarijo/Widoco/releases/download/v1.4.25/widoco-1.4.25-jar-with-dependencies_JDK-11.jar -o widoco.jar
 fi
 
-uvx mitmdump -s proxy/proxy.py &
+uvx --from mitmproxy mitmdump -s proxy/proxy.py &
 
 proxy_pid=$!
 
 sleep 30s
 
-sudo keytool -importcert -noprompt -alias mitmproxy -storepass changeit -keystore $JAVA_HOME/lib/security/cacerts -trustcacerts -file ~/.mitmproxy/mitmproxy-ca-cert.pem
+if [ `$with_sudo keytool -list -cacerts -alias mitmproxy -storepass changeit | grep "Certificate fingerprint" | wc -l` -gt 1 ]; then
+    echo "Importing mitmproxy certificate into Java cacerts"
+    $with_sudo keytool -importcert -noprompt -alias mitmproxy -storepass changeit -keystore $JAVA_HOME/lib/security/cacerts -trustcacerts -file ~/.mitmproxy/mitmproxy-ca-cert.pem
+fi
 
 # Generate documentation with OOPS evaluation
-java -Dhttps.proxyHost=localhost -Dhttps.proxyPort=8080 -Dhttp.proxyHost=localhost -Dhttp.proxyPort=8080 -jar widoco.jar -ontFile ./ontology/ehri.owl -outFolder ./documentation -getOntologyMetadata -oops -rewriteAll -htaccess -excludeProvenance -import rico-v1.0.2.rdf
+java -Dhttps.proxyHost=localhost -Dhttps.proxyPort=8080 -Dhttp.proxyHost=localhost -Dhttp.proxyPort=8080 -jar widoco.jar -ontFile ./ontology/ehri.owl -outFolder ./documentation -getOntologyMetadata -oops -rewriteAll -htaccess -excludeProvenance
 # Generate documentation without OOPS evaluation
-java -Dhttps.proxyHost=localhost -Dhttps.proxyPort=8080 -Dhttp.proxyHost=localhost -Dhttp.proxyPort=8080 -jar widoco.jar -ontFile ./ontology/ehri.owl -outFolder ./documentation -getOntologyMetadata -rewriteAll -htaccess -excludeProvenance -import rico-v1.0.2.rdf
+java -Dhttps.proxyHost=localhost -Dhttps.proxyPort=8080 -Dhttp.proxyHost=localhost -Dhttp.proxyPort=8080 -jar widoco.jar -ontFile ./ontology/ehri.owl -outFolder ./documentation -getOntologyMetadata -rewriteAll -htaccess -excludeProvenance
 
 # Include static sections in the generated documentation
 cp configurations/documentationAdditionalContent/introduction-en.html documentation/sections/introduction-en.html
