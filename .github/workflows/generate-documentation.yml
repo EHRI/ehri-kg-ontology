@@ -17,8 +17,11 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
       
+      - name: Install uv
+        run: sudo snap install astral-uv --classic
+
       - name: Run documentation generation script
-        run: bash generate-documentation.sh
+        run: bash generate-documentation.sh -sudo
       
       - uses: stefanzweifel/git-auto-commit-action@v5
         with: 
