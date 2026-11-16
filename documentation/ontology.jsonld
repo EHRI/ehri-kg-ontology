@@ -3,9 +3,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+      "@id" : "http://lod.ehri-project.eu/ontology#Institution"
     }, {
-      "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+      "@id" : "http://lod.ehri-project.eu/ontology#RecordResource"
     } ]
   } ]
 }, {
@@ -13,9 +13,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+      "@id" : "http://lod.ehri-project.eu/ontology#Institution"
     }, {
-      "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+      "@id" : "http://lod.ehri-project.eu/ontology#RecordResource"
     } ]
   } ]
 }, {
@@ -23,9 +23,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://lod.ehri-project-test.eu/ontology#Country"
+      "@id" : "http://lod.ehri-project.eu/ontology#Country"
     }, {
-      "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+      "@id" : "http://lod.ehri-project.eu/ontology#RecordResource"
     } ]
   } ]
 }, {
@@ -33,9 +33,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://lod.ehri-project-test.eu/ontology#Person"
+      "@id" : "http://lod.ehri-project.eu/ontology#Person"
     }, {
-      "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+      "@id" : "http://lod.ehri-project.eu/ontology#RecordResource"
     } ]
   } ]
 }, {
@@ -43,9 +43,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+      "@id" : "http://lod.ehri-project.eu/ontology#Institution"
     }, {
-      "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+      "@id" : "http://lod.ehri-project.eu/ontology#RecordResource"
     } ]
   } ]
 }, {
@@ -56,118 +56,50 @@
     "@value" : "true"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#has_copy_relation_role"
+    "@id" : "http://lod.ehri-project.eu/ontology#has_copy_relation_role"
   } ]
 }, {
   "@id" : "_:genid23",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "_:genid24"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://www.ica.org/standards/RiC/ontology#relationHasSource"
-  } ]
-}, {
-  "@id" : "_:genid24",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
-    }, {
-      "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid27",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "_:genid28"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://www.ica.org/standards/RiC/ontology#relationHasTarget"
-  } ]
-}, {
-  "@id" : "_:genid28",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
-    }, {
-      "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid31",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasSelf" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
     "@value" : "true"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#is_copy_of_relation_role"
+    "@id" : "http://lod.ehri-project.eu/ontology#is_copy_of_relation_role"
   } ]
 }, {
-  "@id" : "_:genid32",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "@id" : "_:genid24",
   "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "_:genid33"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://www.ica.org/standards/RiC/ontology#relationHasSource"
   } ]
 }, {
-  "@id" : "_:genid33",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
-    }, {
-      "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid36",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "@id" : "_:genid25",
   "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "_:genid37"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://www.ica.org/standards/RiC/ontology#relationHasTarget"
   } ]
 }, {
-  "@id" : "_:genid37",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
-    }, {
-      "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
-    } ]
+  "@id" : "_:genid26",
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid4",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+      "@id" : "http://lod.ehri-project.eu/ontology#Institution"
     }, {
-      "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+      "@id" : "http://lod.ehri-project.eu/ontology#RecordResource"
     } ]
   } ]
 }, {
@@ -175,13 +107,16 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+      "@id" : "http://lod.ehri-project.eu/ontology#Institution"
     }, {
-      "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+      "@id" : "http://lod.ehri-project.eu/ontology#RecordResource"
     } ]
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology",
+  "@id" : "http://creativecommons.org/ns#license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://lod.ehri-project.eu/ontology",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://creativecommons.org/ns#license" : [ {
     "@id" : "https://creativecommons.org/licenses/by/4.0/"
@@ -212,7 +147,7 @@
     "@value" : "ehri"
   } ],
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#"
+    "@id" : "http://lod.ehri-project.eu/ontology#"
   } ],
   "http://schema.org/codeRepository" : [ {
     "@id" : "https://github.com/EHRI/ehri-kg-ontology"
@@ -227,10 +162,10 @@
     "@id" : "https://www.ica.org/standards/RiC/ontology/1.1"
   } ],
   "http://www.w3.org/2002/07/owl#priorVersion" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology/0.1.0"
+    "@id" : "http://lod.ehri-project-test.eu/ontology/0.1.1"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology/0.2.0"
+    "@id" : "http://lod.ehri-project.eu/ontology/0.2.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "0.2.0"
@@ -239,7 +174,7 @@
     "@id" : "https://ehri-kg.ehri-project.eu/images/ehri-logo.svg"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#AcquisitionType",
+  "@id" : "http://lod.ehri-project.eu/ontology#AcquisitionType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -259,7 +194,7 @@
     "@id" : "https://www.ica.org/standards/RiC/ontology#ActivityType"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#Agent",
+  "@id" : "http://lod.ehri-project.eu/ontology#Agent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -279,7 +214,7 @@
     "@id" : "https://www.ica.org/standards/RiC/ontology#Agent"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#AlternateAgentName",
+  "@id" : "http://lod.ehri-project.eu/ontology#AlternateAgentName",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -299,7 +234,7 @@
     "@id" : "https://www.ica.org/standards/RiC/ontology#AgentName"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#City",
+  "@id" : "http://lod.ehri-project.eu/ontology#City",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -319,7 +254,7 @@
     "@id" : "https://www.ica.org/standards/RiC/ontology#Place"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#CorporateBody",
+  "@id" : "http://lod.ehri-project.eu/ontology#CorporateBody",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -336,12 +271,12 @@
     "@value" : "Persona jurídica"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#Group"
+    "@id" : "http://lod.ehri-project.eu/ontology#Group"
   }, {
     "@id" : "https://www.ica.org/standards/RiC/ontology#CorporateBody"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#Country",
+  "@id" : "http://lod.ehri-project.eu/ontology#Country",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -361,7 +296,7 @@
     "@id" : "https://www.ica.org/standards/RiC/ontology#Place"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#Family",
+  "@id" : "http://lod.ehri-project.eu/ontology#Family",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -378,12 +313,12 @@
     "@value" : "Family"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#Group"
+    "@id" : "http://lod.ehri-project.eu/ontology#Group"
   }, {
     "@id" : "https://www.ica.org/standards/RiC/ontology#Family"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#FunctionType",
+  "@id" : "http://lod.ehri-project.eu/ontology#FunctionType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -403,7 +338,7 @@
     "@id" : "https://www.ica.org/standards/RiC/ontology#ActivityType"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#Group",
+  "@id" : "http://lod.ehri-project.eu/ontology#Group",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -420,12 +355,12 @@
     "@value" : "Grupo de agentes"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#Agent"
+    "@id" : "http://lod.ehri-project.eu/ontology#Agent"
   }, {
     "@id" : "https://www.ica.org/standards/RiC/ontology#Group"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#HasCopyRelation",
+  "@id" : "http://lod.ehri-project.eu/ontology#HasCopyRelation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -442,17 +377,17 @@
     "@value" : "Relation de propriété de copie"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://org.semanticweb.owlapi/error#Error1"
+  }, {
+    "@id" : "http://org.semanticweb.owlapi/error#Error2"
+  }, {
     "@id" : "https://www.ica.org/standards/RiC/ontology#Relation"
-  }, {
-    "@id" : "_:genid23"
-  }, {
-    "@id" : "_:genid27"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "_:genid22"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#Institution",
+  "@id" : "http://lod.ehri-project.eu/ontology#Institution",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -469,12 +404,12 @@
     "@value" : "Institution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#CorporateBody"
+    "@id" : "http://lod.ehri-project.eu/ontology#CorporateBody"
   }, {
     "@id" : "http://schema.org/ArchiveOrganization"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#InstitutionAddress",
+  "@id" : "http://lod.ehri-project.eu/ontology#InstitutionAddress",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -496,7 +431,7 @@
     "@id" : "https://www.ica.org/standards/RiC/ontology#PhysicalLocation"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#IsCopyOfRelation",
+  "@id" : "http://lod.ehri-project.eu/ontology#IsCopyOfRelation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -513,20 +448,22 @@
     "@value" : "Relation de copie de"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://org.semanticweb.owlapi/error#Error3"
+  }, {
+    "@id" : "http://org.semanticweb.owlapi/error#Error4"
+  }, {
     "@id" : "https://www.ica.org/standards/RiC/ontology#Relation"
-  }, {
-    "@id" : "_:genid32"
-  }, {
-    "@id" : "_:genid36"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid31"
+    "@id" : "_:genid23"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#Item",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#RecordSetType" ],
+  "@id" : "http://lod.ehri-project.eu/ontology#Item",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  }, {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#RecordSetType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -545,7 +482,7 @@
     "@id" : "https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#MaterialScript",
+  "@id" : "http://lod.ehri-project.eu/ontology#MaterialScript",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -565,10 +502,12 @@
     "@id" : "https://www.ica.org/standards/RiC/ontology#Concept"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#OtherLevel",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#RecordSetType" ],
+  "@id" : "http://lod.ehri-project.eu/ontology#OtherLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  }, {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#RecordSetType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fr",
@@ -587,7 +526,7 @@
     "@id" : "https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#ParallelAgentName",
+  "@id" : "http://lod.ehri-project.eu/ontology#ParallelAgentName",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -607,7 +546,7 @@
     "@id" : "https://www.ica.org/standards/RiC/ontology#AgentName"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#Person",
+  "@id" : "http://lod.ehri-project.eu/ontology#Person",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -624,12 +563,12 @@
     "@value" : "Personne"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#Agent"
+    "@id" : "http://lod.ehri-project.eu/ontology#Agent"
   }, {
     "@id" : "https://www.ica.org/standards/RiC/ontology#Person"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource",
+  "@id" : "http://lod.ehri-project.eu/ontology#RecordResource",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -649,7 +588,7 @@
     "@id" : "https://www.ica.org/standards/RiC/ontology#RecordResource"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#RecordSet",
+  "@id" : "http://lod.ehri-project.eu/ontology#RecordSet",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -666,12 +605,12 @@
     "@value" : "Record set"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+    "@id" : "http://lod.ehri-project.eu/ontology#RecordResource"
   }, {
     "@id" : "https://www.ica.org/standards/RiC/ontology#RecordSet"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#Region",
+  "@id" : "http://lod.ehri-project.eu/ontology#Region",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -691,14 +630,14 @@
     "@id" : "https://www.ica.org/standards/RiC/ontology#Place"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#accessibility",
+  "@id" : "http://lod.ehri-project.eu/ontology#accessibility",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Collects information about the accessibility of an institution with respect to its archival holdings and services."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+    "@id" : "http://lod.ehri-project.eu/ontology#Institution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -714,14 +653,14 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#administrativeStructure",
+  "@id" : "http://lod.ehri-project.eu/ontology#administrativeStructure",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Represents the current administrative structure of an institution."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+    "@id" : "http://lod.ehri-project.eu/ontology#Institution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -737,14 +676,14 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#appraisal",
+  "@id" : "http://lod.ehri-project.eu/ontology#appraisal",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Provides information on appraisal, destruction and scheduling actions."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+    "@id" : "http://lod.ehri-project.eu/ontology#RecordResource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -760,7 +699,7 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#archivalHistory",
+  "@id" : "http://lod.ehri-project.eu/ontology#archivalHistory",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -786,14 +725,14 @@
     "@id" : "https://www.ica.org/standards/RiC/ontology#history"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#archivalSituation",
+  "@id" : "http://lod.ehri-project.eu/ontology#archivalSituation",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Offers a short introduction to the archival situation and culture in a country."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#Country"
+    "@id" : "http://lod.ehri-project.eu/ontology#Country"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -809,14 +748,14 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#archivistNote",
+  "@id" : "http://lod.ehri-project.eu/ontology#archivistNote",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Explains how the description was prepared and by whom."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+    "@id" : "http://lod.ehri-project.eu/ontology#RecordResource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -835,7 +774,7 @@
     "@id" : "https://www.ica.org/standards/RiC/ontology#note"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#biographicalHistory",
+  "@id" : "http://lod.ehri-project.eu/ontology#biographicalHistory",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -861,14 +800,14 @@
     "@id" : "https://www.ica.org/standards/RiC/ontology#history"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#buildings",
+  "@id" : "http://lod.ehri-project.eu/ontology#buildings",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Provides information about the buildings of an institution."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+    "@id" : "http://lod.ehri-project.eu/ontology#Institution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -884,7 +823,7 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#conditionsOfAccess",
+  "@id" : "http://lod.ehri-project.eu/ontology#conditionsOfAccess",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -910,14 +849,14 @@
     "@id" : "https://www.ica.org/standards/RiC/ontology#conditionsOfAccess"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#contactPerson",
+  "@id" : "http://lod.ehri-project.eu/ontology#contactPerson",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Provides information needed to contact members of the staff."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#InstitutionAddress"
+    "@id" : "http://lod.ehri-project.eu/ontology#InstitutionAddress"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -933,14 +872,14 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#findingAids",
+  "@id" : "http://lod.ehri-project.eu/ontology#findingAids",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Provides a general overview of finding aids published by an institution."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+    "@id" : "http://lod.ehri-project.eu/ontology#Institution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -956,14 +895,14 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#generalContext",
+  "@id" : "http://lod.ehri-project.eu/ontology#generalContext",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Provides information about the geographical and cultural context of an institution."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+    "@id" : "http://lod.ehri-project.eu/ontology#Institution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fr",
@@ -982,7 +921,7 @@
     "@id" : "https://www.ica.org/standards/RiC/ontology#generalDescription"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#hasCopy",
+  "@id" : "http://lod.ehri-project.eu/ontology#hasCopy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1010,17 +949,17 @@
     "@id" : "https://www.ica.org/standards/RiC/ontology#isRelatedTo"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#isCopyOf"
+    "@id" : "http://lod.ehri-project.eu/ontology#isCopyOf"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#hasOrHadScript",
+  "@id" : "http://lod.ehri-project.eu/ontology#hasOrHadScript",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Indicates the written script present in the materials."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+    "@id" : "http://lod.ehri-project.eu/ontology#RecordResource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fr",
@@ -1033,23 +972,23 @@
     "@value" : "tiene o tenía como escritura"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#MaterialScript"
+    "@id" : "http://lod.ehri-project.eu/ontology#MaterialScript"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://www.ica.org/standards/RiC/ontology#isRelatedTo"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#isOrWasScriptOf"
+    "@id" : "http://lod.ehri-project.eu/ontology#isOrWasScriptOf"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#has_copy_relation_role",
+  "@id" : "http://lod.ehri-project.eu/ontology#has_copy_relation_role",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Connects a HasCopyRelation to itself."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#HasCopyRelation"
+    "@id" : "http://lod.ehri-project.eu/ontology#HasCopyRelation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fr",
@@ -1062,13 +1001,13 @@
     "@value" : "has the role of the Has copy relation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#HasCopyRelation"
+    "@id" : "http://lod.ehri-project.eu/ontology#HasCopyRelation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://www.ica.org/standards/RiC/ontology#relation_role"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#isCopyOf",
+  "@id" : "http://lod.ehri-project.eu/ontology#isCopyOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1096,14 +1035,14 @@
     "@id" : "https://www.ica.org/standards/RiC/ontology#isRelatedTo"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#isOrWasScriptOf",
+  "@id" : "http://lod.ehri-project.eu/ontology#isOrWasScriptOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The inverse of ehri:hasOrHadScript, allowing a script to be related back to the record where it appears."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#MaterialScript"
+    "@id" : "http://lod.ehri-project.eu/ontology#MaterialScript"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -1116,20 +1055,20 @@
     "@value" : "is or was the script of"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+    "@id" : "http://lod.ehri-project.eu/ontology#RecordResource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://www.ica.org/standards/RiC/ontology#isRelatedTo"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#is_copy_of_relation_role",
+  "@id" : "http://lod.ehri-project.eu/ontology#is_copy_of_relation_role",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Connects a IsCopyOfRelation to itself."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#IsCopyOfRelation"
+    "@id" : "http://lod.ehri-project.eu/ontology#IsCopyOfRelation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fr",
@@ -1142,20 +1081,20 @@
     "@value" : "has the role of the Is copy of relation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#IsCopyOfRelation"
+    "@id" : "http://lod.ehri-project.eu/ontology#IsCopyOfRelation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://www.ica.org/standards/RiC/ontology#relation_role"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#locationOfCopies",
+  "@id" : "http://lod.ehri-project.eu/ontology#locationOfCopies",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Indicates the existence, location and availability of copies of the unit of description."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+    "@id" : "http://lod.ehri-project.eu/ontology#RecordResource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1171,14 +1110,14 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#locationOfOriginals",
+  "@id" : "http://lod.ehri-project.eu/ontology#locationOfOriginals",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Indicates the existence, location, availability and/or destruction of the original material, in cases where the unit of description consists of copies."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+    "@id" : "http://lod.ehri-project.eu/ontology#RecordResource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1194,14 +1133,14 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#otherFindingAids",
+  "@id" : "http://lod.ehri-project.eu/ontology#otherFindingAids",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Identifies and gives information about any finding aids related to the unit of description."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+    "@id" : "http://lod.ehri-project.eu/ontology#RecordResource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fr",
@@ -1217,14 +1156,14 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#physicalCharacteristicsAndTechnicalRequirements",
+  "@id" : "http://lod.ehri-project.eu/ontology#physicalCharacteristicsAndTechnicalRequirements",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Collects information about any important physical characteristics or technical requirements that affect use of the unit of description."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+    "@id" : "http://lod.ehri-project.eu/ontology#RecordResource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -1240,14 +1179,14 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#publicAreas",
+  "@id" : "http://lod.ehri-project.eu/ontology#publicAreas",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Collects information about areas of the institution available for public use."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+    "@id" : "http://lod.ehri-project.eu/ontology#Institution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fr",
@@ -1263,14 +1202,14 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#publicationNote",
+  "@id" : "http://lod.ehri-project.eu/ontology#publicationNote",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Identifies any publications that are about or are based on the use, study or analysis of the unit of description."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+    "@id" : "http://lod.ehri-project.eu/ontology#RecordResource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fr",
@@ -1286,14 +1225,14 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#recordsManagementAndCollectingPolicies",
+  "@id" : "http://lod.ehri-project.eu/ontology#recordsManagementAndCollectingPolicies",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Provides information about the records management and collecting policies of an institution with archival holdings."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+    "@id" : "http://lod.ehri-project.eu/ontology#Institution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fr",
@@ -1309,14 +1248,14 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#relatedMaterial",
+  "@id" : "http://lod.ehri-project.eu/ontology#relatedMaterial",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Identifies related units of description."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+    "@id" : "http://lod.ehri-project.eu/ontology#RecordResource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1332,14 +1271,14 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#reproductionServices",
+  "@id" : "http://lod.ehri-project.eu/ontology#reproductionServices",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Provides information about reproduction services available to the public (microfilms, photocopies, photographs, digitised copies) and their general conditions and restrictions."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+    "@id" : "http://lod.ehri-project.eu/ontology#Institution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1355,14 +1294,14 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#researchExtensive",
+  "@id" : "http://lod.ehri-project.eu/ontology#researchExtensive",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Offers information on how EHRI acquired data relating to a country and integrated it into the EHRI Portal."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#Country"
+    "@id" : "http://lod.ehri-project.eu/ontology#Country"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -1378,14 +1317,14 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#researchServices",
+  "@id" : "http://lod.ehri-project.eu/ontology#researchServices",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Describes the research services provided by an institution."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#Institution"
+    "@id" : "http://lod.ehri-project.eu/ontology#Institution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1401,14 +1340,14 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#researchSummary",
+  "@id" : "http://lod.ehri-project.eu/ontology#researchSummary",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Describes the identification work carried out by EHRI, ongoing since October 2010. This section also includes references to aggregators and country-specific research guides."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#Country"
+    "@id" : "http://lod.ehri-project.eu/ontology#Country"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -1424,14 +1363,14 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#separatedMaterial",
+  "@id" : "http://lod.ehri-project.eu/ontology#separatedMaterial",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Information about materials that are associated by provenance to the described materials but that have been physically separated or removed. Items may be separated for various reasons, including the dispersal of special formats to more appropriate custodial units; the outright destruction of duplicate or nonessential material; and the deliberate or unintentional scattering of fonds among different repositories."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#RecordResource"
+    "@id" : "http://lod.ehri-project.eu/ontology#RecordResource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1447,14 +1386,14 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#sources",
+  "@id" : "http://lod.ehri-project.eu/ontology#sources",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Provides information on sources consulted in preparing the description and the personnel involved."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#Agent"
+    "@id" : "http://lod.ehri-project.eu/ontology#Agent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -1470,14 +1409,14 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/ontology#structureOrGenealogy",
+  "@id" : "http://lod.ehri-project.eu/ontology#structureOrGenealogy",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Describes and/or represents the internal administrative structure(s) of a corporate body or the genealogy of a family."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://lod.ehri-project-test.eu/ontology#Agent"
+    "@id" : "http://lod.ehri-project.eu/ontology#Agent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -1493,10 +1432,12 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#RecordGroup",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#RecordSetType" ],
+  "@id" : "http://lod.ehri-project.eu/vocabularies/recordSetTypes#RecordGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  }, {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#RecordSetType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fr",
@@ -1515,10 +1456,12 @@
     "@id" : "https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subcollection",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#RecordSetType" ],
+  "@id" : "http://lod.ehri-project.eu/vocabularies/recordSetTypes#Subcollection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  }, {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#RecordSetType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fr",
@@ -1537,10 +1480,12 @@
     "@id" : "https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subfonds",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#RecordSetType" ],
+  "@id" : "http://lod.ehri-project.eu/vocabularies/recordSetTypes#Subfonds",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  }, {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#RecordSetType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fr",
@@ -1559,10 +1504,12 @@
     "@id" : "https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subgroup",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#RecordSetType" ],
+  "@id" : "http://lod.ehri-project.eu/vocabularies/recordSetTypes#Subgroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  }, {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#RecordSetType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fr",
@@ -1581,10 +1528,12 @@
     "@id" : "https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"
   } ]
 }, {
-  "@id" : "http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subseries",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#RecordSetType" ],
+  "@id" : "http://lod.ehri-project.eu/vocabularies/recordSetTypes#Subseries",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  }, {
+    "@id" : "https://www.ica.org/standards/RiC/ontology#RecordSetType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fr",
@@ -1603,11 +1552,38 @@
     "@id" : "https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"
   } ]
 }, {
+  "@id" : "http://org.semanticweb.owlapi/error#Error1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://org.semanticweb.owlapi/error#Error2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://org.semanticweb.owlapi/error#Error3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://org.semanticweb.owlapi/error#Error4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://purl.org/dc/elements/1.1/contributor",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
   } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/abstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -1786,7 +1762,11 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
+  "@id" : "http://www.w3.org/2002/07/owl#minQualifiedCardinality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://www.ica.org/standards/RiC/ontology#Thing"
   } ]
@@ -1794,6 +1774,81 @@
   "@id" : "http://www.w3.org/2004/02/skos/core#definition",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#topConceptOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://xmlns.com/foaf/0.1/logo",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://www.ica.org/standards/RiC/ontology#ActivityType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://www.ica.org/standards/RiC/ontology#Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://www.ica.org/standards/RiC/ontology#AgentName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://www.ica.org/standards/RiC/ontology#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://www.ica.org/standards/RiC/ontology#CorporateBody",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://www.ica.org/standards/RiC/ontology#Family",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://www.ica.org/standards/RiC/ontology#Group",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://www.ica.org/standards/RiC/ontology#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://www.ica.org/standards/RiC/ontology#PhysicalLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://www.ica.org/standards/RiC/ontology#Place",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://www.ica.org/standards/RiC/ontology#RecordResource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://www.ica.org/standards/RiC/ontology#RecordSet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://www.ica.org/standards/RiC/ontology#RecordSetType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://www.ica.org/standards/RiC/ontology#Relation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://www.ica.org/standards/RiC/ontology#Thing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://www.ica.org/standards/RiC/ontology#conditionsOfAccess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://www.ica.org/standards/RiC/ontology#generalDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://www.ica.org/standards/RiC/ontology#hasCopy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://www.ica.org/standards/RiC/ontology#history",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://www.ica.org/standards/RiC/ontology#isCopyOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://www.ica.org/standards/RiC/ontology#isRelatedTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://www.ica.org/standards/RiC/ontology#note",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://www.ica.org/standards/RiC/ontology#relation_role",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 } ]

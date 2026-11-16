@@ -17,18 +17,27 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://lod.ehri-project-test.eu/ontology#","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://lod.ehri-project-test.eu/ontology#","name":"EHRI Ontology", "headline":"This ontology defines the data model used by the EHRI Knowledge Graph for the representation of the information hosted in the EHRI Portal. It does so by extending RiC-O v1.1 and reusing some of the schema.org concepts.", "dateReleased":"Wed Sep 02 05:51:51 UTC 2026", "version":"0.2.0", "license":"https://creativecommons.org/licenses/by/4.0/", "codeRepository":"https://github.com/EHRI/ehri-kg-ontology", "author":[{"@type":"Person","name":"Herminio García-González (Kazerne Dossin)"},{"@type":"Person","name":"Mike Bryant (NIOD)"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://lod.ehri-project.eu/ontology#","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://lod.ehri-project.eu/ontology#","name":"EHRI Ontology", "headline":"This ontology defines the data model used by the EHRI Knowledge Graph for the representation of the information hosted in the EHRI Portal. It does so by extending RiC-O v1.1 and reusing some of the schema.org concepts.", "datePublished":"Mon Nov 16 15:30:08 UTC 2026", "version":"0.2.0", "license":"https://creativecommons.org/licenses/by/4.0/", "codeRepository":"https://github.com/EHRI/ehri-kg-ontology", "author":[{"@type":"Person","name":"Herminio García-González (Kazerne Dossin)"},{"@type":"Person","name":"Mike Bryant (NIOD)"}]}</script>
 
 <script src="resources/jquery.js"></script> 
-<script src="resources/marked.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/marked@18.0.1/lib/marked.umd.min.js"></script> 
+<script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.14.0/+esm';mermaid.initialize({startOnLoad:false});window.mermaid=mermaid;</script> 
     <script> 
+function scrollToHash() {
+  var h = location.hash;
+  if (!h || h.length < 2) return;
+  var id;
+  try { id = decodeURIComponent(h.slice(1)); } catch (e) { id = h.slice(1); }
+  var el = document.getElementById(id);
+  if (el) el.scrollIntoView();
+}
 function loadHash() {
   jQuery(".markdown").each(function(el){jQuery(this).after(marked.parse(jQuery(this).text())).remove()});
-	var hash = location.hash;
-	if($(hash).offset()!=null){
-	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
-}
-	loadTOC();
+  if (typeof window.mermaid !== 'undefined') { window.mermaid.run({ querySelector: 'pre code.language-mermaid' }); }
+  loadTOC();
+  scrollToHash();
+  if (document.readyState === 'complete') { setTimeout(scrollToHash, 300); }
+  else { window.addEventListener('load', function(){ setTimeout(scrollToHash, 300); }); }
 }
 function loadTOC(){
 	//process toc dynamically
@@ -56,14 +65,16 @@ function loadTOC(){
  $.fn.ignore = function(sel){
         return this.clone().find(sel||">*").remove().end();
  };    $(function(){
-      $("#abstract").load("sections/abstract-en.html"); 
-      $("#introduction").load("sections/introduction-en.html"); 
-      $("#nstable").load("sections/ns-en.html"); 
-      $("#overview").load("sections/overview-en.html"); 
-      $("#description").load("sections/description-en.html"); 
-      $("#references").load("sections/references-en.html"); 
-      $("#changelog").load("sections/changelog-en.html"); 
-      $("#crossref").load("sections/crossref-en.html", null, loadHash); 
+      var loads = [];
+      function _ls(sel,url){var d=$.Deferred();$(sel).load(url,function(){d.resolve();});return d.promise();}
+      loads.push(_ls("#abstract","sections/abstract-en.html")); 
+      loads.push(_ls("#introduction","sections/introduction-en.html")); 
+      loads.push(_ls("#nstable","sections/ns-en.html")); 
+      loads.push(_ls("#overview","sections/overview-en.html")); 
+      loads.push(_ls("#description","sections/description-en.html")); 
+      loads.push(_ls("#references","sections/references-en.html")); 
+      loads.push(_ls("#crossref","sections/crossref-en.html")); 
+      $.when.apply($, loads).then(loadHash);
     });
     </script> 
   </head> 
@@ -78,9 +89,11 @@ function loadTOC(){
 
 <dl>
 <dt>This version:</dt>
-<dd><a href="http://lod.ehri-project-test.eu/ontology/0.2.0">http://lod.ehri-project-test.eu/ontology/0.2.0</a></dd>
+<dd><a href="http://lod.ehri-project.eu/ontology/0.2.0">http://lod.ehri-project.eu/ontology/0.2.0</a></dd>
+<dt>Latest version:</dt>
+<dd><a href="http://lod.ehri-project.eu/ontology#">http://lod.ehri-project.eu/ontology#</a></dd>
 <dt>Previous version:</dt>
-<dd><a href="http://lod.ehri-project-test.eu/ontology/0.1.0">http://lod.ehri-project-test.eu/ontology/0.1.0</a></dd>
+<dd><a href="http://lod.ehri-project-test.eu/ontology/0.1.1">http://lod.ehri-project-test.eu/ontology/0.1.1</a></dd>
 <dt>Revision:</dt>
 <dd>0.2.0</dd>
 <dt>Authors:</dt>
@@ -88,9 +101,6 @@ function loadTOC(){
 
 <dt>Publisher:</dt>
 <dd>EHRI-ERIC</dd>
-<dt>Imported Ontologies:</dt>
-<dd><a href="https://www.ica.org/standards/RiC/ontology/1.1">RiC-O 1.1</a></dd>
-
 <dt>Funder:</dt>
 <dd><a href="https://oscars-project.eu/">https://oscars-project.eu/</a></dd>
 
@@ -99,7 +109,7 @@ function loadTOC(){
 
 <dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-https://creativecommons.org/licenses/by/4.0/-blue.svg" alt="https://creativecommons.org/licenses/by/4.0/" /></a>
 </dd><!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
-<dd>Herminio García-González (Kazerne Dossin), Mike Bryant (NIOD). EHRI Ontology. Revision: 0.2.0. Retrieved from: http://lod.ehri-project-test.eu/ontology/0.2.0</dd>
+<dd>Herminio García-González (Kazerne Dossin), Mike Bryant (NIOD). EHRI Ontology. Revision: 0.2.0. Retrieved from: http://lod.ehri-project.eu/ontology/0.2.0</dd>
 <dt>Vocabulary maintained at:</dt>
 <dd><a href="https://github.com/EHRI/ehri-kg-ontology">https://github.com/EHRI/ehri-kg-ontology</a></dd>
 </dl>

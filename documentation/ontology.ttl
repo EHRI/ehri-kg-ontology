@@ -1,37 +1,61 @@
-@prefix : <http://lod.ehri-project-test.eu/ontology#> .
+@prefix : <http://lod.ehri-project.eu/ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://lod.ehri-project-test.eu/ontology#> .
+@base <http://lod.ehri-project.eu/ontology#> .
 
-<http://lod.ehri-project-test.eu/ontology> rdf:type owl:Ontology ;
-                                            owl:versionIRI <http://lod.ehri-project-test.eu/ontology/0.2.0> ;
-                                            owl:imports <https://www.ica.org/standards/RiC/ontology/1.1> ;
-                                            <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> ;
-                                            <http://purl.org/dc/elements/1.1/creator> "Herminio García-González (Kazerne Dossin)"@en ,
-                                                                                      "Mike Bryant (NIOD)"@en ;
-                                            <http://purl.org/dc/elements/1.1/title> "EHRI Ontology"@en ;
-                                            <http://purl.org/dc/terms/abstract> "This ontology defines the data model used by the EHRI Knowledge Graph for the representation of the information hosted in the EHRI Portal. It does so by extending RiC-O v1.1 and reusing some of the schema.org concepts."@en ;
-                                            <http://purl.org/dc/terms/description> "The EHRI Ontology extends some of the RiC-O types and adds additional properties to represent data present in the EHRI Portal. Whenever a class is extended with new properties, a subclass bounded to the ehri prefix is created in order to maintain the original RiC-O axioms. In some cases, classes are specialised via subclassing in order to contribute additional meaning to the superclass."@en ;
-                                            <http://purl.org/dc/terms/publisher> "EHRI-ERIC" ;
-                                            <http://purl.org/vocab/vann/preferredNamespacePrefix> "ehri" ;
-                                            <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
-                                            <http://schema.org/codeRepository> <https://github.com/EHRI/ehri-kg-ontology> ;
-                                            <http://schema.org/funder> <https://oscars-project.eu/> ;
-                                            <http://schema.org/funding> <https://oscars-project.eu/projects/ehri-kg-european-holocaust-research-infrastructure-knowledge-graph> ;
-                                            owl:priorVersion <http://lod.ehri-project-test.eu/ontology/0.1.0> ;
-                                            owl:versionInfo "0.2.0" ;
-                                            <http://xmlns.com/foaf/0.1/logo> <https://ehri-kg.ehri-project.eu/images/ehri-logo.svg> .
+<http://lod.ehri-project.eu/ontology> rdf:type owl:Ontology ;
+                                       owl:versionIRI <http://lod.ehri-project.eu/ontology/0.2.0> ;
+                                       owl:imports <https://www.ica.org/standards/RiC/ontology/1.1> ;
+                                       <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                       <http://purl.org/dc/elements/1.1/creator> "Herminio García-González (Kazerne Dossin)"@en ,
+                                                                                 "Mike Bryant (NIOD)"@en ;
+                                       <http://purl.org/dc/elements/1.1/title> "EHRI Ontology"@en ;
+                                       <http://purl.org/dc/terms/abstract> "This ontology defines the data model used by the EHRI Knowledge Graph for the representation of the information hosted in the EHRI Portal. It does so by extending RiC-O v1.1 and reusing some of the schema.org concepts."@en ;
+                                       <http://purl.org/dc/terms/description> "The EHRI Ontology extends some of the RiC-O types and adds additional properties to represent data present in the EHRI Portal. Whenever a class is extended with new properties, a subclass bounded to the ehri prefix is created in order to maintain the original RiC-O axioms. In some cases, classes are specialised via subclassing in order to contribute additional meaning to the superclass."@en ;
+                                       <http://purl.org/dc/terms/publisher> "EHRI-ERIC" ;
+                                       <http://purl.org/vocab/vann/preferredNamespacePrefix> "ehri" ;
+                                       <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
+                                       <http://schema.org/codeRepository> <https://github.com/EHRI/ehri-kg-ontology> ;
+                                       <http://schema.org/funder> <https://oscars-project.eu/> ;
+                                       <http://schema.org/funding> <https://oscars-project.eu/projects/ehri-kg-european-holocaust-research-infrastructure-knowledge-graph> ;
+                                       owl:priorVersion <http://lod.ehri-project-test.eu/ontology/0.1.1> ;
+                                       owl:versionInfo "0.2.0" ;
+                                       <http://xmlns.com/foaf/0.1/logo> <https://ehri-kg.ehri-project.eu/images/ehri-logo.svg> .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/elements/1.1/contributor
 <http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty ;
                                               rdfs:subPropertyOf rdfs:comment .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/vocab/vann/preferredNamespacePrefix
@@ -54,8 +78,20 @@
 <http://schema.org/funding> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/2002/07/owl#minQualifiedCardinality
+owl:minQualifiedCardinality rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2004/02/skos/core#definition
 <http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#topConceptOf
+<http://www.w3.org/2004/02/skos/core#topConceptOf> rdf:type owl:AnnotationProperty .
 
 
 ###  http://xmlns.com/foaf/0.1/logo
@@ -66,7 +102,7 @@
 #    Object Properties
 #################################################################
 
-###  http://lod.ehri-project-test.eu/ontology#hasCopy
+###  http://lod.ehri-project.eu/ontology#hasCopy
 :hasCopy rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf <https://www.ica.org/standards/RiC/ontology#hasCopy> ,
                             <https://www.ica.org/standards/RiC/ontology#isRelatedTo> ;
@@ -87,7 +123,7 @@
                     "tiene como copia"@es .
 
 
-###  http://lod.ehri-project-test.eu/ontology#hasOrHadScript
+###  http://lod.ehri-project.eu/ontology#hasOrHadScript
 :hasOrHadScript rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf <https://www.ica.org/standards/RiC/ontology#isRelatedTo> ;
                 owl:inverseOf :isOrWasScriptOf ;
@@ -99,7 +135,7 @@
                            "tiene o tenía como escritura"@es .
 
 
-###  http://lod.ehri-project-test.eu/ontology#has_copy_relation_role
+###  http://lod.ehri-project.eu/ontology#has_copy_relation_role
 :has_copy_relation_role rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf <https://www.ica.org/standards/RiC/ontology#relation_role> ;
                         rdfs:domain :HasCopyRelation ;
@@ -110,7 +146,7 @@
                                    "has the role of the Has copy relation"@en .
 
 
-###  http://lod.ehri-project-test.eu/ontology#isCopyOf
+###  http://lod.ehri-project.eu/ontology#isCopyOf
 :isCopyOf rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf <https://www.ica.org/standards/RiC/ontology#isCopyOf> ,
                              <https://www.ica.org/standards/RiC/ontology#isRelatedTo> ;
@@ -130,7 +166,7 @@
                      "is copy of"@en .
 
 
-###  http://lod.ehri-project-test.eu/ontology#isOrWasScriptOf
+###  http://lod.ehri-project.eu/ontology#isOrWasScriptOf
 :isOrWasScriptOf rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf <https://www.ica.org/standards/RiC/ontology#isRelatedTo> ;
                  rdfs:domain :MaterialScript ;
@@ -141,7 +177,7 @@
                             "is or was the script of"@en .
 
 
-###  http://lod.ehri-project-test.eu/ontology#is_copy_of_relation_role
+###  http://lod.ehri-project.eu/ontology#is_copy_of_relation_role
 :is_copy_of_relation_role rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf <https://www.ica.org/standards/RiC/ontology#relation_role> ;
                           rdfs:domain :IsCopyOfRelation ;
@@ -152,11 +188,27 @@
                                      "has the role of the Is copy of relation"@en .
 
 
+###  https://www.ica.org/standards/RiC/ontology#hasCopy
+<https://www.ica.org/standards/RiC/ontology#hasCopy> rdf:type owl:ObjectProperty .
+
+
+###  https://www.ica.org/standards/RiC/ontology#isCopyOf
+<https://www.ica.org/standards/RiC/ontology#isCopyOf> rdf:type owl:ObjectProperty .
+
+
+###  https://www.ica.org/standards/RiC/ontology#isRelatedTo
+<https://www.ica.org/standards/RiC/ontology#isRelatedTo> rdf:type owl:ObjectProperty .
+
+
+###  https://www.ica.org/standards/RiC/ontology#relation_role
+<https://www.ica.org/standards/RiC/ontology#relation_role> rdf:type owl:ObjectProperty .
+
+
 #################################################################
 #    Data properties
 #################################################################
 
-###  http://lod.ehri-project-test.eu/ontology#accessibility
+###  http://lod.ehri-project.eu/ontology#accessibility
 :accessibility rdf:type owl:DatatypeProperty ;
                rdfs:domain :Institution ;
                rdfs:range rdfs:Literal ;
@@ -166,7 +218,7 @@
                           "accessibilité"@fr .
 
 
-###  http://lod.ehri-project-test.eu/ontology#administrativeStructure
+###  http://lod.ehri-project.eu/ontology#administrativeStructure
 :administrativeStructure rdf:type owl:DatatypeProperty ;
                          rdfs:domain :Institution ;
                          rdfs:range rdfs:Literal ;
@@ -176,7 +228,7 @@
                                     "structure administrative"@fr .
 
 
-###  http://lod.ehri-project-test.eu/ontology#appraisal
+###  http://lod.ehri-project.eu/ontology#appraisal
 :appraisal rdf:type owl:DatatypeProperty ;
            rdfs:domain :RecordResource ;
            rdfs:range rdfs:Literal ;
@@ -186,7 +238,7 @@
                       "évaluation"@fr .
 
 
-###  http://lod.ehri-project-test.eu/ontology#archivalHistory
+###  http://lod.ehri-project.eu/ontology#archivalHistory
 :archivalHistory rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf <https://www.ica.org/standards/RiC/ontology#history> ;
                  rdfs:domain [ rdf:type owl:Class ;
@@ -201,7 +253,7 @@
                             "historia archivística"@es .
 
 
-###  http://lod.ehri-project-test.eu/ontology#archivalSituation
+###  http://lod.ehri-project.eu/ontology#archivalSituation
 :archivalSituation rdf:type owl:DatatypeProperty ;
                    rdfs:domain :Country ;
                    rdfs:range rdfs:Literal ;
@@ -211,7 +263,7 @@
                               "situation de conservation"@fr .
 
 
-###  http://lod.ehri-project-test.eu/ontology#archivistNote
+###  http://lod.ehri-project.eu/ontology#archivistNote
 :archivistNote rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf <https://www.ica.org/standards/RiC/ontology#note> ;
                rdfs:domain :RecordResource ;
@@ -222,7 +274,7 @@
                           "notes de l'archiviste"@fr .
 
 
-###  http://lod.ehri-project-test.eu/ontology#biographicalHistory
+###  http://lod.ehri-project.eu/ontology#biographicalHistory
 :biographicalHistory rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf <https://www.ica.org/standards/RiC/ontology#history> ;
                      rdfs:domain [ rdf:type owl:Class ;
@@ -237,7 +289,7 @@
                                 "reseña biográfica"@es .
 
 
-###  http://lod.ehri-project-test.eu/ontology#buildings
+###  http://lod.ehri-project.eu/ontology#buildings
 :buildings rdf:type owl:DatatypeProperty ;
            rdfs:domain :Institution ;
            rdfs:range rdfs:Literal ;
@@ -247,7 +299,7 @@
                       "edificio(s)"@es .
 
 
-###  http://lod.ehri-project-test.eu/ontology#conditionsOfAccess
+###  http://lod.ehri-project.eu/ontology#conditionsOfAccess
 :conditionsOfAccess rdf:type owl:DatatypeProperty ;
                     rdfs:subPropertyOf <https://www.ica.org/standards/RiC/ontology#conditionsOfAccess> ;
                     rdfs:domain [ rdf:type owl:Class ;
@@ -262,7 +314,7 @@
                                "conditions of access"@en .
 
 
-###  http://lod.ehri-project-test.eu/ontology#contactPerson
+###  http://lod.ehri-project.eu/ontology#contactPerson
 :contactPerson rdf:type owl:DatatypeProperty ;
                rdfs:domain :InstitutionAddress ;
                rdfs:range rdfs:Literal ;
@@ -272,7 +324,7 @@
                           "personne de contact"@fr .
 
 
-###  http://lod.ehri-project-test.eu/ontology#findingAids
+###  http://lod.ehri-project.eu/ontology#findingAids
 :findingAids rdf:type owl:DatatypeProperty ;
              rdfs:domain :Institution ;
              rdfs:range rdfs:Literal ;
@@ -282,7 +334,7 @@
                         "instruments de recherche"@fr .
 
 
-###  http://lod.ehri-project-test.eu/ontology#generalContext
+###  http://lod.ehri-project.eu/ontology#generalContext
 :generalContext rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf <https://www.ica.org/standards/RiC/ontology#generalDescription> ;
                 rdfs:domain :Institution ;
@@ -293,7 +345,7 @@
                            "general context"@en .
 
 
-###  http://lod.ehri-project-test.eu/ontology#locationOfCopies
+###  http://lod.ehri-project.eu/ontology#locationOfCopies
 :locationOfCopies rdf:type owl:DatatypeProperty ;
                   rdfs:domain :RecordResource ;
                   rdfs:range rdfs:Literal ;
@@ -303,7 +355,7 @@
                              "existencia y localización de copias"@es .
 
 
-###  http://lod.ehri-project-test.eu/ontology#locationOfOriginals
+###  http://lod.ehri-project.eu/ontology#locationOfOriginals
 :locationOfOriginals rdf:type owl:DatatypeProperty ;
                      rdfs:domain :RecordResource ;
                      rdfs:range rdfs:Literal ;
@@ -313,7 +365,7 @@
                                 "existencia y localización de los originales"@es .
 
 
-###  http://lod.ehri-project-test.eu/ontology#otherFindingAids
+###  http://lod.ehri-project.eu/ontology#otherFindingAids
 :otherFindingAids rdf:type owl:DatatypeProperty ;
                   rdfs:domain :RecordResource ;
                   rdfs:range rdfs:Literal ;
@@ -323,7 +375,7 @@
                              "otros instrumentos de descripción"@es .
 
 
-###  http://lod.ehri-project-test.eu/ontology#physicalCharacteristicsAndTechnicalRequirements
+###  http://lod.ehri-project.eu/ontology#physicalCharacteristicsAndTechnicalRequirements
 :physicalCharacteristicsAndTechnicalRequirements rdf:type owl:DatatypeProperty ;
                                                  rdfs:domain :RecordResource ;
                                                  rdfs:range rdfs:Literal ;
@@ -333,7 +385,7 @@
                                                             "physical characteristics and technical requirements"@en .
 
 
-###  http://lod.ehri-project-test.eu/ontology#publicAreas
+###  http://lod.ehri-project.eu/ontology#publicAreas
 :publicAreas rdf:type owl:DatatypeProperty ;
              rdfs:domain :Institution ;
              rdfs:range rdfs:Literal ;
@@ -343,7 +395,7 @@
                         "public areas"@en .
 
 
-###  http://lod.ehri-project-test.eu/ontology#publicationNote
+###  http://lod.ehri-project.eu/ontology#publicationNote
 :publicationNote rdf:type owl:DatatypeProperty ;
                  rdfs:domain :RecordResource ;
                  rdfs:range rdfs:Literal ;
@@ -353,7 +405,7 @@
                             "publication note"@en .
 
 
-###  http://lod.ehri-project-test.eu/ontology#recordsManagementAndCollectingPolicies
+###  http://lod.ehri-project.eu/ontology#recordsManagementAndCollectingPolicies
 :recordsManagementAndCollectingPolicies rdf:type owl:DatatypeProperty ;
                                         rdfs:domain :Institution ;
                                         rdfs:range rdfs:Literal ;
@@ -363,7 +415,7 @@
                                                    "records management and collecting policies"@en .
 
 
-###  http://lod.ehri-project-test.eu/ontology#relatedMaterial
+###  http://lod.ehri-project.eu/ontology#relatedMaterial
 :relatedMaterial rdf:type owl:DatatypeProperty ;
                  rdfs:domain :RecordResource ;
                  rdfs:range rdfs:Literal ;
@@ -373,7 +425,7 @@
                             "unidades de descripción relacionadas"@es .
 
 
-###  http://lod.ehri-project-test.eu/ontology#reproductionServices
+###  http://lod.ehri-project.eu/ontology#reproductionServices
 :reproductionServices rdf:type owl:DatatypeProperty ;
                       rdfs:domain :Institution ;
                       rdfs:range rdfs:Literal ;
@@ -383,7 +435,7 @@
                                  "servicios de reproducción"@es .
 
 
-###  http://lod.ehri-project-test.eu/ontology#researchExtensive
+###  http://lod.ehri-project.eu/ontology#researchExtensive
 :researchExtensive rdf:type owl:DatatypeProperty ;
                    rdfs:domain :Country ;
                    rdfs:range rdfs:Literal ;
@@ -393,7 +445,7 @@
                               "research by EHRI (extensive)"@en .
 
 
-###  http://lod.ehri-project-test.eu/ontology#researchServices
+###  http://lod.ehri-project.eu/ontology#researchServices
 :researchServices rdf:type owl:DatatypeProperty ;
                   rdfs:domain :Institution ;
                   rdfs:range rdfs:Literal ;
@@ -403,7 +455,7 @@
                              "servicios de ayuda a la investigación"@es .
 
 
-###  http://lod.ehri-project-test.eu/ontology#researchSummary
+###  http://lod.ehri-project.eu/ontology#researchSummary
 :researchSummary rdf:type owl:DatatypeProperty ;
                  rdfs:domain :Country ;
                  rdfs:range rdfs:Literal ;
@@ -413,7 +465,7 @@
                             "research by EHRI (summary)"@en .
 
 
-###  http://lod.ehri-project-test.eu/ontology#separatedMaterial
+###  http://lod.ehri-project.eu/ontology#separatedMaterial
 :separatedMaterial rdf:type owl:DatatypeProperty ;
                    rdfs:domain :RecordResource ;
                    rdfs:range rdfs:Literal ;
@@ -423,7 +475,7 @@
                               "unidades de descripción separadas"@es .
 
 
-###  http://lod.ehri-project-test.eu/ontology#sources
+###  http://lod.ehri-project.eu/ontology#sources
 :sources rdf:type owl:DatatypeProperty ;
          rdfs:domain :Agent ;
          rdfs:range rdfs:Literal ;
@@ -433,7 +485,7 @@
                     "sources"@fr .
 
 
-###  http://lod.ehri-project-test.eu/ontology#structureOrGenealogy
+###  http://lod.ehri-project.eu/ontology#structureOrGenealogy
 :structureOrGenealogy rdf:type owl:DatatypeProperty ;
                       rdfs:domain :Agent ;
                       rdfs:range rdfs:Literal ;
@@ -509,11 +561,27 @@
                                          "telephone number"@en .
 
 
+###  https://www.ica.org/standards/RiC/ontology#conditionsOfAccess
+<https://www.ica.org/standards/RiC/ontology#conditionsOfAccess> rdf:type owl:DatatypeProperty .
+
+
+###  https://www.ica.org/standards/RiC/ontology#generalDescription
+<https://www.ica.org/standards/RiC/ontology#generalDescription> rdf:type owl:DatatypeProperty .
+
+
+###  https://www.ica.org/standards/RiC/ontology#history
+<https://www.ica.org/standards/RiC/ontology#history> rdf:type owl:DatatypeProperty .
+
+
+###  https://www.ica.org/standards/RiC/ontology#note
+<https://www.ica.org/standards/RiC/ontology#note> rdf:type owl:DatatypeProperty .
+
+
 #################################################################
 #    Classes
 #################################################################
 
-###  http://lod.ehri-project-test.eu/ontology#AcquisitionType
+###  http://lod.ehri-project.eu/ontology#AcquisitionType
 :AcquisitionType rdf:type owl:Class ;
                  rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#ActivityType> ;
                  rdfs:comment "Represents the type of the acquisition as a specialisation of rico:ActivityType."@en ;
@@ -522,7 +590,7 @@
                             "Type d'acquisition"@fr .
 
 
-###  http://lod.ehri-project-test.eu/ontology#Agent
+###  http://lod.ehri-project.eu/ontology#Agent
 :Agent rdf:type owl:Class ;
        rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#Agent> ;
        rdfs:comment "This is a specialisation of the rico:Agent class created for its extension with additional properties."@en ;
@@ -531,7 +599,7 @@
                   "Agente"@es .
 
 
-###  http://lod.ehri-project-test.eu/ontology#AlternateAgentName
+###  http://lod.ehri-project.eu/ontology#AlternateAgentName
 :AlternateAgentName rdf:type owl:Class ;
                     rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#AgentName> ;
                     rdfs:comment "This class allows to represent any other name(s) used for an institution, or by which it may be known. This could include other forms of the same name, abbreviations, acronyms, other institutional names, or changes of name over time (historical names)."@en ;
@@ -540,7 +608,7 @@
                                "Formes alternatives du nom"@fr .
 
 
-###  http://lod.ehri-project-test.eu/ontology#City
+###  http://lod.ehri-project.eu/ontology#City
 :City rdf:type owl:Class ;
       rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#Place> ;
       rdfs:comment "This class represents a city as a more precise type of rico:Place."@en ;
@@ -549,7 +617,7 @@
                  "Ville"@fr .
 
 
-###  http://lod.ehri-project-test.eu/ontology#CorporateBody
+###  http://lod.ehri-project.eu/ontology#CorporateBody
 :CorporateBody rdf:type owl:Class ;
                rdfs:subClassOf :Group ,
                                <https://www.ica.org/standards/RiC/ontology#CorporateBody> ;
@@ -559,7 +627,7 @@
                           "Persona jurídica"@es .
 
 
-###  http://lod.ehri-project-test.eu/ontology#Country
+###  http://lod.ehri-project.eu/ontology#Country
 :Country rdf:type owl:Class ;
          rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#Place> ;
          rdfs:comment "This class represents a country as a more precise type of rico:Place."@en ;
@@ -568,7 +636,7 @@
                     "País"@es .
 
 
-###  http://lod.ehri-project-test.eu/ontology#Family
+###  http://lod.ehri-project.eu/ontology#Family
 :Family rdf:type owl:Class ;
         rdfs:subClassOf :Group ,
                         <https://www.ica.org/standards/RiC/ontology#Family> ;
@@ -578,7 +646,7 @@
                    "Family"@en .
 
 
-###  http://lod.ehri-project-test.eu/ontology#FunctionType
+###  http://lod.ehri-project.eu/ontology#FunctionType
 :FunctionType rdf:type owl:Class ;
               rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#ActivityType> ;
               rdfs:comment "Represents the function type as a specialisation of rico:ActivityType."@en ;
@@ -587,7 +655,7 @@
                          "Type de fonction"@fr .
 
 
-###  http://lod.ehri-project-test.eu/ontology#Group
+###  http://lod.ehri-project.eu/ontology#Group
 :Group rdf:type owl:Class ;
        rdfs:subClassOf :Agent ,
                        <https://www.ica.org/standards/RiC/ontology#Group> ;
@@ -597,38 +665,22 @@
                   "Grupo de agentes"@es .
 
 
-###  http://lod.ehri-project-test.eu/ontology#HasCopyRelation
+###  http://lod.ehri-project.eu/ontology#HasCopyRelation
 :HasCopyRelation rdf:type owl:Class ;
                  owl:equivalentClass [ rdf:type owl:Restriction ;
                                        owl:onProperty :has_copy_relation_role ;
                                        owl:hasSelf "true"^^xsd:boolean
                                      ] ;
-                 rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#Relation> ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty <https://www.ica.org/standards/RiC/ontology#relationHasSource> ;
-                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                   owl:onClass [ rdf:type owl:Class ;
-                                                 owl:unionOf ( :Institution
-                                                               :RecordResource
-                                                             )
-                                               ]
-                                 ] ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty <https://www.ica.org/standards/RiC/ontology#relationHasTarget> ;
-                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                   owl:onClass [ rdf:type owl:Class ;
-                                                 owl:unionOf ( :Institution
-                                                               :RecordResource
-                                                             )
-                                               ]
-                                 ] ;
+                 rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error1> ,
+                                 <http://org.semanticweb.owlapi/error#Error2> ,
+                                 <https://www.ica.org/standards/RiC/ontology#Relation> ;
                  rdfs:comment "Connects an Institution or a RecordResource to another Institution which has a copy of it (or part of it) or to a RecordResource which is a copy of the former."@en ;
                  rdfs:label "Has copy relation"@en ,
                             "Relación de tenencia de copia"@es ,
                             "Relation de propriété de copie"@fr .
 
 
-###  http://lod.ehri-project-test.eu/ontology#Institution
+###  http://lod.ehri-project.eu/ontology#Institution
 :Institution rdf:type owl:Class ;
              rdfs:subClassOf :CorporateBody ,
                              <http://schema.org/ArchiveOrganization> ;
@@ -638,7 +690,7 @@
                         "Institution"@fr .
 
 
-###  http://lod.ehri-project-test.eu/ontology#InstitutionAddress
+###  http://lod.ehri-project.eu/ontology#InstitutionAddress
 :InstitutionAddress rdf:type owl:Class ;
                     rdfs:subClassOf <http://schema.org/PostalAddress> ,
                                     <https://www.ica.org/standards/RiC/ontology#PhysicalLocation> ;
@@ -648,38 +700,22 @@
                                "Institution's address"@en .
 
 
-###  http://lod.ehri-project-test.eu/ontology#IsCopyOfRelation
+###  http://lod.ehri-project.eu/ontology#IsCopyOfRelation
 :IsCopyOfRelation rdf:type owl:Class ;
                   owl:equivalentClass [ rdf:type owl:Restriction ;
                                         owl:onProperty :is_copy_of_relation_role ;
                                         owl:hasSelf "true"^^xsd:boolean
                                       ] ;
-                  rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#Relation> ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty <https://www.ica.org/standards/RiC/ontology#relationHasSource> ;
-                                    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                    owl:onClass [ rdf:type owl:Class ;
-                                                  owl:unionOf ( :Institution
-                                                                :RecordResource
-                                                              )
-                                                ]
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty <https://www.ica.org/standards/RiC/ontology#relationHasTarget> ;
-                                    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                    owl:onClass [ rdf:type owl:Class ;
-                                                  owl:unionOf ( :Institution
-                                                                :RecordResource
-                                                              )
-                                                ]
-                                  ] ;
+                  rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error3> ,
+                                  <http://org.semanticweb.owlapi/error#Error4> ,
+                                  <https://www.ica.org/standards/RiC/ontology#Relation> ;
                   rdfs:comment "Connects an Institution or an RecordResource to another Institution whose originals have been copied (or part of them) or to a RecordResource which is the original of the this copy."@en ;
                   rdfs:label "Is copy of relation"@en ,
                              "Relación de copia de"@es ,
                              "Relation de copie de"@fr .
 
 
-###  http://lod.ehri-project-test.eu/ontology#MaterialScript
+###  http://lod.ehri-project.eu/ontology#MaterialScript
 :MaterialScript rdf:type owl:Class ;
                 rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#Concept> ;
                 rdfs:comment "This class represents the written scripts that can be found in some material. Similar to the written language, each will be represented by an instance. Examples of scripts are: Latin, Cyrillic, Hebrew, etc."@en ;
@@ -688,7 +724,7 @@
                            "Écriture des documents"@fr .
 
 
-###  http://lod.ehri-project-test.eu/ontology#ParallelAgentName
+###  http://lod.ehri-project.eu/ontology#ParallelAgentName
 :ParallelAgentName rdf:type owl:Class ;
                    rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#AgentName> ;
                    rdfs:comment "This class represents the various forms in which the authorised form of name of an institution with archival holdings occurs in other languages or script form(s)."@en ;
@@ -697,7 +733,7 @@
                               "Parallel forms of the agent's name"@en .
 
 
-###  http://lod.ehri-project-test.eu/ontology#Person
+###  http://lod.ehri-project.eu/ontology#Person
 :Person rdf:type owl:Class ;
         rdfs:subClassOf :Agent ,
                         <https://www.ica.org/standards/RiC/ontology#Person> ;
@@ -707,7 +743,7 @@
                    "Personne"@fr .
 
 
-###  http://lod.ehri-project-test.eu/ontology#RecordResource
+###  http://lod.ehri-project.eu/ontology#RecordResource
 :RecordResource rdf:type owl:Class ;
                 rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#RecordResource> ;
                 rdfs:comment "This is a specialisation of the rico:RecordResource class created for its extension with additional properties."@en ;
@@ -716,7 +752,7 @@
                            "Ressource archivistique"@fr .
 
 
-###  http://lod.ehri-project-test.eu/ontology#RecordSet
+###  http://lod.ehri-project.eu/ontology#RecordSet
 :RecordSet rdf:type owl:Class ;
            rdfs:subClassOf :RecordResource ,
                            <https://www.ica.org/standards/RiC/ontology#RecordSet> ;
@@ -726,13 +762,29 @@
                       "Record set"@en .
 
 
-###  http://lod.ehri-project-test.eu/ontology#Region
+###  http://lod.ehri-project.eu/ontology#Region
 :Region rdf:type owl:Class ;
         rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#Place> ;
         rdfs:comment "This class represents a region as a more precise type of rico:Place."@en ;
         rdfs:label "Region"@en ,
                    "Región"@es ,
                    "Région"@fr .
+
+
+###  http://org.semanticweb.owlapi/error#Error1
+<http://org.semanticweb.owlapi/error#Error1> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error2
+<http://org.semanticweb.owlapi/error#Error2> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error3
+<http://org.semanticweb.owlapi/error#Error3> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error4
+<http://org.semanticweb.owlapi/error#Error4> rdf:type owl:Class .
 
 
 ###  http://schema.org/ArchiveOrganization
@@ -744,88 +796,161 @@
 
 
 ###  http://www.w3.org/2004/02/skos/core#Concept
-<http://www.w3.org/2004/02/skos/core#Concept> rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#Thing> .
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class ;
+                                              rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#Thing> .
+
+
+###  https://www.ica.org/standards/RiC/ontology#ActivityType
+<https://www.ica.org/standards/RiC/ontology#ActivityType> rdf:type owl:Class .
+
+
+###  https://www.ica.org/standards/RiC/ontology#Agent
+<https://www.ica.org/standards/RiC/ontology#Agent> rdf:type owl:Class .
+
+
+###  https://www.ica.org/standards/RiC/ontology#AgentName
+<https://www.ica.org/standards/RiC/ontology#AgentName> rdf:type owl:Class .
+
+
+###  https://www.ica.org/standards/RiC/ontology#Concept
+<https://www.ica.org/standards/RiC/ontology#Concept> rdf:type owl:Class .
+
+
+###  https://www.ica.org/standards/RiC/ontology#CorporateBody
+<https://www.ica.org/standards/RiC/ontology#CorporateBody> rdf:type owl:Class .
+
+
+###  https://www.ica.org/standards/RiC/ontology#Family
+<https://www.ica.org/standards/RiC/ontology#Family> rdf:type owl:Class .
+
+
+###  https://www.ica.org/standards/RiC/ontology#Group
+<https://www.ica.org/standards/RiC/ontology#Group> rdf:type owl:Class .
+
+
+###  https://www.ica.org/standards/RiC/ontology#Person
+<https://www.ica.org/standards/RiC/ontology#Person> rdf:type owl:Class .
+
+
+###  https://www.ica.org/standards/RiC/ontology#PhysicalLocation
+<https://www.ica.org/standards/RiC/ontology#PhysicalLocation> rdf:type owl:Class .
+
+
+###  https://www.ica.org/standards/RiC/ontology#Place
+<https://www.ica.org/standards/RiC/ontology#Place> rdf:type owl:Class .
+
+
+###  https://www.ica.org/standards/RiC/ontology#RecordResource
+<https://www.ica.org/standards/RiC/ontology#RecordResource> rdf:type owl:Class .
+
+
+###  https://www.ica.org/standards/RiC/ontology#RecordSet
+<https://www.ica.org/standards/RiC/ontology#RecordSet> rdf:type owl:Class .
+
+
+###  https://www.ica.org/standards/RiC/ontology#RecordSetType
+<https://www.ica.org/standards/RiC/ontology#RecordSetType> rdf:type owl:Class .
+
+
+###  https://www.ica.org/standards/RiC/ontology#Relation
+<https://www.ica.org/standards/RiC/ontology#Relation> rdf:type owl:Class .
+
+
+###  https://www.ica.org/standards/RiC/ontology#Thing
+<https://www.ica.org/standards/RiC/ontology#Thing> rdf:type owl:Class .
 
 
 #################################################################
 #    Individuals
 #################################################################
 
-###  http://lod.ehri-project-test.eu/ontology#Item
+###  http://lod.ehri-project.eu/ontology#Item
 :Item rdf:type owl:NamedIndividual ,
                <http://www.w3.org/2004/02/skos/core#Concept> ,
                <https://www.ica.org/standards/RiC/ontology#RecordSetType> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> ;
-      <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> ;
       rdfs:label "item"@en ,
                  "pièce"@fr ,
-                 "unidad documental simple"@es .
+                 "unidad documental simple"@es ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> ;
+      <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
 
 
-###  http://lod.ehri-project-test.eu/ontology#OtherLevel
+###  http://lod.ehri-project.eu/ontology#OtherLevel
 :OtherLevel rdf:type owl:NamedIndividual ,
                      <http://www.w3.org/2004/02/skos/core#Concept> ,
                      <https://www.ica.org/standards/RiC/ontology#RecordSetType> ;
-            <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> ;
-            <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> ;
             rdfs:label "autre niveau"@fr ,
                        "other level"@en ,
-                       "otro nivel"@es .
+                       "otro nivel"@es ;
+            <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> ;
+            <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
 
 
-###  http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#RecordGroup
-<http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#RecordGroup> rdf:type owl:NamedIndividual ,
-                                                                                   <http://www.w3.org/2004/02/skos/core#Concept> ,
-                                                                                   <https://www.ica.org/standards/RiC/ontology#RecordSetType> ;
-                                                                          <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> ;
-                                                                          <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> ;
-                                                                          rdfs:label "groupe d'enregistrement"@fr ,
-                                                                                     "record group"@en ,
-                                                                                     "unidad documental compuesta"@es .
+###  http://lod.ehri-project.eu/vocabularies/recordSetTypes#RecordGroup
+<http://lod.ehri-project.eu/vocabularies/recordSetTypes#RecordGroup> rdf:type owl:NamedIndividual ,
+                                                                              <http://www.w3.org/2004/02/skos/core#Concept> ,
+                                                                              <https://www.ica.org/standards/RiC/ontology#RecordSetType> ;
+                                                                     rdfs:label "groupe d'enregistrement"@fr ,
+                                                                                "record group"@en ,
+                                                                                "unidad documental compuesta"@es ;
+                                                                     <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> ;
+                                                                     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
 
 
-###  http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subcollection
-<http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subcollection> rdf:type owl:NamedIndividual ,
-                                                                                     <http://www.w3.org/2004/02/skos/core#Concept> ,
-                                                                                     <https://www.ica.org/standards/RiC/ontology#RecordSetType> ;
-                                                                            <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> ;
-                                                                            <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> ;
-                                                                            rdfs:label "sous-collection"@fr ,
-                                                                                       "sub-collection"@en ,
-                                                                                       "subcolección"@es .
-
-
-###  http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subfonds
-<http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subfonds> rdf:type owl:NamedIndividual ,
+###  http://lod.ehri-project.eu/vocabularies/recordSetTypes#Subcollection
+<http://lod.ehri-project.eu/vocabularies/recordSetTypes#Subcollection> rdf:type owl:NamedIndividual ,
                                                                                 <http://www.w3.org/2004/02/skos/core#Concept> ,
                                                                                 <https://www.ica.org/standards/RiC/ontology#RecordSetType> ;
+                                                                       rdfs:label "sous-collection"@fr ,
+                                                                                  "sub-collection"@en ,
+                                                                                  "subcolección"@es ;
                                                                        <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> ;
-                                                                       <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> ;
-                                                                       rdfs:label "sous-fonds"@fr ,
-                                                                                  "sub-fonds"@en ,
-                                                                                  "subfondo"@es .
+                                                                       <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
 
 
-###  http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subgroup
-<http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subgroup> rdf:type owl:NamedIndividual ,
-                                                                                <http://www.w3.org/2004/02/skos/core#Concept> ,
-                                                                                <https://www.ica.org/standards/RiC/ontology#RecordSetType> ;
-                                                                       <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> ;
-                                                                       <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> ;
-                                                                       rdfs:label "sous-groupe"@fr ,
-                                                                                  "sub-group"@en ,
-                                                                                  "subunidad documental compuesta"@es .
+###  http://lod.ehri-project.eu/vocabularies/recordSetTypes#Subfonds
+<http://lod.ehri-project.eu/vocabularies/recordSetTypes#Subfonds> rdf:type owl:NamedIndividual ,
+                                                                           <http://www.w3.org/2004/02/skos/core#Concept> ,
+                                                                           <https://www.ica.org/standards/RiC/ontology#RecordSetType> ;
+                                                                  rdfs:label "sous-fonds"@fr ,
+                                                                             "sub-fonds"@en ,
+                                                                             "subfondo"@es ;
+                                                                  <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> ;
+                                                                  <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
 
 
-###  http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subseries
-<http://lod.ehri-project-test.eu/vocabularies/recordSetTypes#Subseries> rdf:type owl:NamedIndividual ,
-                                                                                 <http://www.w3.org/2004/02/skos/core#Concept> ,
-                                                                                 <https://www.ica.org/standards/RiC/ontology#RecordSetType> ;
-                                                                        <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> ;
-                                                                        <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> ;
-                                                                        rdfs:label "sous-série"@fr ,
-                                                                                   "sub-series"@en ,
-                                                                                   "subserie"@es .
+###  http://lod.ehri-project.eu/vocabularies/recordSetTypes#Subgroup
+<http://lod.ehri-project.eu/vocabularies/recordSetTypes#Subgroup> rdf:type owl:NamedIndividual ,
+                                                                           <http://www.w3.org/2004/02/skos/core#Concept> ,
+                                                                           <https://www.ica.org/standards/RiC/ontology#RecordSetType> ;
+                                                                  rdfs:label "sous-groupe"@fr ,
+                                                                             "sub-group"@en ,
+                                                                             "subunidad documental compuesta"@es ;
+                                                                  <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> ;
+                                                                  <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
 
+
+###  http://lod.ehri-project.eu/vocabularies/recordSetTypes#Subseries
+<http://lod.ehri-project.eu/vocabularies/recordSetTypes#Subseries> rdf:type owl:NamedIndividual ,
+                                                                            <http://www.w3.org/2004/02/skos/core#Concept> ,
+                                                                            <https://www.ica.org/standards/RiC/ontology#RecordSetType> ;
+                                                                   rdfs:label "sous-série"@fr ,
+                                                                              "sub-series"@en ,
+                                                                              "subserie"@es ;
+                                                                   <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> ;
+                                                                   <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> .
+
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
