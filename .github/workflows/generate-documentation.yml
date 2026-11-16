@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'ontology/ehri.owl'
+  workflow_dispatch:
 
 jobs:
   generate-documentation:
@@ -17,8 +18,11 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
       
+      - name: Install uv
+        run: curl -LsSf https://astral.sh/uv/install.sh | sh
+
       - name: Run documentation generation script
-        run: bash generate-documentation.sh
+        run: bash generate-documentation.sh -sudo
       
       - uses: stefanzweifel/git-auto-commit-action@v5
         with: 
