@@ -7,7 +7,7 @@
 @base <http://lod.ehri-project-test.eu/ontology#> .
 
 <http://lod.ehri-project-test.eu/ontology> rdf:type owl:Ontology ;
-                                            owl:versionIRI <http://lod.ehri-project-test.eu/ontology/0.1.0> ;
+                                            owl:versionIRI <http://lod.ehri-project-test.eu/ontology/0.1.1> ;
                                             owl:imports <https://www.ica.org/standards/RiC/ontology/1.0.2> ;
                                             <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> ;
                                             <http://purl.org/dc/elements/1.1/creator> "Herminio García-González (Kazerne Dossin)"@en ,
@@ -21,8 +21,8 @@
                                             <http://schema.org/codeRepository> <https://github.com/EHRI/ehri-kg-ontology> ;
                                             <http://schema.org/funder> <https://oscars-project.eu/> ;
                                             <http://schema.org/funding> <https://oscars-project.eu/projects/ehri-kg-european-holocaust-research-infrastructure-knowledge-graph> ;
-                                            owl:priorVersion <http://lod.ehri-project-test.eu/ontology/0.0.2> ;
-                                            owl:versionInfo "0.1.0" ;
+                                            owl:priorVersion <http://lod.ehri-project-test.eu/ontology/0.1.0> ;
+                                            owl:versionInfo "0.1.1" ;
                                             <http://xmlns.com/foaf/0.1/logo> <https://ehri-kg.ehri-project.eu/images/ehri-logo.svg> .
 
 #################################################################
@@ -286,7 +286,7 @@
 :otherFindingAids rdf:type owl:DatatypeProperty ;
                   rdfs:domain :RecordResource ;
                   rdfs:range rdfs:Literal ;
-                  rdfs:comment "Provides information on the history of the unit of description that is significant for its authenticity, integrity and interpretation."@en ;
+                  rdfs:comment "Identifies and gives information about any finding aids related to the unit of description."@en ;
                   rdfs:label "autres instruments de recherche"@fr ,
                              "other finding aids"@en ,
                              "otros instrumentos de descripción"@es .
@@ -486,6 +486,15 @@
 #    Classes
 #################################################################
 
+###  http://lod.ehri-project-test.eu/ontology#AcquisitionType
+:AcquisitionType rdf:type owl:Class ;
+                 rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#ActivityType> ;
+                 rdfs:comment "Represents the type of the acquisition as a specialisation of rico:ActivityType."@en ;
+                 rdfs:label "Acquisition type"@en ,
+                            "Tipo de adquisición"@es ,
+                            "Type d'acquisition"@fr .
+
+
 ###  http://lod.ehri-project-test.eu/ontology#Agent
 :Agent rdf:type owl:Class ;
        rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#Agent> ;
@@ -540,6 +549,15 @@
         rdfs:label "Familia"@es ,
                    "Famille"@fr ,
                    "Family"@en .
+
+
+###  http://lod.ehri-project-test.eu/ontology#FunctionType
+:FunctionType rdf:type owl:Class ;
+              rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#ActivityType> ;
+              rdfs:comment "Represents the function type as a specialisation of rico:ActivityType."@en ;
+              rdfs:label "Function type"@en ,
+                         "Tipo de función"@es ,
+                         "Type de fonction"@fr .
 
 
 ###  http://lod.ehri-project-test.eu/ontology#Group
