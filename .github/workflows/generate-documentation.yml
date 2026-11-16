@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'ontology/ehri.owl'
+  workflow_dispatch:
 
 jobs:
   generate-documentation:
