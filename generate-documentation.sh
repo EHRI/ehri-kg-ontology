@@ -5,7 +5,7 @@ if [ "$1" = "-sudo" ]; then
 fi
 
 if [ ! -f widoco.jar ]; then
-    curl -L https://github.com/dgarijo/Widoco/releases/download/v1.4.25/widoco-1.4.25-jar-with-dependencies_JDK-11.jar -o widoco.jar
+    curl -L https://github.com/dgarijo/Widoco/releases/download/v1.4.26/widoco-1.4.26-jar-with-dependencies_JDK-11.jar -o widoco.jar
 fi
 
 uvx --from mitmproxy mitmdump -s proxy/proxy.py &
