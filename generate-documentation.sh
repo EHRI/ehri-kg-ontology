@@ -12,7 +12,7 @@ uvx --from mitmproxy mitmdump -s proxy/proxy.py &
 
 proxy_pid=$!
 
-sleep 120s
+sleep 30s
 
 if [ `$with_sudo keytool -list -cacerts -alias mitmproxy -storepass changeit | grep "Certificate fingerprint" | wc -l` -lt 1 ]; then
     echo "Importing mitmproxy certificate into Java cacerts"
