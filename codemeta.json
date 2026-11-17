@@ -1,0 +1,55 @@
+{
+    "@context": "https://w3id.org/codemeta/3.0",
+    "@type": [
+        "SoftwareSourceCode",
+        "SoftwareApplication"
+    ],
+    "author": [
+        {
+            "affiliation": {
+                "name": "Kazerne Dossin",
+                "@type": "Organization"
+            },
+            "email": "herminio.garciagonzalez@kazernedossin.eu",
+            "familyName": "García González",
+            "givenName": "Herminio",
+            "@id": "https://orcid.org/0000-0001-5590-4857",
+            "@type": "Person"
+        },
+        {
+            "affiliation": {
+                "name": "NIOD Institute for War, Holocaust and Genocide Studies",
+                "@type": "Organization"
+            },
+            "email": "m.bryant@niod.knaw.nl",
+            "familyName": "Bryant",
+            "givenName": "Mike",
+            "@id": "http://orcid.org/0000-0003-0765-7390",
+            "@type": "Person"
+        }
+    ],
+    "applicationCategory": "Semantic web",
+    "codeRepository": "https://github.com/EHRI/ehri-kg-ontology",
+    "dateCreated": "2025-06-30",
+    "dateModified": "2026-03-05",
+    "datePublished": "2025-10-15",
+    "description": "Ontology and related resources used for the modelling of the EHRI-KG",
+    "downloadUrl": "https://github.com/EHRI/ehri-kg-ontology/releases",
+    "funder": {
+        "name": "OSCARS project",
+        "@type": "Organization"
+    },
+    "identifier": "https://doi.org/10.5281/zenodo.17358935",
+    "license": "https://spdx.org/licenses/CC-BY-4.0",
+    "name": "ehri-kg-ontology",
+    "programmingLanguage": [
+        "OWL",
+        "HTML",
+        "Shell"
+    ],
+    "funding": "101129751",
+    "releaseNotes": "# Version 0.1.1\n- An erroneous description has been fixed.\n- Two missing classes were added.",
+    "version": "v0.1.1",
+    "continuousIntegration": "https://raw.githubusercontent.com/EHRI/ehri-kg-ontology/main/.github/workflows/generate-documentation.yml",
+    "issueTracker": "https://api.github.com/repos/EHRI/ehri-kg-ontology/issues"
+}
