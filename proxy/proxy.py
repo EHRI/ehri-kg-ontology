@@ -2,7 +2,8 @@ from mitmproxy import http
 import pathlib
 
 LOCAL = {
-    "/standards/RiC/ontology/1.0.2": "configurations/imports/RiC-O_1-0-2.rdf"
+    "/standards/RiC/ontology/1.0.2": "configurations/imports/RiC-O_1-0-2.rdf",
+    "/standards/RiC/ontology/1.1": "configurations/imports/RiC-O_1-1.rdf"
 }
 
 def request(flow: http.HTTPFlow):
