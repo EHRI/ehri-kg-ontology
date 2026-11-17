@@ -2,97 +2,227 @@
 <h2 id="changes" class="list">Changes from last version</h2>
 <h3 id="changeClass" class="list">Classes</h3>
 <details><summary><u>Added classes</u></summary>
-<ul><li><a href="#AcquisitionType">http://lod.ehri-project-test.eu/ontology#AcquisitionType</a>
+<ul><li><a href="#AcquisitionType">http://lod.ehri-project.eu/ontology#AcquisitionType</a>
 <ul>
 <li>Added: SubClass of https://www.ica.org/standards/RiC/ontology#ActivityType</li>
 </ul>
 </li>
-<li><a href="#FunctionType">http://lod.ehri-project-test.eu/ontology#FunctionType</a>
+<li><a href="#Agent">http://lod.ehri-project.eu/ontology#Agent</a>
+<ul>
+<li>Added: SubClass of https://www.ica.org/standards/RiC/ontology#Agent</li>
+</ul>
+</li>
+<li><a href="#AlternateAgentName">http://lod.ehri-project.eu/ontology#AlternateAgentName</a>
+<ul>
+<li>Added: SubClass of https://www.ica.org/standards/RiC/ontology#AgentName</li>
+</ul>
+</li>
+<li><a href="#City">http://lod.ehri-project.eu/ontology#City</a>
+<ul>
+<li>Added: SubClass of https://www.ica.org/standards/RiC/ontology#Place</li>
+</ul>
+</li>
+<li><a href="#CorporateBody">http://lod.ehri-project.eu/ontology#CorporateBody</a>
+<ul>
+<li>Added: SubClass of http://lod.ehri-project.eu/ontology#Group</li>
+<li>Added: SubClass of https://www.ica.org/standards/RiC/ontology#CorporateBody</li>
+</ul>
+</li>
+<li><a href="#Country">http://lod.ehri-project.eu/ontology#Country</a>
+<ul>
+<li>Added: SubClass of https://www.ica.org/standards/RiC/ontology#Place</li>
+</ul>
+</li>
+<li><a href="#Family">http://lod.ehri-project.eu/ontology#Family</a>
+<ul>
+<li>Added: SubClass of http://lod.ehri-project.eu/ontology#Group</li>
+<li>Added: SubClass of https://www.ica.org/standards/RiC/ontology#Family</li>
+</ul>
+</li>
+<li><a href="#FunctionType">http://lod.ehri-project.eu/ontology#FunctionType</a>
 <ul>
 <li>Added: SubClass of https://www.ica.org/standards/RiC/ontology#ActivityType</li>
 </ul>
 </li>
-<li><a href="#HasCopyRelation">http://lod.ehri-project-test.eu/ontology#HasCopyRelation</a>
+<li><a href="#Group">http://lod.ehri-project.eu/ontology#Group</a>
 <ul>
-<li><li>Added: SubClass of https://www.ica.org/standards/RiC/ontology#Relation</li>
-<li><li>Added: EquivalentClasses EquivalentClasses(&lt;http://lod.ehri-project-test.eu/ontology#HasCopyRelation&gt; ObjectHasSelf(&lt;http://lod.ehri-project-test.eu/ontology#has_copy_relation_role&gt;))</li>
+<li>Added: SubClass of http://lod.ehri-project.eu/ontology#Agent</li>
+<li>Added: SubClass of https://www.ica.org/standards/RiC/ontology#Group</li>
 </ul>
 </li>
-<li><a href="#IsCopyOfRelation">http://lod.ehri-project-test.eu/ontology#IsCopyOfRelation</a>
+<li><a href="#HasCopyRelation">http://lod.ehri-project.eu/ontology#HasCopyRelation</a>
 <ul>
+<li>Added: SubClass of http://org.semanticweb.owlapi/error#Error1</li>
 <li>Added: SubClass of https://www.ica.org/standards/RiC/ontology#Relation</li>
-<li><li>Added: EquivalentClasses EquivalentClasses(&lt;http://lod.ehri-project-test.eu/ontology#IsCopyOfRelation&gt; ObjectHasSelf(&lt;http://lod.ehri-project-test.eu/ontology#is_copy_of_relation_role&gt;))</li>
-<li></ul>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;http://lod.ehri-project.eu/ontology#HasCopyRelation&gt; ObjectHasSelf(&lt;http://lod.ehri-project.eu/ontology#has_copy_relation_role&gt;))</li>
+<li>Added: SubClass of http://org.semanticweb.owlapi/error#Error2</li>
+</ul>
 </li>
-<li><a href="#https://www.ica.org/standards/RiC/ontology#ActivityType">https://www.ica.org/standards/RiC/ontology#ActivityType</a>
+<li><a href="#Institution">http://lod.ehri-project.eu/ontology#Institution</a>
+<ul>
+<li>Added: SubClass of http://schema.org/ArchiveOrganization</li>
+<li>Added: SubClass of http://lod.ehri-project.eu/ontology#CorporateBody</li>
+</ul>
+</li>
+<li><a href="#InstitutionAddress">http://lod.ehri-project.eu/ontology#InstitutionAddress</a>
+<ul>
+<li>Added: SubClass of https://www.ica.org/standards/RiC/ontology#PhysicalLocation</li>
+<li>Added: SubClass of http://schema.org/PostalAddress</li>
+</ul>
+</li>
+<li><a href="#IsCopyOfRelation">http://lod.ehri-project.eu/ontology#IsCopyOfRelation</a>
+<ul>
+<li>Added: SubClass of http://org.semanticweb.owlapi/error#Error4</li>
+<li>Added: SubClass of https://www.ica.org/standards/RiC/ontology#Relation</li>
+<li>Added: SubClass of http://org.semanticweb.owlapi/error#Error3</li>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;http://lod.ehri-project.eu/ontology#IsCopyOfRelation&gt; ObjectHasSelf(&lt;http://lod.ehri-project.eu/ontology#is_copy_of_relation_role&gt;))</li>
+</ul>
+</li>
+<li><a href="#MaterialScript">http://lod.ehri-project.eu/ontology#MaterialScript</a>
+<ul>
+<li>Added: SubClass of https://www.ica.org/standards/RiC/ontology#Concept</li>
+</ul>
+</li>
+<li><a href="#ParallelAgentName">http://lod.ehri-project.eu/ontology#ParallelAgentName</a>
+<ul>
+<li>Added: SubClass of https://www.ica.org/standards/RiC/ontology#AgentName</li>
+</ul>
+</li>
+<li><a href="#Person">http://lod.ehri-project.eu/ontology#Person</a>
+<ul>
+<li>Added: SubClass of http://lod.ehri-project.eu/ontology#Agent</li>
+<li>Added: SubClass of https://www.ica.org/standards/RiC/ontology#Person</li>
+</ul>
+</li>
+<li><a href="#RecordResource">http://lod.ehri-project.eu/ontology#RecordResource</a>
+<ul>
+<li>Added: SubClass of https://www.ica.org/standards/RiC/ontology#RecordResource</li>
+</ul>
+</li>
+<li><a href="#RecordSet">http://lod.ehri-project.eu/ontology#RecordSet</a>
+<ul>
+<li>Added: SubClass of http://lod.ehri-project.eu/ontology#RecordResource</li>
+<li>Added: SubClass of https://www.ica.org/standards/RiC/ontology#RecordSet</li>
+</ul>
+</li>
+<li><a href="#Region">http://lod.ehri-project.eu/ontology#Region</a>
+<ul>
+<li>Added: SubClass of https://www.ica.org/standards/RiC/ontology#Place</li>
+</ul>
+</li>
+<li><a href="#http://org.semanticweb.owlapi/error#Error1">http://org.semanticweb.owlapi/error#Error1</a>
+</li>
+<li><a href="#http://org.semanticweb.owlapi/error#Error2">http://org.semanticweb.owlapi/error#Error2</a>
+</li>
+<li><a href="#http://org.semanticweb.owlapi/error#Error3">http://org.semanticweb.owlapi/error#Error3</a>
+</li>
+<li><a href="#http://org.semanticweb.owlapi/error#Error4">http://org.semanticweb.owlapi/error#Error4</a>
 </li>
 <li><a href="#https://www.ica.org/standards/RiC/ontology#Relation">https://www.ica.org/standards/RiC/ontology#Relation</a>
 </li>
+</ul></details><details><summary><u>Deleted classes</u></summary>
+<ul><li><a href="#http://lod.ehri-project-test.eu/ontology#AcquisitionType">http://lod.ehri-project-test.eu/ontology#AcquisitionType</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#Agent">http://lod.ehri-project-test.eu/ontology#Agent</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#AlternateAgentName">http://lod.ehri-project-test.eu/ontology#AlternateAgentName</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#City">http://lod.ehri-project-test.eu/ontology#City</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#CorporateBody">http://lod.ehri-project-test.eu/ontology#CorporateBody</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#Country">http://lod.ehri-project-test.eu/ontology#Country</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#Family">http://lod.ehri-project-test.eu/ontology#Family</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#FunctionType">http://lod.ehri-project-test.eu/ontology#FunctionType</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#Group">http://lod.ehri-project-test.eu/ontology#Group</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#Institution">http://lod.ehri-project-test.eu/ontology#Institution</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#InstitutionAddress">http://lod.ehri-project-test.eu/ontology#InstitutionAddress</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#MaterialScript">http://lod.ehri-project-test.eu/ontology#MaterialScript</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#ParallelAgentName">http://lod.ehri-project-test.eu/ontology#ParallelAgentName</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#Person">http://lod.ehri-project-test.eu/ontology#Person</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#RecordResource">http://lod.ehri-project-test.eu/ontology#RecordResource</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#RecordSet">http://lod.ehri-project-test.eu/ontology#RecordSet</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#Region">http://lod.ehri-project-test.eu/ontology#Region</a>
+</li>
 </ul></details><h3 id="changeProp" class="list">Object Properties</h3>
 <details><summary><u>Added object properties</u></summary>
-<ul><li><a href="#has_copy_relation_role">http://lod.ehri-project-test.eu/ontology#has_copy_relation_role</a>
+<ul><li><a href="#hasCopy">http://lod.ehri-project.eu/ontology#hasCopy</a>
 <ul>
-<li>Added: SubProperty of https://www.ica.org/standards/RiC/ontology#relation_role</li>
-<li>Added: domain http://lod.ehri-project-test.eu/ontology#HasCopyRelation</li>
-<li>Added: Range http://lod.ehri-project-test.eu/ontology#HasCopyRelation</li>
+<li>Added: SubProperty of https://www.ica.org/standards/RiC/ontology#hasCopy</li>
+<li>Added: domain Union of (http://lod.ehri-project.eu/ontology#Institution, http://lod.ehri-project.eu/ontology#RecordResource)</li>
+<li>Added: Range Union of (http://lod.ehri-project.eu/ontology#Institution, http://lod.ehri-project.eu/ontology#RecordResource)</li>
+<li>Added: InverseObjectProperties InverseObjectProperties(&lt;http://lod.ehri-project.eu/ontology#hasCopy&gt; &lt;http://lod.ehri-project.eu/ontology#isCopyOf&gt;)</li>
+<li>Added: SubProperty of https://www.ica.org/standards/RiC/ontology#isRelatedTo</li>
 </ul>
 </li>
-<li><a href="#is_copy_of_relation_role">http://lod.ehri-project-test.eu/ontology#is_copy_of_relation_role</a>
+<li><a href="#hasOrHadScript">http://lod.ehri-project.eu/ontology#hasOrHadScript</a>
 <ul>
-<li>Added: Range http://lod.ehri-project-test.eu/ontology#IsCopyOfRelation</li>
-<li>Added: SubProperty of https://www.ica.org/standards/RiC/ontology#relation_role</li>
-<li>Added: domain http://lod.ehri-project-test.eu/ontology#IsCopyOfRelation</li>
+<li>Added: domain http://lod.ehri-project.eu/ontology#RecordResource</li>
+<li>Added: Range http://lod.ehri-project.eu/ontology#MaterialScript</li>
+<li>Added: SubProperty of https://www.ica.org/standards/RiC/ontology#isRelatedTo</li>
+<li>Added: InverseObjectProperties InverseObjectProperties(&lt;http://lod.ehri-project.eu/ontology#hasOrHadScript&gt; &lt;http://lod.ehri-project.eu/ontology#isOrWasScriptOf&gt;)</li>
 </ul>
 </li>
-<li><a href="#https://www.ica.org/standards/RiC/ontology#relationHasSource">https://www.ica.org/standards/RiC/ontology#relationHasSource</a>
+<li><a href="#has_copy_relation_role">http://lod.ehri-project.eu/ontology#has_copy_relation_role</a>
+<ul>
+<li>Added: Range http://lod.ehri-project.eu/ontology#HasCopyRelation</li>
+<li>Added: SubProperty of https://www.ica.org/standards/RiC/ontology#relation_role</li>
+<li>Added: domain http://lod.ehri-project.eu/ontology#HasCopyRelation</li>
+</ul>
 </li>
-<li><a href="#https://www.ica.org/standards/RiC/ontology#relationHasTarget">https://www.ica.org/standards/RiC/ontology#relationHasTarget</a>
+<li><a href="#isCopyOf">http://lod.ehri-project.eu/ontology#isCopyOf</a>
+<ul>
+<li>Added: Range Union of (http://lod.ehri-project.eu/ontology#Institution, http://lod.ehri-project.eu/ontology#RecordResource)</li>
+<li>Added: domain Union of (http://lod.ehri-project.eu/ontology#Institution, http://lod.ehri-project.eu/ontology#RecordResource)</li>
+<li>Added: SubProperty of https://www.ica.org/standards/RiC/ontology#isCopyOf</li>
+<li>Added: SubProperty of https://www.ica.org/standards/RiC/ontology#isRelatedTo</li>
+<li>Added: InverseObjectProperties InverseObjectProperties(&lt;http://lod.ehri-project.eu/ontology#hasCopy&gt; &lt;http://lod.ehri-project.eu/ontology#isCopyOf&gt;)</li>
+</ul>
+</li>
+<li><a href="#isOrWasScriptOf">http://lod.ehri-project.eu/ontology#isOrWasScriptOf</a>
+<ul>
+<li>Added: domain http://lod.ehri-project.eu/ontology#MaterialScript</li>
+<li>Added: SubProperty of https://www.ica.org/standards/RiC/ontology#isRelatedTo</li>
+<li>Added: Range http://lod.ehri-project.eu/ontology#RecordResource</li>
+<li>Added: InverseObjectProperties InverseObjectProperties(&lt;http://lod.ehri-project.eu/ontology#hasOrHadScript&gt; &lt;http://lod.ehri-project.eu/ontology#isOrWasScriptOf&gt;)</li>
+</ul>
+</li>
+<li><a href="#is_copy_of_relation_role">http://lod.ehri-project.eu/ontology#is_copy_of_relation_role</a>
+<ul>
+<li>Added: SubProperty of https://www.ica.org/standards/RiC/ontology#relation_role</li>
+<li>Added: Range http://lod.ehri-project.eu/ontology#IsCopyOfRelation</li>
+<li>Added: domain http://lod.ehri-project.eu/ontology#IsCopyOfRelation</li>
+</ul>
 </li>
 <li><a href="#https://www.ica.org/standards/RiC/ontology#relation_role">https://www.ica.org/standards/RiC/ontology#relation_role</a>
 </li>
+</ul></details><details><summary><u>Deleted object properties</u></summary>
+<ul><li><a href="#http://lod.ehri-project-test.eu/ontology#hasCopy">http://lod.ehri-project-test.eu/ontology#hasCopy</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#hasOrHadScript">http://lod.ehri-project-test.eu/ontology#hasOrHadScript</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#isCopyOf">http://lod.ehri-project-test.eu/ontology#isCopyOf</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#isOrWasScriptOf">http://lod.ehri-project-test.eu/ontology#isOrWasScriptOf</a>
+</li>
+<li><a href="#http://www.w3.org/2004/02/skos/core#inScheme">http://www.w3.org/2004/02/skos/core#inScheme</a>
+</li>
+<li><a href="#http://www.w3.org/2004/02/skos/core#topConceptOf">http://www.w3.org/2004/02/skos/core#topConceptOf</a>
+</li>
 </ul></details><h3 id="changeDataProp" class="list">Data Properties</h3>
 <details><summary><u>Modified data properties</u></summary>
-<ul><li><a href="#archivalHistory">http://lod.ehri-project-test.eu/ontology#archivalHistory</a>
-<ul>
-<li>Added: Domain Union of (http://lod.ehri-project-test.eu/ontology#Country, http://lod.ehri-project-test.eu/ontology#RecordResource)</li>
-</ul>
-<ul>
-<li>Deleted: Domain http://lod.ehri-project-test.eu/ontology#Country</li>
-</ul>
-</li>
-<li><a href="#archivistNote">http://lod.ehri-project-test.eu/ontology#archivistNote</a>
-<ul>
-<li>Added: SubProperty of https://www.ica.org/standards/RiC/ontology#note</li>
-</ul>
-<ul>
-<li>Deleted: SubProperty of http://lod.ehri-project-test.eu/ontology#notes</li>
-</ul>
-</li>
-<li><a href="#otherFindingAids">http://lod.ehri-project-test.eu/ontology#otherFindingAids</a>
-<ul>
-<li>Added: rdfs:comment "Identifies and gives information about any finding aids related to the unit of description."@en</li>
-</ul>
-<ul>
-<li>Deleted: rdfs:comment "Provides information on the history of the unit of description that is significant for its authenticity, integrity and interpretation."@en</li>
-</ul>
-</li>
-<li><a href="#separatedMaterial">http://lod.ehri-project-test.eu/ontology#separatedMaterial</a>
-<ul>
-<li>Added: rdfs:label "unidades de descripción separadas"@es</li>
-</ul>
-<ul>
-<li>Deleted: rdfs:label "unidadades de descripción separadas"@es</li>
-</ul>
-</li>
-<li><a href="#sources">http://lod.ehri-project-test.eu/ontology#sources</a>
-<ul>
-<li>Added: Domain http://lod.ehri-project-test.eu/ontology#Agent</li>
-</ul>
-<ul>
-<li>Deleted: Domain Union of (http://lod.ehri-project-test.eu/ontology#Agent, http://lod.ehri-project-test.eu/ontology#RecordResource)</li>
-</ul>
-</li>
-<li><a href="#http://schema.org/openingHours">http://schema.org/openingHours</a>
+<ul><li><a href="#http://schema.org/openingHours">http://schema.org/openingHours</a>
 <ul>
 <li>Added: rdfs:isDefinedBy http://schema.org/openingHours</li>
 </ul>
@@ -101,24 +231,228 @@
 </ul>
 </li>
 </ul></details><details><summary><u>Added data properties</u></summary>
-<ul><li><a href="#biographicalHistory">http://lod.ehri-project-test.eu/ontology#biographicalHistory</a>
+<ul><li><a href="#accessibility">http://lod.ehri-project.eu/ontology#accessibility</a>
 <ul>
 <li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
-<li>Added: SubProperty of https://www.ica.org/standards/RiC/ontology#history</li>
-<li>Added: Domain Union of (http://lod.ehri-project-test.eu/ontology#Person, http://lod.ehri-project-test.eu/ontology#RecordResource)</li>
+<li>Added: Domain http://lod.ehri-project.eu/ontology#Institution</li>
 </ul>
 </li>
-<li><a href="#physicalCharacteristicsAndTechnicalRequirements">http://lod.ehri-project-test.eu/ontology#physicalCharacteristicsAndTechnicalRequirements</a>
+<li><a href="#administrativeStructure">http://lod.ehri-project.eu/ontology#administrativeStructure</a>
 <ul>
-<li>Added: Domain http://lod.ehri-project-test.eu/ontology#RecordResource</li>
 <li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+<li>Added: Domain http://lod.ehri-project.eu/ontology#Institution</li>
+</ul>
+</li>
+<li><a href="#appraisal">http://lod.ehri-project.eu/ontology#appraisal</a>
+<ul>
+<li>Added: Domain http://lod.ehri-project.eu/ontology#RecordResource</li>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+</ul>
+</li>
+<li><a href="#archivalHistory">http://lod.ehri-project.eu/ontology#archivalHistory</a>
+<ul>
+<li>Added: Domain Union of (http://lod.ehri-project.eu/ontology#Country, http://lod.ehri-project.eu/ontology#RecordResource)</li>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+<li>Added: SubProperty of https://www.ica.org/standards/RiC/ontology#history</li>
+</ul>
+</li>
+<li><a href="#archivalSituation">http://lod.ehri-project.eu/ontology#archivalSituation</a>
+<ul>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+<li>Added: Domain http://lod.ehri-project.eu/ontology#Country</li>
+</ul>
+</li>
+<li><a href="#archivistNote">http://lod.ehri-project.eu/ontology#archivistNote</a>
+<ul>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+<li>Added: Domain http://lod.ehri-project.eu/ontology#RecordResource</li>
+<li>Added: SubProperty of https://www.ica.org/standards/RiC/ontology#note</li>
+</ul>
+</li>
+<li><a href="#biographicalHistory">http://lod.ehri-project.eu/ontology#biographicalHistory</a>
+<ul>
+<li>Added: SubProperty of https://www.ica.org/standards/RiC/ontology#history</li>
+<li>Added: Domain Union of (http://lod.ehri-project.eu/ontology#Person, http://lod.ehri-project.eu/ontology#RecordResource)</li>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+</ul>
+</li>
+<li><a href="#buildings">http://lod.ehri-project.eu/ontology#buildings</a>
+<ul>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+<li>Added: Domain http://lod.ehri-project.eu/ontology#Institution</li>
+</ul>
+</li>
+<li><a href="#conditionsOfAccess">http://lod.ehri-project.eu/ontology#conditionsOfAccess</a>
+<ul>
+<li>Added: SubProperty of https://www.ica.org/standards/RiC/ontology#conditionsOfAccess</li>
+<li>Added: Domain Union of (http://lod.ehri-project.eu/ontology#Institution, http://lod.ehri-project.eu/ontology#RecordResource)</li>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+</ul>
+</li>
+<li><a href="#contactPerson">http://lod.ehri-project.eu/ontology#contactPerson</a>
+<ul>
+<li>Added: Domain http://lod.ehri-project.eu/ontology#InstitutionAddress</li>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+</ul>
+</li>
+<li><a href="#findingAids">http://lod.ehri-project.eu/ontology#findingAids</a>
+<ul>
+<li>Added: Domain http://lod.ehri-project.eu/ontology#Institution</li>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+</ul>
+</li>
+<li><a href="#generalContext">http://lod.ehri-project.eu/ontology#generalContext</a>
+<ul>
+<li>Added: Domain http://lod.ehri-project.eu/ontology#Institution</li>
+<li>Added: SubProperty of https://www.ica.org/standards/RiC/ontology#generalDescription</li>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+</ul>
+</li>
+<li><a href="#locationOfCopies">http://lod.ehri-project.eu/ontology#locationOfCopies</a>
+<ul>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+<li>Added: Domain http://lod.ehri-project.eu/ontology#RecordResource</li>
+</ul>
+</li>
+<li><a href="#locationOfOriginals">http://lod.ehri-project.eu/ontology#locationOfOriginals</a>
+<ul>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+<li>Added: Domain http://lod.ehri-project.eu/ontology#RecordResource</li>
+</ul>
+</li>
+<li><a href="#otherFindingAids">http://lod.ehri-project.eu/ontology#otherFindingAids</a>
+<ul>
+<li>Added: Domain http://lod.ehri-project.eu/ontology#RecordResource</li>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+</ul>
+</li>
+<li><a href="#physicalCharacteristicsAndTechnicalRequirements">http://lod.ehri-project.eu/ontology#physicalCharacteristicsAndTechnicalRequirements</a>
+<ul>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+<li>Added: Domain http://lod.ehri-project.eu/ontology#RecordResource</li>
+</ul>
+</li>
+<li><a href="#publicAreas">http://lod.ehri-project.eu/ontology#publicAreas</a>
+<ul>
+<li>Added: Domain http://lod.ehri-project.eu/ontology#Institution</li>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+</ul>
+</li>
+<li><a href="#publicationNote">http://lod.ehri-project.eu/ontology#publicationNote</a>
+<ul>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+<li>Added: Domain http://lod.ehri-project.eu/ontology#RecordResource</li>
+</ul>
+</li>
+<li><a href="#recordsManagementAndCollectingPolicies">http://lod.ehri-project.eu/ontology#recordsManagementAndCollectingPolicies</a>
+<ul>
+<li>Added: Domain http://lod.ehri-project.eu/ontology#Institution</li>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+</ul>
+</li>
+<li><a href="#relatedMaterial">http://lod.ehri-project.eu/ontology#relatedMaterial</a>
+<ul>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+<li>Added: Domain http://lod.ehri-project.eu/ontology#RecordResource</li>
+</ul>
+</li>
+<li><a href="#reproductionServices">http://lod.ehri-project.eu/ontology#reproductionServices</a>
+<ul>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+<li>Added: Domain http://lod.ehri-project.eu/ontology#Institution</li>
+</ul>
+</li>
+<li><a href="#researchExtensive">http://lod.ehri-project.eu/ontology#researchExtensive</a>
+<ul>
+<li>Added: Domain http://lod.ehri-project.eu/ontology#Country</li>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+</ul>
+</li>
+<li><a href="#researchServices">http://lod.ehri-project.eu/ontology#researchServices</a>
+<ul>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+<li>Added: Domain http://lod.ehri-project.eu/ontology#Institution</li>
+</ul>
+</li>
+<li><a href="#researchSummary">http://lod.ehri-project.eu/ontology#researchSummary</a>
+<ul>
+<li>Added: Domain http://lod.ehri-project.eu/ontology#Country</li>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+</ul>
+</li>
+<li><a href="#separatedMaterial">http://lod.ehri-project.eu/ontology#separatedMaterial</a>
+<ul>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+<li>Added: Domain http://lod.ehri-project.eu/ontology#RecordResource</li>
+</ul>
+</li>
+<li><a href="#sources">http://lod.ehri-project.eu/ontology#sources</a>
+<ul>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+<li>Added: Domain http://lod.ehri-project.eu/ontology#Agent</li>
+</ul>
+</li>
+<li><a href="#structureOrGenealogy">http://lod.ehri-project.eu/ontology#structureOrGenealogy</a>
+<ul>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+<li>Added: Domain http://lod.ehri-project.eu/ontology#Agent</li>
 </ul>
 </li>
 <li><a href="#https://www.ica.org/standards/RiC/ontology#note">https://www.ica.org/standards/RiC/ontology#note</a>
 </li>
 </ul></details><details><summary><u>Deleted data properties</u></summary>
-<ul><li><a href="#notes">http://lod.ehri-project-test.eu/ontology#notes</a>
+<ul><li><a href="#http://lod.ehri-project-test.eu/ontology#accessibility">http://lod.ehri-project-test.eu/ontology#accessibility</a>
 </li>
-<li><a href="#physicalCharacterisiticsAndTechnicalRequirements">http://lod.ehri-project-test.eu/ontology#physicalCharacterisiticsAndTechnicalRequirements</a>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#administrativeStructure">http://lod.ehri-project-test.eu/ontology#administrativeStructure</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#appraisal">http://lod.ehri-project-test.eu/ontology#appraisal</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#archivalHistory">http://lod.ehri-project-test.eu/ontology#archivalHistory</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#archivalSituation">http://lod.ehri-project-test.eu/ontology#archivalSituation</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#archivistNote">http://lod.ehri-project-test.eu/ontology#archivistNote</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#buildings">http://lod.ehri-project-test.eu/ontology#buildings</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#conditionsOfAccess">http://lod.ehri-project-test.eu/ontology#conditionsOfAccess</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#contactPerson">http://lod.ehri-project-test.eu/ontology#contactPerson</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#findingAids">http://lod.ehri-project-test.eu/ontology#findingAids</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#generalContext">http://lod.ehri-project-test.eu/ontology#generalContext</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#locationOfCopies">http://lod.ehri-project-test.eu/ontology#locationOfCopies</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#locationOfOriginals">http://lod.ehri-project-test.eu/ontology#locationOfOriginals</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#notes">http://lod.ehri-project-test.eu/ontology#notes</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#otherFindingAids">http://lod.ehri-project-test.eu/ontology#otherFindingAids</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#physicalCharacterisiticsAndTechnicalRequirements">http://lod.ehri-project-test.eu/ontology#physicalCharacterisiticsAndTechnicalRequirements</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#publicAreas">http://lod.ehri-project-test.eu/ontology#publicAreas</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#publicationNote">http://lod.ehri-project-test.eu/ontology#publicationNote</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#recordsManagementAndCollectingPolicies">http://lod.ehri-project-test.eu/ontology#recordsManagementAndCollectingPolicies</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#relatedMaterial">http://lod.ehri-project-test.eu/ontology#relatedMaterial</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#reproductionServices">http://lod.ehri-project-test.eu/ontology#reproductionServices</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#researchExtensive">http://lod.ehri-project-test.eu/ontology#researchExtensive</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#researchServices">http://lod.ehri-project-test.eu/ontology#researchServices</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#researchSummary">http://lod.ehri-project-test.eu/ontology#researchSummary</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#separatedMaterial">http://lod.ehri-project-test.eu/ontology#separatedMaterial</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#sources">http://lod.ehri-project-test.eu/ontology#sources</a>
+</li>
+<li><a href="#http://lod.ehri-project-test.eu/ontology#structureOrGenealogy">http://lod.ehri-project-test.eu/ontology#structureOrGenealogy</a>
 </li>
 </ul></details></div>
